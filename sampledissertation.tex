@@ -9,11 +9,29 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[11pt]{report}
 \usepackage{upennstyle} % You may add additional packages below this line. Overleaf will warn you if your packages conflict with the template packages. See Chapter 1 for more information.
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{epigraph}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning}
+\renewcommand\textflush{flushright}
+\usepackage{etoolbox}
+\makeatletter
+\newlength\epitextskip
+\pretocmd{\@epitext}{\em}{}{}
+\apptocmd{\@epitext}{\em}{}{}
+\patchcmd{\epigraph}{\@epitext{#1}\\}{\@epitext{#1}\\[\epitextskip]}{}{}
+\makeatother
 
+\setlength\epigraphrule{0pt}
+\setlength\epitextskip{2ex}
+\setlength\epigraphwidth{.8\textwidth}
+    
 %-------------------------------------------
 % Citation and bibliography commands. Edit as needed.
-\usepackage[nonamebreak,round]{natbib}
-\bibliographystyle{plainnat}
+\usepackage[nonamebreak,numbers,sort&compress, round]{natbib}
+\usepackage[capitalize,nameinlink]{cleveref}
+\bibliographystyle{unsrtnat}
+
 %-------------------------------------------
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -72,7 +90,148 @@ Collectively, the chapters in this dissertation show that smarter machines do no
 %-------------------------------------------
 
 %%%% OPTIONAL PREFACE
-%\preface{Write your preface text here.} % If applicable, uncomment this line and write your preface between the {}. If you do, you will also need to edit line 101.
+\preface{
+
+ \epigraph{War to the death should be instantly proclaimed against them. Every machine of every sort should be destroyed... 
+ Let there be no exceptions made, no quarter shown.}{Samuel Butler, 1863
+    }
+
+Society has long feared intelligent machines. 
+Well before the Terminator and HAL-9000, the novelist Samuel Butler called for machine genocide. 
+Perhaps because of all this cultural conditioning, I was wary of AI when I started my doctoral studies. 
+In what follows, I'll describe how empirical evidence shifted me from skepticism to cautious optimism that AI tools, properly designed, can improve human capabilities.
+
+My first real contact with AI came in 2012, during a semester abroad at the University of Leuven in Belgium. 
+I took a course called Fundamentals of Artificial Intelligence, where we learned the “classical” toolkit—search algorithms, constraint satisfaction, and hand-crafted heuristics—designed to let computers solve well-defined problems. 
+It was a far cry from the Hollywood image of AI. 
+Seeing how these systems worked under the hood stripped away the mystique: the techniques were clever, but understandable.
+
+A few years later, the field shifted almost overnight. 
+Deep neural networks, long a theoretical curiosity that was impractical to implement, started outperforming older methods on speech recognition, image classification, and language processing. 
+The gains were spectacular—but opaque. 
+The very systems that were setting performance records were also becoming harder to interpret. 
+At the same time, troubling examples emerged: medical triage algorithms that under-treated Black patients, risk-assessment tools that gave harsher scores to minorities, hiring systems that filtered out women. 
+Accuracy had improved, but fairness and explainability had suffered.
+
+This was the state of affairs when I started working on one of my first projects during the doctoral program, now Chapter 3 in this dissertation. 
+I was analyzing the possibility of using predictive AI to evaluate personal qualities at scale in college admissions. 
+If the tool, like others before it, traded efficiency for bias, the bargain was unacceptable. 
+In fact, the best evidence we had so far pointed in this direction. 
+AI extracted measures of application essay content and style had been shown to reveal applicants’ social class.
+
+My collaborators and I were surprised to see that with careful design, AI could accurately measure personal qualities in admissions, which predicted college graduation six years later. 
+Moreover, this performance did not come at the expense of reduced equity, and modern techniques allowed us to “open the black box” and see where the model was looking at to make predictions about applicants' personal qualities. 
+I learned that, contrary to what many critics argued, bias wasn’t baked into AI by design; it was contingent on the recipe. 
+Design choices—not algorithms in the abstract—decide fairness.
+
+Just months after our paper was published, ChatGPT launched publicly.
+Anyone now had access to a system that could generate text about anything that read as if it was written by a human. 
+I had tinkered with earlier AI models that generated text, but none of these were as open to the public nor as powerful as ChatGPT. 
+Like many, I experienced what Ethan Mollick has called “the two sleepless nights”. 
+As I experimented with AI, I realized that now any applicant could draft an essay at the press of a button.
+
+Soon enough, it dawned on me that the stakes were higher than just college admissions. 
+If a readily accessible tool could produce an essay about any topic, would that make writing obsolete? 
+And if writing is how we learn to think, would AI lead to people outsourcing all of their thinking? 
+If so, AI could reduce motivation for effortful but meaningful thought. 
+We often settle for the path of least resistance, even if it is bad for us in the long run. 
+And reduced exposure would then lead to the atrophy of our mental capacities. 
+So I began losing sleep over the question of whether AI would make us lazy and dumb.
+
+I was not alone in worrying about this. 
+New York City public schools banned ChatGPT within a month of its release, citing fears of “cognitive laziness.” 
+Two‑thirds of Americans told pollsters that large language models will make society less intelligent. 
+Was this just another moral panic? 
+After all—from Socrates’ critique of writing to Nicholas Carr’s essay 'Is Google making us stupid’—many before me have worried about the technologies of their time. 
+In hindsight, many of these concerns turned out to be far too pessimistic. 
+The only way to know was to resort to experimentation.
+
+In work not mature enough for this dissertation, we asked people how much of GDP should the US allocate for foreign aid and explain their recommendation. 
+Then, we randomly assigned them to get more information, either through an AI chatbot assistant or through a traditional web search. 
+After revising their original judgments, we evaluated them for critical thinking. 
+The chatbot group outperformed the Google group, showing sharper reasoning despite not experiencing any extra effort and, in fact, spending about four times longer engaging with the material. 
+Far from inducing laziness, the AI prompted deeper—and more sustained—thinking, directly contradicting my initial fear that it would make users passive or shallow.
+
+Building on these findings about thinking quality, we next turned to measuring learning directly.
+We hypothesised that AI would be a coach or a crutch depending on how people used it. 
+So we built two AI conditions to compare to a no-AI control. 
+The AI-crutch condition simply gave away the answer, allowing users to copy and paste without thinking. 
+The AI-coach condition forced the user to try first, and then compare their attempt with the AI's answer. 
+Much to our surprise, we found that both AI conditions—even the AI-crutch—improved writing skill, tested without access to AI. 
+
+We focused on this counterintuitive finding, and collected the data now reported in Chapter 1. 
+We found that despite people's predictions, even when users were allowed to copy and paste AI text, they learned more, even though they spent considerably less time practicing. 
+A follow-up study gave us some clues as to why. 
+Even if in this case AI reduced engagement, the access to higher quality information in the shape of precisely timed, personalized, high quality examples resulted in improved performance.
+
+A year’s worth of AI bots in the wild showed us that AI can also target motivation directly. 
+About the time when we started researching AI and thinking, Angela got a call from Sal Khan, and we started working on AI assistants for motivational support in learning. 
+After careful development with highschoolers and a year of deployment, we found that chatbot use was associated with students attempting more math problems, working for longer, and perhaps most surprisingly, attempting harder questions (Chapter 2).
+
+Reflecting on these findings highlighted an apparent contradiction: 
+Sometimes AI dramatically increased engagement (like in the foreign aid study), and sometimes it reduced it (like in the writing study). 
+And yet in both cases, AI used resulted in improved performance. 
+Engagement alone could not explain the pattern of results we observed. 
+Looking back at our findings we realized the other lever is better information. 
+Both matter. AI tools can supply higher‑signal examples, explanations, or feedback (information). 
+They can also raise or lower the user’s willingness to expend cognitive effort (engagement). 
+Whether people get “smarter or stupider” depends on the net effect of those two levers. See Figure 1.
+
+
+\usetikzlibrary{positioning}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[
+      node distance=12mm and 25mm,
+      box/.style={
+        draw,
+        minimum width=36mm,
+        minimum height=10mm,
+        align=center,
+        font=\fontfamily{phv}\selectfont % Helvetica for node text only
+      },
+      >={Stealth[length=3mm]},
+      every path/.style={thick}
+    ]
+    % Nodes
+    \node[box] (hai) {Human--AI\\Interaction};
+
+    % Align the three boxes in a vertical column
+    \node[box, right=of hai, yshift=15mm] (eff) {Task\\Efficiency};
+    \node[box, right=of hai]               (qual) {Quality of\\Engagement};
+    \node[box, right=of hai, yshift=-15mm] (quant) {Quantity of\\Engagement};
+
+    \node[box, right=of qual, xshift=5mm] (skill) {Skill};
+
+    % Arrows from Human–AI to three mediators
+    \draw[->] (hai) -- (eff);
+    \draw[->] (hai) -- (qual);
+    \draw[->] (hai) -- (quant);
+
+    % Arrows from three mediators to Skill
+    \draw[->] (eff)   -- (skill);
+    \draw[->] (qual)  -- (skill);
+    \draw[->] (quant) -- (skill);
+    \end{tikzpicture}
+    \caption{Using AI tools can improve human skill by improving task efficiency, quantity, and/or quality of engagement.}
+\end{figure}
+
+For me, the question is no longer whether AI will make us stupid or smart, but rather, when will it do so, and how can we carefully design AI (and the contexts around it) to ensure it makes us smarter. 
+Taken together, the studies in this dissertation show that AI can make us smarter—better writers, more motivated learners, and more consistent decision makers—when designers balance the two levers of engagement and information wisely. 
+Where information quality soars, lower engagement may be an acceptable trade‑off; where engagement rises, information need not be as important. 
+
+This insight inspires future work. 
+Can we design for both better information and higher engagement? 
+How can AI help us achieve flow? 
+How can AI boost performance while also deepening agency and meaning? 
+Which design choices sharpen thinking, and which contexts tip the balance toward superficiality? 
+Finally, can we raise objective engagement while dulling the aversive feeling of effort? 
+
+As these technologies continue to evolve, my initial skepticism has turned into cautious optimism. 
+I hope that in the future I can continue to explore these questions, so that rather than a machine genocide, we get to harness them to be our best selves.
+
+} % If applicable, uncomment this line and write your preface between the {}. If you do, you will also need to edit line 101.
 %-------------------------------------------
 
 \begin{document}
@@ -99,11 +258,11 @@ Collectively, the chapters in this dissertation show that smarter machines do no
 \tableofcontents
 
 % %%%% OPTIONAL LIST OF TABLES
-% \clearpage \phantomsection \addcontentsline{toc}{chapter}{LIST OF TABLES} \begin{singlespacing} \listoftables \end{singlespacing}% If not applicable, comment out this line to hide the optional List of Tables
+\clearpage \phantomsection \addcontentsline{toc}{chapter}{LIST OF TABLES} \begin{singlespacing} \listoftables \end{singlespacing}% If not applicable, comment out this line to hide the optional List of Tables
 % %-------------------------------------------
 
 % %%%% OPTIONAL LIST OF ILLUSTRATIONS
-% \clearpage \phantomsection \addcontentsline{toc}{chapter}{LIST OF ILLUSTRATIONS} \begin{singlespacing} \listoffigures \end{singlespacing}% If not applicable, comment out this line to hide the optional List of Illustrations
+\clearpage \phantomsection \addcontentsline{toc}{chapter}{LIST OF ILLUSTRATIONS} \begin{singlespacing} \listoffigures \end{singlespacing}% If not applicable, comment out this line to hide the optional List of Illustrations
 % %-------------------------------------------
 
 %%%% OPTIONAL PREFACE
@@ -112,6 +271,150 @@ Collectively, the chapters in this dissertation show that smarter machines do no
 
 %%%%% MAIN TEXT %%%%%
 \begin{mainf} % The main body of your dissertation starts below this line
+
+\chapter{Preface}
+
+
+ \epigraph{War to the death should be instantly proclaimed against them. Every machine of every sort should be destroyed... 
+ Let there be no exceptions made, no quarter shown.}{Samuel Butler, 1863
+    }
+
+Society has long feared intelligent machines. 
+Well before the Terminator and HAL-9000, the novelist Samuel Butler called for machine genocide. 
+Perhaps because of all this cultural conditioning, I was wary of AI when I started my doctoral studies. 
+In what follows, I'll describe how empirical evidence shifted me from skepticism to cautious optimism that AI tools, properly designed, can improve human capabilities.
+
+My first real contact with AI came in 2012, during a semester abroad at the University of Leuven in Belgium. 
+I took a course called Fundamentals of Artificial Intelligence, where we learned the “classical” toolkit—search algorithms, constraint satisfaction, and hand-crafted heuristics—designed to let computers solve well-defined problems. 
+It was a far cry from the Hollywood image of AI. 
+Seeing how these systems worked under the hood stripped away the mystique: the techniques were clever, but understandable.
+
+A few years later, the field shifted almost overnight. 
+Deep neural networks, long a theoretical curiosity that was impractical to implement, started outperforming older methods on speech recognition, image classification, and language processing. 
+The gains were spectacular—but opaque. 
+The very systems that were setting performance records were also becoming harder to interpret. 
+At the same time, troubling examples emerged: medical triage algorithms that under-treated Black patients, risk-assessment tools that gave harsher scores to minorities, hiring systems that filtered out women. 
+Accuracy had improved, but fairness and explainability had suffered.
+
+This was the state of affairs when I started working on one of my first projects during the doctoral program, now Chapter 3 in this dissertation. 
+I was analyzing the possibility of using predictive AI to evaluate personal qualities at scale in college admissions. 
+If the tool, like others before it, traded efficiency for bias, the bargain was unacceptable. 
+In fact, the best evidence we had so far pointed in this direction. 
+AI extracted measures of application essay content and style had been shown to reveal applicants’ social class.
+
+My collaborators and I were surprised to see that with careful design, AI could accurately measure personal qualities in admissions, which predicted college graduation six years later. 
+Moreover, this performance did not come at the expense of reduced equity, and modern techniques allowed us to “open the black box” and see where the model was looking at to make predictions about applicants' personal qualities. 
+I learned that, contrary to what many critics argued, bias wasn’t baked into AI by design; it was contingent on the recipe. 
+Design choices—not algorithms in the abstract—decide fairness.
+
+Just months after our paper was published, ChatGPT launched publicly.
+Anyone now had access to a system that could generate text about anything that read as if it was written by a human. 
+I had tinkered with earlier AI models that generated text, but none of these were as open to the public nor as powerful as ChatGPT. 
+Like many, I experienced what Ethan Mollick has called “the two sleepless nights”. 
+As I experimented with AI, I realized that now any applicant could draft an essay at the press of a button.
+
+Soon enough, it dawned on me that the stakes were higher than just college admissions. 
+If a readily accessible tool could produce an essay about any topic, would that make writing obsolete? 
+And if writing is how we learn to think, would AI lead to people outsourcing all of their thinking? 
+If so, AI could reduce motivation for effortful but meaningful thought. 
+We often settle for the path of least resistance, even if it is bad for us in the long run. 
+And reduced exposure would then lead to the atrophy of our mental capacities. 
+So I began losing sleep over the question of whether AI would make us lazy and dumb.
+
+I was not alone in worrying about this. 
+New York City public schools banned ChatGPT within a month of its release, citing fears of “cognitive laziness.” 
+Two‑thirds of Americans told pollsters that large language models will make society less intelligent. 
+Was this just another moral panic? 
+After all—from Socrates’ critique of writing to Nicholas Carr’s essay 'Is Google making us stupid’—many before me have worried about the technologies of their time. 
+In hindsight, many of these concerns turned out to be far too pessimistic. 
+The only way to know was to resort to experimentation.
+
+In work not mature enough for this dissertation, we asked people how much of GDP should the US allocate for foreign aid and explain their recommendation. 
+Then, we randomly assigned them to get more information, either through an AI chatbot assistant or through a traditional web search. 
+After revising their original judgments, we evaluated them for critical thinking. 
+The chatbot group outperformed the Google group, showing sharper reasoning despite not experiencing any extra effort and, in fact, spending about four times longer engaging with the material. 
+Far from inducing laziness, the AI prompted deeper—and more sustained—thinking, directly contradicting my initial fear that it would make users passive or shallow.
+
+Building on these findings about thinking quality, we next turned to measuring learning directly.
+We hypothesised that AI would be a coach or a crutch depending on how people used it. 
+So we built two AI conditions to compare to a no-AI control. 
+The AI-crutch condition simply gave away the answer, allowing users to copy and paste without thinking. 
+The AI-coach condition forced the user to try first, and then compare their attempt with the AI's answer. 
+Much to our surprise, we found that both AI conditions—even the AI-crutch—improved writing skill, tested without access to AI. 
+
+We focused on this counterintuitive finding, and collected the data now reported in Chapter 1. 
+We found that despite people's predictions, even when users were allowed to copy and paste AI text, they learned more, even though they spent considerably less time practicing. 
+A follow-up study gave us some clues as to why. 
+Even if in this case AI reduced engagement, the access to higher quality information in the shape of precisely timed, personalized, high quality examples resulted in improved performance.
+
+A year’s worth of AI bots in the wild showed us that AI can also target motivation directly. 
+About the time when we started researching AI and thinking, Angela got a call from Sal Khan, and we started working on AI assistants for motivational support in learning. 
+After careful development with highschoolers and a year of deployment, we found that chatbot use was associated with students attempting more math problems, working for longer, and perhaps most surprisingly, attempting harder questions (Chapter 2).
+
+Reflecting on these findings highlighted an apparent contradiction: 
+Sometimes AI dramatically increased engagement (like in the foreign aid study), and sometimes it reduced it (like in the writing study). 
+And yet in both cases, AI used resulted in improved performance. 
+Engagement alone could not explain the pattern of results we observed. 
+Looking back at our findings we realized the other lever is better information. 
+Both matter. AI tools can supply higher‑signal examples, explanations, or feedback (information). 
+They can also raise or lower the user’s willingness to expend cognitive effort (engagement). 
+Whether people get “smarter or stupider” depends on the net effect of those two levers. See Figure 1.
+
+
+\usetikzlibrary{positioning}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[
+      node distance=12mm and 25mm,
+      box/.style={
+        draw,
+        minimum width=36mm,
+        minimum height=10mm,
+        align=center,
+        font=\fontfamily{phv}\selectfont % Helvetica for node text only
+      },
+      >={Stealth[length=3mm]},
+      every path/.style={thick}
+    ]
+    % Nodes
+    \node[box] (hai) {Human--AI\\Interaction};
+
+    % Align the three boxes in a vertical column
+    \node[box, right=of hai, yshift=15mm] (eff) {Task\\Efficiency};
+    \node[box, right=of hai]               (qual) {Quality of\\Engagement};
+    \node[box, right=of hai, yshift=-15mm] (quant) {Quantity of\\Engagement};
+
+    \node[box, right=of qual, xshift=5mm] (skill) {Skill};
+
+    % Arrows from Human–AI to three mediators
+    \draw[->] (hai) -- (eff);
+    \draw[->] (hai) -- (qual);
+    \draw[->] (hai) -- (quant);
+
+    % Arrows from three mediators to Skill
+    \draw[->] (eff)   -- (skill);
+    \draw[->] (qual)  -- (skill);
+    \draw[->] (quant) -- (skill);
+    \end{tikzpicture}
+    \caption{Using AI tools can improve human skill by improving task efficiency, quantity, and/or quality of engagement.}
+\end{figure}
+
+For me, the question is no longer whether AI will make us stupid or smart, but rather, when will it do so, and how can we carefully design AI (and the contexts around it) to ensure it makes us smarter. 
+Taken together, the studies in this dissertation show that AI can make us smarter—better writers, more motivated learners, and more consistent decision makers—when designers balance the two levers of engagement and information wisely. 
+Where information quality soars, lower engagement may be an acceptable trade‑off; where engagement rises, information need not be as important. 
+
+This insight inspires future work. 
+Can we design for both better information and higher engagement? 
+How can AI help us achieve flow? 
+How can AI boost performance while also deepening agency and meaning? 
+Which design choices sharpen thinking, and which contexts tip the balance toward superficiality? 
+Finally, can we raise objective engagement while dulling the aversive feeling of effort? 
+
+As these technologies continue to evolve, my initial skepticism has turned into cautious optimism. 
+I hope that in the future I can continue to explore these questions, so that rather than a machine genocide, we get to harness them to be our best selves.
+
+
 
 \chapter{Learning, not cheating: AI assistance can enhance rather than hinder skill development}
 
@@ -504,12 +807,9 @@ As per our pre-registrations, we fit ANCOVA models predicting outcomes from cond
 Our analyses of the hypothetical hiring situation use beta regression, because the relative likelihood of a cover letter being preferred is bounded between 0 and 1.
 When correcting for multiple comparisons in exploratory moderation analyses, we use the Benjamini-Hochberg correction \cite{benjamini1995controlling}. 
 
+\chapter{Help Me Focus: AI-delivered motivational interventions enhance student persistence in online learning environments}
 
-END
-
-
-\chapter{Khan}
-
+\section{Abstract}
 Can generative AI provide motivational support at scale? 
 While psychological interventions have proven to be effective in controlled settings, their scalability in natural contexts remains understudied. 
 This year-long field investigation shows that AI-delivered interventions benefit learners in an ecologically valid setting.
@@ -520,7 +820,7 @@ Effects on accuracy were less robust: average accuracy did not improve, but unde
 Exploratory text analyses reveal that AI-facilitated interactions are associated with reduced negative affect.
 These findings suggest that scalable emotion regulation interventions can significantly enhance engagement in digital learning environments, highlighting the potential for AI-supported emotional scaffolding to address barriers to educational persistence and achievement.
 
-
+\section{Introduction}
 Motivation is a central driver of behavior in various domains, including consumer decision-making, workplace performance, health, and education. 
 People often know what they should do---whether it’s sticking to a fitness plan, managing personal finances, or completing an online course---yet struggle to persist when faced with frustration, effort, or competing demands. 
 A core challenge in behavior change is not just delivering information but sustaining motivation over time.
@@ -650,7 +950,7 @@ Similarly, item difficulty was negatively associated with accuracy and engagemen
 \end{figure}
 
 \begin{landscape}
-\begin{table*}[!htbp] \centering    \caption{Regression Results}    \label{tab:main_reg} \resizebox{\textwidth}{!}{% key: fit to the (rotated) page height
+\begin{table*}[!htbp] \centering    \caption{Regression Results}    \label{tab:main_reg} \resizebox{\linewidth}{!}{% key: fit to the (rotated) page height
 \begin{tabular}{@{\extracolsep{5pt}}lcccccc}  \\[-1.8ex]\hline \\[-1.8ex]  \\[-1.8ex] & \multicolumn{2}{c}{Engagement: Log(Time on Task)} & \multicolumn{2}{c}{Challenge-Seeking: Item Difficulty} & \multicolumn{2}{c}{Performance: Percent Correct} \\   & Situation & Emotion & Situation & Emotion & Situation & Emotion \\  \\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\  \hline \\[-1.8ex]   Post-Intervention Effect & 0.426$^{***}$ & 0.558$^{***}$ & 0.129$^{***}$ & 0.119$^{***}$ & 0.425 & 0.586 \\    & (0.088) & (0.083) & (0.037) & (0.035) & (1.201) & (1.250) \\    Time-Varying User Skill & 1.057$^{***}$ & 0.737$^{**}$ & $-$0.363$^{***}$ & $-$0.537$^{***}$ & 61.608$^{***}$ & 68.997$^{***}$ \\    & (0.225) & (0.265) & (0.096) & (0.112) & (3.092) & (3.997) \\    Time-Varying Item Difficulty & $-$0.294$^{**}$ & $-$0.433$^{***}$ &  &  & $-$17.840$^{***}$ & $-$20.118$^{***}$ \\    & (0.099) & (0.099) &  &  & (1.360) & (1.491) \\   \hline \\[-1.8ex]  Observations & 1,782 & 1,834 & 1,782 & 1,834 & 1,782 & 1,834 \\  R$^{2}$ & 0.877 & 0.885 & 0.832 & 0.837 & 0.918 & 0.915 \\  Adjusted R$^{2}$ & 0.603 & 0.616 & 0.457 & 0.456 & 0.735 & 0.714 \\  Residual Std. Error & 0.906 (df = 551) & 0.932 (df = 547) & 0.389 (df = 552) & 0.402 (df = 548) & 12.428 (df = 551) & 14.034 (df = 547) \\  \hline \\[-1.8ex]  \textit{Note:}  & \multicolumn{6}{r}{$^{*}$p$<$0.05; $^{**}$p$<$0.01; $^{***}$p$<$0.001} \\  \end{tabular}}  \end{table*} 
 \end{landscape}
 
@@ -828,7 +1128,7 @@ These frameworks emphasize alignment with stakeholder objectives, interpretabili
     Rather than simply maximizing predictive accuracy, these approaches prioritize alignment with stakeholder goals (e.g., admitting students who demonstrate prosocial purpose, \cite{noauthor_our_2021}), interpretability (e.g., providing separate, face-valid scores for separate personal qualities rather than a single summary score of character with no evidence of face validity), and rigorously auditing model outputs for unintended bias. By prioritizing these aspects, digital technology can facilitate the identification of discrimination and contribute to rectifying historical exclusion \cite{lobel_equality_2022}.
 
 In this investigation, we developed an artificial intelligence (AI) approach to assessing personal qualities with these priorities in mind. 
-We began with a de-identified sample of 309,594 college applications (see \textbf{Figure 1}). Each included a 150-word essay describing an extracurricular or work activity of the applicant’s choice. Next, in a \textit{Development Sample} of 3,131 essays, research assistants (RA) and admissions officers (AO) identified the presence or absence of seven different personal qualities commonly valued by universities and shown in prior research to predict college success \cite{almlund_personality_2011}. See \textbf{Table 1}. Research assistant and admissions officer ratings were used to fine-tune separate RoBERTa language models \cite{liu_roberta_2019} for each personal quality. We then confirmed each model’s interpretability as well as evidence of convergent, discriminant, and predictive validity by demographic subgroup. Finally, we applied these fine-tuned models to the \textit{Holdout Sample} of 306,463 essays, examining associations between computer-generated personal quality scores, demographic characteristics, and six-year college graduation.
+We began with a de-identified sample of 309,594 college applications (see \textbf{Figure 1}). Each included a 150-word essay describing an extracurricular or work activity of the applicant’s choice. Next, in a \textit{Development Sample} of 3,131 essays, research assistants (RA) and admissions officers (AO) identified the presence or absence of seven different personal qualities commonly valued by universities and shown in prior research to predict college success \cite{almlund_personality_2011}. See \textbf{Table \ref{tab:pqs}}. Research assistant and admissions officer ratings were used to fine-tune separate RoBERTa language models \cite{liu_roberta_2019} for each personal quality. We then confirmed each model’s interpretability as well as evidence of convergent, discriminant, and predictive validity by demographic subgroup. Finally, we applied these fine-tuned models to the \textit{Holdout Sample} of 306,463 essays, examining associations between computer-generated personal quality scores, demographic characteristics, and six-year college graduation.
 
 \begin{table*}
 \small
@@ -861,6 +1161,8 @@ Working with or learning from others. Valuing what fellow participants bring to 
 Persisting in the face of challenge.                                                                                                                                                      & I’ve learned to become a gracious victor and to grow from defeat. Track has helped me overcome my fear of losing, and even helped me put my life in perspective. I’ve learned to keep working and fighting even when the odds seem impossible to beat. There were many times that I found myself lagging, but I pulled ahead at the end because I never gave up. The most important thing I’ve learned is to never let anything stand in my way.     \\                         \hline    
 \multicolumn{2}{l}{\textit{Note.} Our data use agreement with Common App does not allow us to publish real excerpts to protect student identity.}
 \end{tabular}
+\label{tab:pqs}
+
 \end{table*}
 
 \begin{figure*}
@@ -894,11 +1196,12 @@ Descriptive Statistics                & \multicolumn{1}{l}{} & \multicolumn{1}{l
 \hline
 \multicolumn{15}{p{17.25cm}}{\textit{Note.} Inter-rater reliability for human raters was measured with Krippendorf’s alpha. Correlations between human ratings and computer-generated likelihoods for the same personal qualities are shown along the diagonals. All correlations are point-biserial correlation coefficients between binary human ratings and continuous computer-generated likelihoods. \text{*} \textit{p} < .05. \text{**} \textit{p} < .01. \text{***} \textit{p} < .001. \textit{n} = 3,131. \textit{n} for inter-rater reliability = 206 essays coded by multiple research assistants, n = 3131 essays coded by two admission officers.}
 \end{tabular}
+\label{tab:concurrent}
 \end{table*}
 \end{landscape}
 \section{Results}
 
-On average, research assistants and admissions officers found evidence for two out of seven personal qualities in each essay. As shown in \textbf{Table 2}, some personal qualities were more commonly observed than others. For instance, research assistants and admissions officers identified leadership in 42\% and 44\% of essays, respectively; in contrast, they identified perseverance in only 19\% and 21\% of essays, respectively. Correlations between research assistant and admission officer ratings ranged between $\phi$ = .193 and .703, \textit{p}s < .001.
+On average, research assistants and admissions officers found evidence for two out of seven personal qualities in each essay. As shown in \textbf{Table \ref{tab:concurrent}}, some personal qualities were more commonly observed than others. For instance, research assistants and admissions officers identified leadership in 42\% and 44\% of essays, respectively; in contrast, they identified perseverance in only 19\% and 21\% of essays, respectively. Correlations between research assistant and admission officer ratings ranged between $\phi$ = .193 and .703, \textit{p}s < .001.
 
 Using these binary human ratings, we fine-tuned separate RoBERTa models to produce continuous likelihood scores for each personal quality, and each kind of rater. See \textbf{Section 2} in \textbf{Supplementary Materials} for details on model pretraining and fine-tuning.
 
@@ -919,7 +1222,7 @@ See \textbf{Section 7} in \textbf{Supplementary Materials} for details.
 
 
 \subsection{Convergent and discriminant validity of computer-generated likelihoods in the Development Sample}
-Computer-generated likelihoods for each personal quality converged with human ratings of the same personal quality (\textit{r}s ranged from .59 to .86, average \textit{r} = .74, for research assistants; \textit{r}s ranged from .45 to .80, average \textit{r} = .62, for admission officers). In contrast, computer-generated likelihoods for a particular personal quality did not correlate with human ratings of other personal qualities (\textit{r}s from -.16 to .18, average \textit{r} = .01, for research assistants; \textit{r}s from -.35 to .27, average \textit{r} = -.03, for admission officers). See \textbf{Table 2}. Unsurprisingly, the more reliably human raters were able to code each personal quality, the better the computer-generated likelihoods of personal qualities matched these ratings (\textit{r} = .95, \textit{p} = .001, for research assistants; \textit{r} = .94, \textit{p} = .001, for admission officers). In the sub-sample of essays that were coded by multiple raters, model scores correlated more strongly with human ratings than human ratings correlated with each other (\textit{M}$_{human-computer}$ = .74, \textit{M}$_{human-human}$ = .69, \textit{t} = 4.16, \textit{p} = .006, for research assistants; \textit{M}$_{human-computer}$ = .60, \textit{M}$_{human-human}$ = 0.28, \textit{t} = 19.40, \textit{p} < .001, for admissions officers). There were positive correlations between computer-generated likelihoods for personal qualities from models trained on research assistants and admissions officers (\textit{r}s ranged from .394 to .869, \textit{p}s < .001).
+Computer-generated likelihoods for each personal quality converged with human ratings of the same personal quality (\textit{r}s ranged from .59 to .86, average \textit{r} = .74, for research assistants; \textit{r}s ranged from .45 to .80, average \textit{r} = .62, for admission officers). In contrast, computer-generated likelihoods for a particular personal quality did not correlate with human ratings of other personal qualities (\textit{r}s from -.16 to .18, average \textit{r} = .01, for research assistants; \textit{r}s from -.35 to .27, average \textit{r} = -.03, for admission officers). See \textbf{Table \ref{tab:concurrent}}. Unsurprisingly, the more reliably human raters were able to code each personal quality, the better the computer-generated likelihoods of personal qualities matched these ratings (\textit{r} = .95, \textit{p} = .001, for research assistants; \textit{r} = .94, \textit{p} = .001, for admission officers). In the sub-sample of essays that were coded by multiple raters, model scores correlated more strongly with human ratings than human ratings correlated with each other (\textit{M}$_{human-computer}$ = .74, \textit{M}$_{human-human}$ = .69, \textit{t} = 4.16, \textit{p} = .006, for research assistants; \textit{M}$_{human-computer}$ = .60, \textit{M}$_{human-human}$ = 0.28, \textit{t} = 19.40, \textit{p} < .001, for admissions officers). There were positive correlations between computer-generated likelihoods for personal qualities from models trained on research assistants and admissions officers (\textit{r}s ranged from .394 to .869, \textit{p}s < .001).
 
 \subsection{Convergent validity does not vary by demographic subgroup in the Development Sample}
 
@@ -991,6 +1294,7 @@ Correlations between human ratings and computer-generated likelihoods of persona
 % \end{table}
 
 \begin{table}[!htbp]
+\small
 \centering
 \caption{Odds ratios from binary logistic regression models predicting six-year college graduation in the \textit{N} = 306,463 Holdout Sample}
 \begin{tabular}{@{\extracolsep{3pt}}lcccc}
@@ -1188,14 +1492,14 @@ Analysis files are available at https://zenodo.org/record/8250087. The raw data 
 
 %%%%% OPTIONAL APPENDICES %%%%%
 %-------------------------------------------
-\begin{append}
-\chapter{\MakeUppercase{Title of Appendix A}}
-The content of Appendix A begins here. Use the \verb|\chapter| command to insert additional appendices.
-\section{Section Name of Appendix A}
-Use the \verb|\section| command to create sections.
-\chapter{\MakeUppercase{Title of Appendix B}}
-The content of Appendix B begins here.
-\end{append}
+% \begin{append}
+% \chapter{\MakeUppercase{Title of Appendix A}}
+% The content of Appendix A begins here. Use the \verb|\chapter| command to insert additional appendices.
+% \section{Section Name of Appendix A}
+% Use the \verb|\section| command to create sections.
+% \chapter{\MakeUppercase{Title of Appendix B}}
+% The content of Appendix B begins here.
+% \end{append}
 %-------------------------------------------
 
 %%%%% BIBLIOGRAPHY %%%%%
