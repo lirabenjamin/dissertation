@@ -1,0 +1,91 @@
+\babel@toc {american}{}\relax 
+\contentsline {chapter}{ABSTRACT}{iii}{chapter*.1}%
+\contentsline {chapter}{LIST OF TABLES}{vi}{section*.2}%
+\contentsline {chapter}{LIST OF ILLUSTRATIONS}{vii}{section*.3}%
+\contentsline {chapter}{\numberline {1}Preface}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Learning, not cheating: AI assistance can enhance rather than hinder skill development}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Abstract}{6}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Introduction}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Study 1}{10}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Lay forecasters predicted that practicing with AI would hinder learning}{10}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Study 2}{12}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}AI practice improved writing skill}{12}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}AI practice was less effortful}{13}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}AI practice did not create the illusion of mastery}{15}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}The effects of practicing with AI persist}{15}{subsection.2.4.4}%
+\contentsline {section}{\numberline {2.5}Study 3}{16}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Participants are willing to pay more for feedback from humans than for AI feedback}{16}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Participants think editorial feedback is more effective, beyond social preferences}{16}{subsection.2.5.2}%
+\contentsline {section}{\numberline {2.6}Study 4}{16}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Practicing with AI was more effective than looking for examples online and getting feedback from professional editors}{16}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Practicing with AI is not less effortful than incorporating editorial feedback}{16}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Practicing with AI does not create more of an illusion of knowledge than editorial feedback}{16}{subsection.2.6.3}%
+\contentsline {section}{\numberline {2.7}Study 5}{16}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Seeing an AI example was as effective as practicing with AI}{16}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Seeing an AI example was even less effortful than practicing with AI}{17}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.3}Seeing an AI example did not create the illusion of mastery}{19}{subsection.2.7.3}%
+\contentsline {subsection}{\numberline {2.7.4}The effects of seeing an AI example persist}{19}{subsection.2.7.4}%
+\contentsline {section}{\numberline {2.8}Discussion}{19}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}Future Directions}{20}{subsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.8.2}Conclusion}{21}{subsection.2.8.2}%
+\contentsline {section}{\numberline {2.9}Methods}{22}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}Ethical Considerations}{22}{subsection.2.9.1}%
+\contentsline {subsection}{\numberline {2.9.2}Pre-registration}{22}{subsection.2.9.2}%
+\contentsline {subsection}{\numberline {2.9.3}Participants}{22}{subsection.2.9.3}%
+\contentsline {subsection}{\numberline {2.9.4}Procedure}{23}{subsection.2.9.4}%
+\contentsline {subsection}{\numberline {2.9.5}Measurement}{24}{subsection.2.9.5}%
+\contentsline {subsection}{\numberline {2.9.6}Statistical analysis}{25}{subsection.2.9.6}%
+\contentsline {chapter}{\numberline {3}Help Me Focus: AI-delivered motivational interventions enhance student persistence in online learning environments}{26}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Abstract}{26}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Introduction}{26}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}The Process Model of Emotion Regulation}{27}{subsection.3.2.1}%
+\contentsline {subsubsection}{Situation modification}{27}{subsubsection*.12}%
+\contentsline {subsubsection}{Emotional reframing}{27}{subsubsection*.13}%
+\contentsline {subsection}{\numberline {3.2.2}AI as a Scalable Motivational Coach}{27}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Current Investigation}{28}{subsection.3.2.3}%
+\contentsline {subsubsection}{Situation modification}{28}{subsubsection*.16}%
+\contentsline {subsubsection}{Emotional reframing}{28}{subsubsection*.17}%
+\contentsline {section}{\numberline {3.3}Results}{30}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}When do users decide to engage with the prompts}{30}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Chatbot use is related to increases in motivation but not performance}{32}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Heterogeneity by baseline skill and gender}{35}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Analysis of conversations: Both prompts reduced users' negative emotion}{35}{subsection.3.3.4}%
+\contentsline {section}{\numberline {3.4}Discussion}{35}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Future Directions}{37}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Conclusion}{39}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Methods}{39}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Setting and data}{39}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Participants}{39}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Interventions}{40}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Design and exposure definition}{40}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Measures}{40}{subsection.3.5.5}%
+\contentsline {subsection}{\numberline {3.5.6}Item and learner latent traits}{40}{subsection.3.5.6}%
+\contentsline {subsection}{\numberline {3.5.7}Statistical analysis}{41}{subsection.3.5.7}%
+\contentsline {subsection}{\numberline {3.5.8}Ethical considerations}{41}{subsection.3.5.8}%
+\contentsline {subsection}{\numberline {3.5.9}Pre-registration}{42}{subsection.3.5.9}%
+\contentsline {chapter}{\numberline {4}Using Artificial Intelligence to Assess Personal Qualities in College Admissions}{43}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{43}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Results}{49}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Model interpretability}{49}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Convergent and discriminant validity of computer-generated likelihoods in the Development Sample}{49}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Convergent validity does not vary by demographic subgroup in the Development Sample}{50}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Human ratings and computer-generated likelihoods were largely unrelated to demographics in the Development Sample}{51}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Computer-generated likelihoods were as predictive of college graduation as human raters in the Development Sample}{51}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Computer-generated likelihoods were largely independent of demographics but, in support of criterion validity, predicted graduation in the Holdout Sample}{53}{subsection.4.2.6}%
+\contentsline {section}{\numberline {4.3}Discussion}{54}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Materials and Methods}{57}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Participants}{57}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Measures}{58}{subsection.4.4.2}%
+\contentsline {subsubsection}{Extracurriculars essay}{58}{subsubsection*.28}%
+\contentsline {subsubsection}{Standardized test scores}{58}{subsubsection*.29}%
+\contentsline {subsubsection}{Extracurricular activities}{58}{subsubsection*.30}%
+\contentsline {subsubsection}{Demographics}{58}{subsubsection*.31}%
+\contentsline {subsubsection}{College graduation}{58}{subsubsection*.32}%
+\contentsline {subsection}{\numberline {4.4.3}Analytic Strategy}{59}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}RoBERTa fine-tuning procedure}{59}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}Acknowledgements}{61}{subsection.4.4.5}%
+\contentsline {subsubsection}{Funding}{61}{subsubsection*.33}%
+\contentsline {subsubsection}{Author contributions}{61}{subsubsection*.34}%
+\contentsline {subsubsection}{Competing interests}{62}{subsubsection*.35}%
+\contentsline {subsubsection}{Ethics statement}{62}{subsubsection*.36}%
+\contentsline {subsubsection}{Data and Materials Availability}{62}{subsubsection*.37}%
