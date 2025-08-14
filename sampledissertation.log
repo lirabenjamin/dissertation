@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.11)  14 AUG 2025 12:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.11)  14 AUG 2025 13:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -492,7 +492,9 @@ Package: nextpage 2009/09/03 v1.1a additional page commands
 \epigraphrule=\skip107
 ) (/usr/local/texlive/2025basic/texmf-dist/tex/latex/tools/dcolumn.sty
 Package: dcolumn 2023/07/08 v1.06 decimal alignment package (DPC)
-) (/usr/local/texlive/2025basic/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2025basic/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2025basic/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+) (/usr/local/texlive/2025basic/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2025/07/08 version 6.7.1 text color boxes
+ (/usr/local/texlive/2025basic/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2025basic/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2025basic/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks39
 \pgfutil@tempdima=\dimen268
 \pgfutil@tempdimb=\dimen269
@@ -686,12 +688,62 @@ File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@expandcount=\count376
  (/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+))) (/usr/local/texlive/2025basic/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (/usr/local/texlive/2025basic/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box71
+\tcb@upperbox=\box72
+\tcb@lowerbox=\box73
+\tcb@phantombox=\box74
+\c@tcbbreakpart=\count377
+\c@tcblayer=\count378
+\c@tcolorbox@number=\count379
+\l__tcobox_tmpa_box=\box75
+\l__tcobox_tmpa_dim=\dimen318
+\tcb@temp=\box76
+\tcb@temp=\box77
+\tcb@temp=\box78
+\tcb@temp=\box79
+) (/usr/local/texlive/2025basic/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count380
+\l__siunitx_number_exponent_fixed_int=\count381
+\l__siunitx_number_min_decimal_int=\count382
+\l__siunitx_number_min_integer_int=\count383
+\l__siunitx_number_round_precision_int=\count384
+\l__siunitx_number_lower_threshold_int=\count385
+\l__siunitx_number_upper_threshold_int=\count386
+\l__siunitx_number_group_first_int=\count387
+\l__siunitx_number_group_size_int=\count388
+\l__siunitx_number_group_minimum_int=\count389
+\l__siunitx_angle_tmp_dim=\dimen319
+\l__siunitx_angle_marker_box=\box80
+\l__siunitx_angle_unit_box=\box81
+\l__siunitx_compound_count_int=\count390
+ (/usr/local/texlive/2025basic/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
+)
+\l__siunitx_table_tmp_box=\box82
+\l__siunitx_table_tmp_dim=\dimen320
+\l__siunitx_table_column_width_dim=\dimen321
+\l__siunitx_table_integer_box=\box83
+\l__siunitx_table_decimal_box=\box84
+\l__siunitx_table_uncert_box=\box85
+\l__siunitx_table_before_box=\box86
+\l__siunitx_table_after_box=\box87
+\l__siunitx_table_before_dim=\dimen322
+\l__siunitx_table_carry_dim=\dimen323
+\l__siunitx_unit_tmp_int=\count391
+\l__siunitx_unit_position_int=\count392
+\l__siunitx_unit_total_int=\count393
+) (/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen318
-\pgfarrowlength=\dimen319
-\pgfarrowwidth=\dimen320
-\pgfarrowlinewidth=\dimen321
+\pgfarrowinset=\dimen324
+\pgfarrowlength=\dimen325
+\pgfarrowwidth=\dimen326
+\pgfarrowlinewidth=\dimen327
 ) (/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -701,7 +753,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip109
 \bibsep=\skip110
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count377
+\c@NAT@ctr=\count394
 ) (/usr/local/texlive/2025basic/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
@@ -728,29 +780,29 @@ Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'american'.
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count378
-)
-No file sampledissertation.aux.
+\l__color_backend_stack_int=\count395
+) (./sampledissertation.aux)
 \openout1 = `sampledissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 238.
-LaTeX Font Info:    ... okay on input line 238.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 238.
-LaTeX Font Info:    ... okay on input line 238.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 238.
-LaTeX Font Info:    ... okay on input line 238.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 238.
-LaTeX Font Info:    ... okay on input line 238.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 238.
-LaTeX Font Info:    ... okay on input line 238.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 238.
-LaTeX Font Info:    ... okay on input line 238.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 238.
-LaTeX Font Info:    ... okay on input line 238.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 238.
-LaTeX Font Info:    ... okay on input line 238.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 238.
-LaTeX Font Info:    ... okay on input line 238.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 243.
+LaTeX Font Info:    ... okay on input line 243.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 243.
+LaTeX Font Info:    ... okay on input line 243.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 243.
+LaTeX Font Info:    ... okay on input line 243.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 243.
+LaTeX Font Info:    ... okay on input line 243.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 243.
+LaTeX Font Info:    ... okay on input line 243.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 243.
+LaTeX Font Info:    ... okay on input line 243.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 243.
+LaTeX Font Info:    ... okay on input line 243.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 243.
+LaTeX Font Info:    ... okay on input line 243.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 243.
+LaTeX Font Info:    ... okay on input line 243.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -787,16 +839,16 @@ LaTeX Font Info:    ... okay on input line 238.
 
 (/usr/local/texlive/2025basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count379
-\scratchdimen=\dimen322
-\scratchbox=\box71
-\nofMPsegments=\count380
-\nofMParguments=\count381
+\scratchcounter=\count396
+\scratchdimen=\dimen328
+\scratchbox=\box88
+\nofMPsegments=\count397
+\nofMParguments=\count398
 \everyMPshowfont=\toks51
-\MPscratchCnt=\count382
-\MPscratchDim=\dimen323
-\MPnumerator=\count383
-\makeMPintoPDFobject=\count384
+\MPscratchCnt=\count399
+\MPscratchDim=\dimen329
+\MPnumerator=\count400
+\makeMPintoPDFobject=\count401
 \everyMPtoPDFconversion=\toks52
 ) (/usr/local/texlive/2025basic/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -813,11 +865,15 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 238.
+Package hyperref Info: Link coloring ON on input line 243.
+ (./sampledissertation.out) (./sampledissertation.out)
 \@outlinefile=\write4
 \openout4 = `sampledissertation.out'.
 
-\n=\count385
+ (/usr/local/texlive/2025basic/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+)
+\n=\count402
 
 
 [1
@@ -868,49 +924,58 @@ Package hyperref Info: Link coloring ON on input line 238.
 
 ]
 
-[4]
-No file sampledissertation.toc.
+[4] (./sampledissertation.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+ (/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+ (/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+[5
+
+])
 \tf@toc=\write5
 \openout5 = `sampledissertation.toc'.
 
 
 
-[5
+[6] (./sampledissertation.lot
+Overfull \hbox (10.40584pt too wide) in paragraph at lines 19--19
+ \T1/cmr/m/n/10.95 (min)), log(keystrokes), sub-jec-tive rat-ing, raw time in min-utes, and raw keystrokes. 
+ []
 
-]
-No file sampledissertation.lot.
+)
 \tf@lot=\write6
 \openout6 = `sampledissertation.lot'.
 
 
 
-[6
+[7
+
+] (./sampledissertation.lof
+
+[8
 
 ]
-No file sampledissertation.lof.
+
+[9])
 \tf@lof=\write7
 \openout7 = `sampledissertation.lof'.
 
 
 
-[7
-
-]
+[10]
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 281.
-(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 281.
- (/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.305 
+l.310 
        [1
 
 ]
@@ -918,7 +983,7 @@ l.305
 [2]
 
 [3]
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 382.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 387.
  (/usr/local/texlive/2025basic/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
@@ -928,238 +993,67 @@ File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 [5]
 Chapter 2.
 
-Package natbib Warning: Citation `bubeck2023' on page 6 undefined on input line 427.
-
-
-Package natbib Warning: Citation `noy2023' on page 6 undefined on input line 428.
-
-
-Package natbib Warning: Citation `dellacqua2023' on page 6 undefined on input line 428.
-
-
-Package natbib Warning: Citation `wiles2023algorithmic' on page 6 undefined on input line 428.
-
-
-Package natbib Warning: Citation `hofman2023sports' on page 6 undefined on input line 430.
-
-
-Package natbib Warning: Citation `puntoni2021' on page 6 undefined on input line 430.
-
-
-Package natbib Warning: Citation `borges2024' on page 6 undefined on input line 430.
-
-
-Package natbib Warning: Citation `hawkins2024between' on page 6 undefined on input line 431.
-
-
-Package natbib Warning: Citation `roose2023' on page 6 undefined on input line 432.
-
-
-Package natbib Warning: Citation `banks2023' on page 6 undefined on input line 433.
-
-
-Package natbib Warning: Citation `lin2024a' on page 6 undefined on input line 435.
-
-
 
 [6
 
 ]
 
-Package natbib Warning: Citation `ji2023survey' on page 7 undefined on input line 438.
-
-
-Package natbib Warning: Citation `yuan2023well' on page 7 undefined on input line 438.
-
-
-Package natbib Warning: Citation `fisher2015' on page 7 undefined on input line 442.
-
-
-Package natbib Warning: Citation `sparrow2011' on page 7 undefined on input line 445.
-
-
-Package natbib Warning: Citation `maguire2000' on page 7 undefined on input line 446.
-
-
-Package natbib Warning: Citation `griesbauer2022london' on page 7 undefined on input line 446.
-
-
-Package natbib Warning: Citation `sweller1985use' on page 7 undefined on input line 452.
-
-
-Package natbib Warning: Citation `atkinson2000learning' on page 7 undefined on input line 452.
-
-
-Package natbib Warning: Citation `anderson1995cognitive' on page 7 undefined on input line 453.
-
-
-
 [7]
 
-Package natbib Warning: Citation `kumar2023' on page 8 undefined on input line 458.
-
-
-Package natbib Warning: Citation `lehmann2024ai' on page 8 undefined on input line 458.
-
-
-Package natbib Warning: Citation `bastani2024' on page 8 undefined on input line 458.
-
-
-Package natbib Warning: Citation `nie2024gpt' on page 8 undefined on input line 458.
-
-
-Package natbib Warning: Citation `lehmann2024ai' on page 8 undefined on input line 458.
-
-
-Package natbib Warning: Citation `bick2024rapid' on page 8 undefined on input line 463.
-
-
-Package natbib Warning: Citation `rogers2023' on page 8 undefined on input line 467.
-
-
-Package natbib Warning: Citation `shulman2024' on page 8 undefined on input line 467.
-
-
-LaTeX Warning: Reference `fig:tool' on page 8 undefined on input line 468.
-
-
-LaTeX Warning: Reference `fig:design' on page 8 undefined on input line 471.
-
-
-
 [8]
-<EmailRewriter.pdf, id=88, 496.41199pt x 265.38448pt>
+<EmailRewriter.pdf, id=415, 496.41199pt x 265.38448pt>
 File: EmailRewriter.pdf Graphic file (type pdf)
 <use EmailRewriter.pdf>
-Package pdftex.def Info: EmailRewriter.pdf  used on input line 478.
+Package pdftex.def Info: EmailRewriter.pdf  used on input line 483.
 (pdftex.def)             Requested size: 422.77664pt x 226.01924pt.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 483.
-
-<design_fig.pdf, id=89, 897.3525pt x 234.8775pt>
+<design_fig.pdf, id=416, 897.3525pt x 234.8775pt>
 File: design_fig.pdf Graphic file (type pdf)
 <use design_fig.pdf>
-Package pdftex.def Info: design_fig.pdf  used on input line 485.
+Package pdftex.def Info: design_fig.pdf  used on input line 490.
 (pdftex.def)             Requested size: 422.77664pt x 110.65764pt.
-
-Package natbib Warning: Citation `rogers2023' on page 9 undefined on input line 486.
-
-
-Package natbib Warning: Citation `rogers2023' on page 9 undefined on input line 486.
-
 
 
 [9 <./EmailRewriter.pdf>]
 
-LaTeX Warning: Reference `fig:s1' on page 10 undefined on input line 501.
-
-
-
 [10 <./design_fig.pdf>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 504.
-
-<ranking.pdf, id=143, 252.945pt x 180.675pt>
+<ranking.pdf, id=469, 252.945pt x 180.675pt>
 File: ranking.pdf Graphic file (type pdf)
 <use ranking.pdf>
-Package pdftex.def Info: ranking.pdf  used on input line 506.
+Package pdftex.def Info: ranking.pdf  used on input line 511.
 (pdftex.def)             Requested size: 469.75502pt x 335.54749pt.
-
-Package natbib Warning: Citation `rogers2023' on page 11 undefined on input line 524.
-
 
 
 [11 <./ranking.pdf>]
-
-Package natbib Warning: Citation `dellacqua2023' on page 12 undefined on input line 536.
-
-
-Package natbib Warning: Citation `noy2023' on page 12 undefined on input line 536.
-
-
-LaTeX Warning: Reference `fig:s2_supplement' on page 12 undefined on input line 546.
-
-
-LaTeX Warning: Reference `fig:ratings1' on page 12 undefined on input line 547.
-
-<mainfig.pdf, id=155, 252.945pt x 144.54pt>
+<mainfig.pdf, id=484, 252.945pt x 144.54pt>
 File: mainfig.pdf Graphic file (type pdf)
 <use mainfig.pdf>
-Package pdftex.def Info: mainfig.pdf  used on input line 551.
+Package pdftex.def Info: mainfig.pdf  used on input line 556.
 (pdftex.def)             Requested size: 469.75502pt x 268.43797pt.
-
-LaTeX Warning: Reference `fig:s2_supplement' on page 12 undefined on input line 554.
-
-
-LaTeX Warning: Reference `fig:s2_supplement' on page 12 undefined on input line 554.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 558.
-
-<ratings1.pdf, id=156, 252.945pt x 144.54pt>
+<ratings1.pdf, id=487, 252.945pt x 144.54pt>
 File: ratings1.pdf Graphic file (type pdf)
 <use ratings1.pdf>
-Package pdftex.def Info: ratings1.pdf  used on input line 560.
+Package pdftex.def Info: ratings1.pdf  used on input line 565.
 (pdftex.def)             Requested size: 469.75502pt x 268.43797pt.
 
 
 [12]
 
-LaTeX Warning: Reference `fig:distance' on page 13 undefined on input line 578.
-
-
-
 [13 <./mainfig.pdf>]
 
 [14 <./ratings1.pdf>]
 
-LaTeX Warning: Reference `sec:future_learning2' on page 15 undefined on input line 604.
-
-
-LaTeX Warning: Reference `fig:difs' on page 15 undefined on input line 617.
-
-
-LaTeX Warning: Reference `sec:persists2' on page 15 undefined on input line 617.
-
-
-LaTeX Warning: Reference `tab:interactions2' on page 15 undefined on input line 622.
-
-
-
 [15]
 
-LaTeX Warning: Reference `fig:s3sup' on page 16 undefined on input line 650.
-
-
-LaTeX Warning: Reference `fig:ratings2' on page 16 undefined on input line 650.
-
-
-
 [16]
-<average_test_rewritten_lines_raw.pdf, id=211, 252.945pt x 144.54pt>
+<average_test_rewritten_lines_raw.pdf, id=545, 252.945pt x 144.54pt>
 File: average_test_rewritten_lines_raw.pdf Graphic file (type pdf)
 <use average_test_rewritten_lines_raw.pdf>
-Package pdftex.def Info: average_test_rewritten_lines_raw.pdf  used on input line 654.
+Package pdftex.def Info: average_test_rewritten_lines_raw.pdf  used on input line 659.
 (pdftex.def)             Requested size: 469.75502pt x 268.43797pt.
-
-
-LaTeX Warning: Reference `fig:s3sup' on page 17 undefined on input line 659.
-
-
-LaTeX Warning: Reference `fig:s3sup' on page 17 undefined on input line 659.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 663.
-
-<ratings2.pdf, id=212, 252.945pt x 144.54pt>
+<ratings2.pdf, id=548, 252.945pt x 144.54pt>
 File: ratings2.pdf Graphic file (type pdf)
 <use ratings2.pdf>
-Package pdftex.def Info: ratings2.pdf  used on input line 665.
+Package pdftex.def Info: ratings2.pdf  used on input line 670.
 (pdftex.def)             Requested size: 469.75502pt x 268.43797pt.
 
 
@@ -1167,77 +1061,17 @@ Package pdftex.def Info: ratings2.pdf  used on input line 665.
 
 [18 <./ratings2.pdf>]
 
-LaTeX Warning: Reference `sec:future_learning3' on page 19 undefined on input line 688.
-
-
-LaTeX Warning: Reference `fig:s3' on page 19 undefined on input line 696.
-
-
-LaTeX Warning: Reference `sec:persist3' on page 19 undefined on input line 696.
-
-
-LaTeX Warning: Reference `tab:interactions3' on page 19 undefined on input line 698.
-
-
-
 [19]
 
-Package natbib Warning: Citation `lin2024a' on page 20 undefined on input line 712.
-
-
-Package natbib Warning: Citation `hawkins2024between' on page 20 undefined on input line 712.
-
-
-Package natbib Warning: Citation `bandura1971' on page 20 undefined on input line 713.
-
-
-Package natbib Warning: Citation `meltzoff2005imitation' on page 20 undefined on input line 713.
-
-
-Package natbib Warning: Citation `lyons2007hidden' on page 20 undefined on input line 713.
-
-
-Package natbib Warning: Citation `anders2008deliberate' on page 20 undefined on input line 714.
-
-
-Package natbib Warning: Citation `bick2024rapid' on page 20 undefined on input line 718.
-
-
-Package natbib Warning: Citation `bastani2024' on page 20 undefined on input line 719.
-
-
-Package natbib Warning: Citation `nie2024gpt' on page 20 undefined on input line 719.
-
-
-Package natbib Warning: Citation `kumar2023' on page 20 undefined on input line 726.
-
-
-Package natbib Warning: Citation `bastani2024' on page 20 undefined on input line 727.
-
-
-Package natbib Warning: Citation `lehmann2024ai' on page 20 undefined on input line 727.
-
-
-
 [20]
-
-Package natbib Warning: Citation `shin2023' on page 21 undefined on input line 735.
-
-
-Package natbib Warning: Citation `whut2010' on page 21 undefined on input line 747.
-
-
-
-[21]
-Overfull \hbox (9.3852pt too wide) in paragraph at lines 756--757
+Overfull \hbox (9.3852pt too wide) in paragraph at lines 761--762
 \T1/cmr/m/n/10.95 All our stud-ies were pre-registered. See pre-registrations for Study 1 at https://aspredicted.org/x9mm-
  []
 
 
-LaTeX Warning: Reference `sec:persist3' on page 22 undefined on input line 766.
 
-
-Overfull \hbox (34.6742pt too wide) in paragraph at lines 763--767
+[21]
+Overfull \hbox (34.6742pt too wide) in paragraph at lines 768--772
 \T1/cmr/m/n/10.95 follow-up for Study 3 was col-lected in three batches. We pre-registered batch 2 https://aspredicted.org/5jcx-
  []
 
@@ -1245,925 +1079,831 @@ Overfull \hbox (34.6742pt too wide) in paragraph at lines 763--767
 
 [22]
 
-LaTeX Warning: Reference `sec:feedback' on page 23 undefined on input line 785.
-
-
-
 [23]
 
-LaTeX Warning: Reference `tab:s2_test' on page 24 undefined on input line 792.
-
-
-LaTeX Warning: Reference `tab:s3_test' on page 24 undefined on input line 792.
-
-
-Package natbib Warning: Citation `rathje2024' on page 24 undefined on input line 797.
-
-
-Package natbib Warning: Citation `hackl2023' on page 24 undefined on input line 797.
-
-
-LaTeX Warning: Reference `tab:prompts' on page 24 undefined on input line 798.
-
-
-LaTeX Warning: Reference `tab:s2_test' on page 24 undefined on input line 800.
-
-
-LaTeX Warning: Reference `tab:s3_test' on page 24 undefined on input line 800.
-
-
-LaTeX Warning: Reference `tab:s2_test' on page 24 undefined on input line 804.
-
-
-LaTeX Warning: Reference `tab:s3_test' on page 24 undefined on input line 804.
-
-
-Package natbib Warning: Citation `benjamini1995controlling' on page 24 undefined on input line 809.
-
-
-
 [24]
-
-[25]
 Chapter 3.
 
 
-[26
+[25
 
 ]
 
-[27]
-<interface.png, id=298, 2514.39375pt x 1271.75125pt>
+[26]
+<interface.png, id=664, 2514.39375pt x 1271.75125pt>
 File: interface.png Graphic file (type png)
 <use interface.png>
-Package pdftex.def Info: interface.png  used on input line 875.
+Package pdftex.def Info: interface.png  used on input line 880.
 (pdftex.def)             Requested size: 446.26582pt x 225.70346pt.
-<sample.pdf, id=300, 551.05875pt x 147.55125pt>
+<sample.pdf, id=666, 551.05875pt x 147.55125pt>
 File: sample.pdf Graphic file (type pdf)
 <use sample.pdf>
-Package pdftex.def Info: sample.pdf  used on input line 882.
+Package pdftex.def Info: sample.pdf  used on input line 887.
 (pdftex.def)             Requested size: 446.26582pt x 119.49557pt.
 
 
-[28]
+[27 <./interface.png>]
 
-[29 <./interface.png> <./sample.pdf>]
-
-LaTeX Warning: Reference `fig:when_engage' on page 30 undefined on input line 915.
-
-<when_engage.pdf, id=321, 433.62pt x 216.81pt>
+[28 <./sample.pdf>]
+<when_engage.pdf, id=687, 433.62pt x 216.81pt>
 File: when_engage.pdf Graphic file (type pdf)
 <use when_engage.pdf>
-Package pdftex.def Info: when_engage.pdf  used on input line 921.
+Package pdftex.def Info: when_engage.pdf  used on input line 926.
 (pdftex.def)             Requested size: 469.75502pt x 234.88904pt.
 
 
-[30]
-
-[31 <./when_engage.pdf>]
-
-LaTeX Warning: Reference `tab:main_reg' on page 32 undefined on input line 935.
-
-
-LaTeX Warning: Reference `fig:main' on page 32 undefined on input line 935.
-
-
-Overfull \hbox (2.67465pt too wide) in paragraph at lines 937--940
+[29]
+Overfull \hbox (2.67465pt too wide) in paragraph at lines 942--945
 []\T1/cmr/m/n/10.95 Our ex-ploratory anal-y-ses pro-vide ad-di-tional con-text for these find-ings. The pos-i-tive post-intervention
  []
 
-<main.pdf, id=343, 325.215pt x 144.54pt>
+<main.pdf, id=697, 325.215pt x 144.54pt>
 File: main.pdf Graphic file (type pdf)
 <use main.pdf>
-Package pdftex.def Info: main.pdf  used on input line 946.
+Package pdftex.def Info: main.pdf  used on input line 951.
 (pdftex.def)             Requested size: 469.75502pt x 208.79686pt.
 
 
-[32]
+[30 <./when_engage.pdf>]
 
-[33 <./main.pdf>]
+[31 <./main.pdf>]
 
-[34
+[32
 
 ]
-
-LaTeX Warning: Reference `fig:sentiment' on page 35 undefined on input line 967.
-
-<sentiment.pdf, id=369, 289.08pt x 144.54pt>
+<sentiment.pdf, id=730, 289.08pt x 144.54pt>
 File: sentiment.pdf Graphic file (type pdf)
 <use sentiment.pdf>
-Package pdftex.def Info: sentiment.pdf  used on input line 972.
+Package pdftex.def Info: sentiment.pdf  used on input line 977.
 (pdftex.def)             Requested size: 469.75502pt x 234.89012pt.
-<wordclouds.pdf, id=370, 601.24625pt x 417.56pt>
+<wordclouds.pdf, id=731, 601.24625pt x 417.56pt>
 File: wordclouds.pdf Graphic file (type pdf)
 <use wordclouds.pdf>
-Package pdftex.def Info: wordclouds.pdf  used on input line 979.
+Package pdftex.def Info: wordclouds.pdf  used on input line 984.
 (pdftex.def)             Requested size: 469.75502pt x 326.24979pt.
 
 
-[35
+[33
 
  <./sentiment.pdf>]
 
-[36 <./wordclouds.pdf>]
+[34 <./wordclouds.pdf>]
 
-[37]
-
-[38]
-
-LaTeX Warning: Reference `fig:interface' on page 39 undefined on input line 1050.
-
-
-Overfull \hbox (15.13986pt too wide) in paragraph at lines 1048--1052
+[35]
+Overfull \hbox (15.13986pt too wide) in paragraph at lines 1053--1057
 \T1/cmr/m/n/10.95 We an-a-lyzed de-identified plat-form logs from Khan Academy over a one-year pe-riod (Jan-uary^^UDecember
  []
 
 
 
-[39]
+[36]
 
-[40]
-Overfull \hbox (2.95987pt too wide) in paragraph at lines 1088--1090
+[37]
+Overfull \hbox (2.95987pt too wide) in paragraph at lines 1093--1095
 \T1/cmr/m/n/10.95 Primary anal-y-ses were es-ti-mated sep-a-rately for SM and ER. We fit lin-ear mod-els at the user$\OMS/cmsy/m/n/10.95 ^^B $\T1/cmr/m/n/10.95 window
  []
 
 
 
-[41]
+[38]
 
-[42]
+[39]
 Chapter 4.
 
-Package natbib Warning: Citation `national_research_council_assessing_2011' on page 43 undefined on input line 1111.
 
-
-Package natbib Warning: Citation `moffitt_gradient_2011' on page 43 undefined on input line 1112.
-
-
-Package natbib Warning: Citation `almlund_personality_2011' on page 43 undefined on input line 1112.
-
-
-Package natbib Warning: Citation `robbins_psychosocial_2004' on page 43 undefined on input line 1112.
-
-
-Package natbib Warning: Citation `kyllonen_personality_2014' on page 43 undefined on input line 1112.
-
-
-Package natbib Warning: Citation `coleman_understanding_2018' on page 43 undefined on input line 1112.
-
-
-Package natbib Warning: Citation `karabel_chosen_2005' on page 43 undefined on input line 1115.
-
-
-
-[43
+[40
 
 ]
 
-Package natbib Warning: Citation `national_research_council_assessing_2011' on page 44 undefined on input line 1119.
+[41]
 
-
-Package natbib Warning: Citation `bastedo_what_2018' on page 44 undefined on input line 1119.
-
-
-Package natbib Warning: Citation `starkman_confessions_2013' on page 44 undefined on input line 1119.
-
-
-Package natbib Warning: Citation `coleman_understanding_2018' on page 44 undefined on input line 1121.
-
-
-Package natbib Warning: Citation `anderson_character_2020' on page 44 undefined on input line 1121.
-
-
-Package natbib Warning: Citation `kahneman_noise_2021' on page 44 undefined on input line 1121.
-
-
-Package natbib Warning: Citation `rushton_behavioral_1983' on page 44 undefined on input line 1121.
-
-
-Package natbib Warning: Citation `hoover_working_2017' on page 44 undefined on input line 1123.
-
-
-Package natbib Warning: Citation `korn_elite_2018' on page 44 undefined on input line 1123.
-
-
-Package natbib Warning: Citation `tay_conceptual_2022' on page 44 undefined on input line 1125.
-
-
-Package natbib Warning: Citation `hickman_automated_2022' on page 44 undefined on input line 1125.
-
-
-Package natbib Warning: Citation `manyika_what_2019' on page 44 undefined on input line 1125.
-
-
-Package natbib Warning: Citation `obermeyer_dissecting_2019' on page 44 undefined on input line 1125.
-
-
-Package natbib Warning: Citation `ensign_runaway_2018' on page 44 undefined on input line 1125.
-
-
-Package natbib Warning: Citation `alvero_essay_2021' on page 44 undefined on input line 1125.
-
-
-
-[44]
-
-Package natbib Warning: Citation `riedl_humancentered_2019' on page 45 undefined on input line 1127.
-
-
-Package natbib Warning: Citation `shneiderman_human-centered_2020' on page 45 undefined on input line 1127.
-
-
-Package natbib Warning: Citation `gunning_xaiexplainable_2019' on page 45 undefined on input line 1127.
-
-
-Package natbib Warning: Citation `shneiderman_human-centered_2020' on page 45 undefined on input line 1128.
-
-
-Package natbib Warning: Citation `noauthor_our_2021' on page 45 undefined on input line 1129.
-
-
-Package natbib Warning: Citation `lobel_equality_2022' on page 45 undefined on input line 1129.
-
-
-Package natbib Warning: Citation `almlund_personality_2011' on page 45 undefined on input line 1132.
-
-
-LaTeX Warning: Reference `tab:pqs' on page 45 undefined on input line 1132.
-
-
-Package natbib Warning: Citation `liu_roberta_2019' on page 45 undefined on input line 1132.
-
-
-
-[45]
-Underfull \hbox (badness 1297) in paragraph at lines 1144--1144
+[42]
+Underfull \hbox (badness 1297) in paragraph at lines 1149--1149
 []\T1/cmr/m/n/10 Helping oth-ers, want-ing to
  []
 
 
-Underfull \hbox (badness 5345) in paragraph at lines 1159--1159
+Underfull \hbox (badness 5345) in paragraph at lines 1164--1164
 []\T1/cmr/m/n/10 Working with or learn-ing
  []
 
 
-Overfull \hbox (69.4551pt too wide) in paragraph at lines 1138--1166
+Overfull \hbox (69.4551pt too wide) in paragraph at lines 1143--1171
 [][]
  []
 
 
-LaTeX Warning: Float too large for page by 29.36996pt on input line 1167.
+LaTeX Warning: Float too large for page by 29.36996pt on input line 1172.
 
-<fig1_new2_scale.pdf, id=489, 523.9575pt x 297.51149pt>
+<fig1_new2_scale.pdf, id=896, 523.9575pt x 297.51149pt>
 File: fig1_new2_scale.pdf Graphic file (type pdf)
 <use fig1_new2_scale.pdf>
-Package pdftex.def Info: fig1_new2_scale.pdf  used on input line 1171.
+Package pdftex.def Info: fig1_new2_scale.pdf  used on input line 1176.
 (pdftex.def)             Requested size: 469.75502pt x 266.74098pt.
 
 
-[46 <./fig1_new2_scale.pdf>]
+[43 <./fig1_new2_scale.pdf>]
 
-[47]
-Overfull \hbox (16.33182pt too wide) detected at line 1186
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 86[]$ 
+[44]
+Overfull \hbox (14.99634pt too wide) detected at line 1192
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 86[]$ 
  []
 
 
-Overfull \hbox (5.44394pt too wide) detected at line 1186
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 04[]$ 
+Overfull \hbox (4.99878pt too wide) detected at line 1192
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 04[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1186
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 09[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1192
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 09[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1186
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 12[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1192
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 12[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) detected at line 1186
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 05[]$ 
+Overfull \hbox (9.99756pt too wide) detected at line 1192
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 05[]$ 
  []
 
 
-Overfull \hbox (5.44394pt too wide) detected at line 1186
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 04[]$ 
+Overfull \hbox (4.99878pt too wide) detected at line 1192
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 04[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1186
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 80[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1192
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 80[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1186
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 13[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1192
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 13[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1186
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 13[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1192
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 13[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1186
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 22[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1192
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 22[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1186
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 24[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1192
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 24[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) detected at line 1186
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 09[]$ 
+Overfull \hbox (9.99756pt too wide) detected at line 1192
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 09[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1187
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 19[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1193
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 19[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1187
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 81[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1193
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 81[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1187
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 15[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1193
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 15[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1187
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 09[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1193
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 09[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) detected at line 1187
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 05[]$ 
+Overfull \hbox (9.99756pt too wide) detected at line 1193
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 05[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1187
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 13[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1193
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 13[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1187
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 73[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1193
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 73[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1187
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 16[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1193
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 16[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1187
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 15[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1193
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 15[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1187
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 06[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1193
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 06[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1187
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 16[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1193
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 16[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1188
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 07[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1194
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 07[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1188
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 18[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1194
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 18[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1188
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 62[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1194
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 62[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) detected at line 1188
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 06[]$ 
+Overfull \hbox (9.99756pt too wide) detected at line 1194
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 06[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1188
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 07[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1194
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 07[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) detected at line 1188
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 06[]$ 
+Overfull \hbox (9.99756pt too wide) detected at line 1194
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 06[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1188
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 18[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1194
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 18[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1188
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 16[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1194
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 16[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1188
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 62[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1194
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 62[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1188
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 07[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1194
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 07[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1188
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 10[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1194
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 10[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1189
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 10[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1195
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 10[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1189
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 10[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1195
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 10[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) detected at line 1189
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 05[]$ 
+Overfull \hbox (9.99756pt too wide) detected at line 1195
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 05[]$ 
  []
 
 
-Overfull \hbox (5.44394pt too wide) detected at line 1189
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 04[]$ 
+Overfull \hbox (4.99878pt too wide) detected at line 1195
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 04[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1189
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 77[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1195
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 77[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1189
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 11[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1195
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 11[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1189
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 28[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1195
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 28[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1189
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 15[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1195
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 15[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1189
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 07[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1195
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 07[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1189
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 65[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1195
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 65[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1189
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 07[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1195
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 07[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1190
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 09[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1196
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 09[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1190
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 16[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1196
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 16[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) detected at line 1190
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 06[]$ 
+Overfull \hbox (9.99756pt too wide) detected at line 1196
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 06[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1190
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 10[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1196
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 10[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1190
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 67[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1196
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 67[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) detected at line 1190
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 05[]$ 
+Overfull \hbox (9.99756pt too wide) detected at line 1196
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 05[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1190
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 35[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1196
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 35[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1190
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 10[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1196
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 10[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1190
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 11[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1196
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 11[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1190
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 08[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1196
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 08[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1190
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 48[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1196
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 48[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1190
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 09[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1196
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 09[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1191
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 26[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1197
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 26[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) detected at line 1191
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 05[]$ 
+Overfull \hbox (9.99756pt too wide) detected at line 1197
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 05[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1191
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 09[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1197
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 09[]$ 
  []
 
 
-Overfull \hbox (5.44394pt too wide) detected at line 1191
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 04[]$ 
+Overfull \hbox (4.99878pt too wide) detected at line 1197
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 04[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1191
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 73[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1197
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 73[]$ 
  []
 
 
-Overfull \hbox (27.3129pt too wide) detected at line 1191
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 08 \OMS/cmsy/m/n/10.95 ^^C ^^C ^^C []$ 
+Overfull \hbox (24.9976pt too wide) detected at line 1197
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 08 \OMS/cmsy/m/n/10 ^^C ^^C ^^C []$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1191
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 24[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1197
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 24[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1191
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 08[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1197
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 08[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1191
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 08[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1197
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 08[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1191
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 45[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1197
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 45[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1192
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 05[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1198
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 05[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1192
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 06[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1198
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 06[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) detected at line 1192
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 06[]$ 
+Overfull \hbox (9.99756pt too wide) detected at line 1198
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 06[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1192
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 06[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1198
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 06[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1192
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 59[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1198
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 59[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1192
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 31[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1198
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 31[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) detected at line 1192
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 05[]$ 
+Overfull \hbox (9.99756pt too wide) detected at line 1198
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 05[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1192
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 12[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1198
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 12[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1192
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 15[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1198
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 15[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1192
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 27[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1198
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 27[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1192
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 06[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1198
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 06[]$ 
  []
 
 
-Overfull \hbox (16.33182pt too wide) detected at line 1192
-$\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 45[]$ 
+Overfull \hbox (14.99634pt too wide) detected at line 1198
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 45[]$ 
  []
 
 
-Overfull \hbox (75.19868pt too wide) in paragraph at lines 1180--1201
+Overfull \hbox (62.6773pt too wide) in paragraph at lines 1186--1207
  [][] 
  []
 
 
 
-[48]
-
-LaTeX Warning: Reference `tab:concurrent' on page 49 undefined on input line 1205.
-
-
-Package natbib Warning: Citation `pierse_transformers_2021' on page 49 undefined on input line 1210.
-
-
-Package natbib Warning: Citation `janizek_explaining_2020' on page 49 undefined on input line 1210.
-
-
-LaTeX Warning: Reference `fig:interpret' on page 49 undefined on input line 1212.
-
-<fig2.jpg, id=519, 523.9575pt x 187.4202pt>
-File: fig2.jpg Graphic file (type jpg)
-<use fig2.jpg>
-Package pdftex.def Info: fig2.jpg  used on input line 1217.
-(pdftex.def)             Requested size: 469.75502pt x 168.03603pt.
-
-LaTeX Warning: Reference `tab:concurrent' on page 49 undefined on input line 1226.
-
-
-
-[49
-
+[45
 
 ]
-/Users/blira/Library/CloudStorage/OneDrive-PennO365/research/dissertation/sampledissertation.tex:1230: Undefined control sequence.
-l.1230 ...n in \textbf{Tables S11 and S12}, \added
-                                                  {after correcting for mult...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+<fig2.jpg, id=928, 523.9575pt x 187.4202pt>
+File: fig2.jpg Graphic file (type jpg)
+<use fig2.jpg>
+Package pdftex.def Info: fig2.jpg  used on input line 1223.
+(pdftex.def)             Requested size: 469.75502pt x 168.03603pt.
 
 
-Package natbib Warning: Citation `benjamini_control_2001' on page 50 undefined on input line 1230.
+[46
 
-/Users/blira/Library/CloudStorage/OneDrive-PennO365/research/dissertation/sampledissertation.tex:1230: Undefined control sequence.
-l.1230 ...he majority subgroup was favored. \added
-                                                  {In most of these cases th...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+]
+
+[47 <./fig2.jpg>]
+
+LaTeX Warning: Float too large for page by 77.75652pt on input line 1368.
 
 
 
-[50 <./fig2.jpg>]
+[48]
 
-LaTeX Warning: Float too large for page by 77.75652pt on input line 1362.
+[49]
 
-
-Package natbib Warning: Citation `benjamini_control_2001' on page 51 undefined on input line 1365.
-
-
-Package natbib Warning: Citation `kamas_empathy_2021' on page 51 undefined on input line 1365.
-
-/Users/blira/Library/CloudStorage/OneDrive-PennO365/research/dissertation/sampledissertation.tex:1371: Undefined control sequence.
-l.1371 ...oldout Sample} of 306,463 essays. \added
-                                                  {For both categories of mo...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
+[50]
 
 [51]
 
 [52]
-/Users/blira/Library/CloudStorage/OneDrive-PennO365/research/dissertation/sampledissertation.tex:1375: Undefined control sequence.
-l.1375 ... = .576, for admission officers). \added
-                                                  {To estimate a ceiling on ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Package natbib Warning: Citation `alvero_essay_2021' on page 53 undefined on input line 1375.
-
-
 
 [53]
 
-Package natbib Warning: Citation `benjamini_control_2001' on page 54 undefined on input line 1379.
-
-
-Package natbib Warning: Citation `alvero_essay_2021' on page 54 undefined on input line 1384.
-
-
-Package natbib Warning: Citation `pennebaker_when_2014' on page 54 undefined on input line 1385.
-
-
-Package natbib Warning: Citation `alvero_essay_2021' on page 54 undefined on input line 1386.
-
-
-Package natbib Warning: Citation `pennebaker_when_2014' on page 54 undefined on input line 1386.
-
-
-
 [54]
-
-Package natbib Warning: Citation `goyer_role_2021' on page 55 undefined on input line 1393.
-
-
-Package natbib Warning: Citation `salganik_measuring_2020' on page 55 undefined on input line 1393.
-
-
-Package natbib Warning: Citation `martin_exploring_2016' on page 55 undefined on input line 1393.
-
-
-Package natbib Warning: Citation `ahadi_multiple_1989' on page 55 undefined on input line 1393.
-
-
-Package natbib Warning: Citation `gotz_small_2022' on page 55 undefined on input line 1393.
-
-
-Package natbib Warning: Citation `goldrick-rab_following_2006' on page 55 undefined on input line 1394.
-
-
-Package natbib Warning: Citation `hepworth_factors_2018' on page 55 undefined on input line 1394.
-
-
-Package natbib Warning: Citation `porchea_predictors_2010' on page 55 undefined on input line 1394.
-
-
-Package natbib Warning: Citation `murphy_customized_2020' on page 55 undefined on input line 1394.
-
-
-Package natbib Warning: Citation `goyer_role_2021' on page 55 undefined on input line 1394.
-
-
-
-[55]
-
-Package natbib Warning: Citation `willingham_success_1985' on page 56 undefined on input line 1396.
-
-
-Package natbib Warning: Citation `bastedo_what_2018' on page 56 undefined on input line 1399.
-
-
-Package natbib Warning: Citation `clifton_managing_2020' on page 56 undefined on input line 1401.
-
-
-Package natbib Warning: Citation `campbell_assessing_1979' on page 56 undefined on input line 1413.
-
-
-Package natbib Warning: Citation `dietvorst_algorithm_2015' on page 56 undefined on input line 1414.
-
-
-
-[56]
-
-[57]
-
-Package natbib Warning: Citation `mahoney_organized_2005' on page 58 undefined on input line 1428.
-
-
-Package natbib Warning: Citation `larson_toward_2000' on page 58 undefined on input line 1428.
-
-
-Package natbib Warning: Citation `act_actsat_2013' on page 58 undefined on input line 1431.
-
-
-Overfull \hbox (62.50516pt too wide) in paragraph at lines 1440--1441
+Overfull \hbox (62.50516pt too wide) in paragraph at lines 1446--1447
 \T1/cmr/m/n/10.95 We ob-tained data from the 2015 Na-tional Stu-dent Clear-ing-house (NSC) database (www.studentclearinghouse.org)
  []
 
 
 
+[55]
+
+[56]
+
+[57]
+
 [58]
 
-Package natbib Warning: Citation `van_buuren_mice_2011' on page 59 undefined on input line 1443.
-
-
-Package natbib Warning: Citation `liu_roberta_2019' on page 59 undefined on input line 1453.
-
-
-
 [59]
-/Users/blira/Library/CloudStorage/OneDrive-PennO365/research/dissertation/sampledissertation.tex:1465: Undefined control sequence.
-l.1465 ...ata sets to fine-tune two sets of \added
-                                                  {separate} RoBERTa models ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+pdfTeX warning (ext4): destination with the same identifier (name{chapter.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1503 ...mentary Online Materials for Chapter 2}}
+                                                  
+Chapter A.
+
+Overfull \hbox (74.90411pt too wide) in paragraph at lines 1515--1525
+ [][] 
+ []
 
 
 
-[60]
+[60
 
-[61]
+]
+<ai_validity.pdf, id=1071, 361.35pt x 144.54pt>
+File: ai_validity.pdf Graphic file (type pdf)
+<use ai_validity.pdf>
+Package pdftex.def Info: ai_validity.pdf  used on input line 1534.
+(pdftex.def)             Requested size: 352.31625pt x 140.92702pt.
+<correlations.pdf, id=1073, 505.89pt x 216.81pt>
+File: correlations.pdf Graphic file (type pdf)
+<use correlations.pdf>
+Package pdftex.def Info: correlations.pdf  used on input line 1552.
+(pdftex.def)             Requested size: 352.31625pt x 150.99513pt.
 
-[62] (./sampledissertation.bbl)
+Overfull \hbox (23.73485pt too wide) in paragraph at lines 1563--1590
+ [][] 
+ []
 
-Package natbib Warning: There were undefined citations.
 
-(./sampledissertation.aux)
+
+[61 <./ai_validity.pdf>]
+
+[62 <./correlations.pdf>]
+Overfull \hbox (289.21098pt too wide) in paragraph at lines 1681--1722
+ [][] 
+ []
+
+
+
+[63]
+<mainfig_sup.pdf, id=1120, 325.215pt x 144.54pt>
+File: mainfig_sup.pdf Graphic file (type pdf)
+<use mainfig_sup.pdf>
+Package pdftex.def Info: mainfig_sup.pdf  used on input line 1728.
+(pdftex.def)             Requested size: 352.31625pt x 156.59709pt.
+
+Overfull \hbox (222.01585pt too wide) in paragraph at lines 1740--1760
+ [][] 
+ []
+
+
+
+[64]
+Overfull \hbox (219.598pt too wide) in paragraph at lines 1768--1794
+ [][] 
+ []
+
+
+Overfull \hbox (102.40364pt too wide) in paragraph at lines 1803--1823
+ [][] 
+ []
+
+
+Overfull \hbox (108.45203pt too wide) in paragraph at lines 1832--1858
+ [][] 
+ []
+
+
+
+[65 <./mainfig_sup.pdf>]
+Overfull \hbox (104.82149pt too wide) in paragraph at lines 1868--1888
+ [][] 
+ []
+
+<levenshtein_distance.pdf, id=1149, 469.755pt x 216.81pt>
+File: levenshtein_distance.pdf Graphic file (type pdf)
+<use levenshtein_distance.pdf>
+Package pdftex.def Info: levenshtein_distance.pdf  used on input line 1894.
+(pdftex.def)             Requested size: 446.26582pt x 205.96832pt.
+
+Overfull \hbox (30.59213pt too wide) in paragraph at lines 1907--1933
+ [][] 
+ []
+
+
+Overfull \hbox (167.22144pt too wide) in paragraph at lines 1941--1967
+ [][] 
+ []
+
+
+
+[66 <./levenshtein_distance.pdf>]
+Overfull \hbox (377.30055pt too wide) in paragraph at lines 1977--2022
+ [][] 
+ []
+
+
+
+[67]
+Overfull \hbox (130.31184pt too wide) in paragraph at lines 2058--2100
+ [][] 
+ []
+
+<skill_lines_raw.pdf, id=1171, 325.215pt x 144.54pt>
+File: skill_lines_raw.pdf Graphic file (type pdf)
+<use skill_lines_raw.pdf>
+Package pdftex.def Info: skill_lines_raw.pdf  used on input line 2110.
+(pdftex.def)             Requested size: 352.31625pt x 156.59709pt.
+
+Overfull \hbox (254.22768pt too wide) in paragraph at lines 2124--2150
+ [][] 
+ []
+
+
+
+[68 <./skill_lines_raw.pdf>]
+Overfull \hbox (219.75064pt too wide) in paragraph at lines 2157--2181
+ [][] 
+ []
+
+
+Overfull \hbox (111.0225pt too wide) in paragraph at lines 2192--2218
+ [][] 
+ []
+
+
+Overfull \hbox (107.39197pt too wide) in paragraph at lines 2227--2253
+ [][] 
+ []
+
+
+Overfull \hbox (107.39197pt too wide) in paragraph at lines 2261--2287
+ [][] 
+ []
+
+
+Overfull \hbox (33.16261pt too wide) in paragraph at lines 2297--2323
+ [][] 
+ []
+
+
+
+[69]
+Overfull \hbox (163.14662pt too wide) in paragraph at lines 2334--2360
+ [][] 
+ []
+
+
+Overfull \hbox (298.19559pt too wide) in paragraph at lines 2404--2462
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 15.8125pt on input line 2462.
+
+
+
+[70]
+
+[71]
+
+[72]
+
+[73]
+
+[74]
+
+[75]
+
+[76]
+
+[77]
+
+[78]
+
+[79]
+
+[80]
+
+[81]
+
+[82]
+
+[83]
+
+[84] (./sampledissertation.bbl
+
+[85
+
+
+]
+
+[86]
+
+[87]
+
+[88]
+Underfull \hbox (badness 10000) in paragraph at lines 284--288
+[]\T1/cmr/m/n/10.95 Eric Hoover.  Work-ing smarter, not harder, in ad-mis-sions.  \T1/cmr/m/it/10.95 The Chron-i-
+ []
+
+
+Underfull \hbox (badness 7362) in paragraph at lines 284--288
+\T1/cmr/m/it/10.95 cle of Higher Ed-u-ca-tion\T1/cmr/m/n/10.95 , March 2017.  URL [][]$https : / / www . chronicle . com / article /
+ []
+
+
+Underfull \hbox (badness 1117) in paragraph at lines 290--295
+\T1/cmr/m/it/10.95 Street Jour-nal\T1/cmr/m/n/10.95 , Jan-uary 2018.  ISSN 0099-9660.  URL [][]$https : / / www . wsj . com / articles /
+ []
+
+
+
+[89]
+Underfull \hbox (badness 10000) in paragraph at lines 383--389
+\T1/cmr/m/n/10.95 volume-[]29 / issue-[]4 / The-[]control-[]of-[]the-[]false-[]discovery-[]rate-[]in-[]multiple-[]testing / 10 . 1214 / aos /
+ []
+
+
+
+[90]
+
+[91]
+
+[92])
+
+[93] (./sampledissertation.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-20>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `sampledissertation.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `sampledissertation.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  463B061A7F0BB65A28BE8C6D44E81386;3901.
+Package rerunfilecheck Info: File `sampledissertation.out' has not changed.
+(rerunfilecheck)             Checksum: DA0A30610A0E21FD0A7479C11FABBFA9;2445.
  ) 
 Here is how much of TeX's memory you used:
- 28351 strings out of 469273
- 529784 string characters out of 5467219
- 991346 words of memory out of 5000000
- 56129 multiletter control sequences out of 15000+600000
- 645900 words of font info for 85 fonts, out of 8000000 for 9000
+ 34757 strings out of 469273
+ 716489 string characters out of 5467219
+ 1261075 words of memory out of 5000000
+ 62323 multiletter control sequences out of 15000+600000
+ 648053 words of font info for 88 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 84i,13n,93p,1728b,1162s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on sampledissertation.pdf (69 pages, 26393569 bytes).
+ 98i,13n,105p,1911b,1719s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on sampledissertation.pdf (103 pages, 26822301 bytes).
 PDF statistics:
- 723 PDF objects out of 1000 (max. 8388607)
- 522 compressed objects within 6 object streams
- 180 named destinations out of 1000 (max. 500000)
- 88 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1519 PDF objects out of 1728 (max. 8388607)
+ 1260 compressed objects within 13 object streams
+ 353 named destinations out of 1000 (max. 500000)
+ 185 words of extra memory for PDF output out of 10000 (max. 10000000)
 

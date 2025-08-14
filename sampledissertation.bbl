@@ -1,0 +1,525 @@
+\begin{thebibliography}{84}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Rogers and {Lasky-Fink}(2023)]{rogers2023}
+Todd Rogers and Jessica {Lasky-Fink}.
+\newblock \emph{Writing for {{Busy Readers}}: {{Communicate More Effectively}} in the {{Real World}}}.
+\newblock Penguin, September 2023.
+\newblock ISBN 978-0-593-18748-7.
+
+\bibitem[Bubeck et~al.(2023)Bubeck, Chandrasekaran, Eldan, Gehrke, Horvitz, Kamar, Lee, Lee, Li, Lundberg, Nori, Palangi, Ribeiro, and Zhang]{bubeck2023}
+S{\'e}bastien Bubeck, Varun Chandrasekaran, Ronen Eldan, Johannes Gehrke, Eric Horvitz, Ece Kamar, Peter Lee, Yin~Tat Lee, Yuanzhi Li, Scott Lundberg, Harsha Nori, Hamid Palangi, Marco~Tulio Ribeiro, and Yi~Zhang.
+\newblock Sparks of {{Artificial General Intelligence}}: {{Early}} experiments with {{GPT-4}}, April 2023.
+
+\bibitem[Noy and Zhang(2023)]{noy2023}
+Shakked Noy and Whitney Zhang.
+\newblock Experimental evidence on the productivity effects of generative artificial intelligence.
+\newblock \emph{Science}, 381:\penalty0 187--192, 2023.
+
+\bibitem[Dell'Acqua et~al.(2023)Dell'Acqua, McFowland, Mollick, {Lifshitz-Assaf}, Kellogg, Rajendran, Krayer, Candelon, and Lakhani]{dellacqua2023}
+Fabrizio Dell'Acqua, Edward McFowland, Ethan~R. Mollick, Hila {Lifshitz-Assaf}, Katherine Kellogg, Saran Rajendran, Lisa Krayer, Fran{\c c}ois Candelon, and Karim~R. Lakhani.
+\newblock Navigating the {{Jagged Technological Frontier}}: {{Field Experimental Evidence}} of the {{Effects}} of {{AI}} on {{Knowledge Worker Productivity}} and {{Quality}}.
+\newblock \emph{SSRN Electronic Journal}, 2023.
+\newblock ISSN 1556-5068.
+\newblock \doi{10.2139/ssrn.4573321}.
+
+\bibitem[Wiles et~al.(2023)Wiles, Munyikwa, and Horton]{wiles2023algorithmic}
+Emma Wiles, Zanele~T Munyikwa, and John~J Horton.
+\newblock Algorithmic writing assistance on jobseekers’ resumes increases hires.
+\newblock Technical report, National Bureau of Economic Research, 2023.
+
+\bibitem[Hofman et~al.(2023)Hofman, Goldstein, and Rothschild]{hofman2023sports}
+Jake~M Hofman, Daniel~G Goldstein, and David~M Rothschild.
+\newblock A sports analogy for understanding different ways to use ai.
+\newblock \emph{Harvard Business Review}, 4, 2023.
+
+\bibitem[Puntoni et~al.(2021)Puntoni, Reczek, Giesler, and Botti]{puntoni2021}
+Stefano Puntoni, Rebecca~Walker Reczek, Markus Giesler, and Simona Botti.
+\newblock Consumers and artificial intelligence: An experiential perspective.
+\newblock \emph{Journal of Marketing}, 85\penalty0 (1):\penalty0 131--151, 2021.
+\newblock \doi{10.1177/0022242920953847}.
+
+\bibitem[Borges et~al.(2024)Borges, Foroutan, Bayazit, Sotnikova, Montariol, Nazaretzky, Banaei, Sakhaeirad, Servant, Neshaei, Frej, Romanou, Weiss, Mamooler, Chen, Fan, Gao, Ismayilzada, Paul, Schwaller, Friedli, Jermann, K{\"a}ser, Bosselut, {EPFL Grader Consortium}, and {EPFL Data Consortium}]{borges2024}
+Beatriz Borges, Negar Foroutan, Deniz Bayazit, Anna Sotnikova, Syrielle Montariol, Tanya Nazaretzky, Mohammadreza Banaei, Alireza Sakhaeirad, Philippe Servant, Seyed~Parsa Neshaei, Jibril Frej, Angelika Romanou, Gail Weiss, Sepideh Mamooler, Zeming Chen, Simin Fan, Silin Gao, Mete Ismayilzada, Debjit Paul, Philippe Schwaller, Sacha Friedli, Patrick Jermann, Tanja K{\"a}ser, Antoine Bosselut, {EPFL Grader Consortium}, and {EPFL Data Consortium}.
+\newblock Could {{ChatGPT}} get an engineering degree? {{Evaluating}} higher education vulnerability to {{AI}} assistants.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 121\penalty0 (49):\penalty0 e2414955121, December 2024.
+\newblock ISSN 0027-8424, 1091-6490.
+\newblock \doi{10.1073/pnas.2414955121}.
+
+\bibitem[Hawkins et~al.(2024)Hawkins, Duong, Fabrizio, and Yudkin]{hawkins2024between}
+Stephen Hawkins, Fred Duong, Ashley Fabrizio, and Daniel Yudkin.
+\newblock Between hesitation \& hope: America's mixed feelings on generative artificial intelligence, October 2024.
+\newblock Available online: \url{https://www.canva.com/design/DAGRVonfEGk/W6C6mAYwwJmRhS2dqjjfVg/view#1}.
+
+\bibitem[Roose(2023)]{roose2023}
+Kevin Roose.
+\newblock Don't {{Ban ChatGPT}} in {{Schools}}. {{Teach With It}}.
+\newblock \emph{New York Times}, January 2023.
+
+\bibitem[Banks(2023)]{banks2023}
+David~C. Banks.
+\newblock {{ChatGPT}} caught {{NYC}} schools off guard. {{Now}}, we're determined to embrace its potential.
+\newblock https://www.chalkbeat.org/newyork/2023/5/18/23727942/chatgpt-nyc-schools-david-banks/, May 2023.
+
+\bibitem[Lin(2024)]{lin2024a}
+Luona Lin.
+\newblock A quarter of {{U}}.{{S}}. teachers say {{AI}} tools do more harm than good in {{K-12}} education, May 2024.
+
+\bibitem[Ji et~al.(2023)Ji, Lee, Frieske, Yu, Su, Xu, Ishii, Bang, Madotto, and Fung]{ji2023survey}
+Ziwei Ji, Nayeon Lee, Rita Frieske, Tiezheng Yu, Dan Su, Yan Xu, Etsuko Ishii, Ye~Jin Bang, Andrea Madotto, and Pascale Fung.
+\newblock Survey of hallucination in natural language generation.
+\newblock \emph{ACM Computing Surveys}, 55\penalty0 (12):\penalty0 1--38, 2023.
+
+\bibitem[Yuan et~al.(2023)Yuan, Yuan, Tan, Wang, and Huang]{yuan2023well}
+Zheng Yuan, Hongyi Yuan, Chuanqi Tan, Wei Wang, and Songfang Huang.
+\newblock How well do large language models perform in arithmetic tasks?
+\newblock \emph{arXiv preprint arXiv:2304.02015}, 2023.
+
+\bibitem[Fisher et~al.(2015)Fisher, Goddu, and Keil]{fisher2015}
+Matthew Fisher, Mariel~K. Goddu, and Frank~C. Keil.
+\newblock Searching for explanations: {{How}} the {{Internet}} inflates estimates of internal knowledge.
+\newblock \emph{Journal of Experimental Psychology: General}, 144\penalty0 (3):\penalty0 674--687, June 2015.
+\newblock ISSN 1939-2222, 0096-3445.
+\newblock \doi{10.1037/xge0000070}.
+
+\bibitem[Sparrow et~al.(2011)Sparrow, Liu, and Wegner]{sparrow2011}
+Betsy Sparrow, Jenny Liu, and Daniel~M. Wegner.
+\newblock Google {{Effects}} on {{Memory}}: {{Cognitive Consequences}} of {{Having Information}} at {{Our Fingertips}}.
+\newblock \emph{Science}, 333\penalty0 (6043):\penalty0 776--778, August 2011.
+\newblock ISSN 0036-8075, 1095-9203.
+\newblock \doi{10.1126/science.1207745}.
+
+\bibitem[Maguire et~al.(2000)Maguire, Gadian, Johnsrude, Good, Ashburner, Frackowiak, and Frith]{maguire2000}
+Eleanor~A. Maguire, David~G. Gadian, Ingrid~S. Johnsrude, Catriona~D. Good, John Ashburner, Richard S.~J. Frackowiak, and Christopher~D. Frith.
+\newblock Navigation-related structural change in the hippocampi of taxi drivers.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 97\penalty0 (8):\penalty0 4398--4403, April 2000.
+\newblock ISSN 0027-8424, 1091-6490.
+\newblock \doi{10.1073/pnas.070039597}.
+
+\bibitem[Griesbauer et~al.(2022)Griesbauer, Manley, Wiener, and Spiers]{griesbauer2022london}
+Eva-Maria Griesbauer, Ed~Manley, Jan~M Wiener, and Hugo~J Spiers.
+\newblock London taxi drivers: A review of neurocognitive studies and an exploration of how they build their cognitive map of london.
+\newblock \emph{Hippocampus}, 32\penalty0 (1):\penalty0 3--20, 2022.
+
+\bibitem[Sweller and Cooper(1985)]{sweller1985use}
+John Sweller and Graham~A Cooper.
+\newblock The use of worked examples as a substitute for problem solving in learning algebra.
+\newblock \emph{Cognition and instruction}, 2\penalty0 (1):\penalty0 59--89, 1985.
+
+\bibitem[Atkinson et~al.(2000)Atkinson, Derry, Renkl, and Wortham]{atkinson2000learning}
+Robert~K Atkinson, Sharon~J Derry, Alexander Renkl, and Donald Wortham.
+\newblock Learning from examples: Instructional principles from the worked examples research.
+\newblock \emph{Review of educational research}, 70\penalty0 (2):\penalty0 181--214, 2000.
+
+\bibitem[Anderson et~al.(1995)Anderson, Corbett, Koedinger, and Pelletier]{anderson1995cognitive}
+John~R Anderson, Albert~T Corbett, Kenneth~R Koedinger, and Ray Pelletier.
+\newblock Cognitive tutors: Lessons learned.
+\newblock \emph{The journal of the learning sciences}, 4\penalty0 (2):\penalty0 167--207, 1995.
+
+\bibitem[Kumar et~al.(2023)Kumar, Rothschild, Goldstein, and Hofman]{kumar2023}
+Harsh Kumar, David~M. Rothschild, Daniel~G. Goldstein, and Jake Hofman.
+\newblock Math {{Education}} with {{Large Language Models}}: {{Peril}} or {{Promise}}?
+\newblock \emph{SSRN Electronic Journal}, 2023.
+\newblock ISSN 1556-5068.
+\newblock \doi{10.2139/ssrn.4641653}.
+
+\bibitem[Lehmann et~al.(2024)Lehmann, Cornelius, and Sting]{lehmann2024ai}
+Matthias Lehmann, Philipp~B Cornelius, and Fabian~J Sting.
+\newblock Ai meets the classroom: When does chatgpt harm learning?
+\newblock \emph{arXiv preprint arXiv:2409.09047}, 2024.
+
+\bibitem[Bastani et~al.(2024)Bastani, Bastani, Sungu, Ge, Kabakc{\i}, and Mariman]{bastani2024}
+Hamsa Bastani, Osbert Bastani, Alp Sungu, Haosen Ge, {\"O}zge Kabakc{\i}, and Rei Mariman.
+\newblock Generative {{AI Can Harm Learning}}, 2024.
+
+\bibitem[Nie et~al.(2024)Nie, Chandak, Suzara, Malik, Woodrow, Peng, Sahami, Brunskill, and Piech]{nie2024gpt}
+Allen Nie, Yash Chandak, Miroslav Suzara, Ali Malik, Juliette Woodrow, Matt Peng, Mehran Sahami, Emma Brunskill, and Chris Piech.
+\newblock The gpt surprise: Offering large language model chat in a massive coding class reduced engagement but increased adopters’ exam performances.
+\newblock Technical report, Center for Open Science, 2024.
+
+\bibitem[Bick et~al.(2024)Bick, Blandin, and Deming]{bick2024rapid}
+Alexander Bick, Adam Blandin, and David~J Deming.
+\newblock The rapid adoption of generative ai.
+\newblock Technical report, National Bureau of Economic Research, 2024.
+
+\bibitem[Shulman et~al.(2024)Shulman, Markowitz, and Rogers]{shulman2024}
+Hillary~C. Shulman, David~M. Markowitz, and Todd Rogers.
+\newblock Reading dies in complexity: {{Online}} news consumers prefer simple writing.
+\newblock \emph{Science Advances}, 10\penalty0 (23):\penalty0 eadn2555, June 2024.
+\newblock ISSN 2375-2548.
+\newblock \doi{10.1126/sciadv.adn2555}.
+
+\bibitem[Bandura(1971)]{bandura1971}
+Albert Bandura.
+\newblock \emph{Social Learning Theory}.
+\newblock General Learning Press, New York, 1971.
+
+\bibitem[Meltzoff(2005)]{meltzoff2005imitation}
+Andrew~N. Meltzoff.
+\newblock Imitation and other minds: The like me hypothesis.
+\newblock In Susan Hurley and Nick Chater, editors, \emph{Perspectives on Imitation: From Neuroscience to Social Science, Volume 2: Imitation, Human Development, and Culture}, pages 55--77. MIT Press, Cambridge, MA, 2005.
+
+\bibitem[Lyons et~al.(2007)Lyons, Young, and Keil]{lyons2007hidden}
+Derek~E Lyons, Andrew~G Young, and Frank~C Keil.
+\newblock The hidden structure of overimitation.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 104\penalty0 (50):\penalty0 19751--19756, 2007.
+
+\bibitem[Ericsson(2008)]{anders2008deliberate}
+A~K Ericsson.
+\newblock Deliberate practice and acquisition of expert performance: a general overview.
+\newblock \emph{Academic emergency medicine}, 15\penalty0 (11):\penalty0 988--994, 2008.
+
+\bibitem[Shin et~al.(2023)Shin, Kim, Van~Opheusden, and Griffiths]{shin2023}
+Minkyu Shin, Jin Kim, Bas Van~Opheusden, and Thomas~L. Griffiths.
+\newblock Superhuman artificial intelligence can improve human decision-making by increasing novelty.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 120\penalty0 (12):\penalty0 e2214840120, March 2023.
+\newblock ISSN 0027-8424, 1091-6490.
+\newblock \doi{10.1073/pnas.2214840120}.
+
+\bibitem[whu(2010)]{whut2010}
+Charlie {{Rose}} : {{WHUT}} : {{June}} 14, 2010 9:00am-10:00am {{EDT}}, June 2010.
+
+\bibitem[Rathje et~al.(2024)Rathje, Mirea, Sucholutsky, Marjieh, Robertson, and Van~Bavel]{rathje2024}
+Steve Rathje, Dan-Mircea Mirea, Ilia Sucholutsky, Raja Marjieh, Claire~E. Robertson, and Jay~J. Van~Bavel.
+\newblock {{GPT}} is an effective tool for multilingual psychological text analysis.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 121\penalty0 (34):\penalty0 e2308950121, August 2024.
+\newblock ISSN 0027-8424, 1091-6490.
+\newblock \doi{10.1073/pnas.2308950121}.
+
+\bibitem[Hackl et~al.(2023)Hackl, M{\"u}ller, Granitzer, and Sailer]{hackl2023}
+Veronika Hackl, Alexandra~Elena M{\"u}ller, Michael Granitzer, and Maximilian Sailer.
+\newblock Is {{GPT-4}} a reliable rater? {{Evaluating}} consistency in {{GPT-4}}'s text ratings.
+\newblock \emph{Frontiers in Education}, 8:\penalty0 1272229, December 2023.
+\newblock ISSN 2504-284X.
+\newblock \doi{10.3389/feduc.2023.1272229}.
+
+\bibitem[Benjamini and Hochberg(1995)]{benjamini1995controlling}
+Yoav Benjamini and Yosef Hochberg.
+\newblock Controlling the false discovery rate: a practical and powerful approach to multiple testing.
+\newblock \emph{Journal of the Royal statistical society: series B (Methodological)}, 57\penalty0 (1):\penalty0 289--300, 1995.
+
+\bibitem[{National Research Council}(2011)]{national_research_council_assessing_2011}
+{National Research Council}.
+\newblock \emph{Assessing 21st {Century} {Skills}: {Summary} of a {Workshop}}.
+\newblock The National Academies Press, Washington DC, 2011.
+\newblock URL \url{https://doi.org/10.17226/13215}.
+
+\bibitem[Moffitt et~al.(2011)Moffitt, Arseneault, Belsky, Dickson, Hancox, Harrington, Houts, Poulton, Roberts, Ross, Sears, Thomson, and Caspi]{moffitt_gradient_2011}
+T.~E. Moffitt, L.~Arseneault, D.~Belsky, N.~Dickson, R.~J. Hancox, H.~Harrington, R.~Houts, R.~Poulton, B.~W. Roberts, S.~Ross, M.~R. Sears, W.~M. Thomson, and A.~Caspi.
+\newblock A gradient of childhood self-control predicts health, wealth, and public safety.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 108\penalty0 (7):\penalty0 2693--2698, February 2011.
+\newblock ISSN 0027-8424, 1091-6490.
+\newblock \doi{10.1073/pnas.1010076108}.
+\newblock URL \url{http://www.pnas.org/cgi/doi/10.1073/pnas.1010076108}.
+
+\bibitem[Almlund et~al.(2011)Almlund, Duckworth, Heckman, and Kautz]{almlund_personality_2011}
+Mathilde Almlund, Angela~Lee Duckworth, James Heckman, and Tim Kautz.
+\newblock Personality {Psychology} and {Economics}.
+\newblock In \emph{Handbook of the {Economics} of {Education}}, volume~4, pages 1--181. Elsevier, 2011.
+\newblock ISBN 978-0-444-53444-6.
+\newblock \doi{10.1016/B978-0-444-53444-6.00001-8}.
+\newblock URL \url{https://linkinghub.elsevier.com/retrieve/pii/B9780444534446000018}.
+
+\bibitem[Robbins et~al.(2004)Robbins, Lauver, Le, Davis, Langley, and Carlstrom]{robbins_psychosocial_2004}
+Steven~B. Robbins, Kristy Lauver, Huy Le, Daniel Davis, Ronelle Langley, and Aaron Carlstrom.
+\newblock Do {Psychosocial} and {Study} {Skill} {Factors} {Predict} {College} {Outcomes}? {A} {Meta}-{Analysis}.
+\newblock \emph{Psychological Bulletin}, 130\penalty0 (2):\penalty0 261--288, 2004.
+\newblock ISSN 1939-1455, 0033-2909.
+\newblock \doi{10.1037/0033-2909.130.2.261}.
+\newblock URL \url{http://doi.apa.org/getdoi.cfm?doi=10.1037/0033-2909.130.2.261}.
+
+\bibitem[Kyllonen et~al.(2014)Kyllonen, Lipnevich, Burrus, and Roberts]{kyllonen_personality_2014}
+Patrick~C. Kyllonen, Anastasiya~A. Lipnevich, Jeremy Burrus, and Richard~D. Roberts.
+\newblock Personality, {Motivation}, and {College} {Readiness}: {A} {Prospectus} for {Assessment} and {Development}: {Personality}, {Motivation}, and {College} {Readiness}.
+\newblock \emph{ETS Research Report Series}, 2014\penalty0 (1):\penalty0 1--48, June 2014.
+\newblock ISSN 23308516.
+\newblock \doi{10.1002/ets2.12004}.
+\newblock URL \url{https://onlinelibrary.wiley.com/doi/10.1002/ets2.12004}.
+
+\bibitem[Coleman and Keith(2018)]{coleman_understanding_2018}
+Arthur~L Coleman and Jamie~Lewis Keith.
+\newblock Understanding {Holistic} {Review} in {Higher} {Education} {Admissions}.
+\newblock Technical report, College Board, New York, 2018.
+
+\bibitem[Karabel(2005)]{karabel_chosen_2005}
+Jerome Karabel.
+\newblock \emph{The {Chosen}: {The} {Hidden} {History} of {Admission} and {Exclusion} at {Harvard}, {Yale}, and {Princeton}.}
+\newblock Houghton Mifflin Harcourt, 2005.
+
+\bibitem[Bastedo et~al.(2018)Bastedo, Bowman, Glasener, and Kelly]{bastedo_what_2018}
+Michael~N. Bastedo, Nicholas~A. Bowman, Kristen~M. Glasener, and Jandi~L. Kelly.
+\newblock What are {We} {Talking} {About} {When} {We} {Talk} {About} {Holistic} {Review}? {Selective} {College} {Admissions} and its {Effects} on {Low}-{SES} {Students}.
+\newblock \emph{The Journal of Higher Education}, 89\penalty0 (5):\penalty0 782--805, September 2018.
+\newblock ISSN 0022-1546, 1538-4640.
+\newblock \doi{10.1080/00221546.2018.1442633}.
+\newblock URL \url{https://www.tandfonline.com/doi/full/10.1080/00221546.2018.1442633}.
+
+\bibitem[Starkman(2013)]{starkman_confessions_2013}
+Ruth Starkman.
+\newblock Confessions of an {Application} {Reader}.
+\newblock \emph{The New York Times}, August 2013.
+\newblock ISSN 0362-4331.
+\newblock URL \url{https://www.nytimes.com/2013/08/04/education/edlife/lifting-the-veil-on-the-holistic-process-at-the-university-of-california-berkeley.html}.
+
+\bibitem[Anderson and Weissbourd(2020)]{anderson_character_2020}
+Trisha~Ross Anderson and Richard Weissbourd.
+\newblock Character {Assessment} in {College} {Admission}.
+\newblock Technical report, Making Caring Common Project, Boston, 2020.
+
+\bibitem[Kahneman et~al.(2021)Kahneman, Sibony, and Sunstein]{kahneman_noise_2021}
+Daniel Kahneman, Olivier Sibony, and Cass~R. Sunstein.
+\newblock \emph{Noise: {A} {Flaw} in {Human} {Judgment}}.
+\newblock Harper Collins, 2021.
+
+\bibitem[Rushton et~al.(1983)Rushton, Brainerd, and Pressley]{rushton_behavioral_1983}
+J~Philippe Rushton, Charles~J Brainerd, and Michael Pressley.
+\newblock Behavioral development and construct validity: {The} principle of aggregation.
+\newblock \emph{Psychological Bulletin}, 94\penalty0 (1):\penalty0 18, 1983.
+
+\bibitem[Hoover(2017)]{hoover_working_2017}
+Eric Hoover.
+\newblock Working smarter, not harder, in admissions.
+\newblock \emph{The Chronicle of Higher Education}, March 2017.
+\newblock URL \url{https://www.chronicle.com/article/working-smarter-not-harder-in-admissions/}.
+
+\bibitem[Korn(2018)]{korn_elite_2018}
+Melissa Korn.
+\newblock Some elite colleges review an application in 8 minutes (or less).
+\newblock \emph{Wall Street Journal}, January 2018.
+\newblock ISSN 0099-9660.
+\newblock URL \url{https://www.wsj.com/articles/some-elite-colleges-review-an-application-in-8-minutes-or-less-1517400001}.
+
+\bibitem[Tay et~al.(2022)Tay, Woo, Hickman, Booth, and D’Mello]{tay_conceptual_2022}
+Louis Tay, Sang~Eun Woo, Louis Hickman, Brandon~M Booth, and Sidney D’Mello.
+\newblock A {Conceptual} {Framework} for {Investigating} and {Mitigating} {Machine}-{Learning} {Measurement} {Bias} ({MLMB}) in {Psychological} {Assessment}.
+\newblock \emph{Advances in Methods and Practices in Psychological Science}, 5\penalty0 (1):\penalty0 1--30, 2022.
+
+\bibitem[Hickman et~al.(2022)Hickman, Bosch, Ng, Saef, Tay, and Woo]{hickman_automated_2022}
+Louis Hickman, Nigel Bosch, Vincent Ng, Rachel Saef, Louis Tay, and Sang~Eun Woo.
+\newblock Automated video interview personality assessments: {Reliability}, validity, and generalizability investigations.
+\newblock \emph{Journal of Applied Psychology}, 107:\penalty0 1323--1351, 2022.
+\newblock ISSN 1939-1854.
+\newblock \doi{10.1037/apl0000695}.
+\newblock Place: US Publisher: American Psychological Association.
+
+\bibitem[Manyika et~al.(2019)Manyika, Silberg, and Presten]{manyika_what_2019}
+James Manyika, Jake Silberg, and Brittany Presten.
+\newblock What do we do about the biases in {AI}?
+\newblock \emph{Harvard Business Review}, pages 1--5, 2019.
+
+\bibitem[Obermeyer et~al.(2019)Obermeyer, Powers, Vogeli, and Mullainathan]{obermeyer_dissecting_2019}
+Ziad Obermeyer, Brian Powers, Christine Vogeli, and Sendhil Mullainathan.
+\newblock Dissecting racial bias in an algorithm used to manage the health of populations.
+\newblock \emph{Science}, 366:\penalty0 447--453, 2019.
+
+\bibitem[Ensign et~al.(2018)Ensign, Friedler, Neville, Scheidegger, and Venkatasubramanian]{ensign_runaway_2018}
+Danielle Ensign, Sorelle~A Friedler, Scott Neville, Carlos Scheidegger, and Suresh Venkatasubramanian.
+\newblock Runaway feedback loops in predictive policing.
+\newblock \emph{Proceedings of Machine Learning Research}, 81:\penalty0 1--12, 2018.
+
+\bibitem[Alvero et~al.(2021)Alvero, Giebel, Gebre-Medhin, antonio, Stevens, and Domingue]{alvero_essay_2021}
+Aj~Alvero, Sonia Giebel, Ben Gebre-Medhin, a.~l. antonio, M.~L. Stevens, and Benjamin~W. Domingue.
+\newblock Essay content and style are strongly related to household income and {SAT} scores: {Evidence} from 60,000 undergraduate applications.
+\newblock \emph{Science Advances}, 7\penalty0 (42):\penalty0 eabi9031, October 2021.
+\newblock ISSN 2375-2548.
+\newblock \doi{10.1126/sciadv.abi9031}.
+\newblock URL \url{https://www.science.org/doi/10.1126/sciadv.abi9031}.
+
+\bibitem[Riedl(2019)]{riedl_humancentered_2019}
+Mark~O. Riedl.
+\newblock Human‐centered artificial intelligence and machine learning.
+\newblock \emph{Human Behavior and Emerging Technologies}, 1\penalty0 (1):\penalty0 33--36, January 2019.
+\newblock ISSN 2578-1863, 2578-1863.
+\newblock \doi{10.1002/hbe2.117}.
+\newblock URL \url{https://onlinelibrary.wiley.com/doi/10.1002/hbe2.117}.
+
+\bibitem[Shneiderman(2020)]{shneiderman_human-centered_2020}
+Ben Shneiderman.
+\newblock Human-{Centered} {Artificial} {Intelligence}: {Three} fresh ideas.
+\newblock \emph{AIS Transactions on Human-Computer Interaction}, 12\penalty0 (3):\penalty0 109--124, 2020.
+\newblock ISSN 19443900.
+\newblock \doi{10.17705/1thci.00131}.
+\newblock URL \url{http://aisel.aisnet.org/thci/vol12/iss3/1}.
+
+\bibitem[Gunning et~al.(2019)Gunning, Stefik, Choi, Miller, Stumpf, and Yang]{gunning_xaiexplainable_2019}
+David Gunning, Mark Stefik, Jaesik Choi, Timothy Miller, Simone Stumpf, and Guang-Zhong Yang.
+\newblock {XAI}—{Explainable} artificial intelligence.
+\newblock \emph{Science Robotics}, 4\penalty0 (37):\penalty0 eaay7120, December 2019.
+\newblock ISSN 2470-9476.
+\newblock \doi{10.1126/scirobotics.aay7120}.
+\newblock URL \url{https://www.science.org/doi/10.1126/scirobotics.aay7120}.
+
+\bibitem[noa(2021)]{noauthor_our_2021}
+Our {Selection} {Process}, 2021.
+\newblock URL \url{https://admission.stanford.edu/apply/selection/}.
+
+\bibitem[Lobel(2022)]{lobel_equality_2022}
+Orly Lobel.
+\newblock \emph{The {Equality} {Machine}: {Harnessing} {Digital} {Technology} for a {Brighter}, {More} {Inclusive} {Future}}.
+\newblock Public Affairs, 2022.
+
+\bibitem[Liu et~al.(2019)Liu, Ott, Goyal, Du, Joshi, Chen, Levy, Lewis, Zettlemoyer, and Stoyanov]{liu_roberta_2019}
+Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke Zettlemoyer, and Veselin Stoyanov.
+\newblock {RoBERTa}: {A} {Robustly} {Optimized} {BERT} {Pretraining} {Approach}, July 2019.
+\newblock URL \url{http://arxiv.org/abs/1907.11692}.
+\newblock arXiv:1907.11692 [cs].
+
+\bibitem[Pierse(2021)]{pierse_transformers_2021}
+Charles Pierse.
+\newblock Transformers {Interpret}, February 2021.
+\newblock URL \url{https://github.com/cdpierse/transformers-interpret}.
+\newblock original-date: 2020-05-27T20:32:08Z.
+
+\bibitem[Janizek et~al.(2020)Janizek, Sturmfels, and Lee]{janizek_explaining_2020}
+Joseph~D. Janizek, Pascal Sturmfels, and Su-In Lee.
+\newblock Explaining {Explanations}: {Axiomatic} {Feature} {Interactions} for {Deep} {Networks}, June 2020.
+\newblock URL \url{http://arxiv.org/abs/2002.04138}.
+
+\bibitem[Benjamini and Yekutieli(2001)]{benjamini_control_2001}
+Yoav Benjamini and Daniel Yekutieli.
+\newblock The control of the false discovery rate in multiple testing under dependency.
+\newblock \emph{The Annals of Statistics}, 29\penalty0 (4):\penalty0 1165--1188, August 2001.
+\newblock ISSN 0090-5364.
+\newblock \doi{10.1214/aos/1013699998}.
+\newblock URL \url{https://projecteuclid.org/journals/annals-of-statistics/volume-29/issue-4/The-control-of-the-false-discovery-rate-in-multiple-testing/10.1214/aos/1013699998.full}.
+
+\bibitem[Kamas and Preston(2021)]{kamas_empathy_2021}
+Linda Kamas and Anne Preston.
+\newblock Empathy, gender, and prosocial behavior.
+\newblock \emph{Journal of Behavioral and Experimental Economics}, 92:\penalty0 101654, June 2021.
+\newblock ISSN 22148043.
+\newblock \doi{10.1016/j.socec.2020.101654}.
+\newblock URL \url{https://linkinghub.elsevier.com/retrieve/pii/S2214804320306972}.
+
+\bibitem[Pennebaker et~al.(2014)Pennebaker, Chung, Frazee, Lavergne, and Beaver]{pennebaker_when_2014}
+James~W. Pennebaker, Cindy~K. Chung, Joey Frazee, Gary~M. Lavergne, and David~I. Beaver.
+\newblock When small words foretell academic auccess: {The} case of college admissions essays.
+\newblock \emph{PLoS ONE}, 9\penalty0 (12):\penalty0 e115844, December 2014.
+\newblock ISSN 1932-6203.
+\newblock \doi{10.1371/journal.pone.0115844}.
+\newblock URL \url{https://dx.plos.org/10.1371/journal.pone.0115844}.
+
+\bibitem[Goyer et~al.(2021)Goyer, Walton, and Yeager]{goyer_role_2021}
+J.~Parker Goyer, Gregory~M. Walton, and David~S. Yeager.
+\newblock The role of psychological factors and institutional channels in predicting the attainment of postsecondary goals.
+\newblock \emph{Developmental Psychology}, 57:\penalty0 73--86, 2021.
+\newblock ISSN 1939-0599.
+\newblock \doi{10.1037/dev0001142}.
+\newblock Place: US Publisher: American Psychological Association.
+
+\bibitem[Salganik et~al.(2020)Salganik, Lundberg, Kindel, Ahearn, Al-Ghoneim, Almaatouq, Altschul, Brand, Carnegie, Compton, Datta, Davidson, Filippova, Gilroy, Goode, Jahani, Kashyap, Kirchner, McKay, Morgan, Pentland, Polimis, Raes, Rigobon, Roberts, Stanescu, Suhara, Usmani, Wang, Adem, Alhajri, AlShebli, Amin, Amos, Argyle, Baer-Bositis, Büchi, Chung, Eggert, Faletto, Fan, Freese, Gadgil, Gagné, Gao, Halpern-Manners, Hashim, Hausen, He, Higuera, Hogan, Horwitz, Hummel, Jain, Jin, Jurgens, Kaminski, Karapetyan, Kim, Leizman, Liu, Möser, Mack, Mahajan, Mandell, Marahrens, Mercado-Garcia, Mocz, Mueller-Gastell, Musse, Niu, Nowak, Omidvar, Or, Ouyang, Pinto, Porter, Porter, Qian, Rauf, Sargsyan, Schaffner, Schnabel, Schonfeld, Sender, Tang, Tsurkov, van Loon, Varol, Wang, Wang, Wang, Wang, Weissman, Whitaker, Wolters, Woon, Wu, Wu, Yang, Yin, Zhao, Zhu, Brooks-Gunn, Engelhardt, Hardt, Knox, Levy, Narayanan, Stewart, Watts, and McLanahan]{salganik_measuring_2020}
+Matthew~J. Salganik, Ian Lundberg, Alexander~T. Kindel, Caitlin~E. Ahearn, Khaled Al-Ghoneim, Abdullah Almaatouq, Drew~M. Altschul, Jennie~E. Brand, Nicole~Bohme Carnegie, Ryan~James Compton, Debanjan Datta, Thomas Davidson, Anna Filippova, Connor Gilroy, Brian~J. Goode, Eaman Jahani, Ridhi Kashyap, Antje Kirchner, Stephen McKay, Allison~C. Morgan, Alex Pentland, Kivan Polimis, Louis Raes, Daniel~E. Rigobon, Claudia~V. Roberts, Diana~M. Stanescu, Yoshihiko Suhara, Adaner Usmani, Erik~H. Wang, Muna Adem, Abdulla Alhajri, Bedoor AlShebli, Redwane Amin, Ryan~B. Amos, Lisa~P. Argyle, Livia Baer-Bositis, Moritz Büchi, Bo-Ryehn Chung, William Eggert, Gregory Faletto, Zhilin Fan, Jeremy Freese, Tejomay Gadgil, Josh Gagné, Yue Gao, Andrew Halpern-Manners, Sonia~P. Hashim, Sonia Hausen, Guanhua He, Kimberly Higuera, Bernie Hogan, Ilana~M. Horwitz, Lisa~M. Hummel, Naman Jain, Kun Jin, David Jurgens, Patrick Kaminski, Areg Karapetyan, E.~H. Kim, Ben Leizman, Naijia Liu, Malte Möser, Andrew~E. Mack, Mayank Mahajan, Noah Mandell, Helge Marahrens, Diana Mercado-Garcia, Viola Mocz, Katariina Mueller-Gastell, Ahmed Musse, Qiankun Niu, William Nowak, Hamidreza Omidvar, Andrew Or, Karen Ouyang, Katy~M. Pinto, Ethan Porter, Kristin~E. Porter, Crystal Qian, Tamkinat Rauf, Anahit Sargsyan, Thomas Schaffner, Landon Schnabel, Bryan Schonfeld, Ben Sender, Jonathan~D. Tang, Emma Tsurkov, Austin van Loon, Onur Varol, Xiafei Wang, Zhi Wang, Julia Wang, Flora Wang, Samantha Weissman, Kirstie Whitaker, Maria~K. Wolters, Wei~Lee Woon, James Wu, Catherine Wu, Kengran Yang, Jingwen Yin, Bingyu Zhao, Chenyun Zhu, Jeanne Brooks-Gunn, Barbara~E. Engelhardt, Moritz Hardt, Dean Knox, Karen Levy, Arvind Narayanan, Brandon~M. Stewart, Duncan~J. Watts, and Sara McLanahan.
+\newblock Measuring the predictability of life outcomes with a scientific mass collaboration.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 117\penalty0 (15):\penalty0 8398--8403, April 2020.
+\newblock ISSN 0027-8424, 1091-6490.
+\newblock \doi{10.1073/pnas.1915006117}.
+\newblock URL \url{https://pnas.org/doi/full/10.1073/pnas.1915006117}.
+
+\bibitem[Martin et~al.(2016)Martin, Hofman, Sharma, Anderson, and Watts]{martin_exploring_2016}
+Travis Martin, Jake~M. Hofman, Amit Sharma, Ashton Anderson, and Duncan~J. Watts.
+\newblock Exploring {Limits} to {Prediction} in {Complex} {Social} {Systems}.
+\newblock In \emph{Proceedings of the 25th {International} {Conference} on {World} {Wide} {Web}}, pages 683--694, Montréal Québec Canada, April 2016. International World Wide Web Conferences Steering Committee.
+\newblock ISBN 978-1-4503-4143-1.
+\newblock \doi{10.1145/2872427.2883001}.
+\newblock URL \url{https://dl.acm.org/doi/10.1145/2872427.2883001}.
+
+\bibitem[Ahadi and Diener(1989)]{ahadi_multiple_1989}
+Stephan Ahadi and Edward Diener.
+\newblock Multiple determinants and effect size.
+\newblock \emph{Journal of Personality and Social Psychology}, 56\penalty0 (3):\penalty0 398--406, 1989.
+\newblock ISSN 1939-1315.
+\newblock \doi{10.1037/0022-3514.56.3.398}.
+
+\bibitem[Götz et~al.(2022)Götz, Gosling, and Rentfrow]{gotz_small_2022}
+Friedrich~M Götz, Samuel~D Gosling, and Peter~J Rentfrow.
+\newblock Small {Effects}: {The} {Indispensable} {Foundation} for a {Cumulative} {Psychological} {Science}.
+\newblock \emph{Perspectives on Psychological Science}, 17\penalty0 (1):\penalty0 205--215, 2022.
+
+\bibitem[Goldrick-Rab(2006)]{goldrick-rab_following_2006}
+Sara Goldrick-Rab.
+\newblock Following their every move: {An} investigation of social-class differences in college pathways.
+\newblock \emph{Sociology of Education}, 79\penalty0 (1):\penalty0 67--79, January 2006.
+\newblock ISSN 0038-0407, 1939-8573.
+\newblock \doi{10.1177/003804070607900104}.
+\newblock URL \url{http://journals.sagepub.com/doi/10.1177/003804070607900104}.
+
+\bibitem[Hepworth et~al.(2018)Hepworth, Littlepage, and Hancock]{hepworth_factors_2018}
+Daniel Hepworth, Ben Littlepage, and Katy Hancock.
+\newblock Factors influencing university student academic success.
+\newblock \emph{Educational Research Quarterly}, 42\penalty0 (1):\penalty0 45--61, 2018.
+
+\bibitem[Porchea et~al.(2010)Porchea, Allen, Robbins, and Phelps]{porchea_predictors_2010}
+Sameano~F. Porchea, Jeff Allen, Steve Robbins, and Richard~P. Phelps.
+\newblock Predictors of long-term enrollment and degree outcomes for community college students: {Integrating} academic, psychosocial, socio-demographic, and situational factors.
+\newblock \emph{The Journal of Higher Education}, 81\penalty0 (6):\penalty0 680--708, November 2010.
+\newblock ISSN 0022-1546, 1538-4640.
+\newblock \doi{10.1080/00221546.2010.11779077}.
+\newblock URL \url{https://www.tandfonline.com/doi/full/10.1080/00221546.2010.11779077}.
+
+\bibitem[Murphy et~al.(2020)Murphy, Gopalan, Carter, Emerson, Bottoms, and Walton]{murphy_customized_2020}
+Mary~C. Murphy, Maithreyi Gopalan, Evelyn~R. Carter, Katherine T.~U. Emerson, Bette~L. Bottoms, and Gregory~M. Walton.
+\newblock A customized belonging intervention improves retention of socially disadvantaged students at a broad-access university.
+\newblock \emph{Science Advances}, 6\penalty0 (29):\penalty0 eaba4677, July 2020.
+\newblock ISSN 2375-2548.
+\newblock \doi{10.1126/sciadv.aba4677}.
+\newblock URL \url{https://www.science.org/doi/10.1126/sciadv.aba4677}.
+
+\bibitem[Willingham(1985)]{willingham_success_1985}
+Warren~W Willingham.
+\newblock \emph{Success in {College}: {The} {Role} of {Personal} {Qualities} and {Academic} {Ability}}.
+\newblock College Board Publications, 1985.
+
+\bibitem[Clifton(2020)]{clifton_managing_2020}
+Jeremy D.~W. Clifton.
+\newblock Managing validity versus reliability trade-offs in scale-building decisions.
+\newblock \emph{Psychological Methods}, 25\penalty0 (3):\penalty0 259, 2020.
+\newblock ISSN 1939-1463.
+\newblock \doi{10.1037/met0000236}.
+\newblock URL \url{https://psycnet.apa.org/fulltext/2019-47148-001.pdf}.
+\newblock Publisher: US: American Psychological Association.
+
+\bibitem[Campbell(1979)]{campbell_assessing_1979}
+Donald~T. Campbell.
+\newblock Assessing the impact of planned social change.
+\newblock \emph{Evaluation and Program Planning}, 2\penalty0 (1):\penalty0 67--90, January 1979.
+\newblock ISSN 01497189.
+\newblock \doi{10.1016/0149-7189(79)90048-X}.
+\newblock URL \url{https://linkinghub.elsevier.com/retrieve/pii/014971897990048X}.
+
+\bibitem[Dietvorst et~al.(2015)Dietvorst, Simmons, and Massey]{dietvorst_algorithm_2015}
+Berkeley~J Dietvorst, Joseph~P Simmons, and Cade Massey.
+\newblock Algorithm aversion: {People} erroneously avoid algorithms after seeing them err.
+\newblock \emph{Journal of Experimental Psychology: General}, 144\penalty0 (1):\penalty0 114--126, 2015.
+
+\bibitem[Mahoney et~al.(2005)Mahoney, Larson, Eccles, and Lord]{mahoney_organized_2005}
+Joseph~L Mahoney, Reed~W Larson, Jacquelynne~S Eccles, and Heather Lord.
+\newblock Organized activities as developmental contexts for children and adolescents.
+\newblock \emph{Organized activities as contexts of development: Extracurricular activities, after-school and community programs}, pages 3--22, 2005.
+
+\bibitem[Larson(2000)]{larson_toward_2000}
+Reed~W. Larson.
+\newblock Toward a psychology of positive youth development.
+\newblock \emph{American Psychologist}, 55\penalty0 (1):\penalty0 170, 2000.
+\newblock ISSN 1935-990X.
+\newblock \doi{10.1037/0003-066X.55.1.170}.
+\newblock URL \url{http://psycnet.apa.org/fulltext/2000-13324-016.pdf}.
+\newblock Publisher: US: American Psychological Association.
+
+\bibitem[ACT(2013)]{act_actsat_2013}
+ACT.
+\newblock {ACT}–{SAT} concordance: {A} tool for comparing scores, 2013.
+\newblock URL \url{https://www.act.org/content/dam/act/unsecured/documents/reference.pdf}.
+
+\bibitem[van Buuren and Groothuis-Oudshoorn(2011)]{van_buuren_mice_2011}
+Stef van Buuren and Karin Groothuis-Oudshoorn.
+\newblock mice: {Multivariate} imputation by chained equations in {R}.
+\newblock \emph{Journal of Statistical Software}, 45\penalty0 (3), 2011.
+\newblock ISSN 1548-7660.
+\newblock \doi{10.18637/jss.v045.i03}.
+\newblock URL \url{http://www.jstatsoft.org/v45/i03/}.
+
+\end{thebibliography}
