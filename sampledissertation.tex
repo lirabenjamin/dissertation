@@ -90,148 +90,148 @@ Collectively, the chapters in this dissertation show that smarter machines do no
 %-------------------------------------------
 
 %%%% OPTIONAL PREFACE
-\preface{
+% \preface{
 
- \epigraph{War to the death should be instantly proclaimed against them. Every machine of every sort should be destroyed... 
- Let there be no exceptions made, no quarter shown.}{Samuel Butler, 1863
-    }
+%  \epigraph{War to the death should be instantly proclaimed against them. Every machine of every sort should be destroyed... 
+%  Let there be no exceptions made, no quarter shown.}{Samuel Butler, 1863
+%     }
 
-Society has long feared intelligent machines. 
-Well before the Terminator and HAL-9000, the novelist Samuel Butler called for machine genocide. 
-Perhaps because of all this cultural conditioning, I was wary of AI when I started my doctoral studies. 
-In what follows, I'll describe how empirical evidence shifted me from skepticism to cautious optimism that AI tools, properly designed, can improve human capabilities.
+% Society has long feared intelligent machines. 
+% Well before the Terminator and HAL-9000, the novelist Samuel Butler called for machine genocide. 
+% Perhaps because of all this cultural conditioning, I was wary of AI when I started my doctoral studies. 
+% In what follows, I'll describe how empirical evidence shifted me from skepticism to cautious optimism that AI tools, properly designed, can improve human capabilities.
 
-My first real contact with AI came in 2012, during a semester abroad at the University of Leuven in Belgium. 
-I took a course called Fundamentals of Artificial Intelligence, where we learned the “classical” toolkit—search algorithms, constraint satisfaction, and hand-crafted heuristics—designed to let computers solve well-defined problems. 
-It was a far cry from the Hollywood image of AI. 
-Seeing how these systems worked under the hood stripped away the mystique: the techniques were clever, but understandable.
+% My first real contact with AI came in 2012, during a semester abroad at the University of Leuven in Belgium. 
+% I took a course called Fundamentals of Artificial Intelligence, where we learned the “classical” toolkit—search algorithms, constraint satisfaction, and hand-crafted heuristics—designed to let computers solve well-defined problems. 
+% It was a far cry from the Hollywood image of AI. 
+% Seeing how these systems worked under the hood stripped away the mystique: the techniques were clever, but understandable.
 
-A few years later, the field shifted almost overnight. 
-Deep neural networks, long a theoretical curiosity that was impractical to implement, started outperforming older methods on speech recognition, image classification, and language processing. 
-The gains were spectacular—but opaque. 
-The very systems that were setting performance records were also becoming harder to interpret. 
-At the same time, troubling examples emerged: medical triage algorithms that under-treated Black patients, risk-assessment tools that gave harsher scores to minorities, hiring systems that filtered out women. 
-Accuracy had improved, but fairness and explainability had suffered.
+% A few years later, the field shifted almost overnight. 
+% Deep neural networks, long a theoretical curiosity that was impractical to implement, started outperforming older methods on speech recognition, image classification, and language processing. 
+% The gains were spectacular—but opaque. 
+% The very systems that were setting performance records were also becoming harder to interpret. 
+% At the same time, troubling examples emerged: medical triage algorithms that under-treated Black patients, risk-assessment tools that gave harsher scores to minorities, hiring systems that filtered out women. 
+% Accuracy had improved, but fairness and explainability had suffered.
 
-This was the state of affairs when I started working on one of my first projects during the doctoral program, now Chapter 3 in this dissertation. 
-I was analyzing the possibility of using predictive AI to evaluate personal qualities at scale in college admissions. 
-If the tool, like others before it, traded efficiency for bias, the bargain was unacceptable. 
-In fact, the best evidence we had so far pointed in this direction. 
-AI extracted measures of application essay content and style had been shown to reveal applicants’ social class.
+% This was the state of affairs when I started working on one of my first projects during the doctoral program, now Chapter 3 in this dissertation. 
+% I was analyzing the possibility of using predictive AI to evaluate personal qualities at scale in college admissions. 
+% If the tool, like others before it, traded efficiency for bias, the bargain was unacceptable. 
+% In fact, the best evidence we had so far pointed in this direction. 
+% AI extracted measures of application essay content and style had been shown to reveal applicants’ social class.
 
-My collaborators and I were surprised to see that with careful design, AI could accurately measure personal qualities in admissions, which predicted college graduation six years later. 
-Moreover, this performance did not come at the expense of reduced equity, and modern techniques allowed us to “open the black box” and see where the model was looking at to make predictions about applicants' personal qualities. 
-I learned that, contrary to what many critics argued, bias wasn’t baked into AI by design; it was contingent on the recipe. 
-Design choices—not algorithms in the abstract—decide fairness.
+% My collaborators and I were surprised to see that with careful design, AI could accurately measure personal qualities in admissions, which predicted college graduation six years later. 
+% Moreover, this performance did not come at the expense of reduced equity, and modern techniques allowed us to “open the black box” and see where the model was looking at to make predictions about applicants' personal qualities. 
+% I learned that, contrary to what many critics argued, bias wasn’t baked into AI by design; it was contingent on the recipe. 
+% Design choices—not algorithms in the abstract—decide fairness.
 
-Just months after our paper was published, ChatGPT launched publicly.
-Anyone now had access to a system that could generate text about anything that read as if it was written by a human. 
-I had tinkered with earlier AI models that generated text, but none of these were as open to the public nor as powerful as ChatGPT. 
-Like many, I experienced what Ethan Mollick has called “the two sleepless nights”. 
-As I experimented with AI, I realized that now any applicant could draft an essay at the press of a button.
+% Just months after our paper was published, ChatGPT launched publicly.
+% Anyone now had access to a system that could generate text about anything that read as if it was written by a human. 
+% I had tinkered with earlier AI models that generated text, but none of these were as open to the public nor as powerful as ChatGPT. 
+% Like many, I experienced what Ethan Mollick has called “the two sleepless nights”. 
+% As I experimented with AI, I realized that now any applicant could draft an essay at the press of a button.
 
-Soon enough, it dawned on me that the stakes were higher than just college admissions. 
-If a readily accessible tool could produce an essay about any topic, would that make writing obsolete? 
-And if writing is how we learn to think, would AI lead to people outsourcing all of their thinking? 
-If so, AI could reduce motivation for effortful but meaningful thought. 
-We often settle for the path of least resistance, even if it is bad for us in the long run. 
-And reduced exposure would then lead to the atrophy of our mental capacities. 
-So I began losing sleep over the question of whether AI would make us lazy and dumb.
+% Soon enough, it dawned on me that the stakes were higher than just college admissions. 
+% If a readily accessible tool could produce an essay about any topic, would that make writing obsolete? 
+% And if writing is how we learn to think, would AI lead to people outsourcing all of their thinking? 
+% If so, AI could reduce motivation for effortful but meaningful thought. 
+% We often settle for the path of least resistance, even if it is bad for us in the long run. 
+% And reduced exposure would then lead to the atrophy of our mental capacities. 
+% So I began losing sleep over the question of whether AI would make us lazy and dumb.
 
-I was not alone in worrying about this. 
-New York City public schools banned ChatGPT within a month of its release, citing fears of “cognitive laziness.” 
-Two‑thirds of Americans told pollsters that large language models will make society less intelligent. 
-Was this just another moral panic? 
-After all—from Socrates’ critique of writing to Nicholas Carr’s essay 'Is Google making us stupid’—many before me have worried about the technologies of their time. 
-In hindsight, many of these concerns turned out to be far too pessimistic. 
-The only way to know was to resort to experimentation.
+% I was not alone in worrying about this. 
+% New York City public schools banned ChatGPT within a month of its release, citing fears of “cognitive laziness.” 
+% Two‑thirds of Americans told pollsters that large language models will make society less intelligent. 
+% Was this just another moral panic? 
+% After all—from Socrates’ critique of writing to Nicholas Carr’s essay 'Is Google making us stupid’—many before me have worried about the technologies of their time. 
+% In hindsight, many of these concerns turned out to be far too pessimistic. 
+% The only way to know was to resort to experimentation.
 
-In work not mature enough for this dissertation, we asked people how much of GDP should the US allocate for foreign aid and explain their recommendation. 
-Then, we randomly assigned them to get more information, either through an AI chatbot assistant or through a traditional web search. 
-After revising their original judgments, we evaluated them for critical thinking. 
-The chatbot group outperformed the Google group, showing sharper reasoning despite not experiencing any extra effort and, in fact, spending about four times longer engaging with the material. 
-Far from inducing laziness, the AI prompted deeper—and more sustained—thinking, directly contradicting my initial fear that it would make users passive or shallow.
+% In work not mature enough for this dissertation, we asked people how much of GDP should the US allocate for foreign aid and explain their recommendation. 
+% Then, we randomly assigned them to get more information, either through an AI chatbot assistant or through a traditional web search. 
+% After revising their original judgments, we evaluated them for critical thinking. 
+% The chatbot group outperformed the Google group, showing sharper reasoning despite not experiencing any extra effort and, in fact, spending about four times longer engaging with the material. 
+% Far from inducing laziness, the AI prompted deeper—and more sustained—thinking, directly contradicting my initial fear that it would make users passive or shallow.
 
-Building on these findings about thinking quality, we next turned to measuring learning directly.
-We hypothesised that AI would be a coach or a crutch depending on how people used it. 
-So we built two AI conditions to compare to a no-AI control. 
-The AI-crutch condition simply gave away the answer, allowing users to copy and paste without thinking. 
-The AI-coach condition forced the user to try first, and then compare their attempt with the AI's answer. 
-Much to our surprise, we found that both AI conditions—even the AI-crutch—improved writing skill, tested without access to AI. 
+% Building on these findings about thinking quality, we next turned to measuring learning directly.
+% We hypothesised that AI would be a coach or a crutch depending on how people used it. 
+% So we built two AI conditions to compare to a no-AI control. 
+% The AI-crutch condition simply gave away the answer, allowing users to copy and paste without thinking. 
+% The AI-coach condition forced the user to try first, and then compare their attempt with the AI's answer. 
+% Much to our surprise, we found that both AI conditions—even the AI-crutch—improved writing skill, tested without access to AI. 
 
-We focused on this counterintuitive finding, and collected the data now reported in Chapter 1. 
-We found that despite people's predictions, even when users were allowed to copy and paste AI text, they learned more, even though they spent considerably less time practicing. 
-A follow-up study gave us some clues as to why. 
-Even if in this case AI reduced engagement, the access to higher quality information in the shape of precisely timed, personalized, high quality examples resulted in improved performance.
+% We focused on this counterintuitive finding, and collected the data now reported in Chapter 1. 
+% We found that despite people's predictions, even when users were allowed to copy and paste AI text, they learned more, even though they spent considerably less time practicing. 
+% A follow-up study gave us some clues as to why. 
+% Even if in this case AI reduced engagement, the access to higher quality information in the shape of precisely timed, personalized, high quality examples resulted in improved performance.
 
-A year’s worth of AI bots in the wild showed us that AI can also target motivation directly. 
-About the time when we started researching AI and thinking, Angela got a call from Sal Khan, and we started working on AI assistants for motivational support in learning. 
-After careful development with highschoolers and a year of deployment, we found that chatbot use was associated with students attempting more math problems, working for longer, and perhaps most surprisingly, attempting harder questions (Chapter 2).
+% A year’s worth of AI bots in the wild showed us that AI can also target motivation directly. 
+% About the time when we started researching AI and thinking, Angela got a call from Sal Khan, and we started working on AI assistants for motivational support in learning. 
+% After careful development with highschoolers and a year of deployment, we found that chatbot use was associated with students attempting more math problems, working for longer, and perhaps most surprisingly, attempting harder questions (Chapter 2).
 
-Reflecting on these findings highlighted an apparent contradiction: 
-Sometimes AI dramatically increased engagement (like in the foreign aid study), and sometimes it reduced it (like in the writing study). 
-And yet in both cases, AI used resulted in improved performance. 
-Engagement alone could not explain the pattern of results we observed. 
-Looking back at our findings we realized the other lever is better information. 
-Both matter. AI tools can supply higher‑signal examples, explanations, or feedback (information). 
-They can also raise or lower the user’s willingness to expend cognitive effort (engagement). 
-Whether people get “smarter or stupider” depends on the net effect of those two levers. See Figure 1.
+% Reflecting on these findings highlighted an apparent contradiction: 
+% Sometimes AI dramatically increased engagement (like in the foreign aid study), and sometimes it reduced it (like in the writing study). 
+% And yet in both cases, AI used resulted in improved performance. 
+% Engagement alone could not explain the pattern of results we observed. 
+% Looking back at our findings we realized the other lever is better information. 
+% Both matter. AI tools can supply higher‑signal examples, explanations, or feedback (information). 
+% They can also raise or lower the user’s willingness to expend cognitive effort (engagement). 
+% Whether people get “smarter or stupider” depends on the net effect of those two levers. See Figure 1.
 
 
-\usetikzlibrary{positioning}
+% \usetikzlibrary{positioning}
 
-\begin{figure}[h]
-    \centering
-    \begin{tikzpicture}[
-      node distance=12mm and 25mm,
-      box/.style={
-        draw,
-        minimum width=36mm,
-        minimum height=10mm,
-        align=center,
-        font=\fontfamily{phv}\selectfont % Helvetica for node text only
-      },
-      >={Stealth[length=3mm]},
-      every path/.style={thick}
-    ]
-    % Nodes
-    \node[box] (hai) {Human--AI\\Interaction};
+% \begin{figure}[h]
+%     \centering
+%     \begin{tikzpicture}[
+%       node distance=12mm and 25mm,
+%       box/.style={
+%         draw,
+%         minimum width=36mm,
+%         minimum height=10mm,
+%         align=center,
+%         font=\fontfamily{phv}\selectfont % Helvetica for node text only
+%       },
+%       >={Stealth[length=3mm]},
+%       every path/.style={thick}
+%     ]
+%     % Nodes
+%     \node[box] (hai) {Human--AI\\Interaction};
 
-    % Align the three boxes in a vertical column
-    \node[box, right=of hai, yshift=15mm] (eff) {Task\\Efficiency};
-    \node[box, right=of hai]               (qual) {Quality of\\Engagement};
-    \node[box, right=of hai, yshift=-15mm] (quant) {Quantity of\\Engagement};
+%     % Align the three boxes in a vertical column
+%     \node[box, right=of hai, yshift=15mm] (eff) {Task\\Efficiency};
+%     \node[box, right=of hai]               (qual) {Quality of\\Engagement};
+%     \node[box, right=of hai, yshift=-15mm] (quant) {Quantity of\\Engagement};
 
-    \node[box, right=of qual, xshift=5mm] (skill) {Skill};
+%     \node[box, right=of qual, xshift=5mm] (skill) {Skill};
 
-    % Arrows from Human–AI to three mediators
-    \draw[->] (hai) -- (eff);
-    \draw[->] (hai) -- (qual);
-    \draw[->] (hai) -- (quant);
+%     % Arrows from Human–AI to three mediators
+%     \draw[->] (hai) -- (eff);
+%     \draw[->] (hai) -- (qual);
+%     \draw[->] (hai) -- (quant);
 
-    % Arrows from three mediators to Skill
-    \draw[->] (eff)   -- (skill);
-    \draw[->] (qual)  -- (skill);
-    \draw[->] (quant) -- (skill);
-    \end{tikzpicture}
-    \caption{Using AI tools can improve human skill by improving task efficiency, quantity, and/or quality of engagement.}
-\end{figure}
+%     % Arrows from three mediators to Skill
+%     \draw[->] (eff)   -- (skill);
+%     \draw[->] (qual)  -- (skill);
+%     \draw[->] (quant) -- (skill);
+%     \end{tikzpicture}
+%     \caption{Using AI tools can improve human skill by improving task efficiency, quantity, and/or quality of engagement.}
+% \end{figure}
 
-For me, the question is no longer whether AI will make us stupid or smart, but rather, when will it do so, and how can we carefully design AI (and the contexts around it) to ensure it makes us smarter. 
-Taken together, the studies in this dissertation show that AI can make us smarter—better writers, more motivated learners, and more consistent decision makers—when designers balance the two levers of engagement and information wisely. 
-Where information quality soars, lower engagement may be an acceptable trade‑off; where engagement rises, information need not be as important. 
+% For me, the question is no longer whether AI will make us stupid or smart, but rather, when will it do so, and how can we carefully design AI (and the contexts around it) to ensure it makes us smarter. 
+% Taken together, the studies in this dissertation show that AI can make us smarter—better writers, more motivated learners, and more consistent decision makers—when designers balance the two levers of engagement and information wisely. 
+% Where information quality soars, lower engagement may be an acceptable trade‑off; where engagement rises, information need not be as important. 
 
-This insight inspires future work. 
-Can we design for both better information and higher engagement? 
-How can AI help us achieve flow? 
-How can AI boost performance while also deepening agency and meaning? 
-Which design choices sharpen thinking, and which contexts tip the balance toward superficiality? 
-Finally, can we raise objective engagement while dulling the aversive feeling of effort? 
+% This insight inspires future work. 
+% Can we design for both better information and higher engagement? 
+% How can AI help us achieve flow? 
+% How can AI boost performance while also deepening agency and meaning? 
+% Which design choices sharpen thinking, and which contexts tip the balance toward superficiality? 
+% Finally, can we raise objective engagement while dulling the aversive feeling of effort? 
 
-As these technologies continue to evolve, my initial skepticism has turned into cautious optimism. 
-I hope that in the future I can continue to explore these questions, so that rather than a machine genocide, we get to harness them to be our best selves.
+% As these technologies continue to evolve, my initial skepticism has turned into cautious optimism. 
+% I hope that in the future I can continue to explore these questions, so that rather than a machine genocide, we get to harness them to be our best selves.
 
-} % If applicable, uncomment this line and write your preface between the {}. If you do, you will also need to edit line 101.
+% } % If applicable, uncomment this line and write your preface between the {}. If you do, you will also need to edit line 101.
 %-------------------------------------------
 
 \begin{document}
