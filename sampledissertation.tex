@@ -1137,7 +1137,7 @@ In this investigation, we developed an artificial intelligence (AI) approach to 
 We began with a de-identified sample of 309,594 college applications (see \textbf{Figure 1}). Each included a 150-word essay describing an extracurricular or work activity of the applicant’s choice. Next, in a \textit{Development Sample} of 3,131 essays, research assistants (RA) and admissions officers (AO) identified the presence or absence of seven different personal qualities commonly valued by universities and shown in prior research to predict college success \cite{almlund_personality_2011}. See \textbf{Table \ref{tab:pqs}}. Research assistant and admissions officer ratings were used to fine-tune separate RoBERTa language models \cite{liu_roberta_2019} for each personal quality. We then confirmed each model’s interpretability as well as evidence of convergent, discriminant, and predictive validity by demographic subgroup. Finally, we applied these fine-tuned models to the \textit{Holdout Sample} of 306,463 essays, examining associations between computer-generated personal quality scores, demographic characteristics, and six-year college graduation.
 
 \begin{table*}[ht]
-\small
+\footnotesize
 \caption{Personal qualities and example essay excerpts}
 \def\arraystretch{1}%  1 is the default, change whatever you need
 \begin{tabular}{  p{.275\linewidth}  p{.675\linewidth}}
@@ -1181,7 +1181,7 @@ Persisting in the face of challenge.                                            
 \begin{landscape}
 \begin{table*}[ht]
 \centering
-\small
+\footnotesize
 \caption{Descriptive statistics and correlations between human ratings and computer-generated likelihoods of personal qualities in the Development Sample}
 \begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{1.2}D{.}{.}{1.2}D{.}{.}{1.2}D{.}{.}{1.2}D{.}{.}{1.2}D{.}{.}{1.2}D{.}{.}{1.2}D{.}{.}{1.2}D{.}{.}{1.2}D{.}{.}{1.2}D{.}{.}{1.2}D{.}{.}{1.2}D{.}{.}{1.2}D{.}{.}{1.2}}
 \hline
@@ -1301,7 +1301,7 @@ Correlations between human ratings and computer-generated likelihoods of persona
 % \end{table}
 
 \begin{table}[!htbp]
-\small
+\footnotesize
 \centering
 \caption{Odds ratios from binary logistic regression models predicting six-year college graduation in the \textit{N} = 306,463 Holdout Sample}
 \begin{tabular}{@{\extracolsep{3pt}}lcccc}
@@ -1493,6 +1493,35 @@ This research was approved by the University of Pennsylvannia IRB.
 \subsubsection{Data and Materials Availability} 
 Analysis files are available at https://zenodo.org/record/8250087. The raw data for this study is not available in order to protect the privacy and anonymity of the applicants, per our data use agreement with the Common Application. Please contact Brian Kim at the Common Application (bkim@commonapp.org) for questions pertaining to student application data, and Joshua Leake at the National Student Clearinghouse (leake@studentclearinghouse.org) for questions pertaining to student graduation data.
 
+\chapter{Conclusion}
+
+People worry that a world in which artificial intelligence tools get smarter and smarter is a world in which the users of such tools get stupider and stupider. These fears are widespread. Poll after poll, op-ed after op-ed worries about how in a world where AI can do all our thinking for us, we become cognitively enfeebled, stupid, lazy, and biased. These worries are not unfounded: In reputable studies, students learning with AI tools perform worse than their counterparts learning alone \cite{sungu}, workers who use AI perform better, but see reductions in their intrinsic motivation \cite{}, and when AI tools are in high stakes settings like medical diagnoses and college admissions they can set in stone the biases present in their training data \cite{obermeyer_dissecting_2019, alvero_essay_2021}.
+
+However, the chapters of this dissertation show that this is not inevitable, and with careful design, the opposite is possible. AI can help us learn, become more persistent when learning challenging material, and assist us in making fairer decisions at scale. In Chapter 1, participants randomly assigned to use AI to help them write cover letters improved their writing more than those who practiced on their own, those who googled examples online, and even those who received personalized feedback from professional editors. They improved more despite exerting less effort. In chapter 2, AI motivational coaches, when carefully designed helped students improve persistence and challenge seeking when learning difficult material. Finally in chapter 3, AI systems fine tuned on college admissions officers' judgments were able to reliably measure personal qualities from students essays, without introducing demographic bias, while retaining interpretability and incremental predictive validity for six-year college graduation.
+
+Taken together, these results challenge the knee-jerk that AI tools invariably erode human learning, motivation, and decision-making. With the right design, AI tools can improve rather than hinder these capabilities.
+
+Moreover, the studies suggest a unifying framework that helps us understand the mechanisms by which AI can enhance human capabilities. Namely, AI tools can influence the quality and quantity of engagement, and the utility of the learning task itself (e.g., by providing better information). All else being equal, more and higher quality engagement, and a higher task utility result in improved capabilities. 
+
+However, all else is not always equal. AI tools can affect these levers in opposite directions. For example, in chapter 1, the AI writing tool reduced the amount of time and the intensity of the work during that time (i.e., quantity and quality of engagement). In chapter 2, AI led to increases in learning time, but did not change the usefulness of the task itself. Whether AI functions as a coach or a crutch depends on the profile of engagement (how long and how deeply learners invest) and the yield of the task (how much that engagement builds transferable skill).
+
+These studies prompt us to reconsider the relationship between effort and learning. The common assumption that "no pain, no gain" holds for cognitive tasks may be incomplete. While desirable difficulties are important, our findings suggest that superior information can make learning more efficient, achieving greater gains with less effort. AI's ability to reduce extraneous cognitive load allows users to focus their effort on what matters most.
+
+
+\section{Future Directions}
+
+
+\subsection*{Learning} While my data thus far show that AI can catalyze learning, other studies have found that AI tools are either neutral or harmful.\cite{bastani2024,lehmann2024ai} In future research, I will explore the boundary conditions and moderators surrounding the benefits of AI on learning. Does AI also support the acquisition of declarative knowledge, as opposed to procedural skills? Can it be helpful in other domains, such as mathematics or computer programming? In what situations are AI tools less helpful or detrimental (e.g., learners facing severe time pressure or competing demands on their attention)? What metacognitive strategies would enhance the learning benefits of AI tools?
+
+
+\subsection*{Motivation} I have found that the effects of AI use on engagement can be nuanced. Practicing writing with an AI tool reduced both objective and subjective measures of effort. In contrast, compared to using google to do research, using an AI chatbot increased engagement \textit{without} increasing the subjective experience of effort. These findings complement prior work showing that the phenomenology of effort is dissociable from the actual effort invested in a task. In future research, I would like to explore how AI can increase objective engagement while reducing the typically aversive subjective experience of effort. Can AI tools help people enter the flow state (i.e., maximal attention to the task at hand minus the sensation that this engagement is effortful)? On the other hand, might reducing subjective effort lead to overreliance on AI, crowding out learning from other people? And to the extent that subjective effort enhances the value of our work (i.e., the Ikea effect), will AI undermine a sense of meaning and purpose?
+
+\subsection*{Judgment and Decision Making.} In future research, I will investigate scenarios in which AI tools inadvertently cause shallow thinking, overconfidence, or overreliance–and how they might be optimized to foster even deeper reflection. For instance, what types of prompts, feedback, or conversational strategies encourage more deliberative reasoning? And can AI systems be designed to systematically challenge cognitive biases, promote actively open-minded thinking, or scaffold counterfactual reasoning?
+
+\section{Conclusion}
+
+The evidence suggests that smarter machines do not doom us to become stupider humans. Instead, using AI tools can enhance rather than diminish our capabilities---but only when we understand the psychological mechanisms at play. The stakes are considerable: get this right, and AI becomes a catalyst for human flourishing; get it wrong, and we risk the cognitive atrophy that critics rightly fear.
+The challenge, then, is to harness these remarkable technologies not as a replacement for human intellect, but as a catalyst for it. My hope is that we will be able to thread that needle, and use AI in ways that help us become our best selves.
 
 \end{mainf}
 %-------------------------------------------
