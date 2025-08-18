@@ -8,26 +8,27 @@
 \contentsline {table}{\numberline {4.2}{\ignorespaces Descriptive statistics and correlations between human ratings and computer-generated likelihoods of personal qualities in the Development Sample}}{45}{table.caption.25}%
 \contentsline {table}{\numberline {4.3}{\ignorespaces Odds ratios from binary logistic regression models predicting six-year college graduation in the \textit {N} = 306,463 Holdout Sample}}{49}{table.caption.27}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Prompt instructions given to GPT-4o and Claude for rating cover letters.}}{60}{table.caption.38}%
-\contentsline {table}{\numberline {A.2}{\ignorespaces Results from beta regressions predicting the relative likelihood of an interview from test phase cover letters. The reference category is practice with AI for Study 2, and practice without AI for Study 3.}}{63}{table.caption.41}%
-\contentsline {table}{\numberline {A.3}{\ignorespaces Missingness and attrition proportions and test in Study 2.}}{65}{table.caption.43}%
-\contentsline {table}{\numberline {A.4}{\ignorespaces Randomization checks for pre-treatment variables in Study 2. \textit {p}-values are BH multiple comparisons corrected. Continuous variables tested with ANOVA, binary and factor variables with $\chi ^2$ tests. SMD = Standardized Mean Difference.}}{71}{table.caption.44}%
-\contentsline {table}{\numberline {A.5}{\ignorespaces Practice effects}}{72}{table.caption.46}%
-\contentsline {table}{\numberline {A.6}{\ignorespaces Test effects}}{72}{table.caption.47}%
-\contentsline {table}{\numberline {A.7}{\ignorespaces Practice effort differences}}{73}{table.caption.48}%
-\contentsline {table}{\numberline {A.8}{\ignorespaces Test effort differences}}{73}{table.caption.49}%
-\contentsline {table}{\numberline {A.9}{\ignorespaces Learning rate differences. Means are the rate of improvement per unit sqrt(time (min)), log(keystrokes), subjective rating, raw time in minutes, and raw keystrokes. }}{74}{table.caption.50}%
-\contentsline {table}{\numberline {A.10}{\ignorespaces Differences in motivational variables by condition.}}{74}{table.caption.52}%
-\contentsline {table}{\numberline {A.11}{\ignorespaces Followup effects}}{75}{table.caption.53}%
-\contentsline {table}{\numberline {A.12}{\ignorespaces BH-corrected \textit {p}-values for interaction terms from models predicting each outcome from condition interacted with pre-treatment variables.}}{76}{table.caption.54}%
-\contentsline {table}{\numberline {A.13}{\ignorespaces Missingness and attrition proportions and test in Study 3.}}{77}{table.caption.55}%
-\contentsline {table}{\numberline {A.14}{\ignorespaces Randomization checks for pre-treatment variables. \textit {p}-values are BH corrected. SMD = Standardized Mean Difference.}}{78}{table.caption.56}%
-\contentsline {table}{\numberline {A.15}{\ignorespaces Practice effects}}{79}{table.caption.58}%
-\contentsline {table}{\numberline {A.16}{\ignorespaces Test effects}}{80}{table.caption.59}%
-\contentsline {table}{\numberline {A.17}{\ignorespaces Practice effort differences}}{80}{table.caption.60}%
-\contentsline {table}{\numberline {A.18}{\ignorespaces Test effort differences}}{81}{table.caption.61}%
-\contentsline {table}{\numberline {A.19}{\ignorespaces Learning rate differences}}{81}{table.caption.62}%
-\contentsline {table}{\numberline {A.20}{\ignorespaces Motivation}}{82}{table.caption.63}%
-\contentsline {table}{\numberline {A.21}{\ignorespaces Followup effects}}{82}{table.caption.64}%
-\contentsline {table}{\numberline {A.22}{\ignorespaces Follow-up effects by data collection batch}}{83}{table.caption.65}%
-\contentsline {table}{\numberline {A.23}{\ignorespaces Metrics for interaction terms predicting each outcome by condition and pre-treatment variables.}}{84}{table.caption.66}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Prompt instructions given to GPT-4o and Claude for rating cover letters.}}{63}{table.caption.38}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces Results from beta regressions predicting the relative likelihood of an interview from test phase cover letters. The reference category is practice with AI for Study 2, and practice without AI for Study 3.}}{66}{table.caption.41}%
+\contentsline {table}{\numberline {A.3}{\ignorespaces Missingness and attrition proportions and test in Study 2.}}{68}{table.caption.43}%
+\contentsline {table}{\numberline {A.4}{\ignorespaces Randomization checks for pre-treatment variables in Study 2. \textit {p}-values are BH multiple comparisons corrected. Continuous variables tested with ANOVA, binary and factor variables with $\chi ^2$ tests. SMD = Standardized Mean Difference.}}{74}{table.caption.44}%
+\contentsline {table}{\numberline {A.5}{\ignorespaces Practice effects}}{75}{table.caption.46}%
+\contentsline {table}{\numberline {A.6}{\ignorespaces Test effects}}{75}{table.caption.47}%
+\contentsline {table}{\numberline {A.7}{\ignorespaces Practice effort differences}}{76}{table.caption.48}%
+\contentsline {table}{\numberline {A.8}{\ignorespaces Test effort differences}}{76}{table.caption.49}%
+\contentsline {table}{\numberline {A.9}{\ignorespaces Learning rate differences. Means are the rate of improvement per unit sqrt(time (min)), log(keystrokes), subjective rating, raw time in minutes, and raw keystrokes. }}{77}{table.caption.50}%
+\contentsline {table}{\numberline {A.10}{\ignorespaces Differences in motivational variables by condition.}}{77}{table.caption.52}%
+\contentsline {table}{\numberline {A.11}{\ignorespaces Followup effects}}{78}{table.caption.53}%
+\contentsline {table}{\numberline {A.12}{\ignorespaces BH-corrected \textit {p}-values for interaction terms from models predicting each outcome from condition interacted with pre-treatment variables.}}{79}{table.caption.54}%
+\contentsline {table}{\numberline {A.13}{\ignorespaces Missingness and attrition proportions and test in Study 3.}}{80}{table.caption.55}%
+\contentsline {table}{\numberline {A.14}{\ignorespaces Randomization checks for pre-treatment variables. \textit {p}-values are BH corrected. SMD = Standardized Mean Difference.}}{81}{table.caption.56}%
+\contentsline {table}{\numberline {A.15}{\ignorespaces Practice effects}}{82}{table.caption.58}%
+\contentsline {table}{\numberline {A.16}{\ignorespaces Test effects}}{83}{table.caption.59}%
+\contentsline {table}{\numberline {A.17}{\ignorespaces Practice effort differences}}{83}{table.caption.60}%
+\contentsline {table}{\numberline {A.18}{\ignorespaces Test effort differences}}{84}{table.caption.61}%
+\contentsline {table}{\numberline {A.19}{\ignorespaces Learning rate differences}}{84}{table.caption.62}%
+\contentsline {table}{\numberline {A.20}{\ignorespaces Motivation}}{85}{table.caption.63}%
+\contentsline {table}{\numberline {A.21}{\ignorespaces Followup effects}}{85}{table.caption.64}%
+\contentsline {table}{\numberline {A.22}{\ignorespaces Follow-up effects by data collection batch}}{86}{table.caption.65}%
+\contentsline {table}{\numberline {A.23}{\ignorespaces Metrics for interaction terms predicting each outcome by condition and pre-treatment variables.}}{87}{table.caption.66}%

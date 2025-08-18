@@ -1,4 +1,4 @@
-\begin{thebibliography}{84}
+\begin{thebibliography}{85}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -521,5 +521,10 @@ Stef van Buuren and Karin Groothuis-Oudshoorn.
 \newblock ISSN 1548-7660.
 \newblock \doi{10.18637/jss.v045.i03}.
 \newblock URL \url{http://www.jstatsoft.org/v45/i03/}.
+
+\bibitem[Wu et~al.(2025)Wu, Liu, Ruan, Chen, and Xie]{wu2025human}
+Suqing Wu, Yukun Liu, Mengqi Ruan, Siyu Chen, and Xiao-Yun Xie.
+\newblock Human-generative ai collaboration enhances task performance but undermines human’s intrinsic motivation.
+\newblock \emph{Scientific Reports}, 15\penalty0 (1):\penalty0 15105, 2025.
 
 \end{thebibliography}

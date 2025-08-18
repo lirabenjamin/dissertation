@@ -89,26 +89,29 @@
 \contentsline {subsubsection}{Competing interests}{59}{subsubsection*.35}%
 \contentsline {subsubsection}{Ethics statement}{59}{subsubsection*.36}%
 \contentsline {subsubsection}{Data and Materials Availability}{59}{subsubsection*.37}%
+\contentsline {chapter}{\numberline {5}Conclusion}{60}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Future Directions}{61}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Conclusion}{62}{section.5.2}%
 \renewcommand {\cftchappresnum }{APPENDIX }
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{\numberline {A}\MakeUppercase []{Supplementary Online Materials for Chapter 2}}{60}{chapter.1}%
-\contentsline {section}{\numberline {A.1}Additional methods}{60}{section.1.1}%
-\contentsline {subsection}{\numberline {A.1.1}AI Ratings}{60}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Pairwise Comparisons}{61}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {A.1.3}Feedback}{62}{subsection.1.1.3}%
-\contentsline {section}{\numberline {A.2}Results Study 2}{62}{section.1.2}%
-\contentsline {subsection}{\numberline {A.2.1}Randomization, Balance, and Missingness}{62}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {A.2.2}AI practice improved writing skill}{63}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {A.2.3}AI practice was less effortful}{65}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {A.2.4}Seeing an AI example did not discourage motivation for future learning}{66}{subsection.1.2.4}%
-\contentsline {subsection}{\numberline {A.2.5}The effects of practicing with AI persist}{67}{subsection.1.2.5}%
-\contentsline {subsection}{\numberline {A.2.6}AI practice was equally effective across subgroups}{67}{subsection.1.2.6}%
-\contentsline {section}{\numberline {A.3}Results Study 3}{67}{section.1.3}%
-\contentsline {subsection}{\numberline {A.3.1}Randomization, Balance, and Missingness}{67}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {A.3.2}AI examples improve writing skill}{68}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {A.3.3}Seeing AI examples was less effortful}{69}{subsection.1.3.3}%
-\contentsline {subsection}{\numberline {A.3.4}Seeing an AI example did not discourage motivation for future learning}{69}{subsection.1.3.4}%
-\contentsline {subsection}{\numberline {A.3.5}The effects of seeing an AI example persist}{69}{subsection.1.3.5}%
-\contentsline {subsection}{\numberline {A.3.6}Seeing AI examples was equally effective across subgroups}{70}{subsection.1.3.6}%
-\contentsline {chapter}{BIBLIOGRAPHY}{85}{section*.67}%
+\contentsline {chapter}{\numberline {A}\MakeUppercase []{Supplementary Online Materials for Chapter 2}}{63}{chapter.1}%
+\contentsline {section}{\numberline {A.1}Additional methods}{63}{section.1.1}%
+\contentsline {subsection}{\numberline {A.1.1}AI Ratings}{63}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Pairwise Comparisons}{64}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Feedback}{65}{subsection.1.1.3}%
+\contentsline {section}{\numberline {A.2}Results Study 2}{65}{section.1.2}%
+\contentsline {subsection}{\numberline {A.2.1}Randomization, Balance, and Missingness}{65}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}AI practice improved writing skill}{66}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {A.2.3}AI practice was less effortful}{68}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {A.2.4}Seeing an AI example did not discourage motivation for future learning}{69}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {A.2.5}The effects of practicing with AI persist}{70}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {A.2.6}AI practice was equally effective across subgroups}{70}{subsection.1.2.6}%
+\contentsline {section}{\numberline {A.3}Results Study 3}{70}{section.1.3}%
+\contentsline {subsection}{\numberline {A.3.1}Randomization, Balance, and Missingness}{70}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {A.3.2}AI examples improve writing skill}{71}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {A.3.3}Seeing AI examples was less effortful}{72}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {A.3.4}Seeing an AI example did not discourage motivation for future learning}{72}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {A.3.5}The effects of seeing an AI example persist}{72}{subsection.1.3.5}%
+\contentsline {subsection}{\numberline {A.3.6}Seeing AI examples was equally effective across subgroups}{73}{subsection.1.3.6}%
+\contentsline {chapter}{BIBLIOGRAPHY}{88}{section*.67}%
 \setcounter {tocdepth}{0}
