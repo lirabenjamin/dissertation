@@ -384,14 +384,14 @@ Whether people get “smarter or stupider” depends on the net effect of those 
       every path/.style={thick}
     ]
     % Nodes
-    \node[box] (hai) {Human--AI\\Interaction};
+    \node[box] (hai) {Practicing w/AI\\(vs. Practicing Alone)};
 
     % Align the three boxes in a vertical column
-    \node[box, right=of hai, yshift=15mm] (eff) {Task\\Efficiency};
-    \node[box, right=of hai]               (qual) {Quality of\\Engagement};
-    \node[box, right=of hai, yshift=-15mm] (quant) {Quantity of\\Engagement};
+\node[box, right=of hai,yshift=15mm]   (qual) {Quantity of\\Effort};
+\node[box, right=of hai ]              (quant) {Quality of\\Effort};
+\node[box, right=of hai, yshift=-15mm] (eff) {Quality of\\Practice Task};
 
-    \node[box, right=of qual, xshift=5mm] (skill) {Skill};
+\node[box, right=of quant, xshift=5mm]  (skill) {Skill};
 
     % Arrows from Human–AI to three mediators
     \draw[->] (hai) -- (eff);
@@ -425,7 +425,8 @@ I hope that in the future I can continue to explore these questions, so that rat
 \chapter{Learning, not cheating: AI assistance can enhance rather than hinder skill development}
 
 \section{Abstract}
-Does using AI make you stupid? In particular, do the immediate productivity gains of outsourcing cognitive work to AI come at the expense of long-term human capital development? In this investigation, lay forecasters predicted that practicing writing cover letters with an AI tool would impair learning compared to practicing writing letters without the tool. However, in a pre-registered experiment, participants randomly assigned to practice writing with AI improved more on a writing test one day later compared to writers assigned to practice without AI. Notably, writers given access to the AI tool improved more despite exerting less effort, as measured by time on task, keystrokes, or subjective ratings. Similarly, lay forecasters predicted that AI tools would be less helpful, and less worth paying for, than feedback from experienced human editors. Contrary to this intuition, a second preregistered experiment showed that practicing writing with an AI tool improved writing skill more receiving personalized feedback from professional human editors. Finally, in a third pre-registered experiment, we tested the possibility that AI teaches by example: writers merely shown an AI-generated cover letter (without the opportunity to practice) performed as well as writers who practiced writing with the original AI tool. Collectively, these findings constitute an existence proof that by providing personalized and high-quality examples, AI tools can improve, rather than undermine, learning. \footnote{This work is currently under review at Science Advances} 
+Does using AI make you stupid? Contrary to the predictions of lay forecasters, participants randomly assigned to practice writing with AI improved more on a writing test one day later compared to writers assigned to practice without AI—despite exerting less effort. Likewise, whereas forecasters predicted that AI tools would be less helpful, and less worth paying for, than personalized feedback from experienced human editors, we found the converse: practicing with an AI tool increased skill more than feedback from human editors (or simply googling examples and tips). The results of a third experiment suggest that AI may teach by example: writers merely shown an AI-generated cover letter (without the opportunity to practice) performed as well as writers who practiced writing with the original AI tool. Collectively, the findings of these pre-registered studies constitute an existence proof that by providing personalized, high-quality examples, AI tools can improve, rather than undermine, learning.  
+\footnote{This work is currently under review at Science Advances} 
 
 \section{Introduction}
 
@@ -452,6 +453,8 @@ Third, technological tools reduce the need for the learner to be cognitively eng
   To the extent that tools powered by generative AI instantaneously produce turn-key solutions for complex cognitive tasks, they may be especially detrimental to learning. 
   It is, after all, tempting to copy and paste the output of an AI tool without even laying eyes on it.  
 
+% [Fourth, it may displace humans.]
+
 And yet there is a plausible, albeit less obvious, alternate hypothesis: Using AI tools to help do our work could help us develop our own skills. 
     In particular, the current generation of AI tools may teach by example, offering high-quality and personally tailored demonstrations of abstract principles that are otherwise difficult to grasp and apply.
     Classic research shows that worked examples of math problems (i.e., not just answers but the step-by-step process by which problems are solved) scaffold learning more effectively than explanations alone \cite{sweller1985use, atkinson2000learning}. 
@@ -463,6 +466,21 @@ There is little research on how AI tools influence skill development.
   Some studies have found that interacting with AI tools improves skill on subsequent tests in which AI tools are not available \cite{kumar2023, lehmann2024ai}, while others have shown null or even negative effects \cite{bastani2024, nie2024gpt,lehmann2024ai}. 
   Notably, these studies examine AI tutors, chatbots, or explanations explicitly designed to support learning, rather than simply providing solutions as is typical in real-world use. 
   Further, they focus exclusively on mathematics and computer programming. 
+
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=.9\linewidth]{EmailRewriter.pdf}
+    \caption{The AI writing tool we created for this investigation takes inputted text (left panel) and generates a version that incorporates recommended writing principles (right panel). Users could edit the text in the left-hand box, which was prepopulated with the text they were instructed to rewrite. They could then copy and paste the revised output from the right-hand box.}
+    \label{fig:tool}
+\end{figure*}
+
+\begin{figure*}[]
+    \centering
+    \includegraphics[width=.9\linewidth]{design_fig.pdf}
+    \caption{Experimental design for Study 2. First, all participants completed a baseline questionnaire, a pretest (rewriting a poorly-written cover letter), and a lesson introducing five evidence-based principles of effective writing \cite{rogers2023}. Next, participants were randomly assigned to one of three conditions: practicing with an AI writing tool, practicing without an AI writing tool, or no practice. Then, all participants were tested on writing skill (rewriting a new cover letter without access to AI) and completed an exit questionnaire. Finally, to assess the persistence of skill improvement, participants were invited to complete a similar incentivized test of writing skill one day later.}
+    \label{fig:design}
+\end{figure*}
 
 In this investigation, we ask whether AI tools can increase intermediate-term skill development, above and beyond just improving performance while using the AI tool.
   We focus on writing---the most common use of AI at work, as ranked in a nationally representative survey of American adults in August 2024  \cite{bick2024rapid}. 
@@ -476,40 +494,29 @@ In this investigation, we ask whether AI tools can increase intermediate-term sk
   See Figure \ref{fig:design}.
   We used GPT4o to rate each cover letter for each of the five writing principles introduced in this experiment. We averaged these ratings to produce summary scores of writing skill and, in a random subsample (\textit{n} = 30), validated these scores using trained human raters (\textit{r} = .83, \textit{p} < .001).
   Additionally, we asked a separate sample of participants to read pairs of test-phase cover letters randomly selected from different conditions, and to indicate which letter would be more likely to secure a job interview. 
-  Cover letters more likely to secure an interview obtained higher AI ratings of writing skill (\textit{r}s = .29 and .28, \textit{p}s < .001, for Study 2 and 3, respectively). 
+  Cover letters more likely to secure an interview obtained higher AI ratings of writing skill (\textit{r}s = .29, .35, and .28, \textit{p}s < .001, for Study 2, 4 and 5, respectively). 
 
-\begin{figure*}[t]
-    \centering
-    \includegraphics[width=.9\linewidth]{EmailRewriter.pdf}
-    \caption{The AI writing tool we created for this investigation takes inputted text (left panel) and generates a version that incorporates recommended writing principles (right panel). Users could edit the text in the left-hand box, which was prepopulated with the text they were instructed to rewrite. They could then copy and paste the revised output from the right-hand box.}
-    \label{fig:tool}
-\end{figure*}
-
-\begin{figure*}[ht]
-    \centering
-    \includegraphics[width=.9\linewidth]{design_fig.pdf}
-    \caption{Experimental design for Study 2. First, all participants completed a baseline questionnaire, a pretest (rewriting a poorly-written cover letter), and a lesson introducing five evidence-based principles of effective writing \cite{rogers2023}. Next, participants were randomly assigned to one of three conditions: practicing with an AI writing tool, practicing without an AI writing tool, or no practice. Then, all participants were tested on writing skill (rewriting a new cover letter without access to AI) and completed an exit questionnaire. Finally, to assess the persistence of skill improvement, participants were invited to complete a similar incentivized test of writing skill one day later.}
-    \label{fig:design}
-\end{figure*}
 
 In Study 1, forecasters presented with this design were twice as likely to predict that practicing writing with the assistance of the AI tool would impair learning compared to practicing without the AI tool. 
 In Study 2, however, participants who had practiced with the AI tool learned more (i.e., wrote better cover letters during the test phase) compared to either comparison group---an advantage that persisted in a one-day follow-up test. 
-Finally, in Study 3, we explored the mechanism for these learning gains by introducing an example-only condition. 
+If participants wrongly believe that AI is detrimental to learning, they might underinvest in AI as a learning tool. Study 3 suggests this is the case, as forecasters predicted that AI would be less effective at providing feedback than experienced human editors, and accordingly, were willing to pay less for it. 
+Study 4 explores whether participants learn more from AI than they would by accessing other ecologically valid human sources of feedback: a low-cost Google Search, and higher-cost personalized feedback from experienced human editors. Contrary to forecasters' predictions, participants who had practiced with AI improved their writing more than those who had access to Google Search, and even than those who received personalized feedback from professional editors. This finding is particularly striking given that our editors averaged 25 years of experience and included professors of journalism, news editors, and even one Pulitzer Prize winner.
+Finally, in Study 5, we explored the mechanism for these learning gains by introducing an example-only condition. 
 Participants who had merely seen an AI-generated example (but did not have an opportunity to practice) improved in writing skill as much as participants who had practiced with an AI tool; benefits again persisted in a one-day follow-up test. 
-Test-phase cover letters written by participants who had practiced with AI (Studies 2 and 3) or had seen an AI example (Study 3) were more likely to secure hypothetical job interviews compared to cover letters written by participants who had not practiced (Study 2) or had practiced without AI (Studies 2 and 3).
+Test-phase cover letters written by participants who had practiced with AI (Studies 2 and 3) or had seen an AI example (Study 3) were more likely to secure hypothetical job interviews compared to cover letters written by participants who had not practiced (Study 2), had practiced without AI (Studies 2 and 5); and as likely as those written by participants who received feedback from experienced editors or used google (Study 4).
 
-\section{Study 1} 
-\subsection{Lay forecasters predicted that practicing with AI would hinder learning}
+\section*{Study 1} 
+\subsection*{Lay forecasters predicted that practicing with AI would hinder learning}
 
 We showed \textit{N} = 150 participants screenshots of a random assignment study with three conditions.
   We asked them to rank-order these conditions according to how much they predicted future participants would learn in each. 
   Confirming our pre-registered hypothesis, nearly twice as many forecasters (64.7\%) ranked practicing alone above practicing writing with access to an AI tool as the converse (35.3\%, $\chi^2$ (1) = 12.9, \textit{p} < .001), see Figure \ref{fig:s1}. 
   Participants made this prediction regardless of self-reported experience with AI (\textit{OR} = 0.83, \textit{p} = .239) or any other measured demographic characteristic (\textit{p}s > .05).
   
-\begin{figure}[ht]
+\begin{figure}[]
     \centering
     \includegraphics[width=1\linewidth]{ranking.pdf}
-    \caption{Forecasters predicted that practicing without an AI tool would improve writing skill more than practicing with an AI tool. Error bars represent proportions $\pm$ 1 SE.}
+    \caption{Forecasters in Study 1 predicted that practicing without an AI tool would improve writing skill more than practicing with an AI tool. Error bars represent proportions $\pm$ 1 SE.}
     \label{fig:s1}
 \end{figure}
 
@@ -517,8 +524,25 @@ In open-ended responses, forecasters who were pessimistic about the effect of th
 
 
 
-\section{Study 2} 
+\section*{Study 2} 
 
+% MAIN LINES
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=1\linewidth]{mainfig.pdf}
+    \caption{In both the main test and the follow-up of Study 2, participants who had practiced with the AI tool outperformed those who practiced without it and those who did not practice at all.
+    Error bars represent means $\pm$ 1 SE.
+    Means shown are for the subsample of participants (\textit{n} = 1,294) who completed the one-day follow-up test. See Figure \ref{fig:s2_supplement} for the equivalent figure in the full sample, excluding the one-day follow-up phase (\textit{N} = 2,238).}
+    \label{fig:difs}
+\end{figure}
+
+% MAIN PAIRWISE
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=1\linewidth]{ratings1.pdf}
+    \caption{During the test phase of Study 2, cover letters written by participants who had practiced with AI were more likely to lead to interview offers than those from other conditions. Points depict the average proportion of times each cover letter was preferred in pairwise comparisons with cover letters from the other two conditions. Error bars represent proportions $\pm$ 1 SE. The dashed line at 50\% represents no preference; values above this line indicate that cover letters were more likely to be preferred, while values below indicate they were less likely to be preferred.}
+    \label{fig:ratings1}
+\end{figure}
 
 Study 2 tested whether the predictions of Study 1 forecasters were
 accurate. Specifically, \textit{N} = 2,238 participants completed a
@@ -527,15 +551,15 @@ letter), followed by a lesson introducing five principles of effective
 writing (i.e., Less is more, Make reading easy, Design for easy
 navigation, Use enough formatting but no more, Make responding easy)
 \cite{rogers2023}. 
-Next, participants were randomly assigned to one of three practice conditions: (1) rewriting a new cover letter with an AI writing tool that revised text instantly based on these principles, (2) rewriting the new cover letter without the AI tool, or (3) a no practice control. 
+Next, participants were randomly assigned to one of three practice conditions: (1) rewriting a new cover letter with an AI writing tool that revised text instantly based on these principles, (2) rewriting the new cover letter without the AI tool, or (3) a no-practice control. 
 At the end of the session, all
-participants completed a test of writing skill (rewriting a yet another cover
+participants completed a test of writing skill (rewriting yet another cover
 letter without access to the AI writing tool) and an exit questionnaire.
 One day later, all participants were invited to complete a similar
 incentivized test of writing skill.
 
 
-\subsection{AI practice improved writing skill}
+\subsection*{AI practice improved writing skill}
 
 Consistent with other studies demonstrating the productivity benefits of
 AI tools \cite{dellacqua2023, noy2023}, participants given access to the
@@ -544,37 +568,23 @@ were dramatically higher in quality than participants who were not
 (\emph{d} = 1.01, \emph{p} \textless.001).
 
 The learning advantage of having practiced with AI was evident in the
-test phase: Consistent with our pre-registered hypothesis, participants
+test phase: Consistent with our preregistered hypothesis, participants
 who had practiced with the AI tool produced higher-quality writing than did
 participants who either had practiced without the AI tool (\emph{d} = .38,
 \emph{p} \textless.001) or who had not practiced at all (\emph{d} = .47,
 \emph{p} \textless.001). See Figure \ref{fig:s2_supplement}.
-Likewise, cover letters written by participants who had practiced with AI were more likely to secure a hypothetical job interview than cover letters by participants who had practiced without AI (.54 vs. .50, \textit{p} = .002) or had not practiced at all (.54 vs. .47, \textit{p} < .001). See Figure \ref{fig:ratings1}. Notably, the effect of practicing with AI was not limited to stronger or weaker writers---participants across all skill levels benefited equally from practicing with AI. 
+Likewise, cover letters written by participants who had practiced with AI were more likely to secure a hypothetical job interview than cover letters by participants who had practiced without AI (.54 vs. .50, \textit{p} = .002) or had not practiced at all (.54 vs. .47, \textit{p} < .001). See Figure \ref{fig:ratings1}. %Notably, the effect of practicing with AI was not limited to stronger or weaker writers---participants across all skill levels benefited equally from practicing with AI. 
 
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=1\linewidth]{mainfig.pdf}
-    \caption{In both the main test and the follow-up, participants who had practiced with the AI tool outperformed those who practiced without it and those who did not practice at all.
-    Error bars represent means $\pm$ 1 SE.
-    Means shown are for the subsample of participants (\textit{n} = 1,294) who completed the one-day follow-up test. See Figure \ref{fig:s2_supplement} for the equivalent figure in the full sample, excluding the one-day follow-up phase (\textit{N} = 2,238).}
-    \label{fig:difs}
-\end{figure}
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=1\linewidth]{ratings1.pdf}
-    \caption{During the test phase, cover letters written by participants who had practiced with AI were more likely to lead to interview offers than those from other conditions. Points depict the average proportion of times each cover letter was preferred in pairwise comparisons with cover letters from the other two conditions. Error bars represent proportions $\pm$ 1 SE. The dashed line at 50\% represents no preference; values above this line indicate that cover letters were more likely to be preferred, while values below indicate they were less likely to be preferred.}
-    \label{fig:ratings1}
-\end{figure}
 
-\subsection{AI practice was less effortful}
+\subsection*{AI practice was less effortful}
 
 The learning benefits of using an AI writing tool were evident
-despite reduced effort during the practice phase. Compared to
+despite reduced quantity and quality of effort during the practice phase. Compared to
 participants who practiced alone, participants who practiced with the AI
 tool spent 0.44 fewer minutes during the practice phase (3.73 vs.~4.17;
-\emph{d} = -.12, \emph{p} = .025), logged roughly a quarter as many
-keystrokes (26\% \emph{d} = -.44, \emph{p} \textless.001) and
+\emph{d} = -.12, \emph{p} = .025, quantity of effort), logged roughly a quarter as many total
+keystrokes (26\% \emph{d} = -.44, \emph{p} \textless.001) and 65\% fewer keystrokes per minute (\emph{d} = -.22, \emph{p} \textless.001, intensity or quality of effort),  and
 self-reported expending less effort during practice (\emph{d} = -.31,
 \emph{p} \textless.001).
 
@@ -591,7 +601,7 @@ time as those who had practiced without AI (\emph{d} = .06, \emph{p} =
 self-reported expending less effort (\emph{d} = -.12, \emph{p} = .023)
 during the test phase.
 
-\subsection{AI practice did not create the illusion of mastery}
+\subsection*{AI practice did not create the illusion of mastery}
 Following the test phase, there were no differences by condition on
 self-reported knowledge or motivation to improve. Despite improving more in objectively assessed writing skill, participants who had practiced with
 AI reported having learned no more than those who had either
@@ -609,73 +619,138 @@ participants who had practiced without AI (.64 vs.~.60, \textit{p} = .167).
 See Section \ref{sec:future_learning2} in the Supplementary Information
 for details.
 
-\subsection{The effects of practicing with AI persist}
+\subsection*{The benefits of practicing with AI were just as large a day later}
 To examine whether the treatment effects persisted over time, we re-contacted all
 participants one day later. The majority of participants responded
 (87\%), and attrition rates did not differ by condition (13\% to
-14\% \(\chi^2\) = .68, \textit{p} .710). Confirming our pre-registered
+14\% \(\chi^2\) = .68, \textit{p} = .710). Confirming our pre-registered
 hypothesis, participants who had practiced with the AI tool to practice the
 previous day continued to outperform those who had practiced without the
 tool (\emph{d} = .41, \emph{p} \textless.001) as well as those who had
 not practiced at all (\emph{d} = .46, \emph{p} \textless.001).
 Participants who had practiced without the AI tool performed no better
-than those who did not practice (\emph{d} = .05, \emph{p} = .331). See Figure \ref{fig:difs} and Section \ref{sec:persists2} of Supplementary Information for details.
+than those who did not practice (\emph{d} = .05, \emph{p} = .331). 
+The magnitude of the follow-up effect size was not significantly different from the immediate test phase effect size (condition $\times$ time interactions were non-significant (\textit{p}s > .69).
+See Figure \ref{fig:difs} and Section \ref{sec:persists2} of Supplementary Information for details.
 
+\subsection*{Results were not moderated by individual differences}
 None of the findings above were moderated by individual difference
 variables, including past experience with AI, age, gender, race,
 education, motivation to learn, and baseline writing skill, BH-corrected
 \textit{p}-values \textgreater .05. See Table \ref{tab:interactions2} in
 the Supplementary Information for details.
 
-\section{Study 3}
+\section*{Study 3}
+Given unwarranted pessimism about the pedagogical power of AI, in Study 3 we asked whether people underinvest in AI as a learning resource? 
+% To analyze this question, people how much they would be willing to pay to obtain feedback from AI vs. experienced human editors. 
+Specifically, we asked \textit{N} = 150 people to imagine they were participants in Study 2 and asked them how much they would be willing to pay for feedback from the AI tool vs. feedback from experienced human editors. To rule out whether these differences in willingness to pay were fully explainable by social preferences (e.g., a preference for paying individuals rather than AI corporations), we also asked them to rate the degree of confidence they had that AI feedback would help them improve their writing.
 
-\subsection{Participants are willing to pay more for feedback from humans than for AI feedback}
+\subsection*{Lay writers were willing to pay more for feedback from expert human editors than for AI feedback}
 
-\subsection{Participants think editorial feedback is more effective, beyond social preferences}
+Out of a maximum of a dollar (the total amount of the hypothetical bonus participants could earn), participants on average were willing to pay 28 cents for the AI tool vs. 38 cents for feedback from an experienced human editor (\textit{t}(149) = -4.83, \textit{p} \textless .001, \textit{d} = 0.39).
 
-\section{Study 4}
-\subsection{Practicing with AI was more effective than looking for examples online and getting feedback from professional editors}
+\subsection*{Lay writers predicted that editorial feedback would be more beneficial}
 
-\subsection{Practicing with AI is not less effortful than incorporating editorial feedback}
+Participants had more confidence that experienced human editors (\textit{M} = 6.68 on a 0-10 likert scale) would help them improve their writing, compared to feedback from an AI tool (\textit{M} = 5.64; \textit{t}(148) = -4.77, \textit{p} \textless .001, \textit{d} = 0.39). This suggests that underinvestment in AI as a learning resource was not uniquely explained by social preferences.
 
-\subsection{Practicing with AI does not create more of an illusion of knowledge than editorial feedback}
+\subsection*{Predicted effectiveness mediated underinvestment in AI feedback}
+
+Perceived effectiveness predicted willingness to pay (b = 0.06, SE = 0.01, p < .001) and accounted for most of the preference for human editors (indirect effect = 0.06, \textit{p} < .001). Once these predictions were accounted for, the remaining preference for human feedback was small and only marginally significant (c' = 0.04, SE = 0.02, p = .054). See Figure \ref{fig:mediation1} and Section \ref{sec:mediation} of Supplementary Information for details.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{mediation.pdf}
+    \caption{Predicted effectiveness mediates underinvestment in AI feedback}
+    \label{fig:mediation1}
+\end{figure}
+
+\section*{Study 4}
+
+% HUMAN BENCHMARKS LINES
+\begin{figure}[tb]
+    \centering
+    \includegraphics[width=1\linewidth]{s5.pdf}
+    \caption{Study 4 participants who had practiced with the AI tool outperformed those who practiced with access to Google examples and feedback from professional editors.
+    Error bars represent means $\pm$ 1 SE.}
+    \label{fig:s5}
+\end{figure}
+
+% HUMAN BENCHMARKS PAIRWISE
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=1\linewidth]{ratings3.pdf}
+    \caption{During the test phase of Study 4, cover letters written by participants who had practiced with AI were about equally likely to lead to interview offers when compared to those who had received feedback from professional editors. Cover letters from both of these conditions outperformed those written by participants who were assigned to browse through Google examples. Points depict the average proportion of times each cover letter was preferred in pairwise comparisons with cover letters from the other two conditions. Error bars represent proportions $\pm$ 1 SE. The dashed line at 50\% represents no preference; values above this line indicate that cover letters were more likely to be preferred, while values below indicate they were less likely to be preferred.}
+    \label{fig:ratings3}
+\end{figure}
 
 
-\section{Study 5} 
+In Study 4, we compared practicing with AI to practicing with feedback from human experts, and, in addition, to practicing with access to examples and tips from Google search. Specifically, \textit{N} = 2,997 participants  completed a baseline questionnaire and pretest, followed by the same lesson on effective writing as in Study 2, and then practiced rewriting a new cover letter on their own. Next, participants were randomly assigned to one of three conditions: (1) practice with AI, (2) search online for cover letter examples, or (3) receive feedback from professional human editors. Letters written by participants assigned to the third condition were given to professional editors, who provided written constructive feedback and a rewritten version of the cover letter. The next day, participants were asked to improve the cover letter they had submitted further with the resources afforded by their assigned condition. At the end of the session, all participants completed a test of writing skill (rewriting yet another cover letter without access to the AI writing tool) and an exit questionnaire.
 
-To gain insight into what might be driving the benefit of practicing with AI, in Study 3 (\emph{N} = 2,003), we preregistered a replication and extension in which we replaced the no-practice condition of Study 2 with an example-only condition.
-In this condition, participants were shown an AI-generated writing example that they could not edit. 
-To the extent that the benefit of practicing with AI was driven by exposure to examples, the example-only condition should improve performance in the test phase as much as the practice with AI condition.
+\subsection*{AI practice improved writing skill more than getting feedback from professional editors and looking for examples online}
 
-\subsection{Seeing an AI example was as effective as practicing with
-AI}\label{seeing-an-ai-example-was-as-effective-as-practicing-with-ai}
+During the practice phase, participants working with AI outperformed participants who were able to Google cover letter examples and tips (\textit{d} = 1.03, \textit{p} \textless .001) or who received personalized feedback from professional editors (\textit{d} = 0.76 \textit{p} \textless .001). 
 
-As in Study 2, participants given access to the AI writing tool dramatically outperformed participants who did not get access to it, both while using it during the practice phase (\emph{d} = 1.22, \emph{p} \textless.001), and during the no-AI test phase (\emph{d} = .34, \emph{p}  \textless{} .001). Their test-phase cover letters were also relatively more likely to secure them hypothetical job interviews (.51 vs. .47, \textit{p} = .008).
+During the test phase, when all participants were asked to write a new cover letter without access to any outside resources, participants who had practiced with the AI tool produced higher-quality cover letters than those in the Google condition (\emph{d} = 0.46, \textit{p} \textless .001,
+\emph{p} \textless.001), and event than those who had received personalized feedback from professional editors (\textit{d} = 0.20, \emph{p} \textless .001). See Figure \ref{fig:s5}. 
 
-Participants who had merely seen an AI-generated example also improved more in writing skill than those who had practiced without AI (\emph{d} = .37, \emph{p} = \textless{} .001), and produced letters that were relatively more likely to secure them interviews (.52 vs. .47, \textit{p} = .007). Notably, they improved as much as participants who had practiced with the AI tool (and could edit its output, \emph{d} = .03, \emph{p} = .883), and were offered hypothetical interviews at similar rates as them (.51 vs. .52, \textit{p} = .561). See Figures \ref{fig:s3sup} and \ref{fig:ratings2}. As in Study 2, gains from practicing with AI and seeing AI examples were comparable across all levels of baseline writing skill.
+% Notably, the effect of practicing with AI was not limited to stronger or weaker writers---participants across all skill levels benefited equally from practicing with AI. 
 
+
+However, cover letters written by participants who had practiced with AI were not significantly more likely to secure a hypothetical job interview than cover letters by participants  (.50 vs. .52, \textit{p} = .102), or participants who had who had access to Google Search  (.50 vs. .48, \textit{p} = .141). See Figure \ref{fig:ratings3}.
+
+% spending less time per letter as the task progressed (\textit{b} = -0.387, SE = 0.028, \textit{p} < .001), the quality of their edits and feedback actually improved (\textit{b} = 0.013, SE = 0.005 \textit{p} < 0.001).
+
+A possible concern is that reviewing many letters consecutively caused editors to get tired and give worse feedback over time. This could suggest our experiment compared AI against a disadvantaged ``strawman'' version of human expertise. However, analysis of the editors’ performance revealed the opposite pattern: while editors became more efficient, spending less time per letter as the task progressed (\textit{b} = -0.387, \textit{p} < .001), the quality of their edits and feedback actually improved (\textit{b} = 0.013, \textit{p} < 0.001). Thus, the AI tool’s advantage over professional editors cannot be attributed to a decline in editorial performance. See Section \ref{sec:editors} of Supplementary Information for details.
+
+\subsection*{AI practice wasn't any more effortful than getting feedback from professional editors and was less effortful than looking for examples online}
+
+During the practice phase, participants who used AI spent 1.18 fewer minutes than Google users (\emph{d} = 0.32, \emph{p} < .001) and about the same time as those receiving editor feedback (difference = 0.43 minutes, \emph{d} = 0.09, \emph{ns}). Nevertheless, participants across all three groups reported similar levels of subjective effort (\emph{p}s > .05). Objective measures told a similar story: AI users logged 76\% fewer keystrokes than Google users (\emph{d} = 0.32, \emph{p} < .001), but not fewer than those working with editor feedback (68\% fewer, \emph{d} = 0.08, \emph{ns}). They also typed at a slower pace than both Google users (\emph{d} = 0.34, \emph{p} < .001) and those who received editor feedback (\emph{d} = 0.41, \emph{p} < .001).
+
+Once participants were tested without external support, differences in effort narrowed. Participants who had practiced with AI spent slightly more time writing than Google users (median = 5.72 vs.\ 5.16 minutes, \emph{d} = 0.18, \emph{p} < .001) and about the same as those given editor feedback (median = 5.72 vs.\ 5.52 minutes, \emph{d} = 0.07, \emph{ns}). Self-reported effort did not differ between AI users and participants who received editor feedback (\textit{d} = .02, \emph{p} > .05), though Google users rated the task as easier than AI users (\emph{d} = -0.22, \emph{p} < .001) and participants who received editor feedback (\emph{d} = -0.24, \emph{p} < .001). Participants across the three conditions accrued approximately the same amount of keystrokes (\emph{p}s > .05).
+
+\subsection*{AI practice did not create more of an illusion of mastery than getting feedback from professional editors or looking for examples online}
+
+Participants who had practiced with AI did not report learning more than those who received feedback from expert human editors (\textit{d} = 0.07, \textit{ns}), nor did they consider their writing skills to be better (\textit{d} = -0.02, \textit{ns}). Both of these groups, however, correctly recognized that they had learned more than those assigned to search for online cover letter examples and tips (\textit{d}s = .28 and .20, respectively), and evaluated their writing skills accordingly (\textit{d}s = .11 and .12, respectively). AI users and those who received expert editor feedback did not request feedback on their test submissions at different rates (71\% and 70\%, respectively). Both groups were more likely to request feedback than those who had practiced with access to Google search (64\%, \textit{p} = .003 and .007, respectively). See Section \ref{sec:future_learning5} in the Supplementary Information for details.
+
+\subsection*{Results were not moderated by individual differences}
+As in Study 2, the above findings were consistent across all measured individual differences. See Table \ref{tab:interactions5} in the
+Supplementary Information for details.
+
+\section*{Study 5} 
+
+% MECHANISM LINES
 \begin{figure}[t]
     \centering
     \includegraphics[width=\linewidth]{average_test_rewritten_lines_raw.pdf}
     \caption{
-    In both the main test and the follow-up, participants who simply saw an AI-generated example improved just as much as those who practiced with AI and more than those who practiced without AI.
+    In both the main test and the follow-up of Study 5, participants who simply saw an AI-generated example improved just as much as those who practiced with AI and more than those who practiced without AI.
     Error bars represent means $\pm$ 1 SE.
     Means shown are for the subsample of participants  (\textit{n} = 608) who completed the one-day follow-up test.
     See Figure \ref{fig:s3sup} for the equivalent figure in the full sample, excluding the one-day follow-up phase (\textit{N} = 2,003).}
     \label{fig:s3}
 \end{figure}
 
-\begin{figure}[ht]
+% MECHANISM PAIRWISE
+\begin{figure}[]
     \centering
     \includegraphics[width=1\linewidth]{ratings2.pdf}
-    \caption{During the test phase, cover letters written by participants who had seen an AI-generated example were about equally likely to lead to interview offers when compared to those assigned to practice with AI. Cover letters from both AI conditions outperformed those written by participants who were assigned to practice without AI. Points depict the average proportion of times each cover letter was preferred in pairwise comparisons with cover letters from the other two conditions. Error bars represent proportions $\pm$ 1 SE. The dashed line at 50\% represents no preference; values above this line indicate that cover letters were more likely to be preferred, while values below indicate they were less likely to be preferred.}
+    \caption{During the test phase of Study 5, cover letters written by participants who had seen an AI-generated example were about equally likely to lead to interview offers when compared to those assigned to practice with AI. Cover letters from both AI conditions outperformed those written by participants who were assigned to practice without AI. Points depict the average proportion of times each cover letter was preferred in pairwise comparisons with cover letters from the other two conditions. Error bars represent proportions $\pm$ 1 SE. The dashed line at 50\% represents no preference; values above this line indicate that cover letters were more likely to be preferred, while values below indicate they were less likely to be preferred.}
     \label{fig:ratings2}
 \end{figure}
 
+To gain insight into what might be driving the benefit of practicing with AI, in Study 5 (\emph{N} = 2,003), we preregistered a replication and extension in which we replaced the no-practice condition of Study 2 with an example-only condition.
+In this condition, participants were shown an AI-generated writing example that they could not edit. 
+To the extent that the benefit of practicing with AI was driven by exposure to examples, the example-only condition should improve performance in the test phase as much as the practice with AI condition.
+
+\subsection*{Seeing an AI example was as effective as practicing with
+AI}\label{seeing-an-ai-example-was-as-effective-as-practicing-with-ai}
+
+As in Study 2, participants given access to the AI writing tool dramatically outperformed participants who did not get access to it, both while using it during the practice phase (\emph{d} = 1.22, \emph{p} \textless.001), and during the no-AI test phase (\emph{d} = .34, \emph{p}  \textless{} .001). Their test-phase cover letters were also relatively more likely to secure them hypothetical job interviews (.51 vs. .47, \textit{p} = .008).
+
+Participants who had merely seen an AI-generated example also improved more in writing skill than those who had practiced without AI (\emph{d} = .37, \emph{p} \textless{} .001), and produced letters that were relatively more likely to secure them interviews (.52 vs. .47, \textit{p} = .007). Notably, they improved as much as participants who had practiced with the AI tool (and could edit its output, \emph{d} = .03, \emph{p} = .883), and were offered hypothetical interviews at similar rates as them (.51 vs. .52, \textit{p} = .561). See Figures \ref{fig:s3sup} and \ref{fig:ratings2}. %As in Study 2, gains from practicing with AI and seeing AI examples were comparable across all levels of baseline writing skill.
 
 
-
-\subsection{Seeing an AI example was even less effortful than practicing
+\subsection*{Seeing an AI example was even less effortful than practicing
 with
 AI}\label{seeing-an-ai-example-was-even-less-effortful-than-practicing-with-ai}
 
@@ -684,52 +759,51 @@ practicing with AI (\emph{d} = 0.99, \emph{p} \textless{}
 .001) and 2.96 fewer minutes than participants practicing without AI (\emph{d} =
 1.13 \emph{p} = \textless{} .001), and reported expending less effort than those practicing with an AI tool
 (\emph{d} = 0.19, \emph{p} = .003) and those practicing without AI (\emph{d} = 0.32, \emph{p}
-\textless{} .001).  As in Study 2, participants who practiced with AI logged 2.83 times fewer keystrokes than did participants who practiced without AI. As expected, participants exposed to the AI example logged 0 keystrokes.
+\textless{} .001).  As in Study 2, participants who practiced with AI logged 2.83 times fewer keystrokes and 2.10 fewer keystrokes per minute (\emph{d} = 0.15, \emph{p} = .007) than did participants who practiced without AI. As expected, participants exposed to the AI example logged 0 keystrokes.
 
 During the test phase, participants who had seen the AI example worked for an additional 56 seconds more than participants who had practiced without AI (\emph{d} = 0.22, \emph{p} \textless{} .001). They also logged 30\% more keystrokes than participants who had practiced with AI (\textit{d} = 1.86 \textit{p} <.001) and 60\% more than those who practiced without AI (\textit{d} = 2.39, \textit{p} < .001). Across conditions, all participants self-reported similar levels of subjective effort (\textit{d}s < .08, \textit{p}s > .05).
 
-\subsection{Seeing an AI example did not create the illusion of mastery}
+\subsection*{Seeing an AI example did not create the illusion of mastery}
 
-As in Study 2, despite learning more, participants who had practiced with AI or had merely seen an AI-generated example reported learning similar amounts to those who practiced without AI (\textit{p}s > .05) and rated their writing skill after practice at comparable levels (\textit{p}s > .05). Moreover, all participants requested feedback at similar rates (proportions ranged from 63\% to 67\%). See Section \ref{sec:future_learning3} in the Supplementary Information for details.
+As in Studies 2 and 4, despite learning more, participants who had practiced with AI or had merely seen an AI-generated example reported learning similar amounts to those who practiced without AI (\textit{p}s > .05) and rated their writing skill after practice at comparable levels (\textit{p}s > .05). Moreover, all participants requested feedback at similar rates (proportions ranged from 63\% to 67\%). See Section \ref{sec:future_learning3} in the Supplementary Information for details.
 
 
-\subsection{The effects of seeing an AI example
-persist}\label{the-effects-of-seeing-an-ai-example-persist}
+\subsection*{The benefits of seeing an AI example were just as large a day later}\label{the-effects-of-seeing-an-ai-example-persist}
 
 When we recontacted a subsample of (\textit{n} = 800) participants one day later, 
   the majority responded (\textit{n} = 633, 80\%); the attrition rates ranged from 17\% to 24\% and did not differ by condition ($\chi^2$ (2) = 4.56, \textit{p} = .102).
-  The effect remained robust after 24 hours. Participants who had practiced with the AI-tool (\emph{d} = .29, \emph{p} = .006) and participants who had simply seen an AI example (\emph{d} = .32, \emph{p} = .003), both continued to outperform those who had practiced without the tool. Participants who had merely seen an AI example performed as well as those who had practiced with AI (\emph{d} = .02, \emph{p} = .830). See Figure \ref{fig:s3} and Section \ref{sec:persist3} of Supplementary Information for details.
+  The effect remained robust after 24 hours. Participants who had practiced with the AI-tool (\emph{d} = .29, \emph{p} = .006) and participants who had simply seen an AI example (\emph{d} = .32, \emph{p} = .003), both continued to outperform those who had practiced without the tool. Participants who had merely seen an AI example performed as well as those who had practiced with AI (\emph{d} = .02, \emph{p} = .830). As in Study 2, the magnitude of the follow-up effect size was not significantly different from the immediate test phase effect size (condition $\times$ time interactions were non-significant (\textit{p}s > .96). See Figure \ref{fig:s3} and Section \ref{sec:persist3} of Supplementary Information for details.
 
-As in Study 2, the above findings were not moderated by individual differences. See Table \ref{tab:interactions3} in the
+\subsection*{Results were not moderated by individual differences}
+As in the previous studies, the above findings were consistent across all measured individual differences. See Table \ref{tab:interactions3} in the
 Supplementary Information for details.
 
+\section*{Discussion} 
 
+Contrary to lay forecasters' expectations (Studies 1 and 3), participants who practiced writing cover letters with an AI tool learned more than those who practiced on their own (Studies 2 and 5), more than those who had access to Google cover letter examples, and even more than those who received personalized feedback from professional human editors (Study 4). Specifically, participants who had practiced with AI, later wrote cover letters (without AI assistance) that were rated higher in writing quality and were more likely to secure a hypothetical interview---both immediately after practice and one day later.
+Learning gains were not the result of greater effort; in fact, participants who had practiced with AI expended less effort during practice than those who had practiced alone. Instead, these gains can be explained by exposure to a high-quality, just-in-time personalized example: participants who merely viewed an AI-generated example cover letter (without editing it) improved their writing skill as much as those given the option to practice editing the cover letter (Study 5).
 
-
-\section{Discussion} 
-% Contrary to the expectations of lay forecasters (Study 1), participants who relied on an AI tool to write cover letters improved in writing skill compared to participants who practiced alone (Study 2).
-
-Add a discussion paragraph on effort. People think that more effort causes learning. But no, we found that AI users never worked harder and always learned more. AI can remove the unnecesary effort, and thus help you be more efficient with the effort you put in. 
-
-Contrary to the expectations of lay forecasters (Study 1), participants who practiced writing cover letters with an AI tool learned more than those who practiced on their own (Studies 2 and 3). Specifically, participants who had practiced with AI wrote (without AI assistance) cover letters that were rated higher in writing quality and were more likely to secure a hypothetical interview---both immediately after practice and one day later.
-Learning gains were not the result of greater effort; in fact, participants who'd practiced with AI expended less effort during practice than those who'd practiced alone. Instead, these gains can be explained by exposure to a high-quality, just-in-time personalized example: participants who merely viewed an AI-generated example cover letter (without editing it) improved their writing skill as much as those given the option to practice editing the cover letter (Study 3).
-
-While not obvious to forecasters, teachers \cite{lin2024a}, and the general population \cite{hawkins2024between}, the benefits of seeing AI-generated examples are consistent with prior research on how people learn. 
+While not immediately apparent to forecasters, teachers \cite{lin2024a}, and the general population \cite{hawkins2024between}, the benefits of viewing AI-generated examples are consistent with prior research on how people learn. 
  In addition to the literature on worked examples mentioned earlier, research has shown that humans are especially adept at observing, imitating, and learning from others \cite{bandura1971, meltzoff2005imitation, lyons2007hidden}. 
-  Our findings also align with the expert performance literature: the most successful learners engage in deliberate practice, which (in addition to concentration, feedback, and repetition) depends upon detailed mental representations of excellent performance \cite{anders2008deliberate}.   
+  Our findings also align with the expert performance literature: the most successful learners engage in deliberate practice, which (in addition to concentration, feedback, and repetition) depends upon detailed mental representations of excellent performance \cite{anders2008deliberate}.
 
-\subsection{Future Directions}
+Study 1 forecasters who believed AI would harm learning, cited reduced effort as the mechanism, and prior research supports this concern \cite{melumad2025experimental, kosmyna2025your}---all things being equal, the more effort a learner invests in a given practice task, the more they learn. So why, in Studies 2 and 5, did we observe the opposite? That is, why did practicing with AI improve writing skill more than practicing alone while reducing both the quantity and quality of effort? Likewise, why in Study 4, did writers who googled how to compose a cover letter work longer and harder than writers who practiced with AI, yet learn less? We posit a third mechanism that offsets decrements in human effort: the quality of the practice task itself. See Figure \ref{fig:arrows}. Perhaps the excellent personalized examples provided by AI are analogous to demonstrations of an Olympic coach. For every moment of focused effort invested, the learning dividends are greater. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{f10.pdf}
+\caption{\textbf{Conceptual mechanism.} Access to AI reduces practice effort but raises the \emph{quality of the practice task} by providing high-quality, personalized examples. The quality boost offsets lower effort, yielding greater post-practice writing skill. }    \label{fig:arrows}
+\end{figure}
+
+\subsection*{Future Directions}
 Three promising directions for future research are worth highlighting.
-First, it remains to be seen whether learning from AI examples occurs in domains other than writing, currently the modal use case for AI tools in the workplace \cite{bick2024rapid}. Writing may be particularly suited to learning by example because at a glance, a single AI-generated example visually communicates the elements of effective professional writing (e.g., short sentences and boldface formatting). 
+First, it is not yet clear whether learning from AI examples extends beyond writing--the most common workplace use case for AI tools \cite{bick2024rapid}. Writing may be particularly suited to learning by example because at a glance, a single AI-generated example visually communicates the elements of effective professional writing (e.g., short sentences and boldface formatting). 
     In other domains, merely observing a solution may be less informative. For instance, the final answer to a math or computer programming problem does not instantly reveal the procedure that produced it. Studies of AI tutors in these domains have, perhaps not surprisingly, found null or negative effects \cite{bastani2024, nie2024gpt}.    
 
-   
-
-    
 Second, additional research is needed to explore moderators of learning from AI tools. 
     Certain strategies for interacting with AI may bolster their effectiveness.
     For example, experimental research suggests that learners benefit more from AI explanations for math problems if they first try to solve them on their own \cite{kumar2023}. 
-    Similarly, correlational evidence that asking AI for explanations as opposed to answers is associated with more learning in mathematics \cite{bastani2024} and computer programming \cite{lehmann2024ai}.
+    Similarly, correlational evidence suggests that asking AI for explanations as opposed to answers is associated with more learning in mathematics \cite{bastani2024} and computer programming \cite{lehmann2024ai}.
     On the other hand, other factors could minimize learning benefits.
     In our experimental paradigm, participants practiced for as long as they wanted, with the foreknowledge that their skills would subsequently be tested (and rewarded monetarily) without access to AI. 
     During practice, therefore, participants were incentivized to prioritize gains in acquired skill over performance in the moment. 
@@ -741,7 +815,7 @@ Third, in our experimental paradigm, participants who interacted with the AI too
   Future research, ideally in field settings, is needed to establish the long-term benefits and costs of relying on AI tools.
 
 
-\subsection{Conclusion}
+\subsection*{Conclusion}
 Our findings should temper widespread concern that AI tools invariably boost momentary productivity at the expense of long-term skill development.  
   Although it reduced the effort users invested in practicing, the AI writing tool nevertheless accelerated skill development.
   It accomplished this by providing high-quality, just-in-time, personalized examples of excellent writing.
@@ -753,24 +827,35 @@ Our findings should temper widespread concern that AI tools invariably boost mom
   Few learners have access to the best human teachers, coaches, and mentors, but generative AI now makes it possible to learn from personalized, just-in-time demonstrations tailored to any domain. 
   In doing so, AI has the potential not only to boost productivity but also to democratize opportunities to build human capital at scale.
 
-\section{Methods}
-\subsection{Ethical Considerations}
+\section*{Methods}
+\subsection*{Ethical Considerations}
 The study was assessed by the University of Pennsylvania's IRB, and was approved before implementation (Protocol 853653). All participants completed informed consent.
 
-\subsection{Pre-registration}
-All our studies were pre-registered. See pre-registrations for Study 1 at https://aspredicted.org/x9mm-7qwp.pdf. 
+\subsection*{Pre-registration}
+All studies were preregistered. Accordingly, the analyses presented in the main text were also pre-registered, with exceptions noted below. 
 
-Study 2 was run twice because of a technical issue that caused imbalanced missing data issue the first time it was run. 
-  The findings in this sample were consistent with the ones reported here. 
-  Pre-registration is available at https://aspredicted.org/4sw4-mpny.pdf. 
-  The version of Study 2 presented above was pre-registered https://aspredicted.org/xyyn-gmzc.pdf. 
+The preregistration for Study 1 is at https://aspredicted.org/x9mm-7qwp.pdf. 
 
-Pre-registration for Study 3 is available at https://aspredicted.org/3mty-fcfy.pdf. 
-  The one-day follow-up for Study 3 was collected in three batches. 
-  We pre-registered batch 2 https://aspredicted.org/5jcx-bhg9.pdf, but report pooled results in the main text. 
-  Details on the separate batches are available in Supplementary Information Section \ref{sec:persist3}.
+The preregistration for Study 2 is at https://aspredicted.org/xyyn-gmzc.pdf.
+% Study 2 was conducted twice because a technical issue in the initial run led to imbalanced missing data. 
+% The findings in this first sample were consistent with the ones reported here. 
+The preregistration for the pairwise comparisons analysis is available at  https://aspredicted.org/4sw4-mpny.pdf. 
+After preregistration, we considered a keystrokes-per-minute metric of effort intensity (rather than duration). Thus, the keystrokes-per-minute analysis was not preregistered.
 
-\subsection{Participants}
+The preregistration for Study 3 is at https://aspredicted.org/xyyn-gmzc.pdf. Analyses on confidence on AI vs. human feedback, and the mediation analysis were not preregistered.
+
+The preregistration for Study 4 is at https://aspredicted.org/xyyn-gmzc.pdf.
+The preregistration for the pairwise comparisons analysis is available at https://aspredicted.org/4sw4-mpny.pdf. 
+ The keystrokes-per-minute metric of effort was not pre-registered.
+
+The preregistration for Study 5 is at https://aspredicted.org/3mty-fcfy.pdf. 
+The one-day follow-up for Study 5 was collected in three batches: a pilot, followed by a second and third batch. 
+We preregistered batch 2 https://aspredicted.org/5jcx-bhg9.pdf, but report pooled results in the main text. 
+Details on the separate batches are available in the Supplementary Information Section \ref{sec:persist3}. 
+The preregistration for the pairwise comparisons analysis is available at https://aspredicted.org/4sw4-mpny.pdf. 
+The keystrokes-per-minute metric of effort was not pre-registered.
+
+\subsection*{Participants}
 We sampled participants from Prolific from all our studies. We excluded all Prolific users who participated in one of the earlier studies from participation in subsequent studies. 
 
 Participants in Study 1 (\textit{N} = 150) were predominantly female (n = 93, 62\%), and ranged in age from 21 to 81 (M = 38.4, SD = 12.2). They were predominantly white (75\%). A small proportion were students (13\%), and most were employed (62\%)
@@ -779,7 +864,7 @@ In Study 2, the sample was more evenly split between men (46\%) and women (52\%)
 
 Study 3 had similar proportions of men (46\%) and women (53\%), and participants ranged in age from 18 to 95 (M = 37.9, SD = 12.6). Over half of the sample (64\%) was white, with the rest being comprised of Black (24\%), Latino (8\%), and Asian (6\%) participants. Most participants (74\%) had college degrees. Most participants (91\%) were at least somewhat motivated to improve their writing, and had varying levels of experience with AI writing assistants (40\% had tried them, but hardly ever used them, 42\% used them at least a few times per week, and 18\% had never used AI assistants before).
 
-\subsection{Procedure}
+\subsection*{Procedure}
 Participants first saw an introductory screen about what they were about to do. 
   They then completed a brief questionnaire where they reported their demographics, their experience with AI writing tools, their motivation to improve their writing, and their perceived writing skill. 
   They then completed a 2-minute pre-test in which they saw a poorly worded cover letter and were asked to improve it. 
@@ -796,7 +881,7 @@ Participants first saw an introductory screen about what they were about to do.
 A small percentage of participants (2.88\%) admitted to cheating. 
   As per our pre-registration, these participants are included in our analyses, but see Tables \ref{tab:s2_test} and \ref{tab:s3_test} in Supplementary Information to see results excluding them, which are consistent with our main interpretation.
 
-\subsection{Measurement}
+\subsection*{Measurement}
 As per our pre-registration, we used OpenAI's GPT-4o to rate text samples for writing quality. 
     To do this, we independently rated each cover letter and each writing principle. 
     Research has demonstrated that large language models can provide ratings of writing quality that align closely with human judgments, offering reliability and consistency across various evaluation contexts \cite{rathje2024, hackl2023}.
@@ -808,7 +893,7 @@ To validate these ratings, the first author and a trained research assistant too
 
 To address concerns that particular LLMs might be biased in favor of their own output, we also used Claude to rate the cover letters. We find that GPT ratings correlate strongly with Claude ratings (\textit{r} = .71, \textit{p} < .001), and that the effects are not attenuated by using different models (See Tables \ref{tab:s2_test} and \ref{tab:s3_test}), suggesting that our effects are not explainable by same-model bias.
 
-\subsection{Statistical analysis}
+\subsection*{Statistical analysis}
 As per our pre-registrations, we fit ANCOVA models predicting outcomes from condition indicators, controlling for pretest score and baseline characteristics (age, gender, race/ethnicity, primary language, education level, motivation to improve writing skills, self-rated writing skill, experience with AI writing assistants, and baseline writing effectiveness). We used logistic regression to predict whether participants chose to see optional feedback for their test from condition, controlling for pretest score and baseline characteristics. 
 Our analyses of the hypothetical hiring situation use beta regression, because the relative likelihood of a cover letter being preferred is bounded between 0 and 1.
 When correcting for multiple comparisons in exploratory moderation analyses, we use the Benjamini-Hochberg correction \cite{benjamini1995controlling}. 
@@ -819,7 +904,7 @@ When correcting for multiple comparisons in exploratory moderation analyses, we 
 Can generative AI provide motivational support at scale? 
 While psychological interventions have proven to be effective in controlled settings, their scalability in natural contexts remains understudied. 
 This year-long field investigation shows that AI-delivered interventions benefit learners in an ecologically valid setting.
-Relative to the week before completing the intervention, students increased their time on task by 53\% after Situation Modification and 75\% after Emotional Reframing. 
+Relative to the week before completing the intervention, students increased their time on task by 10\% after Situation Modification and 11\% after Emotional Reframing. 
 Students also worked on more challenging items following exposure to the interventions.
 Effects on accuracy were less robust: average accuracy did not improve, but under Emotional Reframing higher-skill students showed modest gains.
 % Although our design was observational rather than randomized, analyses suggest minimal selection biases. Users exhibited similar patterns of activity before engaging with the interventions, with the exception that they attempted more challenging items and spent more total time on task during this period for the emotional reframing and situation modification prompts, respectively. Our analysis additionally controls for all unobserved user characteristics, general time trends, and time-varying user skill. 
@@ -827,62 +912,42 @@ Exploratory text analyses reveal that AI-facilitated interactions are associated
 These findings suggest that scalable emotion regulation interventions can significantly enhance engagement in digital learning environments, highlighting the potential for AI-supported emotional scaffolding to address barriers to educational persistence and achievement.
 
 \section{Introduction}
-Motivation is a central driver of behavior in various domains, including consumer decision-making, workplace performance, health, and education. 
-People often know what they should do---whether it’s sticking to a fitness plan, managing personal finances, or completing an online course---yet struggle to persist when faced with frustration, effort, or competing demands. 
-A core challenge in behavior change is not just delivering information but sustaining motivation over time.
 
-% There is a literature in affective computing that has traditionally focused on the emotional and motivational challenges of learning, but hasn't been able to do this at scale and with interactivity. 
-% They have been primarily on controlled lab settings, e.g, in labs to record facial expressions and detect affect from that.
+Motivation drives behavior across domains including consumer decisions, workplace performance, health, and education. People often know what they should do—stick to fitness plans, manage finances, complete online courses—yet struggle to persist when faced with frustration, effort, or competing demands. The core challenge in behavior change is not delivering information but sustaining motivation over time.
 
-Traditionally, human mentors, managers, or coaches provide this motivational support, recognizing when individuals are struggling and intervening in real-time (Lepper et al., 1993). 
-However, as interactions shift to digital environments, this personalized, adaptive motivational support is often missing. 
-The consequences are well-documented: employees disengage from workplace training, consumers abandon long-term financial plans, and learners drop out of online courses (Reich \& Ruipérez-Valiente, 2019; Milkman et al., 2021). 
-Without timely intervention, engagement and persistence decline, limiting the effectiveness of digital interventions.
+Traditionally, human mentors, managers, and coaches provide motivational support by recognizing when individuals struggle and intervening in real-time \citep{lepper1993motivational}. However, as interactions shift to digital environments, this personalized, adaptive support is often missing. The consequences are well-documented: employees disengage from workplace training, consumers abandon financial plans, and learners drop out of online courses \citep{reich2019failure, milkman2021megastudy}. Without timely intervention, engagement and persistence decline, limiting the effectiveness of digital interventions.
 
-\subsection{The Process Model of Emotion Regulation}
-Psychological research offers a promising framework for addressing these motivational failures. 
-The process model of emotion regulation (Gross, 1998) describes how individuals respond to challenges that trigger frustration, anxiety, or disengagement from a task. 
-The model identifies two key strategies that proactively shape emotional responses:
+\subsection*{The Process Model of Behavior}
 
-\subsubsection{Situation modification} 
-Structuring the environment to reduce the need for willpower. 
-In a workplace setting, this might involve removing distractions to enhance productivity. 
-In consumer finance, it could mean automating savings to prevent impulsive spending.
+Psychological research offers a promising framework for addressing these motivational failures. The process model of emotion regulation \citep{gross1998antecedent} describes how individuals respond to challenges that trigger frustration, anxiety, or disengagement from tasks. The model identifies two key strategies that proactively shape emotional responses. 
 
-\subsubsection{Emotional reframing} Interpreting negative emotions (e.g., frustration) as signals of progress rather than failure. 
-For instance, framing difficulty as a necessary step in skill development can increase persistence in learning, just as reframing discomfort in exercise can encourage continued effort.
+First, situation modification involves structuring the environment to reduce the need for willpower. In workplace settings, this might involve removing distractions to enhance productivity. In consumer finance, it could mean automating savings to prevent impulsive spending. Second, emotional reframing involves interpreting negative emotions such as frustration as signals of progress rather than failure. For instance, framing difficulty as a necessary step in skill development can increase persistence in learning, just as reframing discomfort in exercise can encourage continued effort.
 
-Behavioral interventions based on these strategies have successfully improved consumer persistence, workplace performance, and learning outcomes (Yeager et al., 2016; Mrazek et al., 2018). 
-However, scaling these interventions remains a challenge—particularly in digital settings where human coaches are unavailable.
+Behavioral interventions based on these strategies have successfully improved consumer persistence, workplace performance, and learning outcomes \citep{yeager2016mindset, mrazek2018mindfulness}. However, scaling these interventions remains a challenge, particularly in digital settings where human coaches are unavailable.
 
-\subsection{AI as a Scalable Motivational Coach}
-Advances in AI-powered conversational agents offer a potential solution, providing real-time, scalable motivational support at a fraction of the cost of human mentors. 
-There are three reasons why generative AI may effectively support motivation and learning.
+\subsection*{AI as a Scalable Motivational Coach}
 
-First, people generally perceive text written by AI assistants as empathetic, sometimes more so than text written by humans. 
-Perceived empathy: Research suggests that AI can sometimes be viewed as more supportive than humans, particularly in digital interactions where social judgment is minimized (Hoegen et al., 2019).
+The proliferation of artificial intelligence-powered conversational agents presents a promising avenue for addressing the scalability challenges inherent in traditional motivational coaching. These systems offer the potential to deliver real-time, personalized motivational support to large populations at substantially reduced costs compared to human mentors. The theoretical foundation for AI-mediated motivational support rests on several key advantages that distinguish these systems from conventional interventions.
 
-Personalization and engagement: Unlike static behavioral interventions, modern generative AI can adapt advice in real-time, tailoring motivational support to individual users (Bickmore et al., 2005).
+Contemporary research suggests that individuals often perceive AI-generated communications as demonstrating comparable or superior empathy relative to human-authored content, particularly in digital environments where concerns about social evaluation are minimized \citep{ovsyannikova2025third}. This phenomenon may stem from users' reduced anxiety about being judged by an artificial agent, creating conditions more conducive to authentic self-disclosure and receptivity to motivational messages. The absence of perceived social judgment in AI interactions may paradoxically enhance the perceived authenticity of the motivational support provided.
 
-Scalability: AI can provide instant, on-demand motivation across millions of users, making it far more cost-effective than human coaches.
+Unlike static behavioral interventions that rely on predetermined content delivery schedules, contemporary generative AI systems possess the capability to dynamically adapt motivational strategies based on real-time user interactions and contextual factors \citep{bickmore2005relational}. This adaptive capacity enables the customization of motivational messaging to align with individual learning styles, emotional states, and progress trajectories, potentially enhancing intervention effectiveness through increased relevance and timeliness. The ability to process and respond to nuanced user inputs represents a significant advancement over traditional one-size-fits-all approaches to motivational support.
 
-However, AI-driven motivation may also fail for two reasons:
+Furthermore, AI-driven motivational systems can provide instantaneous, on-demand support to virtually unlimited numbers of users simultaneously, representing a fundamental shift from the resource-intensive, one-to-one model of human coaching \citep{fitzpatrick2017delivering}. This scalability characteristic positions AI as a viable solution for addressing motivational support needs across diverse populations and educational contexts where human resources are limited or prohibitively expensive.
 
-Human connection may be essential: Theories of social learning suggest that motivation is facilitated by authentic human connection. 
-Studies on early childhood language acquisition, for example, show that children cannot learn from passive digital exposure alone (Kuhl, 2007). 
-If motivation operates similarly, AI-based interventions may be insufficient.
+Despite these theoretical advantages, several fundamental limitations may constrain the effectiveness of AI-based motivational interventions, raising important questions about the sufficiency of artificial agents in facilitating sustained behavioral change. Social learning theory posits that meaningful motivation emerges through authentic interpersonal relationships characterized by mutual understanding, trust, and emotional resonance \citep{bandura1977social}. Research in developmental psychology provides compelling evidence for this position: studies of early childhood language acquisition demonstrate that children cannot acquire language skills through passive exposure to digital media alone, requiring instead the social scaffolding provided by human interaction \citep{kuhl2007foreign}. If motivational processes operate through similar mechanisms—as suggested by theories of social cognitive development—then AI-based interventions may prove fundamentally insufficient for sustaining long-term behavioral change.
 
-AI can make mistakes: Prior research has shown that AI-generated advice—particularly in sensitive areas like mental health—can be misleading or counterproductive (Stefanos et al., 2023). 
-Poorly timed or irrelevant motivational interventions could frustrate users rather than support them.
+Additionally, emerging research has identified significant concerns regarding the reliability and appropriateness of AI-generated advice, particularly in domains requiring sensitivity to individual psychological states and contexts \citep{de2024chatbots}. Poorly calibrated or contextually inappropriate motivational interventions may not merely fail to support users but could actively undermine motivation through frustration, misalignment with user needs, or provision of counterproductive guidance. The potential for such adverse outcomes underscores the need for careful evaluation of AI-mediated motivational systems before widespread implementation.
 
-\begin{figure*}[ht]
+
+\begin{figure*}
     \centering
     \includegraphics[width=0.95\linewidth]{interface.png}
     \caption{The interface that the users saw when they decided to engage with the bot.}
     \label{fig:interface}
 \end{figure*}
 
-\begin{figure}[ht]
+\begin{figure}
     \centering
     \includegraphics[width=0.95\linewidth]{sample.pdf}
     \caption{Data collection times and sample sizes.}
@@ -890,13 +955,15 @@ Poorly timed or irrelevant motivational interventions could frustrate users rath
 \end{figure}
 
 
-\subsection{Current Investigation}
+\subsection*{Current Investigation}
 This study presents the first large-scale, year-long observational analysis of AI-powered motivational coaching in a digital performance setting. 
 Using behavioral data from Khan Academy, we evaluate two AI-driven motivational strategies:
 
-\subsubsection{Situation modification} Encouraging users to structure their environment and habits in ways that reduce reliance on willpower.
-\subsubsection{Emotional reframing} Helping users reinterpret frustration as an expected and productive part of progress.
- 
+First, the situation modification intervention encouraged users to structure their environment and habits in ways that reduce reliance on willpower. The interaction began by asking the participant to rate their distraction on a scale of 0 - 10. Then, it explained to students that modifying their environments can reduce distractions.
+It proceeded by helping them identify potential distractors in their immediate environment and assisting them in modifying their environment accordingly.
+
+Second, the emotional reframing intervention helped users reinterpret frustration as an expected and productive part of progress. It started by asking students to rate their frustration on a scale of 0 - 10. Then, it validated these negative emotions and guided students in reinterpreting the emotion in a more positive way.
+
 Since AI usage was self-selected, this study does not constitute a traditional experiment. 
 Instead, we employ a fixed-effects methodology to account for timing and user heterogeneity, controlling for time-varying confounds through Bayesian item response theory (IRT) estimates of skill and motivation. 
 This approach allows us to isolate the impact of AI-driven motivational interventions from broader shifts in user performance over time.
@@ -910,9 +977,9 @@ Scalability of motivation science: How can emotion regulation strategies be embe
 Beyond education, these findings have broad implications for AI-driven behavioral interventions in domains such as employee training, consumer engagement, and digital health. 
 As AI systems increasingly mediate human decision-making, understanding when and how AI can sustain motivation is a critical question for marketing, management, and behavioral science.
 
-\section{Results} 
+\section*{Results} 
 
-\subsection{When do users decide to engage with the prompts}
+\subsection*{When do users decide to engage with the prompts}
 Because students could choose when to engage with the interventions, our first step was to examine the timing of that choice.
 If students tended to use a prompt when they were already disengaged or performing poorly, any apparent post-intervention improvement could simply reflect regression to the mean.
 Our data suggest this was not the case. 
@@ -921,17 +988,17 @@ We compared user activity in the week before prompt use to a one-month baseline 
 In fact, students were more likely to use the situation modification prompt during periods of above-average activity, and to use the emotional reframing prompt when they had recently been attempting more difficult items.
 
 
-\begin{figure}[ht]
+\begin{figure}
     \centering
     \includegraphics[width=\linewidth]{when_engage.pdf}
     \caption{Users chose to engage with the prompts at times that were, for the most part, comparable to baseline. However, they were more likely to click on (1) the Emotional Reframing bot when they had been working on harder problems, and (2) the Situation Modification prompt when they had accumulated more time on task than usual. Baseline = One month before the pre-intervention period.}
     \label{fig:when_engage}
 \end{figure}
 
-\subsection{Chatbot use is related to increases in motivation but not performance}
+\subsection*{Chatbot use is related to increases in motivation but not performance}
 
 As preregistered, students spent significantly more time working during the following week. 
-Specifically, they worked **53\%** longer after Situation Modification (\(\beta=0.426,\ p<0.001\)) and **75\%** longer after Emotional Reframing (\(\beta=0.558,\ p<0.001\)).
+Specifically, they worked 10\% longer after Situation Modification (\(\beta=0.426,\ p<0.001\)) and 11\% longer after Emotional Reframing (\(\beta=0.558,\ p<0.001\)).
 
 This increased engagement did not translate into higher performance, contrary to our pre-registered hypothesis. 
 In the week following either prompt, students did not show a significant improvement in accuracy (Situation Modification: \(\beta=0.425,\ p>0.05\); Emotional Reframing: \(\beta=0.586,\ p>0.05\)).
@@ -946,7 +1013,7 @@ This increased willingness to tackle difficult problems aligns with the observed
 As expected, user skill was strongly associated with higher accuracy ($\beta$ = 61.608, \textit{p} < 0.001 for situation modification; $\beta$ = 68.997, \textit{p} < 0.001 for emotional reframing), longer engagement durations, and willingness to attempt more difficult items. 
 Similarly, item difficulty was negatively associated with accuracy and engagement duration.
 
-\begin{figure}[ht]
+\begin{figure}
     \centering
     \includegraphics[width=\linewidth]{main.pdf}
     \caption{After students engaged with the situation modification and emotion regulation prompts, they saw increases in their motivation (operationalized as total time on task), and the difficulty of the items they attempted. 
@@ -955,77 +1022,76 @@ Similarly, item difficulty was negatively associated with accuracy and engagemen
     \label{fig:main}
 \end{figure}
 
-\begin{landscape}
-\begin{table*}[!htbp] \centering    \caption{Regression Results}    \label{tab:main_reg} \resizebox{\linewidth}{!}{% key: fit to the (rotated) page height
-\begin{tabular}{@{\extracolsep{5pt}}lcccccc}  \\[-1.8ex]\hline \\[-1.8ex]  \\[-1.8ex] & \multicolumn{2}{c}{Engagement: Log(Time on Task)} & \multicolumn{2}{c}{Challenge-Seeking: Item Difficulty} & \multicolumn{2}{c}{Performance: Percent Correct} \\   & Situation & Emotion & Situation & Emotion & Situation & Emotion \\  \\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\  \hline \\[-1.8ex]   Post-Intervention Effect & 0.426$^{***}$ & 0.558$^{***}$ & 0.129$^{***}$ & 0.119$^{***}$ & 0.425 & 0.586 \\    & (0.088) & (0.083) & (0.037) & (0.035) & (1.201) & (1.250) \\    Time-Varying User Skill & 1.057$^{***}$ & 0.737$^{**}$ & $-$0.363$^{***}$ & $-$0.537$^{***}$ & 61.608$^{***}$ & 68.997$^{***}$ \\    & (0.225) & (0.265) & (0.096) & (0.112) & (3.092) & (3.997) \\    Time-Varying Item Difficulty & $-$0.294$^{**}$ & $-$0.433$^{***}$ &  &  & $-$17.840$^{***}$ & $-$20.118$^{***}$ \\    & (0.099) & (0.099) &  &  & (1.360) & (1.491) \\   \hline \\[-1.8ex]  Observations & 1,782 & 1,834 & 1,782 & 1,834 & 1,782 & 1,834 \\  R$^{2}$ & 0.877 & 0.885 & 0.832 & 0.837 & 0.918 & 0.915 \\  Adjusted R$^{2}$ & 0.603 & 0.616 & 0.457 & 0.456 & 0.735 & 0.714 \\  Residual Std. Error & 0.906 (df = 551) & 0.932 (df = 547) & 0.389 (df = 552) & 0.402 (df = 548) & 12.428 (df = 551) & 14.034 (df = 547) \\  \hline \\[-1.8ex]  \textit{Note:}  & \multicolumn{6}{r}{$^{*}$p$<$0.05; $^{**}$p$<$0.01; $^{***}$p$<$0.001} \\  \end{tabular}}  \end{table*} 
-\end{landscape}
+\begin{table*}[!htbp] \centering    \caption{Regression Results}    \label{tab:main_reg}  \begin{tabular}{@{\extracolsep{5pt}}lcccccc}  \\[-1.8ex]\hline \\[-1.8ex]  \\[-1.8ex] & \multicolumn{2}{c}{Engagement: Log(Time on Task)} & \multicolumn{2}{c}{Challenge-Seeking: Item Difficulty} & \multicolumn{2}{c}{Performance: Percent Correct} \\   & Situation & Emotion & Situation & Emotion & Situation & Emotion \\  \\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\  \hline \\[-1.8ex]   Post-Intervention Effect & 0.426$^{***}$ & 0.558$^{***}$ & 0.129$^{***}$ & 0.119$^{***}$ & 0.425 & 0.586 \\    & (0.088) & (0.083) & (0.037) & (0.035) & (1.201) & (1.250) \\    Time-Varying User Skill & 1.057$^{***}$ & 0.737$^{**}$ & $-$0.363$^{***}$ & $-$0.537$^{***}$ & 61.608$^{***}$ & 68.997$^{***}$ \\    & (0.225) & (0.265) & (0.096) & (0.112) & (3.092) & (3.997) \\    Time-Varying Item Difficulty & $-$0.294$^{**}$ & $-$0.433$^{***}$ &  &  & $-$17.840$^{***}$ & $-$20.118$^{***}$ \\    & (0.099) & (0.099) &  &  & (1.360) & (1.491) \\   \hline \\[-1.8ex]  Observations & 1,782 & 1,834 & 1,782 & 1,834 & 1,782 & 1,834 \\  R$^{2}$ & 0.877 & 0.885 & 0.832 & 0.837 & 0.918 & 0.915 \\  Adjusted R$^{2}$ & 0.603 & 0.616 & 0.457 & 0.456 & 0.735 & 0.714 \\  Residual Std. Error & 0.906 (df = 551) & 0.932 (df = 547) & 0.389 (df = 552) & 0.402 (df = 548) & 12.428 (df = 551) & 14.034 (df = 547) \\  \hline \\[-1.8ex]  \textit{Note:}  & \multicolumn{6}{r}{$^{*}$p$<$0.05; $^{**}$p$<$0.01; $^{***}$p$<$0.001} \\  \end{tabular}  \end{table*} 
 
-
-\subsection{Heterogeneity by baseline skill and gender}
+\subsection*{Heterogeneity by baseline skill and gender}
 
 We find no moderation by gender. 
 Under Emotional Reframing, higher-skill students show higher post-intervention accuracy; under Situation Modification, accuracy does not differ by baseline skill.
 
-\subsection{Analysis of conversations: Both prompts reduced users' negative emotion}
+\subsection*{Analysis of conversations: Both prompts reduced users' negative emotion}
 
 Over the course of the conversations, it looks like the bot was effective in reducing the negative affect experienced by students. 
 As shown in Figure \ref{fig:sentiment}, as users chatted with the bot, their language reflected reductions in negative sentiment and increases in positive sentiment.
 
 
-\begin{figure}[ht]
+\begin{figure}
     \centering
     \includegraphics[width=\linewidth]{sentiment.pdf}
     \caption{Negative sentiment decreased over the span of the conversation. Shaded area represents bootstrapped 95\% confidence intervals. Ns = 405 and 2052 conversations for situation modification and emotional reframing. The correlations between turn number and time bins is -.33 and .39 for Situation Modification and Emotional reframing. If we do this within person (as I think we should), the correlations are weaker: -.07 and -.36, respectively.}
     \label{fig:sentiment}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}
     \centering
     \includegraphics[width=\linewidth]{wordclouds.pdf}
     \caption{Word clouds from TF-IDF vectorization of user and bot text from situation modification and emotional reframing interventions.}
-    \label{fig:wordclouds}
+    \label{fig:sentiment}
 \end{figure}
 
 
 
-\section{Discussion} 
+\section*{Discussion} 
 
 In this investigation, we deployed two motivational support chatbots---based on situation modification and emotional reframing---for a year on Khan Academy. 
 To measure their impact, we compared user behavior before and after exposure to the chatbot intervention.
 Because users chose when to use the chatbots, we used Bayesian IRT to account for potential time-varying confounds.
-After these adjustments, we found that studnets who engaged with either prompt worked for longer after having used the chatbots, attempted more items, and attempted more difficult items.
+After these adjustments, students who engaged with either prompt worked longer, attempted more items, and chose harder items.
 However, these immediate behavioral changes did not translate into performance changes immediately.
 Students did not perform significantly better after engaging with the chatbots.
 
 Why did these AI-mediated interventions improve persistence?
-Prior research suggests that these process model based strategies help.
-In one experiment, students asked to study with their phones further away from them received higher grades in subsequent tests (CHECK).
+Prior research suggests that these process model-based strategies help.
+In one experiment, students asked to study with their phones further away from them received higher grades in subsequent tests.
 In another, providing students with the reframe that mistakes are a part of learning and not indicative of their worth also increased persistence. 
-While expected for emotional reframing, our results suggest that situation modification might also be effective because of reductions in negative affect.
-Future research should confirm the relative increases in persistence of situation modification stratetegies due to reductions in negative affect.
+While expected for emotional reframing, our results suggest that situation modification may also be effective due to reductions in negative affect.
+Future research should confirm the relative increases in persistence of situation modification strategies due to reductions in negative affect.
 
 If these results hold, they offer important implications for the deployment of positive online behaviors.
-First, is the idea that AI-chatbots, when adequately prompted can work like motivational coaches.
-Just like tutors and mentors help people with the challenges that occurr when things are difficult, complicated, or frustrating, AI-chatbots can help users deal with these difficulties.
+First, is the idea that AI-chatbots, when adequately prompted, can work like motivational coaches.
+Just like tutors and mentors help people with the challenges that occur when things are difficult, complicated, or frustrating, AI-chatbots can help users deal with these difficulties.
 This can result in increased persistence in positive behaviors that would otherwise be ended.
 
-Lower-skill learners may require more than motivational support alone.
-Exploratory analyses indicated that students with lower baseline skill did not benefit from chatbot exposure [CITE].
-This pattern suggests that for these learners, motivational prompts should be paired with content-focused scaffolds (e.g., targeted hints, worked examples, or prerequisite review): increased effort is unlikely to yield gains when essential knowledge is missing.
+Lower-skilled learners and users, however, may require supports beyond motivational interventions alone. Exploratory analyses of our data revealed that low-skilled users did not benefit from chatbot exposure. This pattern suggests that these users may require content-based instructional supports rather than purely motivational ones. Increased effort and persistence are unlikely to improve performance when learners lack fundamental knowledge or skills necessary for task completion. For such users, motivational interventions may be insufficient without concurrent provision of scaffolded learning content or skill-building resources.
 
-\subsection{Future Directions}
 
-There are several limitations of this study that are worth highlighting. 
+% Lower skilled learners and users, however might need more than just motivation.
+% Exploratory analyses of our data showed that low-skilled users did not benefit from chatbot exposure.
+% [CITE] This suggests that these kinds of users might need content-based supports: i.e., trying harder doesn't help if you have no idea what you are doing (REWRITE TO MAKE MORE FORMAL< BUT THATS THE IDEA).
+
+\subsection*{Limitations and Future Directions}
+
+Several limitations of this study are worth highlighting. 
 First and foremost, the highly naturalistic setting in which we collected the data meant that we were unable to randomly assign users to condition, weakening the causal interpretation of these findings.
 That said, the pattern of behavior prior to exposure to the chatbots does not suggest that regression to the mean is a viable explanation for these findings.
-And we capitalized on the temporal resolution of the data to control for two crucial time-varying confounds: user motivation/skill and item difficulty.
-If these findings replicate in controlled experiments, we can have more faith that AI-based motivational coaches can increase persistence in difficult tasks.
+We capitalized on the temporal resolution of the data to control for two crucial time-varying confounds: user motivation and skill, as well as item difficulty.
+If these findings are replicated in controlled experiments, we can have greater confidence that AI-based motivational coaches can increase persistence in challenging tasks.
 
 A second limitation is generalizability.
-We tested these motivational coaches in the context of online learning in the Khan Academy platform.
-For the most part, this means school aged children working on math.
-It is unclear how well these kinds of AI motivational coaches would translate to other kinds of important but tedious tasks, and other kinds of users.
-For instance, could these kinds of motivational AI agents help users navigate adult tasks like filing taxes, or investing for retirement?
+We tested these motivational coaches in the context of online learning on the Khan Academy platform.
+For the most part, this means school-aged children working on math.
+It is unclear how well these kinds of AI motivational coaches would translate to other important but tedious tasks and users.
+For instance, could these kinds of motivational AI agents help users navigate adult tasks like filing taxes or investing for retirement?
 Future studies could address these possibilities.
 
 Finally, measuring changes in skill is difficult.
@@ -1033,53 +1099,56 @@ Better measures and a more intentional design might have allowed us to better un
 With the crude measurement of percent correct, we were unable to find robust effects on performance.
 
 Future work can capitalize on these opportunities. 
-First, testing motivational AI coaches with randomized experiments is crucial to establish causality, and better test the mechanism of the reduction of negative emotion.
-Second, our setup allowed us only to make one intervention available, and then the other. 
+First, testing motivational AI coaches with randomized experiments is crucial to establish causality and better test the mechanism of the reduction of negative emotion.
+Second, our setup allowed us to make only one intervention available at a time, and then the other. 
 Future research could address the possibility of personalization and targeted deployment.
-For instance, user behavior and contents of the conversation with the AI tutor (i.e., Khanmigo) could be mined to proactively detect when students might benefit from receiving this intervention.
+For instance, user behavior and the content of conversations with the AI tutor (i.e., Khanmigo) could be mined to proactively detect when students might benefit from receiving this intervention.
 Likewise, the content of the intervention itself could be tailored, such that students who need a situation modification intervention get that, and students who at some other point need some other thing (e.g., a growth mindset intervention), get that.
 Finally, the longer term effects of using AI motivational coaches shoudl be studied.
 
+\subsection*{Conclusion}
 
-\subsection{Conclusion}
-Taken together, this study offers large-scale evidence from a high-stakes, ecologically valid setting that AI-delivered, theory-based motivational prompts can meaningfully boost persistence and encourage learners to attempt more challenging material—without external prodding. 
-Because participation was entirely self-initiated, the findings speak to the potential of interventions that learners actively choose rather than ones imposed on them. At the same time, the skill-contingent nature of performance gains underscores a key design principle: pair motivational coaching with targeted instructional scaffolding. 
-As digital learning and professional training increasingly integrate AI, embedding emotion-regulation supports represents a practical, scalable, and learner-driven approach to fostering sustained engagement in contexts where it matters most.
+Final paragraph. Finish with the contributions: large study, high ecological validity, real-life stakes (math ed matters), self-initiated intervention --- no need to nudge the students, the students nudge themselves. Finish with a positive sentence about the contributions and what this means.
+Taken together, this study provides rare, ecologically valid evidence—at a real scale and with self-initiated use—that AI-delivered, theory-based motivational prompts reliably increase persistence and encourage learners to tackle more challenging material.
+Performance gains appear to be contingent on baseline skill, highlighting a design principle: combining motivational coaching with instructional scaffolding.
+As digital learning and training increasingly rely on AI, embedding emotion-regulation supports offers a practical, scalable path to improving user engagement without requiring heavy-handed nudges or human coaches. 
+
+  
 
 
-\section{Methods}
 
-\subsection{Setting and data}
+\section*{Methods}
+
+\subsection*{Setting and data}
 We analyzed de-identified platform logs from Khan Academy over a one-year period (January–December 2024).
 Two motivational support chatbots grounded in the process model of emotion regulation were available within the product: \emph{Situation Modification} (SM) and \emph{Emotional Reframing} (ER).
 Each exposure was user-initiated via an on-screen prompt (Figure~\ref{fig:interface}); no pop-up or forced assignment was used.
 Logs include time-stamped item attempts (start/end times, correctness) and chatbot conversation text for users who chose to interact.
 
-\subsection{Participants}
-The analytic sample comprised approximately 4{,}000 unique learners who engaged with at least one of the two chatbots during the study window and who had activity in both the pre- and post-exposure windows defined below.
-We included the first qualifying exposure per user per condition (SM and ER analyzed separately).
+\subsection*{Participants}
+The analytic sample comprised 3,570 learners who engaged with the situation modification intervention and 3,608 students who wngaged with the emotional reframing intervention during the study window. Additionally, to be included, participants had to had had activity in both the pre- and post-exposure windows defined below.
+We included the first qualifying exposure per user per condition (i.e., each prompt was anlayzed separately).
 Users without activity in either the pre- or post-window were excluded from the corresponding analysis.
-All data were de-identified prior to analysis.
 
-\subsection{Interventions}
-The SM chatbot encouraged users to structure their environment or routines to reduce reliance on willpower (e.g., minimizing distractions, planning short focused sessions).
-The ER chatbot helped users reinterpret frustration and mistakes as expected, informative signals of learning progress.
+\subsection*{Interventions}
+The situation modification intervention encouraged users to structure their environment or routines to reduce reliance on willpower (e.g., minimizing distractions, planning short focused sessions).
+The emotional reframing intervention helped users reinterpret frustration and mistakes as expected, informative signals of learning progress.
 Both prompts were delivered via a short, text-based exchange that adapted to user inputs; no content tutoring was provided.
 
-\subsection{Design and exposure definition}
+\subsection*{Design and exposure definition}
 Because use of the chatbots was self-initiated, we adopted a within-learner pre/post design with fixed effects and calendar-time controls.
 For each user’s first exposure in a condition, we defined a pre-exposure window as the 7 days preceding the exposure (days \([-7,-1]\)) and a post-exposure window as the 7 days following the exposure (days \([+1,+7]\)).
 To avoid contaminating post measures with the triggering session, we excluded activity from the exposure session itself (day 0) in primary analyses.
 We computed outcomes within each window and compared post versus pre, controlling as described below.
 
-\subsection{Measures}
-\textbf{Engagement (primary).} Total time on task during the window, log-transformed for analysis. Time on task was computed from item start/end timestamps after trimming extreme durations at conventional percentiles.
+\subsection*{Measures}
+Engagement was operationalized as the total time on task during the window, log-transformed for analysis. Time on task was computed from item start/end timestamps.
 
-\textbf{Challenge-seeking (secondary).} Average difficulty of items attempted during the window. Difficulty parameters were obtained from an item-response model described below and scaled so that higher values indicate more difficult items.
+We operationalized challenge-seeking behavior as the average IRT-derived difficulty of items attempted during the window. Difficulty parameters were obtained from an item-response model described below and scaled so that higher values indicate more difficult items.
 
-\textbf{Performance (primary).} Percentage of correct responses during the window. As a complementary specification, we also analyzed time-varying IRT ability (``skill'') estimates.
+Performance was operationalized as the percentage of correct responses during the window. As a complementary specification, we also analyzed time-varying IRT ability (``skill'') estimates.
 
-\subsection{Item and learner latent traits}
+\subsection*{Item and learner latent traits}
 We estimated time-varying learner skill and motivation and item difficulty using a Bayesian model at the attempt level (equations in the main text).
 Let \(s\) index learners, \(i\) items, and \(t\) ordered attempts. We modeled log-duration and correctness jointly:
 \begin{align*}
@@ -1089,22 +1158,20 @@ Let \(s\) index learners, \(i\) items, and \(t\) ordered attempts. We modeled lo
 \end{align*}
 Latent skill and motivation followed separate Gaussian random walks with exponential priors on their step sizes; item difficulties had hierarchical Gaussian priors. Posterior summaries (posterior means) for skill, motivation, and item difficulty were carried forward into the outcome models.
 
-\subsection{Statistical analysis}
+\subsection*{Statistical analysis}
 Primary analyses were estimated separately for SM and ER.
 We fit linear models at the user\,\(\times\,\)window level with user fixed effects and calendar-week fixed effects. For engagement we modeled log time on task; for challenge-seeking, average item difficulty; and for performance, percent correct. All models included time-varying skill and (when relevant) the average item difficulty in the window as covariates. Standard errors were clustered at the user level.
 
 As robustness checks, we (i) excluded the 24 hours before and/or after exposure; (ii) varied the window length (3, 7, 14 days); (iii) re-estimated effects at the attempt level with user fixed effects; (iv) examined the second exposure to assess attenuation; and (v) repeated the performance analysis using IRT skill as the outcome.
 Heterogeneity analyses tested moderation by baseline skill (pre-exposure skill) and gender when available.
 
-\subsection{Ethical considerations}
+\subsection*{Ethical considerations}
 Analyses were conducted on de-identified data provided under a data-use agreement with Khan Academy.
-This research protocol was reviewed and determined \emph{[exempt/approved—fill in]} by the \emph{[IRB name—fill in]} (Protocol \emph{[ID—fill in]}).
 No interventions were randomized by the researchers; chatbot use was voluntary and user-initiated within the platform.
 
-\subsection{Pre-registration}
-Analyses, primary/secondary outcomes, and exclusion rules were preregistered prior to data analysis at \url{[link-to-preregistration]}.
+\subsection*{Pre-registration}
+Analyses, primary/secondary outcomes, and exclusion rules were preregistered prior to data analysis at \url{https://aspredicted.org/g2p8-z8jg.pdf}.
 Any deviations from the preregistered plan are noted in the Appendix.
-
 
 \chapter{Using Artificial Intelligence to Assess Personal Qualities in College Admissions}
 
@@ -1537,8 +1604,9 @@ After participants completed the procedure outlined in Figure \ref{fig:design}, 
 
 Table \ref{tab:prompts} shows the prompts used to have GPT-4o and Claude rate the rewritten cover letters on the five principles. Our pre-registered main outcome is the unweighted mean of these five principles.
 
-\begin{table*}[ht]
+\begin{table*}[h]
     \centering
+    \footnotesize
     \caption{Prompt instructions given to GPT-4o and Claude for rating cover letters.}
     \label{tab:prompts}
     \begin{tabular}{lp{15cm}}
@@ -1558,7 +1626,7 @@ Table \ref{tab:prompts} shows the prompts used to have GPT-4o and Claude rate th
 
 We used a randomly selected sample of 100 cover letters from Study 2 to validate the AI ratings. Two trained raters independently rated each of the 5 principles. The inter-rater correlation was \textit{r} = .74, \textit{p} < .001. The human raters correlated with the AI-generated ratings satisfactorily (\textit{r} = .70, \textit{p} < .001).     See Figure \ref{fig:ai_valid}.
 
-\begin{figure}[ht]
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.75\linewidth]{ai_validity.pdf}
     \caption{Interrater correlations and correlations between AI and human ratings.}
@@ -1569,54 +1637,54 @@ Claude and GPT-4o ratings were positively correlated, with pretest ratings being
 
 \subsection{Pairwise Comparisons}
 Prolific participants were shown pairs of cover letters sampled from different conditions. 
-They were asked to ``Imagine you’re hiring a social media manager for your company; which cover letter would make you more likely to offer an interview to the candidate? Choose one.''.
+They were asked to ``Imagine you’re hiring a social media manager for your company; which cover letter would make you more likely to offer an interview to the candidate? Choose one.''
 Each cover letter was compared to at least three other letters, sampled uniformly at random from the other two conditions. 
-Most letters were compared against 3 or 4 other letters, min, max, med (plot?).
-For each cover letter we calculated the relative likelihood of it securing a hypothetical interview, defined as the total number of times that letter was preferred, divided by the total number of contests for that cover letter.
+Most letters were compared against 3 or 4 other letters.
+For each cover letter, we calculated the relative likelihood of it securing a hypothetical interview, defined as the total number of times that letter was preferred, divided by the total number of contests for that cover letter.
 
-As shown in Figure \ref{fig:ratings_cor}, the relative likelihood of an interview correlated positively with the AI-generated measure of writing skill. 
+% As shown in Figure \ref{fig:ratings_cor}, the relative likelihood of an interview correlated positively with the AI-generated measure of writing skill. 
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.75\linewidth]{correlations.pdf}
-    \caption{Correlations between the relative likelihood of interview and AI-generated writing quality scores.}
-    \label{fig:ratings_cor}
-\end{figure}
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=0.75\linewidth]{correlations.pdf}
+%     \caption{Correlations between the relative likelihood of interview and AI-generated writing quality scores.}
+%     \label{fig:ratings_cor}
+% \end{figure}
 
-Table \ref{tab:beta} shows the beta regressions for the relative likelihood by condition.
+% Table \ref{tab:beta} shows the beta regressions for the relative likelihood by condition.
 
-\begin{table}[ht]
-    \centering
-    \caption{Results from beta regressions predicting the relative likelihood of an interview from test phase cover letters. The reference category is practice with AI for Study 2, and practice without AI for Study 3.}
+% \begin{table}[h]
+%     \centering
+%     \caption{Results from beta regressions predicting the relative likelihood of an interview from test phase cover letters. The reference category is practice with AI for Study 2, and practice without AI for Study 3.}
 
-    \begin{tabular}{lcccc}
-    \toprule
-& (1) & (2) & (3) & (4) \\ \midrule 
-(Intercept)                                                                      & \num{0.085}***  & \num{-4.816}    & \num{-0.061}**  & \num{-0.449}   \\
-& (\num{0.022})   & (\num{5.017})   & (\num{0.021})   & (\num{0.677})  \\
-No practice                                                             & \num{-0.147}*** & \num{-0.250}*** &                  &                 \\
-& (\num{0.031})   & (\num{0.073})   &                  &                 \\
-Practice w/o AI                                                          & \num{-0.096}**  & \num{-0.110}    &                  & \num{-0.103}   \\
-& (\num{0.031})   & (\num{0.073})   &                  & (\num{0.079})  \\
-Practice w/ AI                                                           &                  &                  & \num{0.080}**   &                 \\
-&                  &                  & (\num{0.030})   &                 \\
-See AI example                                                          &                  &                  & \num{0.097}***  & \num{0.055}    \\
-&                  &                  & (\num{0.030})   & (\num{0.078})  \\\midrule 
-Precision ($\phi$)                                                                            & \num{12.899}*** &                  & \num{16.174}*** &                 \\
-& (\num{1.192})   &                  & (\num{1.471})   &                 \\
-Symmertry (Log($\nu$))                                                                          & \num{-0.117}    &                  & \num{0.350}***  &                 \\
-& (\num{0.086})   &                  & (\num{0.080})   &                 \\
-Demographic and baseline performance covariates & No & Yes & No & Yes\\
-\midrule 
-Num.Obs.                                                                         & \num{2188}      & \num{2153}      & \num{1934}      & \num{1917}     \\
-AIC                                                                              & \num{2204.7}    & \num{-10885.8}  & \num{2447.1}    & \num{-14615.7} \\
-BIC                                                                              & \num{2233.2}    & \num{-10721.3}  & \num{2474.9}    & \num{-14454.5} \\
-Log.Lik.                                                                         & \num{-1097.349} &                  & \num{-1218.535} &                 \\
-RMSE                                                                             &                  & \num{0.28}      &                  & \num{0.30}     \\
-\bottomrule
-    \end{tabular}
-    \label{tab:beta}
-\end{table}
+%     \begin{tabular}{lcccc}
+%     \toprule
+% & (1) & (2) & (3) & (4) \\ \midrule 
+% (Intercept)                                                                      & \num{0.085}***  & \num{-4.816}    & \num{-0.061}**  & \num{-0.449}   \\
+% & (\num{0.022})   & (\num{5.017})   & (\num{0.021})   & (\num{0.677})  \\
+% No practice                                                             & \num{-0.147}*** & \num{-0.250}*** &                  &                 \\
+% & (\num{0.031})   & (\num{0.073})   &                  &                 \\
+% Practice w/o AI                                                          & \num{-0.096}**  & \num{-0.110}    &                  & \num{-0.103}   \\
+% & (\num{0.031})   & (\num{0.073})   &                  & (\num{0.079})  \\
+% Practice w/ AI                                                           &                  &                  & \num{0.080}**   &                 \\
+% &                  &                  & (\num{0.030})   &                 \\
+% See AI example                                                          &                  &                  & \num{0.097}***  & \num{0.055}    \\
+% &                  &                  & (\num{0.030})   & (\num{0.078})  \\\midrule 
+% Precision ($\phi$)                                                                            & \num{12.899}*** &                  & \num{16.174}*** &                 \\
+% & (\num{1.192})   &                  & (\num{1.471})   &                 \\
+% Symmetry (Log($\nu$))                                                                          & \num{-0.117}    &                  & \num{0.350}***  &                 \\
+% & (\num{0.086})   &                  & (\num{0.080})   &                 \\
+% Demographic and baseline performance covariates & No & Yes & No & Yes\\
+% \midrule 
+% Num.Obs.                                                                         & \num{2188}      & \num{2153}      & \num{1934}      & \num{1917}     \\
+% AIC                                                                              & \num{2204.7}    & \num{-10885.8}  & \num{2447.1}    & \num{-14615.7} \\
+% BIC                                                                              & \num{2233.2}    & \num{-10721.3}  & \num{2474.9}    & \num{-14454.5} \\
+% Log.Lik.                                                                         & \num{-1097.349} &                  & \num{-1218.535} &                 \\
+% RMSE                                                                             &                  & \num{0.28}      &                  & \num{0.30}     \\
+% \bottomrule
+%     \end{tabular}
+%     \label{tab:beta}
+% \end{table}
 
 
 \subsection{Feedback}\label{sec:feedback}
@@ -1624,7 +1692,7 @@ RMSE                                                                            
 In Studies 2 and 3, participants received feedback for their submissions. The feedback was displayed immediately after the practice cover letter submission. The feedback page read: ``Here is the email'', then reproduced the participants submission verbatim, then read ``Here is one way in which it could be made better.'' The feedback was personalized and created by GPT-4o model. 
 
 The feedack prompt is shown in Figure \ref{fig:feedback prompt}.
-\begin{figure}[ht]
+\begin{figure}
     \centering
     \begin{tcolorbox}[colback=blue!5!white, colframe=blue!75!black, title=Feedback prompt]
 Take into account the following principles. 
@@ -1672,6 +1740,7 @@ One sentence explanation, positive tone.
 
 
 
+\FloatBarrier
 \section{Results Study 2}
 
 \subsection{Randomization, Balance, and Missingness}
@@ -1679,20 +1748,20 @@ To allow users to format their responses flexibly, we used the TinyMCE rich text
 
 There was also attrition in the follow-up sample. While most people responded, 13.45\% of recontacted participants did not respond. This attrition was not selective by condition. As shown in Table \ref{tab:s2missingness}, missingness and attrition rates were low for the main and followup samples, and did not differ by condition.
 
-\begin{table}[ht]
+\begin{table}[h]
     \centering
     \caption{Missingness and attrition proportions and test in Study 2.}
 
 \begin{tabular}{lrr}
 \toprule
 Condition & Main Sample & Followup Sample \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 No practice & $2.25\%$ & $13.38\%$ \\ 
 Practice w/o AI & $3.86\%$ & $12.77\%$ \\ 
 Practice w/ AI & $3.83\%$ & $14.23\%$ \\ 
 \midrule
 Overall & $3.31\%$ & $13.45\%$ \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 $\chi^2$ & $3.966$ & $0.685$ \\ 
 \textit{p}-value & $0.138$ & $0.710$ \\ 
 \bottomrule
@@ -1702,58 +1771,60 @@ $\chi^2$ & $3.966$ & $0.685$ \\
 \end{table}
 
 Pre-treatment variables were balanced across experimental conditions, ensuring that random assignment was successful. To assess balance, we conducted a series of one-way ANOVAs for continuous variables and chi-square tests for categorical variables. Given the multiple comparisons, we applied the Benjamini-Hochberg (BH) procedure to control the false discovery rate. All statistical tests confirmed that none of the pre-treatment variables differed significantly across conditions. See Table \ref{tab:s2randomization}.
-
-\begin{table}[ht]
-    \centering
-        \caption{Randomization checks for pre-treatment variables in Study 2. \textit{p}-values are BH multiple comparisons corrected. Continuous variables tested with ANOVA, binary and factor variables with $\chi^2$ tests. SMD = Standardized Mean Difference.}
-    \label{tab:s2randomization}
-\begin{tabular}{lrrrrrrr}
-\toprule
-\multicolumn{1}{l}{} & Overall & No practice & Practice w/o AI & Practice w/ AI & \textit{p} &  SMD \\ 
-\midrule\addlinespace[2.5pt]
-\textit{\textbf{n}} & 2238 &  755 &  752 &  731 &  &   \\ 
-\textbf{Age (mean (SD))} & 36.22 (12.71) & 35.99 (13.01) & 36.39 (12.70) & 36.29 (12.42) & .923  &  0.021 \\ 
-\textbf{Gender (\%)} &  &   &   &   & .636 &   0.077 \\ 
-\hspace{1em}   Female & 1189 (53.1)  &  421 (55.8)  &  394 (52.4)  &  374 (51.2)  &  &  \\ 
-   \hspace{1em}Male & 1027 (45.9)  &  328 (43.4)  &  348 (46.3)  &  351 (48.0)  &  &    \\ 
-   \hspace{1em}Other &   22 (1.0)  &    6 (0.8)  &   10 (1.3)  &    6 (0.8)    &  &  \\ 
-   \textbf{Race/Ethnicity} &  &   &   &   &  &  \\
-\hspace{1em}White (\%) & 1288 (57.6)  &  419 (55.5)  &  458 (60.9)  &  411 (56.2)  & .213 &  0.073 \\ 
-\hspace{1em}Black (\%) &  745 (33.3)  &  262 (34.7)  &  223 (29.7)  &  260 (35.6)  & .192 &  0.084 \\ 
-\hspace{1em}Asian (\%) &  134 (6.0)  &   49 (6.5)  &   42 (5.6)  &   43 (5.9)  & .923   &  0.025 \\ 
-\hspace{1em}Latino (\%) &  155 (6.9)  &   48 (6.4)  &   65 (8.6)  &   42 (5.7)  & .213   &  0.075 \\
-\hspace{1em}Other (\%) &   62 (2.8)  &   23 (3.0)  &   22 (2.9)  &   17 (2.3)  & .923 &   0.030 \\ 
-\textbf{Education Level (\%)} &  &   &   &   & .923 &    0.099 \\ 
-   \hspace{1em}Less than high school degree &   14 (0.6)  &    5 (0.7)  &    5 (0.7)  &    4 (0.5)  &    &  \\ 
-   \hspace{1em}High school graduate (high school diploma or equivalent including GED) &  207 (9.2)  &   68 (9.0)  &   72 (9.6)  &   67 (9.2)  &  &  \\ 
-   \hspace{1em}Some college but no degree &  321 (14.3)  &  117 (15.5)  &  109 (14.5)  &   95 (13.0)  &  &   \\ 
-   \hspace{1em}Associate degree in college (2-year) &  168 (7.5)  &   61 (8.1)  &   60 (8.0)  &   47 (6.4)    &  &  \\ 
-   \hspace{1em}Bachelor's degree in college (4-year) &  984 (44.0)  &  314 (41.6)  &  334 (44.4)  &  336 (46.0)  &  &    \\ 
-   \hspace{1em}Master's degree &  474 (21.2)  &  165 (21.9)  &  153 (20.3)  &  156 (21.3)  &  &    \\ 
-   \hspace{1em}Doctoral degree (PhD) &   44 (2.0)  &   16 (2.1)  &   11 (1.5)  &   17 (2.3)  &  &    \\ 
-   \hspace{1em}Non-PhD Professional degree (JD, MD) &   26 (1.2)  &    9 (1.2)  &    8 (1.1)  &    9 (1.2)  &    &  \\ 
-\textbf{Perceived Writing Skill (mean (SD))} & 6.70 (1.70) & 6.77 (1.67) & 6.56 (1.72) & 6.76 (1.69) & .192 &    0.083 \\ 
-\textbf{Motivation to improve writing (\%)} &  &   &   &   & .410 &    0.126 \\ 
-   \hspace{1em}Not at all motivated &   33 (1.5)  &    6 (0.8)  &   15 (2.0)  &   12 (1.6)  &  &    \\ 
-   \hspace{1em}Hardly motivated &  106 (4.7)  &   38 (5.0)  &   34 (4.5)  &   34 (4.7)  &  &    \\ 
-   \hspace{1em}Somewhat motivated &  644 (28.8)  &  218 (28.9)  &  236 (31.4)  &  190 (26.0)  &  &    \\ 
-   \hspace{1em}Very motivated &  932 (41.6)  &  311 (41.2)  &  311 (41.4)  &  310 (42.4)  &  &    \\ 
-   \hspace{1em}Extremely motivated &  523 (23.4)  &  182 (24.1)  &  156 (20.7)  &  185 (25.3)  &  &    \\ 
-\textbf{Experience with AI writing assistants (\%)} &  &   &   &   & .701   &  0.094 \\ 
-   \hspace{1em}I have never tried any AI writing assistant &  354 (15.8)  &  109 (14.4)  &  139 (18.5)  &  106 (14.5)  &    &  \\ 
-   \hspace{1em}I have tried AI writing assistant(s) but hardly ever use them &  859 (38.4)  &  291 (38.5)  &  288 (38.3)  &  280 (38.3)  &  &    \\ 
-   \hspace{1em}I use AI writing assistant(s) a few times per week &  477 (21.3)  &  164 (21.7)  &  147 (19.5)  &  166 (22.7)  &  &    \\ 
-   \hspace{1em}I use AI writing assistant(s) about once a week &  395 (17.6)  &  136 (18.0)  &  133 (17.7)  &  126 (17.2)  &  &    \\ 
-   \hspace{1em}I use AI writing assistant(s) every day &  153 (6.8)  &   55 (7.3)  &   45 (6.0)  &   53 (7.3)  &  &    \\ 
-\textbf{Pretest Writing Skill (mean (SD))} & 3.32 (0.78) & 3.31 (0.73) & 3.32 (0.78) & 3.32 (0.83) & .923 &    0.013 \\ 
-\bottomrule
-\end{tabular}
-\end{table}
+    
+    \begin{table}[h]
+        \centering
+            \caption{Randomization checks for pre-treatment variables in Study 2. \textit{p}-values are BH multiple comparisons corrected. Continuous variables tested with ANOVA, binary and factor variables with $\chi^2$ tests. SMD = Standardized Mean Difference.}
+            \footnotesize
+        \label{tab:s2randomization}
+    \begin{tabular}{lrrrrrrr}
+    \toprule
+    \multicolumn{1}{l}{} & Overall & No practice & Practice w/o AI & Practice w/ AI & \textit{p} &  SMD \\ 
+    \midrule
+    \textit{\textbf{n}} & 2238 &  755 &  752 &  731 &  &   \\ 
+    \textbf{Age (mean (SD))} & 36.22 (12.71) & 35.99 (13.01) & 36.39 (12.70) & 36.29 (12.42) & .923  &  0.021 \\ 
+    \textbf{Gender (\%)} &  &   &   &   & .636 &   0.077 \\ 
+    \hspace{1em}   Female & 1189 (53.1)  &  421 (55.8)  &  394 (52.4)  &  374 (51.2)  &  &  \\ 
+       \hspace{1em}Male & 1027 (45.9)  &  328 (43.4)  &  348 (46.3)  &  351 (48.0)  &  &    \\ 
+       \hspace{1em}Other &   22 (1.0)  &    6 (0.8)  &   10 (1.3)  &    6 (0.8)    &  &  \\ 
+       \textbf{Race/Ethnicity} &  &   &   &   &  &  \\
+    \hspace{1em}White (\%) & 1288 (57.6)  &  419 (55.5)  &  458 (60.9)  &  411 (56.2)  & .213 &  0.073 \\ 
+    \hspace{1em}Black (\%) &  745 (33.3)  &  262 (34.7)  &  223 (29.7)  &  260 (35.6)  & .192 &  0.084 \\ 
+    \hspace{1em}Asian (\%) &  134 (6.0)  &   49 (6.5)  &   42 (5.6)  &   43 (5.9)  & .923   &  0.025 \\ 
+    \hspace{1em}Latino (\%) &  155 (6.9)  &   48 (6.4)  &   65 (8.6)  &   42 (5.7)  & .213   &  0.075 \\
+    \hspace{1em}Other (\%) &   62 (2.8)  &   23 (3.0)  &   22 (2.9)  &   17 (2.3)  & .923 &   0.030 \\ 
+    \textbf{Education Level (\%)} &  &   &   &   & .923 &    0.099 \\ 
+       \hspace{1em}Less than high school degree &   14 (0.6)  &    5 (0.7)  &    5 (0.7)  &    4 (0.5)  &    &  \\ 
+       \hspace{1em}High school graduate &  207 (9.2)  &   68 (9.0)  &   72 (9.6)  &   67 (9.2)  &  &  \\ 
+       \hspace{1em}Some college but no degree &  321 (14.3)  &  117 (15.5)  &  109 (14.5)  &   95 (13.0)  &  &   \\ 
+       \hspace{1em}Associate degree in college (2-year) &  168 (7.5)  &   61 (8.1)  &   60 (8.0)  &   47 (6.4)    &  &  \\ 
+       \hspace{1em}Bachelor's degree in college (4-year) &  984 (44.0)  &  314 (41.6)  &  334 (44.4)  &  336 (46.0)  &  &    \\ 
+       \hspace{1em}Master's degree &  474 (21.2)  &  165 (21.9)  &  153 (20.3)  &  156 (21.3)  &  &    \\ 
+       \hspace{1em}Doctoral degree (PhD) &   44 (2.0)  &   16 (2.1)  &   11 (1.5)  &   17 (2.3)  &  &    \\ 
+       \hspace{1em}Non-PhD Professional degree (JD, MD) &   26 (1.2)  &    9 (1.2)  &    8 (1.1)  &    9 (1.2)  &    &  \\ 
+    \textbf{Perceived Writing Skill (mean (SD))} & 6.70 (1.70) & 6.77 (1.67) & 6.56 (1.72) & 6.76 (1.69) & .192 &    0.083 \\ 
+    \textbf{Motivation to improve writing (\%)} &  &   &   &   & .410 &    0.126 \\ 
+       \hspace{1em}Not at all motivated &   33 (1.5)  &    6 (0.8)  &   15 (2.0)  &   12 (1.6)  &  &    \\ 
+       \hspace{1em}Hardly motivated &  106 (4.7)  &   38 (5.0)  &   34 (4.5)  &   34 (4.7)  &  &    \\ 
+       \hspace{1em}Somewhat motivated &  644 (28.8)  &  218 (28.9)  &  236 (31.4)  &  190 (26.0)  &  &    \\ 
+       \hspace{1em}Very motivated &  932 (41.6)  &  311 (41.2)  &  311 (41.4)  &  310 (42.4)  &  &    \\ 
+       \hspace{1em}Extremely motivated &  523 (23.4)  &  182 (24.1)  &  156 (20.7)  &  185 (25.3)  &  &    \\ 
+    \textbf{Experience with AI writing assistants (\%)} &  &   &   &   & .701   &  0.094 \\ 
+       \hspace{1em}I have never tried any AI writing assistant &  354 (15.8)  &  109 (14.4)  &  139 (18.5)  &  106 (14.5)  &    &  \\ 
+       \hspace{1em}I have tried AI writing assistant(s) but hardly ever use them &  859 (38.4)  &  291 (38.5)  &  288 (38.3)  &  280 (38.3)  &  &    \\ 
+       \hspace{1em}I use AI writing assistant(s) a few times per week &  477 (21.3)  &  164 (21.7)  &  147 (19.5)  &  166 (22.7)  &  &    \\ 
+       \hspace{1em}I use AI writing assistant(s) about once a week &  395 (17.6)  &  136 (18.0)  &  133 (17.7)  &  126 (17.2)  &  &    \\ 
+       \hspace{1em}I use AI writing assistant(s) every day &  153 (6.8)  &   55 (7.3)  &   45 (6.0)  &   53 (7.3)  &  &    \\ 
+    \textbf{Pretest Writing Skill (mean (SD))} & 3.32 (0.78) & 3.31 (0.73) & 3.32 (0.78) & 3.32 (0.83) & .923 &    0.013 \\ 
+    \bottomrule
+    \end{tabular}
+    \end{table}
+\FloatBarrier
 \subsection{AI practice improved writing skill}
 
 The AI tool improved performance while participants used it. Table \ref{tab:s2_practice} shows means and standardized differences for different measures of writing skill during the practice phase. The robustness checks included after the main specification, show that results are similar when using a different language model (Column 2), when not including control variables (Column 3), when excluding participants who admitted to cheating in the test phase (Column 4), for the subset of non-attriting participants to the follow-up phase (Column 5), and for each of the 5 principles separately (Columns 6 - 10).
 
-\begin{figure}[ht]
+\begin{figure}[h]
     \centering    \includegraphics[width=0.75\linewidth]{mainfig_sup.pdf}     
     \caption{Participants who had practiced with the AI tool outperformed those who had practiced without it and those who had not practiced at all.
     Error bars represent means $\pm$ 1 SE.
@@ -1762,25 +1833,26 @@ The AI tool improved performance while participants used it. Table \ref{tab:s2_p
 \end{figure}
 
 
-\begin{table}[ht]
+\begin{table}[H]
     \centering
     \caption{Practice effects}
+    \footnotesize
 
 \begin{tabular}{lcccccccccc}
 \toprule
   & GPT-4o & Claude & Ex. Controls & Ex. Cheaters & Followup & LM & ER & EN & F & ER \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{11}{l}{\textbf{Means --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 Practice w/o AI & 4.58 & 6.52 & 4.41 & 4.42 & 4.27 & 4.29 & 6.31 & 5.65 & 3.38 & 4.26 \\ 
  & (.222) & (.091) & (.054) & (.055) & (.281) & (.230) & (.150) & (.258) & (.480) & (.268) \\ 
 Practice w/ AI & 6.05 & 7.01 & 5.86 & 5.89 & 5.78 & 5.56 & 7.11 & 6.75 & 6.30 & 5.54 \\ 
  & (.224) & (.092) & (.055) & (.055) & (.286) & (.232) & (.151) & (.260) & (.484) & (.271) \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{11}{l}{\textbf{Effect Sizes (d) --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
-Practice w/o AI vs. Practice w/ AI & 1.01*** & .81*** & .98*** & 1.00*** & 1.05*** & .84*** & .82*** & .65*** & .93*** & .73*** \\ 
- & (.056) & (.055) & (.055) & (.056) & (.061) & (.055) & (.055) & (.054) & (.056) & (.055) \\ 
+\midrule
+Practice w/o AI  & 1.01*** & .81*** & .98*** & 1.00*** & 1.05*** & .84*** & .82*** & .65*** & .93*** & .73*** \\ 
+ vs. Practice w/ AI& (.056) & (.055) & (.055) & (.056) & (.061) & (.055) & (.055) & (.054) & (.056) & (.055) \\ 
 \midrule
 \multicolumn{11}{p{16.5cm}}{\textit{Note.} GPT-4o is the main specification. Ex. Controls is the main specification, unadjusted for demographic and pretreatment variables, Ex. Cheaters excludes the 3\% of participants who admitted to cheating on the test phase. Followup is the subsample of non-attriting participants who returned to the one-day followup. LM to ER are disagregated scores for each of the five principles. LM = Less is More, ER = Easy Reading, EN = Easy Navigation, F = Formatting, ER = Easy Responding.  *** \textit{p} < .001, ** \textit{p} < .01, * \textit{p} < .05.}
 \vspace{5pt}
@@ -1791,8 +1863,9 @@ Practice w/o AI vs. Practice w/ AI & 1.01*** & .81*** & .98*** & 1.00*** & 1.05*
 During the test phase, when participants had to rewrite a cover letter without the help of the AI tool, participants who had practiced with AI outperformed participants who had not practiced, or had practiced without the AI tool. Again, the learning gains are robust to different specifications, subsamples, and measures or writing quality. See Table \ref{tab:s2_test}.
 For participants assigned to practice with the AI tool, the quality of AI rewrites did not correlate with participants' final submissions, \textit{r} = .06, \textit{p} = .25.
 
-\begin{table}[ht]
+\begin{table}[h]
     \centering
+    \footnotesize
     \caption{Test effects}
 \begin{tabular}{lcccccccccc}
 \toprule
@@ -1809,12 +1882,12 @@ Practice w/ AI & 5.01 & 6.90 & 4.98 & 4.99 & 5.11 & 4.12 & 6.21 & 6.17 & 3.86 & 
 \midrule
 \multicolumn{11}{l}{\textbf{Effect Sizes (d) --- (SE)}} \\ 
 \midrule
-No practice vs. Practice w/o AI & .09 & .09 & .09 & .10 & .09 & .10* & .11* & .01 & .09 & .01 \\ 
- & (.053) & (.053) & (.052) & (.053) & (.056) & (.053) & (.053) & (.053) & (.053) & (.053) \\ 
-No practice vs. Practice w/ AI & .47*** & .36*** & .46*** & .46*** & .48*** & .34*** & .28*** & .42*** & .46*** & .14** \\ 
- & (.054) & (.053) & (.053) & (.054) & (.057) & (.053) & (.053) & (.053) & (.054) & (.053) \\ 
-Practice w/o AI vs. Practice w/ AI & .38*** & .28*** & .36*** & .36*** & .39*** & .23*** & .17** & .41*** & .36*** & .13* \\ 
- & (.054) & (.053) & (.053) & (.054) & (.057) & (.054) & (.053) & (.054) & (.054) & (.053) \\ 
+No practice vs.  & .09 & .09 & .09 & .10 & .09 & .10* & .11* & .01 & .09 & .01 \\ 
+ Practice w/o AI& (.053) & (.053) & (.052) & (.053) & (.056) & (.053) & (.053) & (.053) & (.053) & (.053) \\ 
+No practice vs.  & .47*** & .36*** & .46*** & .46*** & .48*** & .34*** & .28*** & .42*** & .46*** & .14** \\ 
+ Practice w/ AI& (.054) & (.053) & (.053) & (.054) & (.057) & (.053) & (.053) & (.053) & (.054) & (.053) \\ 
+Practice w/o AI vs.  & .38*** & .28*** & .36*** & .36*** & .39*** & .23*** & .17** & .41*** & .36*** & .13* \\ 
+ Practice w/ AI& (.054) & (.053) & (.053) & (.054) & (.057) & (.054) & (.053) & (.054) & (.054) & (.053) \\ 
 \midrule
 \multicolumn{11}{p{16.5cm}}{\textit{Note.} GPT-4o is the main specification. Ex. Controls is the main specification, unadjusted for demographic and pretreatment variables, Ex. Cheaters excludes the 3\% of participants who admitted to cheating on the test phase. Followup is the subsample of non-attriting participants who returned to the one-day followup. LM to ER are disagregated scores for each of the five principles. LM = Less is More, ER = Easy Reading, EN = Easy Navigation, F = Formatting, ER = Easy Responding.  *** \textit{p} < .001, ** \textit{p} < .01, * \textit{p} < .05.}
 \vspace{5pt}
@@ -1822,26 +1895,28 @@ Practice w/o AI vs. Practice w/ AI & .38*** & .28*** & .36*** & .36*** & .39*** 
     \label{tab:s2_test}
 \end{table}
 
+\FloatBarrier
 \subsection{AI practice was less effortful}
 
 Table \ref{tab:effort_practice2} shows OLS models predicting practice effort metrics from practice condition. Results show that participants practicing without AI expended more effort, measured subjectively or objectively, through keystrokes or practice time. As pre-registered, time is square-root-transformed, and keystrokes are log-transformed. Differences are slightly smaller when using untransformed variables.
 
-\begin{table}[ht]
+\begin{table}[H]
     \centering
+    \footnotesize
     \caption{Practice effort differences}
 \begin{tabular}{lccccc}
 \toprule
   & sqrt(Time) & log(Keystrokes) & Subjective Rating (0 - 10) & Time & Keystrokes \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{6}{l}{\textbf{Means --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 Practice w/o AI & 2.37 & 4.31 & 6.52 & 6.76 & 430.95 \\ 
  & (.152) & (.322) & (.291) & (.913) & (57.349) \\ 
 Practice w/ AI & 2.30 & 3.36 & 5.93 & 6.62 & 383.38 \\ 
  & (.153) & (.325) & (.293) & (.919) & (57.887) \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{6}{l}{\textbf{Effect Sizes (d) --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 Practice w/o AI vs. Practice w/ AI & -.07 & -.45*** & -.31*** & -.02 & -.13* \\ 
  & (.053) & (.054) & (.053) & (.053) & (.053) \\ 
 \midrule
@@ -1855,24 +1930,25 @@ Practice w/o AI vs. Practice w/ AI & -.07 & -.45*** & -.31*** & -.02 & -.13* \\
 
 Table \ref{tab:effort_test2} shows OLS models predicting test effort metrics from practice condition. Results show some differences: participants who practiced with AI pressed more keys but reported less subjective effort.
 
-\begin{table}[ht]
+\begin{table}[H]
     \centering
+    \footnotesize
 \caption{Test effort differences}
 \begin{tabular}{lccccc}
 \toprule
   & sqrt(Time) & log(Keystrokes) & Subjective Rating (0 - 10) & Time & Keystrokes \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{6}{l}{\textbf{Means --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 No practice & 2.32 & 5.01 & 6.55 & 5.62 & 399.10 \\ 
  & (.069) & (.213) & (.266) & (.257) & (41.391) \\ 
 Practice w/o AI & 2.15 & 4.87 & 6.91 & 4.98 & 409.09 \\ 
  & (.068) & (.211) & (.265) & (.255) & (41.143) \\ 
 Practice w/ AI & 2.19 & 5.05 & 6.69 & 5.14 & 446.59 \\ 
  & (.069) & (.213) & (.267) & (.257) & (41.408) \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{6}{l}{\textbf{Effect Sizes (d) --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 No practice vs. Practice w/o AI & -.31*** & -.09 & .18*** & -.32*** & .03 \\ 
  & (.053) & (.053) & (.053) & (.053) & (.053) \\ 
 No practice vs. Practice w/ AI & -.24*** & .02 & .07 & -.24*** & .15** \\ 
@@ -1890,23 +1966,23 @@ Practice w/o AI vs. Practice w/ AI & .07 & .11* & -.11* & .08 & .12* \\
 
 Table \ref{tab:learning_rate2} shows OLS models predicting learning rate metrics from practice condition. Learning rate is defined as the difference between test and pretest, divided by the effort metric. It shows how many points (10-point scale) the participant improved per unit effort (e.g., per minute spent practicing). Participants who practiced with AI improved their skill more efficiently.
 
-\begin{table}[ht]
+\begin{table}[H]
     \centering
     \caption{Learning rate differences. Means are the rate of improvement per unit sqrt(time (min)), log(keystrokes), subjective rating, raw time in minutes, and raw keystrokes. }
-
+\footnotesize
 \begin{tabular}{lccccc}
 \toprule
   & sqrt(Time) & log(Keystrokes) & Subjective Rating (0 - 10) & Time & Keystrokes \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{6}{l}{\textbf{Means --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 Practice w/o AI & .28 & .12 & .27 & .32 & .43 \\ 
  & (.062) & (.094) & (.038) & (.096) & (.073) \\ 
 Practice w/ AI & .43 & .36 & .37 & .61 & .62 \\ 
  & (.062) & (.094) & (.038) & (.097) & (.073) \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{6}{l}{\textbf{Effect Sizes (d) --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 Practice w/o AI vs. Practice w/ AI & .39*** & .40*** & .41*** & .47*** & .40*** \\ 
  & (.054) & (.054) & (.054) & (.054) & (.054) \\ 
 \midrule
@@ -1918,36 +1994,38 @@ Practice w/o AI vs. Practice w/ AI & .39*** & .40*** & .41*** & .47*** & .40*** 
 
 Most participants did not engage passively with the AI tool. As shown in Figure \ref{fig:distance}, an overwhelming majority of participants changed the AI tool's output text before submitting it as their answer. A smaller proportion of participants even edited the cover letter email \textit{before} passing it along to the AI tool.
 
-\begin{figure}[ht]
+\begin{figure}
     \centering
     \includegraphics[width=0.95\linewidth]{levenshtein_distance.pdf}
     \caption{Levenshtein distance (number of additions, modifications or deletions) between the original text and the text passed along to the AI tool (Input); and between the AI's output text and what users submitted as their final work (Output).}
     \label{fig:distance}
 \end{figure}
 
-\subsection{Seeing an AI example did not discourage motivation for future learning}\label{sec:future_learning2}
+\FloatBarrier
+\subsection{AI practice did not discourage motivation for future learning}\label{sec:future_learning2}
 
 Table \ref{tab:motivation2} presents differences in perceived learning, perceived writing skill, and the likelihood of asking for feedback across conditions, with effect sizes and means reported for each comparison. Despite objectively learning more, participants who practiced with AI perceived their learning and skill levels to be similar to those who practiced without AI and asked for feedback at comparable rates.
 
-\begin{table}[ht]
+\begin{table}[h]
     \centering
+    \footnotesize
     \caption{Differences in motivational variables by condition.}
 
 \begin{tabular}{lccc}
 \toprule
   & Perceived learning & Perceived writing skill & Asked for feedback \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{4}{l}{\textbf{Means/Proportions}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 No practice & 5.91 & 6.40 & .64 \\ 
  & (.209) & (.208) & (.064) \\ 
 Practice w/o AI & 5.90 & 6.61 & .62 \\ 
  & (.207) & (.206) & (.066) \\ 
 Practice w/ AI & 6.03 & 6.56 & .58 \\ 
  & (.209) & (.208) & (.068 ) \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{4}{l}{\textbf{Effect Sizes (\textit{d}s/odds ratios)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 No practice vs. Practice w/o AI & -.00 & .13* & 1.10 \\ 
  & (.053) & (.053) & (.128) \\ 
 No practice vs. Practice w/ AI & .08 & .10 & 1.30* \\ 
@@ -1961,33 +2039,34 @@ Practice w/o AI vs. Practice w/ AI & .08 & -.03 & 1.17 \\
     \label{tab:motivation2}
 \end{table}
 
+\FloatBarrier
 \subsection{The effects of practicing with AI persist}\label{sec:persists2}
 Table \ref{tab:s2_followup} shows means and standardized differences for measures of writing skill and related outcomes during the follow-up phase. The main specification demonstrates that participants who practiced with AI continued to outperform those who did not practice or practiced without AI. Robustness checks, including using a different language model (Column 2), excluding control variables (Column 3), and removing participants who admitted to cheating (Column 4) confirm the consistency of these effects. The results also hold when evaluating each of the five principles separately (Columns 5–9). These findings suggest that the benefits of practicing with AI are durable and persist even after participants stop using the tool.
-\begin{table}[ht]
+\begin{table}[h]
     \centering
     \caption{Followup effects}
-
+\footnotesize
 \begin{tabular}{lccccccccc}
 \toprule
   & GPT-4o & Claude & Ex. Controls & Ex. Cheaters & LM & ER & EN & F & ER \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{10}{l}{\textbf{Means --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 No practice & 4.73 & 6.75 & 4.75 & 4.75 & 4.31 & 6.36 & 5.56 & 2.43 & 5.01 \\ 
  & (.212) & (.094) & (.054) & (.054) & (.201) & (.206) & (.235) & (.510) & (.267) \\ 
 Practice w/o AI & 4.79 & 6.78 & 4.84 & 4.86 & 4.44 & 6.45 & 5.52 & 2.59 & 4.96 \\ 
  & (.211) & (.093) & (.053) & (.054) & (.200) & (.205) & (.234) & (.507) & (.266) \\ 
 Practice w/ AI & 5.34 & 6.95 & 5.35 & 5.37 & 4.72 & 6.67 & 6.14 & 3.85 & 5.30 \\ 
  & (.214) & (.094) & (.055) & (.055) & (.203) & (.208) & (.237) & (.515) & (.270) \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{10}{l}{\textbf{Effect Sizes (d) --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
-No practice vs. Practice w/o AI & .05 & .06 & .07 & .08 & .11 & .08 & -.02 & .05 & -.03 \\ 
- & (.056) & (.054) & (.055) & (.056) & (.056) & (.056) & (.056) & (.056) & (.056) \\ 
-No practice vs. Practice w/ AI & .46*** & .33*** & .44*** & .45*** & .32*** & .25*** & .40*** & .45*** & .17** \\ 
- & (.057) & (.055) & (.056) & (.057) & (.056) & (.056) & (.057) & (.057) & (.056) \\ 
-Practice w/o AI vs. Practice w/ AI & .41*** & .28*** & .37*** & .37*** & .22*** & .17** & .42*** & .40*** & .20*** \\ 
- & (.057) & (.055) & (.056) & (.056) & (.056) & (.056) & (.057) & (.057) & (.056) \\ 
+\midrule
+No practice vs.  & .05 & .06 & .07 & .08 & .11 & .08 & -.02 & .05 & -.03 \\ 
+ Practice w/o AI& (.056) & (.054) & (.055) & (.056) & (.056) & (.056) & (.056) & (.056) & (.056) \\ 
+No practice vs.  & .46*** & .33*** & .44*** & .45*** & .32*** & .25*** & .40*** & .45*** & .17** \\ 
+Practice w/ AI & (.057) & (.055) & (.056) & (.057) & (.056) & (.056) & (.057) & (.057) & (.056) \\ 
+Practice w/o AI vs.  & .41*** & .28*** & .37*** & .37*** & .22*** & .17** & .42*** & .40*** & .20*** \\ 
+ Practice w/ AI& (.057) & (.055) & (.056) & (.056) & (.056) & (.056) & (.057) & (.057) & (.056) \\ 
 \midrule
 \multicolumn{10}{p{15cm}}{\textit{Note.} GPT-4o is the main specification. Ex. Controls is the main specification, unadjusted for demographic and pretreatment variables, Ex. Cheaters excludes the 3\% of participants who admitted to cheating on the test phase. LM to ER are disagregated scores for each of the five principles. LM = Less is More, ER = Easy Reading, EN = Easy Navigation, F = Formatting, ER = Easy Responding. *** \textit{p} < .001, ** \textit{p} < .01, * \textit{p} < .05.}
 \vspace{5pt}
@@ -1999,8 +2078,10 @@ Practice w/o AI vs. Practice w/ AI & .41*** & .28*** & .37*** & .37*** & .22*** 
 
 To test for moderation effects of pre-treatment demographic variables, we ran separate linear in which writing skill during the test phase was regressed on condition, the pre-treatment moderator of interest, writing skill at baseline, and an interaction term between the moderator $\times$ condition. After correcting the \textit{p-}values for the interaction terms, none were significant at the .05 level, suggesting that practicing with AI was equally effective across groups.
 
-\begin{table}[ht]
+\begin{landscape}
+\begin{table}[h]
     \centering
+    \footnotesize
     \caption{BH-corrected \textit{p}-values for interaction terms from models predicting each outcome from condition interacted with pre-treatment variables.}
     \label{tab:interactions2}
         \begin{tabular}{@{\extracolsep{-4pt}}lcccccccccccccc}
@@ -2009,20 +2090,20 @@ To test for moderation effects of pre-treatment demographic variables, we ran se
     \cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-6} \cmidrule(lr){7-7} \cmidrule(lr){8-8} \cmidrule(lr){9-10} \cmidrule(lr){11-12} \cmidrule(lr){13-14}
     \textbf{Level} & \textbf{No AI} & \textbf{With AI} & \textbf{No AI} & \textbf{With AI} & \textbf{With AI} & \textbf{With AI} & \textbf{With AI} & \textbf{No AI} & \textbf{With AI} & \textbf{No AI} & \textbf{With AI} & \textbf{No AI} & \textbf{With AI} \\ 
     \midrule
-    \addlinespace[2.5pt]
+    
     \multicolumn{14}{l}{\textbf{Continuous Moderators}} \\ 
     \midrule
     Pretest         & 0.955 & 0.914 & 0.631 & 0.699 & 0.984 & 0.914 & 0.941 & 0.820 & 0.914 & 0.914 & 0.914 & 0.574 & 0.851 \\ 
     Year of Birth   & 0.533 & 0.931 & 0.868 & 0.955 & 0.914 & 0.955 & 0.914 & 0.914 & 0.955 & 0.955 & 0.914 & 0.914 & 0.618 \\ 
     Writing Skill   & 0.914 & 0.914 & 0.955 & 0.545 & 0.913 & 0.838 & 0.914 & 0.851 & 0.914 & 0.914 & 0.919 & 0.914 & 0.914 \\ 
     \midrule
-    \addlinespace[2.5pt]
+    
     \multicolumn{14}{l}{\textbf{Gender} (vs. Female)} \\ 
     \midrule
     Male            & 0.955 & 0.914 & 0.970 & 0.955 & 0.699 & 0.914 & 0.955 & 0.699 & 0.979 & 0.914 & 0.851 & 0.699 & 0.533 \\ 
     Other           & 0.719 & 0.919 & 0.914 & 0.955 & 0.931 & 0.955 & 0.931 & 0.914 & 0.914 & 0.955 & 0.931 & 0.876 & 0.913 \\ 
     \midrule
-    \addlinespace[2.5pt]
+    
     \multicolumn{14}{l}{\textbf{Race}} \\ 
     \midrule
     White           & 0.914 & 0.955 & 0.914 & 0.574 & 0.955 & 0.914 & 0.914 & 0.737 & 0.931 & 0.643 & 0.851 & 0.533 & 0.699 \\ 
@@ -2031,7 +2112,7 @@ To test for moderation effects of pre-treatment demographic variables, we ran se
     Latino          & 0.919 & 0.914 & 0.970 & 0.914 & 0.914 & 0.868 & 0.533 & 0.868 & 0.944 & 0.533 & 0.914 & 0.970 & 0.574 \\ 
     Other           & 0.973 & 0.914 & 0.914 & 0.973 & 0.914 & 0.931 & 0.643 & 0.914 & 0.914 & 0.955 & 0.914 & 0.533 & 0.533 \\ 
     \midrule
-    \addlinespace[2.5pt]
+    
     \multicolumn{14}{l}{\textbf{Motivation} (vs. Not at all)} \\ 
     \midrule
     Hardly          & 0.914 & 0.914 & 0.955 & 0.955 & 0.914 & 0.955 & 0.964 & 0.914 & 0.914 & 0.955 & 0.931 & 0.699 & 0.533 \\ 
@@ -2045,25 +2126,466 @@ A few times per week     & 0.914 & 0.667 & 0.955 & 0.955 & 0.914 & 0.533 & 0.914
 About once a week        & 0.876 & 0.214 & 0.914 & 0.955 & 0.955 & 0.699 & 0.914 & 0.574 & 0.914 & 0.931 & 0.919 & 0.914 & 0.970 \\ 
 Every day                & 0.914 & 0.914 & 0.914 & 0.964 & 0.919 & 0.914 & 0.984 & 0.914 & 0.931 & 0.955 & 0.914 & 0.955 & 0.931 \\ 
 \midrule
-\multicolumn{14}{p{\textwidth}}{\textit{Note.} Models for test and follow-up performance, square-root practice time, log keystrokes, subjective effort, perceived learning and perceived writing skill or OLS models. Asking to see feedback was a binary Yes/No variable, and was modelled with logistic regression. Models match the pre-registered main specification, and thus control for all other pre-treatment variables. Per. = Perceived}
+\multicolumn{14}{p{\textwidth}}{\textit{Note.} Models for test and follow-up performance, square-root practice time, log keystrokes, subjective effort, perceived learning and perceived writing skill or OLS models. Asking to see feedback was a binary Yes/No variable, and was modelled with logistic regression. Models match the pre-registered main specification, thereby controlling for all other pre-treatment variables. Per. = Perceived}
 \vspace{5pt}
     \end{tabular}
 \end{table}
+\end{landscape}
+
+\subsection{Pairwise comparisons}
+The relative likelihood of a cover letter receiving an invitation to an interview was correlated with the GPT-rated writing quality. See Figure \ref{fig:correlations2}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{correlations2.pdf}
+    \caption{Correlation between test score writing quality as rated by GPT-4o and relative likelihood of being offered a hypothetical interview.}
+    \label{fig:correlations2}
+\end{figure}
+
+As shown in Table \ref{tab:beta2}, participants who had practiced writing cover letters with AI were more likely to be invited to a hypothetical job interview.
+
+\begin{table}[h]
+    \centering
+    \caption{Results from beta regressions predicting the relative likelihood of an interview from test phase cover letters. The reference category is practice with AI.}
+
+    \begin{tabular}{lcccc}
+    \toprule
+& (1) & (2)  \\ \midrule 
+(Intercept)                                                                      & \num{0.085}***  & \num{-4.816}     \\
+& (\num{0.022})   & (\num{5.017})   \\
+No practice                                                             & \num{-0.147}*** & \num{-0.250}***  \\
+& (\num{0.031})   & (\num{0.073})   \\
+Practice w/o AI                                                          & \num{-0.096}**  & \num{-0.110}   \\
+& (\num{0.031})   & (\num{0.073})  \\
+
+\midrule 
+Precision ($\phi$)                                                                            & \num{12.899}*** &          \\
+& (\num{1.192})   &                  \\
+Symmetry (Log($\nu$))                                                                          & \num{-0.117}    &                \\
+& (\num{0.086})   &                      \\
+Demographic and baseline performance covariates & No & Yes \\
+\midrule 
+Num.Obs.                                                                         & \num{2188}      & \num{2153}        \\
+AIC                                                                              & \num{2204.7}    & \num{-10885.8}  \\
+BIC                                                                              & \num{2233.2}    & \num{-10721.3}   \\
+Log.Lik.                                                                         & \num{-1097.349} &                            \\
+RMSE                                                                             &                  & \num{0.28}          \\
+\bottomrule
+    \end{tabular}
+    \label{tab:beta2}
+\end{table}
+
+
+
+\FloatBarrier
 
 \section{Results Study 3}
+\subsection{Mediation}\label{sec:mediation}
+Participants predicted they would learn more from the feedback of human editors than from AI (a path = 1.05, SE = 0.22, \textit{p} \textless .001). In turn, higher confidence predicted greater willingness to pay (b path = 0.06, SE = 0.01, \textit{p} \textless .001). Participants’ greater willingness to pay for human feedback was largely explained by their prediction that they would learn more from experienced human editors than from AI (indirect effect = 0.06, SE = 0.01, \textit{p} < .001), accounting for most of the overall tendency to pay more for human editors (total effect = 0.10, SE = 0.02, \textit{p} < .001). Once these predictions were taken into account, the remaining preference for human feedback was small and only marginally significant (c' path = 0.04, SE = 0.02, \textit{p} = .054).  See Figure \ref{fig:mediation} and Section \ref{sec:mediation} of Supplementary Information for details.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{mediation.pdf}
+    \caption{Predicted effectiveness mediates underinvestment in AI feedback}
+    \label{fig:mediation}
+\end{figure}
+\FloatBarrier
+
+
+\section{Results Study 4}
+\subsection{Randomization, Balance, and Missingness}
+Participants in Study 4 were recontacted to return two days after the initial intake section. While most people responded, X\% of recontacted participants did not respond. As shown in Table \ref{tab:s5missingness}, missingness and attrition rates were low and did not differ by condition.
+
+\begin{table}
+\centering
+\caption{Missingness and attrition proportions and test in Study 4.}
+
+\begin{tabular}{lr}
+\toprule
+Condition & Retention Rate \\ 
+\midrule
+Practice w/ AI & 85.11\% \\ 
+Google examples & 85.70\% \\ 
+Editor feedback & 86.95\% \\ \midrule
+Overall & 85.92\% \\ \midrule
+$\chi^2$ & 1.446 \\ 
+\textit{p}-value & .485 \\ 
+\bottomrule
+\end{tabular}
+\label{tab:s5missingness}
+\end{table}
+
+Pre-treatment variables were balanced across experimental conditions, ensuring that random assignment was successful. To assess balance, we conducted a series of one-way ANOVAs for continuous variables and chi-square tests for categorical variables. Given the multiple comparisons, we applied the Benjamini-Hochberg (BH) procedure to control the false discovery rate. All statistical tests confirmed that none of the pre-treatment variables differed significantly across conditions. See Table \ref{tab:s5randomization}.
+    
+\begin{table}
+\footnotesize
+            \caption{Randomization checks for pre-treatment variables in Study 4. \textit{p}-values are BH multiple comparisons corrected. Continuous variables tested with ANOVA, binary and factor variables with $\chi^2$ tests. SMD = Standardized Mean Difference.}
+
+\begin{tabular}{lrrrrrrr}
+\toprule
+ & Overall & Practice w/ AI & Google examples & Editor feedback & \textit{p} &  SMD \\ 
+\midrule
+\textit{\textbf{n}} &  2997 &  1001 &  1000 &   996 &  &    \\ 
+\textbf{Age (mean (SD))} & 41.47 (13.83) & 41.38 (13.78) & 41.11 (13.76) & 41.92 (13.95) & .666 &    0.039 \\ 
+\textbf{Gender (\%)} &   &    &    &    & .666 &    0.059 \\ 
+   Female &  1824 (60.9)  &   596 (59.5)  &   628 (62.8)  &   600 (60.2)  &  &    \\ 
+   Male &  1124 (37.5)  &   390 (39.0)  &   352 (35.2)  &   382 (38.4)  &  &   \\ 
+   Other &    49 ( 1.6)  &    15 ( 1.5)  &    20 ( 2.0)  &    14 ( 1.4)  &  &    \\ 
+   \textbf{Race/Ethnicity} & & &&&\\
+White (\%) &  2209 (73.7)  &   745 (74.4)  &   736 (73.6)  &   728 (73.1)  & .950 &    0.020 \\ 
+Black (\%) &   473 (15.8)  &   164 (16.4)  &   145 (14.5)  &   164 (16.5)  & .666 &    0.036 \\ 
+Asian (\%) &   204 ( 6.8)  &    61 ( 6.1)  &    68 ( 6.8)  &    75 ( 7.5)  & .666 &   0.038 \\ 
+Latino (\%) &   253 ( 8.4)  &    79 ( 7.9)  &    95 ( 9.5)  &    79 ( 7.9)  & .666 &   0.038 \\ 
+Other  (\%) &   102 ( 3.4)  &    35 ( 3.5)  &    40 ( 4.0)  &    27 ( 2.7)  & .666 &   0.048 \\ 
+\textbf{Education Level (\%)} &   &    &    &    & .964 &    0.080 \\ 
+   < high school &    10 ( 0.3)  &     4 ( 0.4)  &     2 ( 0.2)  &     4 ( 0.4)  &  &    \\ 
+   High school &   271 ( 9.0)  &    80 ( 8.0)  &    94 ( 9.4)  &    97 ( 9.7)  &  &    \\ 
+   Some college&   508 (17.0)  &   178 (17.8)  &   168 (16.8)  &   162 (16.3)  &  &    \\ 
+   Associate  &   283 ( 9.4)  &    91 ( 9.1)  &    98 ( 9.8)  &    94 ( 9.4)  &  &    \\ 
+   Bachelor's  &  1165 (38.9)  &   398 (39.8)  &   394 (39.4)  &   373 (37.4)  &  &    \\ 
+   Master's  &   596 (19.9)  &   199 (19.9)  &   193 (19.3)  &   204 (20.5)  &  &    \\ 
+   Doctoral/Professional  &   164 ( 5.5)  &    51 ( 5.1)  &    51 ( 5.1)  &    62 ( 6.2)    &  &  \\ 
+\textbf{Perceived Writing Skill (mean (SD))} &  6.69 (1.67) &  6.67 (1.68) &  6.63 (1.69) &  6.76 (1.63) & .666 &    0.051 \\ 
+\textbf{Motivation to Improve Writing} (\%) &   &    &    &    & .748 &    0.083 \\ 
+   Not at all motivated &    24 ( 0.8)  &     9 ( 0.9)  &     6 ( 0.6)  &     9 ( 0.9)  &  &    \\ 
+   Hardly motivated &   166 ( 5.5)  &    59 ( 5.9)  &    55 ( 5.5)  &    52 ( 5.2)  &  &    \\ 
+   Somewhat motivated &  1036 (34.6)  &   354 (35.4)  &   330 (33.0)  &   352 (35.3)  &  &    \\ 
+   Very motivated &  1135 (37.9)  &   387 (38.7)  &   390 (39.0)  &   358 (35.9)  &  &    \\ 
+   Extremely motivated &   636 (21.2)  &   192 (19.2)  &   219 (21.9)  &   225 (22.6)  &  &    \\ 
+\textbf{Experience with AI writing assistants (\%)} &   &    &    &    & .666 &   0.090 \\ 
+   Never &   516 (17.2)  &   188 (18.8)  &   173 (17.3)  &   155 (15.6)  &    &  \\ 
+   Hardly ever use them &  1211 (40.4)  &   383 (38.3)  &   411 (41.1)  &   417 (41.9)  &  &    \\ 
+   A few times per week &   557 (18.6)  &   197 (19.7)  &   173 (17.3)  &   187 (18.8)  &  &    \\ 
+   About once a week &   503 (16.8)  &   158 (15.8)  &   178 (17.8)  &   167 (16.8)  &  &    \\ 
+   Every day &   210 ( 7.0)  &    75 ( 7.5)  &    65 ( 6.5)  &    70 ( 7.0)  &  &  &  \\ 
+\textbf{Pretest Writing Skill (mean (SD))} &  4.40 (0.67) &  4.41 (0.67) &  4.40 (0.68) &  4.40 (0.65) & .964 &    0.008 \\ 
+\bottomrule
+\end{tabular}
+\label{tab:s5randomization}
+\end{table}
+
+\subsection{Editors}\label{sec:editors}
+We recruited 44 professional writers and editors through Journalist’s Resource, paying them \$100 to edit 20 cover letters each. They were asked to spend about 7 minutes per cover letter. In total, they edited 1,227 cover letters.
+
+To determine if editors changed their behavior over time, we fit a series of multilevel models, with cover letter position as a predictor, random intercept for editors, and text quality (as rated by GPT-4o), time spent per cover letter, and number of insertions, deletions, or modifications (i.e., Levenstein distance). These analyses include editors who were able to edit at least 20 letters, and focus on the first 20 letters edited. The quality of the edited letters improved over time ($\beta$ = 0.013, SE = 0.005, p = 0.013), even though editors spent less time as the task progressed ($\beta$ = -0.387, SE = 0.028, \textit{p} < .001). Interestingly, editors also were able to improve the emails using fewer edits as the task progressed ($\beta$ = -2.572, SE = 0.926, \textit{p} = 0.00561). Despite spending less time per letter, editors produced higher quality edits with fewer but more effective changes, demonstrating clear learning effects in professional editing tasks.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{editors_over_time.pdf}
+\caption{Editor performance improved over the course of the task, with participants becoming more efficient at editing emails while reducing both editing time and the number of character-level changes (measured by Levenshtein distance). The line and shaded area show a linear model fit, while the gray line represents the best-fit loess curve.}
+    \label{fig:editors_over_time}
+\end{figure}
+
+\subsection{Search Behavior}
+
+We replicated the first five pages of a Google search for “cover letter examples” and made this available to participants through Qualtrics to monitor their search behavior.
+
+Across 635 participants assigned to use Google to search for cover letter examples and tips, we found search behavior consistent with prior research on web-browsing behavior [CITE]. Most participants (97\%) stayed on page 1, while only 3\% ventured beyond the first page of results. Participants spent an average of 2.8 minutes (median: 1.3 minutes) browsing search results, with an average of 0.9 minutes between clicks. On average, participants made 2.9 clicks during their search session.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{search.pdf}
+    \caption{Web browsing descriptive statistics.}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{AI practice improved writing skill more than getting feedback from professional editors and looking for examples online}
+
+The AI tool improved performance while participants used it. Table \ref{tab:s5_practice_effects} shows means and standardized differences for different measures of writing skill during the practice phase. The robustness checks included after the main specification, show that results are similar when using a different language model (Column 2), when not including control variables (Column 3), when excluding participants who admitted to cheating in the test phase (Column 4), and for each of the 5 principles separately (Columns 5 - 9).
+
+\begin{table}
+\centering
+\caption{Practice effects}
+
+\begin{tabular}{lcccccccc}
+\toprule
+  & GPT-4o & Ex. Controls & Ex. Cheaters & LM & ER & EN & F & ER \\ 
+\midrule
+\multicolumn{9}{l}{\textbf{Means}} \\[2.5pt] 
+\midrule
+{AI} & {6.24} & {6.22} & {6.28} & {5.61} & {7.26} & {6.88} & {5.41} & {6.04} \\ 
+{} & {(.172)} & {(.048)} & {(.173)} & {(.167)} & {(.125)} & {(.190)} & {(.397)} & {(.214)} \\ 
+{Google} & {4.81} & {4.80} & {4.84} & {4.23} & {6.33} & {5.85} & {2.71} & {4.91} \\ 
+{} & {(.173)} & {(.048)} & {(.174)} & {(.167)} & {(.125)} & {(.191)} & {(.398)} & {(.215)} \\ 
+{Editors} & {5.18} & {5.17} & {5.21} & {4.55} & {6.56} & {6.24} & {3.44} & {5.09} \\ 
+{} & {(.172)} & {(.048)} & {(.173)} & {(.166)} & {(.124)} & {(.190)} & {(.396)} & {(.214)} \\ 
+\midrule
+\multicolumn{9}{l}{\textbf{Effect Sizes (d)}} \\[2.5pt] 
+\midrule
+{AI vs. Google} & {-1.04***} & {-1.01***} & {-1.03***} & {-1.03***} & {-.93***} & {-.67***} & {-.85***} & {-.66***} \\ 
+{} & {(.051)} & {(.050)} & {(.052)} & {(.051)} & {(.051)} & {(.050)} & {(.051)} & {(.050)} \\ 
+{AI vs. Editors} & {-.77***} & {-.75***} & {-.77***} & {-.79***} & {-.70***} & {-.42***} & {-.62***} & {-.56***} \\ 
+{} & {(.050)} & {(.049)} & {(.050)} & {(.050)} & {(.050)} & {(.049)} & {(.050)} & {(.050)} \\ 
+{Google vs. Editors} & {.27***} & {.26***} & {.27***} & {.24***} & {.23***} & {.25***} & {.23***} & {.10*} \\ 
+{} & {(.049)} & {(.048)} & {(.049)} & {(.049)} & {(.049)} & {(.049)} & {(.049)} & {(.049)} \\ 
+\midrule
+\multicolumn{9}{p{14cm}}{\textit{Note.} GPT-4o is the main specification. Ex. Controls is the main specification, unadjusted for demographic and pretreatment variables, Ex. Cheaters excludes the 3\% of participants who admitted to cheating on the test phase.  LM to ER are disagregated scores for each of the five principles. LM = Less is More, ER = Easy Reading, EN = Easy Navigation, F = Formatting, ER = Easy Responding.  *** \textit{p} < .001, ** \textit{p} < .01, * \textit{p} < .05.}
+\end{tabular}
+\label{tab:practice_effects_s5}
+\end{table}
+
+During the test phase, when participants had to rewrite a cover letter without the help of the AI tool, participants who had practiced with AI outperformed participants who searched for cover letter examples and tips and participants who received personalized feedback from professional editors. Again, the learning gains are robust to different specifications, subsamples, and measures or writing quality. See Table     \ref{tab:test_effects_s5}.
+\begin{landscape}
+
+\begin{table}[]
+
+
+    \centering
+        \caption{Test effects}
+    \begin{tabular}{lccccccccc}
+\toprule
+  & GPT-4o & Claude & Ex. Controls & Ex. Cheaters & LM & ER & EN & F & ER \\ 
+\midrule
+\multicolumn{10}{l}{\textbf{Means}} \\[2.5pt] 
+\midrule
+{AI} & {4.98} & {5.14} & {4.77} & {4.99} & {3.98} & {6.34} & {6.00} & {3.63} & {4.93} \\ 
+{} & {(.133)} & {(.103)} & {(.041)} & {(.134)} & {(.126)} & {(.133)} & {(.156)} & {(.333)} & {(.169)} \\ 
+{Google} & {4.44} & {4.90} & {4.24} & {4.46} & {3.59} & {5.95} & {5.50} & {2.43} & {4.74} \\ 
+{} & {(.133)} & {(.103)} & {(.040)} & {(.134)} & {(.126)} & {(.133)} & {(.156)} & {(.333)} & {(.169)} \\ 
+{Editors} & {4.75} & {5.03} & {4.55} & {4.76} & {3.70} & {6.10} & {5.95} & {3.18} & {4.80} \\ 
+{} & {(.133)} & {(.103)} & {(.040)} & {(.134)} & {(.126)} & {(.133)} & {(.155)} & {(.333)} & {(.169)} \\ 
+\midrule
+\multicolumn{10}{l}{\textbf{Effect Sizes (d)}} \\[2.5pt] 
+\midrule
+{AI vs. Google} & {-.46***} & {-.27***} & {-.44***} & {-.46***} & {-.36***} & {-.34***} & {-.37***} & {-.41***} & {-.12*} \\ 
+{} & {(.050)} & {(.050)} & {(.049)} & {(.050)} & {(.049)} & {(.049)} & {(.049)} & {(.049)} & {(.049)} \\ 
+{AI vs. Editors} & {-.20***} & {-.12*} & {-.18***} & {-.20***} & {-.25***} & {-.21***} & {-.04} & {-.16**} & {-.09} \\ 
+{} & {(.049)} & {(.049)} & {(.048)} & {(.049)} & {(.049)} & {(.049)} & {(.049)} & {(.049)} & {(.049)} \\ 
+{Google vs. Editors} & {.26***} & {.15**} & {.26***} & {.26***} & {.11*} & {.13**} & {.34***} & {.26***} & {.04} \\ 
+{} & {(.049)} & {(.049)} & {(.048)} & {(.049)} & {(.049)} & {(.049)} & {(.049)} & {(.049)} & {(.049)} \\ 
+\midrule
+\multicolumn{9}{p{14cm}}{\textit{Note.} GPT-4o is the main specification. Ex. Controls is the main specification, unadjusted for demographic and pretreatment variables, Ex. Cheaters excludes the 3\% of participants who admitted to cheating on the test phase. LM to ER are disagregated scores for each of the five principles. LM = Less is More, ER = Easy Reading, EN = Easy Navigation, F = Formatting, ER = Easy Responding.  *** \textit{p} < .001, ** \textit{p} < .01, * \textit{p} < .05.}
+    \end{tabular}
+    \label{tab:test_effects_s5}
+\end{table}
+\end{landscape}
+
+\subsection{AI practice wasn’t any more effortful than getting feedback from professional editors and was less effortful than looking for examples online}
+
+Table \ref{tab:effort_practice5} shows OLS models predicting practice effort metrics from practice condition. Results show that participants practicing without AI expended more effort, measured subjectively or objectively, through keystrokes or practice time. As pre-registered, time is square-root-transformed, and keystrokes are log-transformed. Differences are slightly smaller when using untransformed variables.
+
+\begin{landscape}
+
+\begin{table}[]
+    \centering
+    \caption{Practice effort differences}
+
+    \begin{tabular}{lcccccc}
+\toprule
+  & sqrt(Time) & log(Keystrokes) & Subjective Rating (0 - 10) & Time & Keystrokes & Keystrokes/sec \\ 
+\midrule
+\multicolumn{7}{l}{Means} \\[2.5pt] 
+\midrule
+AI & 2.45 & 3.76 & 7.14 & 7.04 & 251.19 & 1.52 \\ 
+ & (.112) & (.251) & (.217) & (.702) & (41.527) & (.089) \\ 
+Google & 2.76 & 4.68 & 7.11 & 8.96 & 369.45 & 1.78 \\ 
+ & (.112) & (.251) & (.217) & (.702) & (41.464) & (.089) \\ 
+Editors & 2.54 & 4.50 & 7.27 & 7.50 & 281.33 & 1.83 \\ 
+ & (.112) & (.251) & (.216) & (.702) & (41.482) & (.089) \\ 
+\midrule
+\multicolumn{7}{l}{Effect Sizes (d)} \\[2.5pt] 
+\midrule
+AI vs. Google & .32*** & .42*** & -.02 & .31*** & .32*** & .34*** \\ 
+ & (.049) & (.049) & (.049) & (.049) & (.049) & (.050) \\ 
+AI vs. Editors & .09 & .34*** & .07 & .07 & .08 & .41*** \\ 
+ & (.049) & (.049) & (.049) & (.049) & (.049) & (.049) \\ 
+Google vs. Editors & -.22*** & -.08 & .09 & -.24*** & -.24*** & .06 \\ 
+ & (.049) & (.049) & (.049) & (.049) & (.049) & (.049) \\ 
+\midrule
+\multicolumn{6}{l}{\textit{Note.} *** \textit{p} < .001, ** \textit{p} < .01, * \textit{p} < .05.}
+\vspace{5pt}
+    \end{tabular}
+    \label{tab:effort_practice5}
+\end{table}
+\end{landscape}
+Table \ref{tab:effort_test5} shows OLS models predicting test effort metrics from practice condition. Results show some differences: participants who practiced with AI pressed more keys but reported less subjective effort.
+\begin{landscape}
+\begin{table}[]
+    \centering
+        \caption{Test effort differences}
+
+    \begin{tabular}{lcccccc}
+\toprule
+  & sqrt(Time) & log(Keystrokes) & Subjective Rating (0 - 10) & Time & Keystrokes & Keystrokes/sec \\ 
+\midrule
+\multicolumn{7}{l}{Means} \\[2.5pt] 
+\midrule
+AI & 2.32 & 5.44 & 7.95 & 5.55 & 415.78 & 1.92 \\ 
+ & (.056) & (.177) & (.225) & (.218) & (39.760) & (.041) \\ 
+Google & 2.23 & 5.29 & 7.52 & 5.20 & 384.82 & 1.92 \\ 
+ & (.056) & (.177) & (.225) & (.218) & (39.747) & (.041) \\ 
+Editors & 2.29 & 5.39 & 8.00 & 5.41 & 381.98 & 1.95 \\ 
+ & (.056) & (.177) & (.225) & (.218) & (39.793) & (.041) \\ 
+\midrule
+\multicolumn{7}{l}{Effect Sizes (d)} \\[2.5pt] 
+\midrule
+AI vs. Google & -.18*** & -.09 & -.22*** & -.18*** & -.09 & -.02 \\ 
+ & (.049) & (.049) & (.049) & (.049) & (.049) & (.049) \\ 
+AI vs. Editors & -.07 & -.03 & .02 & -.08 & -.10* & .07 \\ 
+ & (.049) & (.049) & (.049) & (.049) & (.049) & (.049) \\ 
+Google vs. Editors & .11* & .06 & .24*** & .11* & -.01 & .09 \\ 
+ & (.049) & (.049) & (.049) & (.049) & (.049) & (.049) \\ 
+\midrule
+\multicolumn{6}{l}{\textit{Note.} *** \textit{p} < .001, ** \textit{p} < .01, * \textit{p} < .05.}
+\vspace{5pt}    \end{tabular}
+    \label{tab:effort_test5}
+\end{table}
+\end{landscape}
+\subsection{AI practice did not create more of an illusion of mastery than getting feedback from professional editors or looking for examples online}\label{sec:future_learning5}
+
+As reported in the main text, there were no differences between participants who practiced with AI and participants who practiced with editor feedback on how much they thought they learned, their perceived skill, and their likelihood to ask for feedback after the test. See Table \ref{tab:motivation5}
+
+\begin{table}[]
+    \centering
+        \caption{Differences in motivational variables by condition}
+
+    \begin{tabular}{lccc}
+\toprule
+  & Perceived Learning & Perceived Writing Skill & Asked for Feedback \\ 
+\midrule
+\multicolumn{4}{l}{\textbf{Means}} \\[2.5pt] 
+\midrule
+{AI} & {6.56} & {6.74} & {.67} \\ 
+{} & {(.227)} & {(.157)} & {(.054)} \\ 
+{Google} & {6.01} & {6.59} & {.59} \\ 
+{} & {(.227)} & {(.157)} & {(.058)} \\ 
+{Editors} & {6.41} & {6.76} & {.66} \\ 
+{} & {(.227)} & {(.156)} & {(.054)} \\ 
+\midrule
+\multicolumn{4}{l}{\textbf{Effect Sizes (d)}} \\[2.5pt] 
+\midrule
+{AI vs. Google} & {-.28***} & {-.11*} & {1.38**} \\ 
+{} & {(.049)} & {(.049)} & {(.147)} \\ 
+{AI vs. Editors} & {-.07} & {.02} & {1.03} \\ 
+{} & {(.049)} & {(.049)} & {(.112)} \\ 
+{Google vs. Editors} & {.20***} & {.12*} & {.75**} \\ 
+{} & {(.049)} & {(.049)} & {(.080)} \\ 
+\midrule
+\multicolumn{4}{l}{\textit{Note.} *** \textit{p} < .001, ** \textit{p} < .01, * \textit{p} < .05.}
+\vspace{5pt}
+\end{tabular}
+    \label{tab:motivation5}
+\end{table}
+
+\subsection{Results were not moderated by individual differences}
+As in Study 2, we tested whether each of the pretreatment demographic variables moderated the effects of seeing an AI example. To do this, we ran separate linear in which writing skill during the test phase was regressed on condition, the pre-treatment moderator of interest, writing skill at baseline, and an interaction term between the moderator $\times$ condition. After correcting the \textit{p-}values for the interaction terms, none were significant at the .05 level, suggesting that seeing AI examples was equally effective across groups. See Table \ref{tab:interactions5}
+
+\begin{landscape}
+\begin{table}[]
+    \centering
+        \caption{BH-corrected \textit{p}-values for interaction terms from models predicting each outcome from condition interacted with pre-treatment variables.}
+\footnotesize
+    \begin{tabular}{lrrrrrrrrrrrrrr}
+\toprule
+ & \multicolumn{2}{c}{\textbf{Test}} & \multicolumn{2}{c}{\textbf{Time Practice}} & \multicolumn{2}{c}{\textbf{Keys Practice}} & \multicolumn{2}{c}{\textbf{Effort Practice}} & \multicolumn{2}{c}{\textbf{Per. Learning}} & \multicolumn{2}{c}{\textbf{Per. Skill}} & \multicolumn{2}{c}{\textbf{Want Feedback}} \\ 
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9} \cmidrule(lr){10-11} \cmidrule(lr){12-13} \cmidrule(lr){14-15}
+ & \textbf{GE} & \textbf{EF} & \textbf{GE} & \textbf{EF}  & \textbf{GE} & \textbf{EF}  & \textbf{GE} & \textbf{EF}  & \textbf{GE} & \textbf{EF} &\textbf{GE} & \textbf{EF}& \textbf{GE} & \textbf{EF}  \\ 
+\midrule
+\multicolumn{15}{l}{} \\[2.5pt] 
+\midrule
+Pretest & 0.805 & 0.950 & 0.990 & 0.877 & 0.99 & 0.990 & 0.805 & 0.997 & 0.919 & 0.930 & 0.990 & 0.99 & 0.990 & 0.690 \\ 
+Year of Birth & 0.996 & 0.402 & 0.990 & 0.748 & 0.877 & 0.894 & 0.798 & 0.852 & 0.765 & 0.708 & 0.936 & 0.695 & 0.990 & 0.789 \\ 
+Writing Skill & 0.971 & 0.991 & 0.889 & 0.805 & 0.877 & 0.894 & 0.99 & 0.985 & 0.878 & 0.572 & 0.789 & 0.957 & 0.877 & 0.572 \\ 
+\midrule
+\multicolumn{15}{l}{\textbf{Gender} vs. Female} \\[2.5pt] 
+\midrule
+Male & 0.695 & 0.957 & 0.877 & 0.805 & 0.899 & 0.894 & 0.891 & 0.950 & 0.981 & 0.889 & 0.99 & 0.923 & 0.314 & 0.402 \\ 
+Other & 0.790 & 0.889 & 0.885 & 0.990 & 0.916 & 0.99 & 0.899 & 0.798 & 0.95 & 0.861 & 0.877 & 0.990 & 0.798 & 0.419 \\ 
+\midrule
+\multicolumn{15}{l}{\textbf{Race/Etnicity}} \\[2.5pt] 
+\midrule
+White & 0.267 & 0.402 & 0.402 & 0.542 & 0.95 & 0.877 & 0.878 & 0.887 & 0.862 & 0.877 & 0.805 & 0.99 & 0.852 & 0.449 \\ 
+Black & 0.748 & 0.922 & 0.748 & 0.990 & 0.891 & 0.877 & 0.442 & 0.211 & 0.189 & 0.533 & 0.140 & 0.427 & 0.99 & 0.99 \\ 
+Asian & 0.150 & 0.432 & 0.990 & 0.789 & 0.894 & 0.605 & 0.519 & 0.805 & 0.937 & 0.899 & 0.990 & 0.805 & 0.805 & 0.378 \\ 
+Latino & 0.189 & 0.789 & 0.402 & 0.889 & 0.318 & 0.894 & 0.981 & 0.605 & 0.899 & 0.805 & 0.852 & 0.789 & 0.99 & 0.99 \\ 
+Other & 0.894 & 0.798 & 0.877 & 0.990 & 0.99 & 0.805 & 0.959 & 0.66 & 0.805 & 0.701 & 0.877 & 0.427 & 0.99 & 0.877 \\ 
+\midrule
+\multicolumn{15}{l}{\textbf{Education}} \\[2.5pt] 
+\midrule
+High school & 0.990 & 0.990 & 0.882 & 0.877 & 0.990 & 0.874 & 0.990 & 0.419 & 0.998 & 0.189 & 0.14 & 0.166 & 0.990 & 0.99 \\ 
+Some college & 0.990 & 0.990 & 0.877 & 0.899 & 0.959 & 0.877 & 0.990 & 0.333 & 0.990 & 0.140 & 0.143 & 0.186 & 0.990 & 0.99 \\ 
+Associate  & 0.990 & 0.990 & 0.899 & 0.690 & 0.99 & 0.798 & 0.990 & 0.542 & 0.990 & 0.14 & 0.144 & 0.166 & 0.990 & 0.990 \\ 
+Bachelor's  & 0.990 & 0.990 & 0.877 & 0.878 & 0.899 & 0.877 & 0.990 & 0.438 & 0.990 & 0.143 & 0.140 & 0.172 & 0.990 & 0.990\\ 
+Master's & 0.990 & 0.981 & 0.889 & 0.877 & 0.957 & 0.852 & 0.973 & 0.605 & 0.990 & 0.143 & 0.140 & 0.189 & 0.990 & 0.990 \\ 
+Doctoral/Professional & 0.990 & 0.894 & 0.894 & 0.805 & 0.990 & 0.789 & 0.990 & 0.402 & 0.927 & 0.140 & 0.140 & 0.14 & 0.990 & 0.990 \\ 
+\midrule
+\multicolumn{15}{l}{\textbf{Motivation} (vs. Not at all)} \\[2.5pt] 
+\midrule
+Hardly motivated & 0.990 & 0.990 & 0.611 & 0.768 & 0.877 & 0.899 & 0.690 & 0.889 & 0.901 & 0.885 & 0.577 & 0.99 & 0.798 & 0.990 \\ 
+Somewhat motivated & 0.996 & 0.957 & 0.605 & 0.805 & 0.732 & 0.854 & 0.278 & 0.542 & 0.838 & 0.99 & 0.877 & 0.877 & 0.877 & 0.934 \\ 
+Very motivated & 0.990 & 0.990 & 0.419 & 0.789 & 0.790 & 0.852 & 0.419 & 0.690 & 0.936 & 0.964 & 0.763 & 0.899 & 0.878 & 0.919 \\ 
+Extremely motivated & 0.990 & 0.936 & 0.547 & 0.789 & 0.69 & 0.789 & 0.448 & 0.608 & 0.894 & 0.990 & 0.660 & 0.894 & 0.789 & 0.874 \\ 
+\midrule
+\multicolumn{15}{l}{\textbf{Experience with AI writing assistants} (vs. None)} \\[2.5pt] 
+\midrule
+Hardly ever & 0.990 & 0.427 & 0.789 & 0.990 & 0.267 & 0.990 & 0.990 & 0.990 & 0.990 & 0.971 & 0.990 & 0.990 & 0.789 & 0.877 \\ 
+A few times per week & 0.805 & 0.877 & 0.789 & 0.990 & 0.660 & 0.990 & 0.930 & 0.990 & 0.889 & 0.444 & 0.970 & 0.990 & 0.899 & 0.877 \\ 
+About once a week & 0.805 & 0.798 & 0.278 & 0.790 & 0.189 & 0.990 & 0.990 & 0.990 & 0.981 & 0.990 & 0.990 & 0.985 & 0.981 & 0.990 \\ 
+Every day & 0.899 & 0.150 & 0.957 & 0.894 & 0.990 & 0.832 & 0.790 & 0.695 & 0.790 & 0.990 & 0.852 & 0.790 & 0.790 & 0.852 \\ 
+\midrule
+\multicolumn{15}{p{17cm}}{\textit{Note.} Models for test performance, square-root practice time, log keystrokes, subjective effort, perceived learning and perceived writing skill or OLS models. Asking to see feedback was a binary Yes/No variable, and was modelled with logistic regression. Models match the pre-registered main specification, thereby controlling for all other pre-treatment variables. Per. = Perceived}
+\vspace{5pt}
+\end{tabular}
+    \label{tab:interactions5}
+\end{table}
+\end{landscape}
+
+\subsection{Pairwise comparisons}
+The relative likelihood of a cover letter receiving an invitation to an interview was correlated with the GPT-rated writing quality. See Figure \ref{fig:correlations4}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{correlations4.pdf}
+    \caption{Correlation between test score writing quality as rated by GPT-4o and relative likelihood of being offered a hypothetical interview.}
+    \label{fig:correlations4}
+\end{figure}
+
+Table \ref{tab:beta4} shows the beta regressions for the relative likelihood by condition.
+
+
+\begin{table}[!htbp] \centering 
+    \caption{Results from beta regressions predicting the relative likelihood of an interview from test phase cover letters. The reference category is practice with AI.}
+  \label{tab:beta4} 
+\begin{tabular}{@{\extracolsep{5pt}}lcc} 
+\toprule
+\\[-1.8ex] & (1) & (2)\\ 
+\hline \\[-1.8ex] 
+ (Intercept) & 0.501$^{***}$ & $-$0.859 \\ 
+  & (0.008) & (0.710) \\ 
+ Practice with Google Search & $-$0.020$^{*}$ & $-$0.023$^{*}$ \\ 
+  & (0.012) & (0.012) \\ 
+  & & \\ 
+ Practice w/ Editor Feedback & 0.015 & 0.012 \\ 
+  & (0.012) & (0.012) \\ 
+\hline \\[-1.8ex] 
+Observations & 2,575 & 2,513 \\ 
+R$^{2}$ & 0.004 & 0.014 \\ 
+Adjusted R$^{2}$ & 0.003 & 0.010 \\ 
+Residual Std. Error & 0.241 (df = 2572) & 0.240 (df = 2501) \\ 
+F Statistic & 4.651$^{***}$ (df = 2; 2572) & 3.267$^{***}$ (df = 11; 2501) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{2}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+
+\end{table} 
+
+
+\FloatBarrier
+\section{Results Study 5}
 \subsection{Randomization, Balance, and Missingness}
 
 As in Study 2, technical issues caused small amounts of missing data. Overall, 5.64\% of data was missing in for the test phase analysis, which was not differentially missing by condition. 
 There was also attrition in the follow-up sample. While most people responded, 13.45\% of recontacted participants did not respond. This attrition was not selective by condition. As shown in Table \ref{tab:s3missingness}, missingness and attrition rates were low for the main and follow-up samples and did not differ by condition.
 
 
-\begin{table}[ht]
+\begin{table}[h]
     \centering
-    \caption{Missingness and attrition proportions and test in Study 3.}
+    \caption{Missingness and attrition proportions and test in Study 5.}
 \begin{tabular}{lrr}
 \toprule
 Condition & Main Sample & Followup Sample \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 Practice w/o AI & $4.61\%$ & $73.51\%$ \\ 
 Practice w/ AI & $5.52\%$ & $70.40\%$ \\ 
 See AI example & $6.77\%$ & $72.16\%$ \\ 
@@ -2080,14 +2602,17 @@ $\chi^2$ & $2.991$ & $1.600$ \\
 
 Pre-treatment variables were balanced across experimental conditions, ensuring that random assignment was successful. To assess balance, we conducted a series of one-way ANOVAs for continuous variables and chi-square tests for categorical variables. Given the multiple comparisons, we applied the Benjamini-Hochberg (BH) procedure to control the false discovery rate. All statistical tests confirmed that none of the pre-treatment variables differed significantly across conditions. See Table \ref{tab:s3randomization}.
 
-\begin{table}[ht]
+
+
+\begin{table}[h]
     \centering
+    \footnotesize
 \caption{Randomization checks for pre-treatment variables. \textit{p}-values are BH corrected. SMD = Standardized Mean Difference.}
 
 \begin{tabular}{lrrrrrrr}
 \toprule
 \multicolumn{1}{l}{} & Overall & Practice w/o AI & Practice w/ AI & See AI example & \textit{p} & SMD \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \textit{\textbf{n}} & 2003 & 672 & 652 & 679 &  &   \\ 
 \textbf{Age (mean (SD))} & 37.89 (12.63) & 37.77 (12.37) & 37.87 (12.85) & 38.03 (12.69) & .997  &  0.014 \\ 
 \textbf{Gender (\%)} &  &   &   &   & .822 &   0.055 \\ 
@@ -2129,12 +2654,13 @@ Pre-treatment variables were balanced across experimental conditions, ensuring t
 \end{table}
 
 
+\FloatBarrier
 \subsection{AI examples improve writing skill}
 
 The AI tool improved performance while participants used it. Table \ref{tab:s3_practice} shows means and standardized differences for different measures of writing skill during the practice phase. The robustness checks included after the main specification, show that results are similar when using a different language model (Column 2), when not including control variables (Column 3), when excluding participants who admitted to cheating in the test phase (Column 4), for the subset of non-attriting participants to the follow-up phase (Column 5), and for each of the 5 principles separately (Columns 6 - 10).
 
 
-\begin{figure}[ht]
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.75\linewidth]{skill_lines_raw.pdf}
     \caption{Participants who had practiced with the AI tool outperformed those who had practiced without it and those who had not practiced at all.
@@ -2145,26 +2671,26 @@ The AI tool improved performance while participants used it. Table \ref{tab:s3_p
 
 During the test phase, when participants had to rewrite a cover letter without the help of the AI tool, participants who simply had seen an AI example outperformed participants who had practiced without the AI tool, and perfomed comparably to those who had practiced with the AI tool. Replicating Study 2, participants who had practiced with the AI tool performed better than those who had practiced  without it. Again, the learning gains are robust to different specifications, subsamples, and measures or writing quality. See Table \ref{tab:s3_test}.
 For participants assigned to practice with the AI tool, The quality of AI rewrites did not correlate with participants' final submissions, \textit{r} = .06, \textit{p} = .25.
-
-
-\begin{table}[ht]
+\begin{landscape}
+\begin{table}[h]
     \centering
+    \footnotesize
     \caption{Practice effects}
    \begin{tabular}{lcccccccccc}
 \toprule
   & GPT-4o & Claude & Ex. Controls & Ex. Cheaters & Followup & LM & ER & EN & F & ER \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{11}{l}{\textbf{Means --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 Practice w/o AI & 4.72 & 4.96 & 4.62 & 4.61 & 4.64 & 4.33 & 6.61 & 5.43 & 2.93 & 4.31 \\ 
  & (.374) & (.379) & (.048) & (.048) & (.651) & (.396) & (.265) & (.438) & (.795) & (.466) \\ 
 Practice w/ AI & 6.19 & 6.36 & 6.08 & 6.08 & 5.98 & 5.53 & 7.44 & 6.60 & 5.64 & 5.74 \\ 
  & (.373) & (.379) & (.048) & (.049) & (.656) & (.395) & (.265) & (.438) & (.794) & (.466) \\ 
 See AI example & 7.83 & 8.04 & 7.72 & 7.72 & 7.58 & 7.23 & 8.38 & 8.18 & 8.34 & 7.02 \\ 
  & (.375) & (.380) & (.048) & (.049) & (.656) & (.397) & (.266) & (.439) & (.797) & (.467) \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{11}{l}{\textbf{Effect Sizes (d) --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 Practice w/o AI vs. Practice w/ AI & 1.22*** & 1.15*** & 1.19*** & 1.21*** & 1.14*** & .95*** & .96*** & .83*** & 1.06*** & .95*** \\ 
  & (.060) & (.059) & (.059) & (.060) & (.112) & (.059) & (.059) & (.058) & (.059) & (.059) \\ 
 Practice w/o AI vs. See AI example & 2.58*** & 2.52*** & 2.54*** & 2.55*** & 2.50*** & 2.28*** & 2.07*** & 1.95*** & 2.12*** & 1.81*** \\ 
@@ -2179,25 +2705,26 @@ Practice w/ AI vs. See AI example & 1.36*** & 1.37*** & 1.35*** & 1.35*** & 1.36
 \end{table}
 
 
-\begin{table}[ht]
+\begin{table}[h]
     \centering
+    \footnotesize
         \caption{Test effects}
 
 \begin{tabular}{lcccccccccc}
 \toprule
   & GPT-4o & Claude & Ex. Controls & Ex. Cheaters & Followup & LM & ER & EN & F & ER \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{11}{l}{\textbf{Means --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 Practice w/o AI & 5.39 & 5.28 & 4.55 & 4.55 & 4.71 & 4.39 & 7.01 & 6.19 & 4.26 & 5.13 \\ 
  & (.411) & (.426) & (.055) & (.055) & (.717) & (.391) & (.367) & (.479) & (.982) & (.496) \\ 
 Practice w/ AI & 5.82 & 5.84 & 5.00 & 5.00 & 5.00 & 4.69 & 7.11 & 6.61 & 5.29 & 5.38 \\ 
  & (.410) & (.426) & (.056) & (.056) & (.722) & (.390) & (.366) & (.478) & (.981) & (.495) \\ 
 See AI example & 5.87 & 5.95 & 5.02 & 5.03 & 5.08 & 4.66 & 7.08 & 6.78 & 5.47 & 5.36 \\ 
  & (.412) & (.427) & (.054) & (.054) & (.722) & (.392) & (.368) & (.480) & (.985) & (.497) \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{11}{l}{\textbf{Effect Sizes (d) --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 Practice w/o AI vs. Practice w/ AI & .32*** & .41*** & .32*** & .33*** & .22* & .24*** & .09 & .28*** & .33*** & .16** \\ 
  & (.057) & (.057) & (.056) & (.057) & (.106) & (.057) & (.057) & (.057) & (.057) & (.057) \\ 
 Practice w/o AI vs. See AI example & .36*** & .49*** & .34*** & .35*** & .29** & .22*** & .06 & .39*** & .38*** & .14** \\ 
@@ -2210,29 +2737,33 @@ Practice w/ AI vs. See AI example & .04 & .08 & .01 & .02 & .06 & -.03 & -.02 & 
 
     \label{tab:s3_test}
 \end{table}
+
+\end{landscape}
+
+\FloatBarrier
 \subsection{Seeing AI examples was less effortful}
 Table \ref{tab:effort_practice3} shows OLS models predicting practice effort metrics from practice condition. Results show that participants seeing an AI example expended considerably less effort, measured subjectively or objectively, through keystrokes or practice time, when compared both to participants who practiced with AI and without it. As in Study 2, participants who practiced with AI still expended less effort than those who practiced without it. As pre-registered, time is square-root-transformed, and keystrokes are log-transformed. Differences are slightly smaller when using untransformed variables.
 
 
-\begin{table}[ht]
+\begin{table}[h]
     \centering
         \caption{Practice effort differences}
-
+\footnotesize
 \begin{tabular}{lccccc}
 \toprule
   & sqrt(Time) & log(Keystrokes) & Subjective Rating (0 - 10) & Time & Keystrokes \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{6}{l}{\textbf{Means --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 Practice w/o AI & 2.83 & 5.01 & 6.17 & 9.00 & 259.34 \\ 
  & (.270) & (.541) & (.642) & (1.495) & (99.161) \\ 
 Practice w/ AI & 2.71 & 4.05 & 5.89 & 8.65 & 228.45 \\ 
  & (.270) & (.540) & (.641) & (1.493) & (99.050) \\ 
 See AI example & 1.85 & .81 & 5.52 & 4.99 & 24.98 \\ 
  & (.271) & (.542) & (.643) & (1.499) & (99.392) \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{6}{l}{\textbf{Effect Sizes (d) --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 Practice w/o AI vs. Practice w/ AI & -.14* & -.55*** & -.14* & -.07 & -.10 \\ 
  & (.056) & (.056) & (.057) & (.056) & (.056) \\ 
 Practice w/o AI vs. See AI example & -1.13*** & -2.41*** & -.32*** & -.83*** & -.73*** \\ 
@@ -2250,24 +2781,25 @@ Practice w/ AI vs. See AI example & -.99*** & -1.86*** & -.18** & -.76*** & -.64
 Table \ref{tab:effort_test3} shows OLS models predicting test effort metrics from practice condition. Results show some differences: participants who had seen the AI example write for longer duing the test, and pressed more keys, however their subjective experience of effort was not different from those who practice with or without the AI tool.
 
 
-\begin{table}[ht]
+\begin{table}[h]
     \centering
+    \footnotesize
     \caption{Test effort differences}
 \begin{tabular}{lccccc}
 \toprule
   & sqrt(Time) & log(Keystrokes) & Subjective Rating (0 - 10) & Time & Keystrokes \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{6}{l}{\textbf{Means --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 Practice w/o AI & 2.45 & 5.40 & 7.05 & 6.14 & 432.01 \\ 
  & (.170) & (.562) & (.623) & (.655) & (109.856) \\ 
 Practice w/ AI & 2.50 & 5.52 & 7.19 & 6.35 & 466.90 \\ 
  & (.169) & (.561) & (.622) & (.654) & (109.733) \\ 
 See AI example & 2.57 & 5.86 & 7.21 & 6.63 & 517.26 \\ 
  & (.170) & (.563) & (.625) & (.656) & (110.112) \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{6}{l}{\textbf{Effect Sizes (d) --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 Practice w/o AI vs. Practice w/ AI & .09 & .06 & .07 & .10 & .10 \\ 
  & (.057) & (.056) & (.057) & (.057) & (.056) \\ 
 Practice w/o AI vs. See AI example & .22*** & .25*** & .08 & .23*** & .24*** \\ 
@@ -2283,25 +2815,25 @@ Practice w/ AI vs. See AI example & .13* & .19*** & .01 & .13* & .14* \\
 
 Table \ref{tab:learning_rate3} shows OLS models predicting learning rate metrics from practice condition. Learning rate is defined as the difference between test and pretest, divided by the effort metric. It shows how many points (10 point scale) the participant improved per unit effort (e.g., per minute spent practicing). Participants who had seen an AI example improved their skill more efficiently.
 
-\begin{table}[ht]
+\begin{table}[h]
     \centering
     \caption{Learning rate differences}
-
+\footnotesize
 \begin{tabular}{lccccc}
 \toprule
   & sqrt(Time) & log(Keystrokes) & Subjective Rating (0 - 10) & Time & Keystrokes \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{6}{l}{\textbf{Means --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 Practice w/o AI & .20 & .15 & .18 & .31 & .34 \\ 
  & (.155) & (.272) & (.085) & (.278) & (.167) \\ 
 Practice w/ AI & .30 & .22 & .25 & .45 & .49 \\ 
  & (.155) & (.272) & (.085) & (.277) & (.167) \\ 
 See AI example & .51 & .97 & .28 & 1.08 & .62 \\ 
  & (.155) & (.273) & (.085) & (.278) & (.168) \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{6}{l}{\textbf{Effect Sizes (d) --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 Practice w/o AI vs. Practice w/ AI & .21*** & .08 & .25*** & .15** & .27*** \\ 
  & (.057) & (.057) & (.057) & (.057) & (.057) \\ 
 Practice w/o AI vs. See AI example & .62*** & .94*** & .38*** & .86*** & .53*** \\ 
@@ -2315,29 +2847,30 @@ Practice w/ AI vs. See AI example & .41*** & .86*** & .13* & .71*** & .25*** \\
     \label{tab:learning_rate3}
 \end{table}
 
+\FloatBarrier
 \subsection{Seeing an AI example did not discourage motivation for future learning}\label{sec:future_learning3}
 
 Table \ref{tab:motivation3} presents differences in perceived learning, perceived writing skill, and the likelihood of asking for feedback across conditions, with effect sizes and means reported for each comparison. Despite objectively learning more, participants who practiced with AI and saw an AI example perceived their learning and skill levels to be similar to those who practiced without AI and asked for feedback at comparable rates.
 
-\begin{table}[ht]
+\begin{table}[h]
     \centering
     \caption{Motivation}
 
 \begin{tabular}{lccc}
 \toprule
   & Perceived learning & Perceived writing skill & Asked for feedback \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{4}{l}{\textbf{Means --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 Practice w/o AI & 5.26 & 6.33 & .64 \\ 
  & (.549) & (.517) & (.670) \\ 
 Practice w/ AI & 5.25 & 6.36 & .46 \\ 
  & (.549) & (.516) & (.669) \\ 
 See AI example & 5.42 & 6.23 & .55 \\ 
  & (.551) & (.518) & (.671) \\ 
-\midrule\addlinespace[2.5pt]
-\multicolumn{4}{l}{ extbf{Effect Sizes (d)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
+\multicolumn{4}{l}{ \textbf{Effect Sizes (d)}} \\ 
+\midrule
 Practice w/o AI vs. Practice w/ AI & -.01 & .02 & 1.19 \\ 
  & (.057) & (.057) & (.122) \\ 
 Practice w/o AI vs. See AI example & .09 & -.06 & 1.10 \\ 
@@ -2351,30 +2884,31 @@ Practice w/ AI vs. See AI example & .09 & -.08 & 0.921 \\
     \label{tab:motivation3}
 \end{table}
 
+\FloatBarrier
 \subsection{The effects of seeing an AI example persist}\label{sec:persist3}
 
 Table \ref{tab:s3_followup} shows means and standardized differences for measures of writing skill and related outcomes during the follow-up phase. The main specification demonstrates that participants who practiced with AI continued to outperform those who did not practice or practiced without AI. Robustness checks, including using a different language model (Column 2), excluding control variables (Column 3), and removing participants who admitted to cheating (Column 4) confirm the consistency of these effects. The results also hold when evaluating each of the five principles separately (Columns 5–9). These findings suggest that the benefits of practicing with AI are durable and persist even after participants stop using the tool.
 
-
-\begin{table}[ht]
+\begin{landscape}
+\begin{table}[h]
     \centering
         \caption{Followup effects}
-
+\footnotesize
 \begin{tabular}{lccccccccc}
 \toprule
   & GPT-4o & Claude & Ex. Controls & Ex. Cheaters & LM & ER & EN & F & ER \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{10}{l}{\textbf{Means --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 Practice w/o AI & 4.95 & 5.10 & 4.87 & 4.88 & 5.32 & 6.83 & 5.40 & 1.98 & 5.23 \\ 
  & (.776) & (.798) & (.109) & (.110) & (.750) & (.730) & (.847) & (1.829) & (.905) \\ 
 Practice w/ AI & 5.37 & 5.67 & 5.34 & 5.38 & 5.57 & 6.98 & 5.76 & 2.91 & 5.61 \\ 
  & (.781) & (.804) & (.103) & (.105) & (.756) & (.735) & (.853) & (1.842) & (.912) \\ 
 See AI example & 5.40 & 5.71 & 5.37 & 5.36 & 5.54 & 6.98 & 5.87 & 3.14 & 5.46 \\ 
  & (.781) & (.804) & (.103) & (.105) & (.756) & (.735) & (.854) & (1.843) & (.912) \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{10}{l}{\textbf{Effect Sizes (d) --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 Practice w/o AI vs. Practice w/ AI & .29** & .40*** & .32** & .34** & .18 & .11 & .24* & .28** & .23* \\ 
  & (.106) & (.107) & (.104) & (.106) & (.106) & (.106) & (.106) & (.106) & (.106) \\ 
 Practice w/o AI vs. See AI example & .32** & .43*** & .35*** & .33** & .16 & .11 & .31** & .35*** & .14 \\ 
@@ -2382,33 +2916,34 @@ Practice w/o AI vs. See AI example & .32** & .43*** & .35*** & .33** & .16 & .11
 Practice w/ AI vs. See AI example & .02 & .03 & .02 & -.01 & -.02 & -.00 & .07 & .07 & -.09 \\ 
  & (.104) & (.104) & (.101) & (.103) & (.104) & (.104) & (.104) & (.104) & (.104) \\ 
 \midrule
-\multicolumn{10}{p{15cm}}{\textit{Note.} GPT-4o is the main specification. Ex. Controls is the main specification, unadjusted for demographic and pretreatment variables, Ex. Cheaters excludes the 3\% of participants who admitted to cheating on the test phase. LM to ER are disagregated scores for each of the five principles. LM = Less is More, ER = Easy Reading, EN = Easy Navigation, F = Formatting, ER = Easy Responding. *** \textit{p} < .001, ** \textit{p} < .01, * \textit{p} < .05.}
+\multicolumn{10}{p{15cm}}{\textit{Note.} GPT-4o is the main specification. Ex. Controls is the main specification, unadjusted for demographic and pretreatment variables, Ex. Cheaters excludes the 3\% of participants who admitted to cheating on the test phase. LM to ER are disaggregated scores for each of the five principles. LM = Less is More, ER = Easy Reading, EN = Easy Navigation, F = Formatting, ER = Easy Responding. *** \textit{p} < .001, ** \textit{p} < .01, * \textit{p} < .05.}
 \vspace{5pt}
 \end{tabular}
     \label{tab:s3_followup}
 \end{table}
+\end{landscape}
 
 The follow-up analyses pool three separate follow-up samples collected on consecutive days. Table \ref{tab:s3_followup_batches} are the results for each of these samples separately.
 
-\begin{table}[ht]
+\begin{table}[h]
     \centering
         \caption{Follow-up effects by data collection batch}
 
 \begin{tabular}{lcccc}
 \toprule
   & Overall & Batch 1 & Batch 2 & Batch 3 \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{5}{l}{\textbf{Means --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 Practice w/o AI & 4.95 & 6.02 & 5.47 & 4.85 \\ 
  & (.776) & (1.539) & (.492) & (.811) \\ 
 Practice w/ AI & 5.37 & 6.64 & 5.57 & 5.41 \\ 
  & (.781) & (1.446) & (.483) & (.817) \\ 
 See AI example & 5.40 & 6.51 & 5.88 & 5.32 \\ 
  & (.781) & (1.502) & (.472) & (.818) \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 \multicolumn{5}{l}{\textbf{Effect Sizes (d) --- (SE)}} \\ 
-\midrule\addlinespace[2.5pt]
+\midrule
 Practice w/o AI vs. Practice w/ AI & .29** & .43 & .07 & .40** \\ 
  & (.106) & (.387) & (.187) & (.147) \\ 
 Practice w/o AI vs. See AI example & .32** & .34 & .29 & .34* \\ 
@@ -2422,12 +2957,15 @@ Practice w/ AI vs. See AI example & .02 & -.09 & .22 & -.06 \\
     \label{tab:s3_followup_batches}
 \end{table}
 
+\FloatBarrier
 
 \subsection{Seeing AI examples was equally effective across subgroups}
 As in Study 2, we tested whether each of the pretreatment demographic variables moderated the effects of seeing an AI example. To do this, we ran separate linear in which writing skill during the test phase was regressed on condition, the pre-treatment moderator of interest, writing skill at baseline, and an interaction term between the moderator $\times$ condition. After correcting the \textit{p-}values for the interaction terms, none were significant at the .05 level, suggesting that seeing AI examples was equally effective across groups.
 
-\begin{table}[ht]
+\begin{landscape}
+\begin{table}[h]
     \centering
+    \footnotesize
     \caption{Metrics for interaction terms predicting each outcome by condition and pre-treatment variables.}
     \label{tab:interactions3}
     \begin{tabular}{@{\extracolsep{-4pt}}lcccccccccccccccc}
@@ -2436,20 +2974,20 @@ As in Study 2, we tested whether each of the pretreatment demographic variables 
     \cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9} \cmidrule(lr){10-11} \cmidrule(lr){12-13} \cmidrule(lr){14-15} \cmidrule(lr){16-17}
     \textbf{Level} & \textbf{PAI} & \textbf{AIE} & \textbf{PAI} & \textbf{AIE} & \textbf{PAI} & \textbf{AIE} & \textbf{PAI} & \textbf{AIE} & \textbf{PAI} & \textbf{AIE} & \textbf{PAI} & \textbf{AIE} & \textbf{PAI} & \textbf{AIE} & \textbf{PAI} & \textbf{AIE} \\ 
     \midrule
-    \addlinespace[2.5pt]
+    
     \multicolumn{17}{l}{\textbf{Continuous Moderators}} \\ 
     \midrule
     Pretest & 0.565 & 0.546 & 0.708 & 0.945 & 0.987 & 0.857 & 0.987 & 0.940 & 0.987 & 0.405 & 0.987 & 0.967 & 0.987 & 0.576 & 0.565 & 0.274 \\ 
-    YOB & 0.961 & 0.987 & 0.967 & 0.857 & 0.565 & 0.855 & 0.405 & 0.405 & 0.940 & 0.763 & 0.516 & 0.724 & 0.987 & 0.724 & 0.763 & 0.871 \\ 
+    Year of birth & 0.961 & 0.987 & 0.967 & 0.857 & 0.565 & 0.855 & 0.405 & 0.405 & 0.940 & 0.763 & 0.516 & 0.724 & 0.987 & 0.724 & 0.763 & 0.871 \\ 
     Writing Skill & 0.943 & 1.000 & 0.405 & 0.987 & 0.878 & 0.987 & 0.967 & 0.871 & 0.763 & 0.707 & 0.986 & 0.405 & 0.900 & 0.987 & 0.434 & 0.405 \\ 
     \midrule
-    \addlinespace[2.5pt]
+    
     \multicolumn{17}{l}{\textbf{Gender}} \\ 
     \midrule
     Male & 0.816 & 0.987 & 0.987 & 0.987 & 0.987 & 0.532 & 0.793 & 0.535 & 0.565 & 0.405 & 0.450 & 0.703 & 0.724 & 0.535 & 0.707 & 0.565 \\ 
     Other & 0.446 & 0.565 & 0.900 & 0.987 & 0.405 & 0.724 & 0.842 & 0.728 & 0.426 & 0.791 & 0.655 & 0.987 & 0.987 & 0.763 & 0.793 & 0.791 \\ 
     \midrule
-    \addlinespace[2.5pt]
+    
     \multicolumn{17}{l}{\textbf{Race}} \\ 
     \midrule
     White & 0.822 & 0.724 & 0.499 & 0.605 & 0.811 & 0.987 & 0.967 & 0.855 & 0.405 & 0.937 & 0.987 & 0.763 & 0.987 & 0.533 & 0.987 & 0.797 \\ 
@@ -2458,7 +2996,7 @@ As in Study 2, we tested whether each of the pretreatment demographic variables 
     Latino & 0.987 & 0.899 & 0.405 & 0.405 & 0.763 & 0.987 & 0.405 & 0.816 & 0.405 & 0.940 & 1.000 & 0.987 & 0.857 & 0.624 & 0.987 & 0.991 \\ 
     Other & 0.405 &  & 0.855 &  & 0.987 &  & 0.855 &  & 0.987 &  & 0.987 &  & 0.987 &  & 0.987 &  \\ 
     \midrule
-    \addlinespace[2.5pt]
+    
     \multicolumn{17}{l}{\textbf{Education Level}} \\ 
     \midrule
     High School Graduate & 0.940 & 0.900 & 0.749 & 0.565 & 0.405 & 0.938 & 0.718 & 0.987 & 0.405 & 0.405 & 0.987 & 0.967 & 0.987 & 0.763 & 0.987 & 0.734 \\ 
@@ -2469,7 +3007,7 @@ As in Study 2, we tested whether each of the pretreatment demographic variables 
     Doctoral Degree & 0.987 & 0.987 & 0.524 & 0.724 & 0.516 & 0.832 & 0.987 & 0.940 & 0.406 & 0.516 & 0.987 & 0.987 & 0.832 & 0.760 & 0.987 & 0.964 \\ 
     Professional Degree & 0.987 & 0.900 & 0.987 & 0.943 & 0.763 & 0.987 & 0.987 & 0.987 & 0.707 & 0.405 & 0.763 & 0.938 & 0.763 & 0.749 & 0.987 & 0.987 \\ 
     \midrule
-    \addlinespace[2.5pt]
+    
     \multicolumn{17}{l}{\textbf{Motivation}} \\ 
     \midrule
     Hardly Motivated & 0.987 & 0.900 & 0.624 & 0.899 & 0.768 & 0.763 & 0.832 & 0.987 & 0.763 & 0.900 & 0.685 & 0.707 & 0.760 & 0.535 & 0.405 & 0.565 \\ 
@@ -2477,7 +3015,7 @@ As in Study 2, we tested whether each of the pretreatment demographic variables 
     Very Motivated & 0.907 & 0.705 & 0.778 & 0.703 & 0.986 & 0.405 & 0.797 & 0.987 & 0.797 & 0.708 & 0.847 & 0.857 & 0.847 & 0.752 & 0.451 & 0.749 \\ 
     Extremely Motivated & 0.855 & 0.536 & 0.724 & 0.707 & 0.763 & 0.724 & 0.763 & 0.987 & 0.987 & 0.763 & 0.987 & 0.900 & 0.763 & 0.763 & 0.535 & 0.535 \\ 
     \midrule
-    \addlinespace[2.5pt]
+    
     \multicolumn{17}{l}{\textbf{Experience with AI Writing Assistants}} \\ 
     \midrule
     Hardly Ever Use Them & 0.724 & 0.763 & 0.907 & 0.791 & 0.405 & 0.900 & 0.405 & 0.987 & 0.967 & 0.446 & 0.565 & 0.987 & 0.987 & 0.724 & 0.987 & 0.405 \\ 
@@ -2489,6 +3027,52 @@ As in Study 2, we tested whether each of the pretreatment demographic variables 
 \vspace{5pt}
     \end{tabular}
 \end{table}
+\end{landscape}
+
+\subsection{Pairwise Compariosns}
+The relative likelihood of a cover letter receiving an invitation to an interview was correlated with the GPT-rated writing quality. See Figure \ref{fig:correlations5}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{correlations5.pdf}
+    \caption{Correlation between test score writing quality as rated by GPT-4o and relative likelihood of being offered a hypothetical interview.}
+    \label{fig:correlations5}
+\end{figure}
+
+As shown in Table \ref{tab:beta5}, participants who had practiced writing cover letters with AI were more likely to be invited to a hypothetical job interview.
+\begin{table}[h]
+    \centering
+    \caption{Results from beta regressions predicting the relative likelihood of an interview from test phase cover letters. The reference category is practice with AI for Study 2, and practice without AI for Study 3.}
+
+    \begin{tabular}{lcc}
+    \toprule
+    & (3) & (4) \\ 
+    \midrule 
+(Intercept)                        & \num{-0.061}** & \num{-0.449} \\
+                                   & (\num{0.021})  & (\num{0.677}) \\
+Practice w/o AI                    &                & \num{-0.103} \\
+                                   &                & (\num{0.079}) \\
+Practice w/ AI                     & \num{0.080}**  &               \\
+                                   & (\num{0.030})  &               \\
+See AI example                     & \num{0.097}*** & \num{0.055} \\
+                                   & (\num{0.030})  & (\num{0.078}) \\
+\midrule 
+Precision ($\phi$)                 & \num{16.174}*** &              \\
+                                   & (\num{1.471})   &              \\
+Symmetry (log($\nu$))              & \num{0.350}***  &              \\
+                                   & (\num{0.080})   &              \\
+Demographic and baseline covariates & No              & Yes          \\
+\midrule 
+Num.Obs.                           & \num{1934}      & \num{1917}   \\
+AIC                                & \num{2447.1}    & \num{-14615.7}\\
+BIC                                & \num{2474.9}    & \num{-14454.5}\\
+Log.Lik.                           & \num{-1218.535} &              \\
+RMSE                               &                 & \num{0.30}   \\
+\bottomrule
+    \end{tabular}
+    \label{tab:beta5}
+\end{table}
+
 
 
 \end{append}
