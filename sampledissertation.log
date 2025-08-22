@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.11)  18 AUG 2025 19:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.11)  22 AUG 2025 01:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -781,7 +781,8 @@ Package csquotes Info: Redefining alias 'default' -> 'american'.
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count395
-) (./sampledissertation.aux)
+)
+No file sampledissertation.aux.
 \openout1 = `sampledissertation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 243.
@@ -802,7 +803,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 243.
 LaTeX Font Info:    ... okay on input line 243.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 243.
 LaTeX Font Info:    ... okay on input line 243.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -866,7 +866,6 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 243.
- (./sampledissertation.out) (./sampledissertation.out)
 \@outlinefile=\write4
 \openout4 = `sampledissertation.out'.
 
@@ -924,52 +923,43 @@ File: translations-basic-dictionary-english.trsl (english translation file `tran
 
 ]
 
-[4] (./sampledissertation.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
- (/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
- (/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-[5
-
-])
+[4]
+No file sampledissertation.toc.
 \tf@toc=\write5
 \openout5 = `sampledissertation.toc'.
 
 
 
-[6] (./sampledissertation.lot
-Overfull \hbox (10.40584pt too wide) in paragraph at lines 20--20
- \T1/cmr/m/n/10.95 (min)), log(keystrokes), sub-jec-tive rat-ing, raw time in min-utes, and raw keystrokes. 
- []
+[5
 
-)
+]
+No file sampledissertation.lot.
 \tf@lot=\write6
 \openout6 = `sampledissertation.lot'.
 
 
 
-[7
-
-] (./sampledissertation.lof
-
-[8
+[6
 
 ]
-
-[9])
+No file sampledissertation.lof.
 \tf@lof=\write7
 \openout7 = `sampledissertation.lof'.
 
 
 
-[10]
-Chapter 1.
+[7
 
+]
+Chapter 1.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 286.
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 286.
+ (/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
@@ -993,43 +983,168 @@ File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 [5]
 Chapter 2.
 
+Package natbib Warning: Citation `bubeck2023' on page 6 undefined on input line 432.
+
+
+Package natbib Warning: Citation `noy2023' on page 6 undefined on input line 433.
+
+
+Package natbib Warning: Citation `dellacqua2023' on page 6 undefined on input line 433.
+
+
+Package natbib Warning: Citation `wiles2023algorithmic' on page 6 undefined on input line 433.
+
+
+Package natbib Warning: Citation `hofman2023sports' on page 6 undefined on input line 435.
+
+
+Package natbib Warning: Citation `puntoni2021' on page 6 undefined on input line 435.
+
+
+Package natbib Warning: Citation `borges2024' on page 6 undefined on input line 435.
+
+
+Package natbib Warning: Citation `hawkins2024between' on page 6 undefined on input line 436.
+
+
+Package natbib Warning: Citation `roose2023' on page 6 undefined on input line 437.
+
+
+Package natbib Warning: Citation `banks2023' on page 6 undefined on input line 438.
+
+
+Package natbib Warning: Citation `lin2024a' on page 6 undefined on input line 440.
+
+
 
 [6
 
 ]
 
+Package natbib Warning: Citation `ji2023survey' on page 7 undefined on input line 443.
+
+
+Package natbib Warning: Citation `yuan2023well' on page 7 undefined on input line 443.
+
+
+Package natbib Warning: Citation `fisher2015' on page 7 undefined on input line 447.
+
+
+Package natbib Warning: Citation `sparrow2011' on page 7 undefined on input line 450.
+
+
+Package natbib Warning: Citation `maguire2000' on page 7 undefined on input line 451.
+
+
+Package natbib Warning: Citation `griesbauer2022london' on page 7 undefined on input line 451.
+
+
+Package natbib Warning: Citation `sweller1985use' on page 7 undefined on input line 457.
+
+
+Package natbib Warning: Citation `atkinson2000learning' on page 7 undefined on input line 457.
+
+
+Package natbib Warning: Citation `anderson1995cognitive' on page 7 undefined on input line 458.
+
+
+
 [7]
 
+Package natbib Warning: Citation `kumar2023' on page 8 undefined on input line 463.
+
+
+Package natbib Warning: Citation `lehmann2024ai' on page 8 undefined on input line 463.
+
+
+Package natbib Warning: Citation `bastani2024' on page 8 undefined on input line 463.
+
+
+Package natbib Warning: Citation `nie2024gpt' on page 8 undefined on input line 463.
+
+
+Package natbib Warning: Citation `lehmann2024ai' on page 8 undefined on input line 463.
+
+
+Package natbib Warning: Citation `bick2024rapid' on page 8 undefined on input line 468.
+
+
+Package natbib Warning: Citation `rogers2023' on page 8 undefined on input line 472.
+
+
+Package natbib Warning: Citation `shulman2024' on page 8 undefined on input line 472.
+
+
+LaTeX Warning: Reference `fig:tool' on page 8 undefined on input line 473.
+
+
+LaTeX Warning: Reference `fig:design' on page 8 undefined on input line 476.
+
+
+
 [8]
-<EmailRewriter.pdf, id=424, 496.41199pt x 265.38448pt>
+<EmailRewriter.pdf, id=88, 496.41199pt x 265.38448pt>
 File: EmailRewriter.pdf Graphic file (type pdf)
 <use EmailRewriter.pdf>
 Package pdftex.def Info: EmailRewriter.pdf  used on input line 483.
 (pdftex.def)             Requested size: 422.77664pt x 226.01924pt.
-<design_fig.pdf, id=425, 897.3525pt x 234.8775pt>
+<design_fig.pdf, id=89, 897.3525pt x 234.8775pt>
 File: design_fig.pdf Graphic file (type pdf)
 <use design_fig.pdf>
 Package pdftex.def Info: design_fig.pdf  used on input line 490.
 (pdftex.def)             Requested size: 422.77664pt x 110.65764pt.
 
 
+Package natbib Warning: Citation `rogers2023' on page 9 undefined on input line 491.
+
+
+Package natbib Warning: Citation `rogers2023' on page 9 undefined on input line 491.
+
+
+
 [9 <./EmailRewriter.pdf>]
 
+LaTeX Warning: Reference `fig:s1' on page 10 undefined on input line 506.
+
+
+
 [10 <./design_fig.pdf>]
-<ranking.pdf, id=478, 252.945pt x 180.675pt>
+<ranking.pdf, id=143, 252.945pt x 180.675pt>
 File: ranking.pdf Graphic file (type pdf)
 <use ranking.pdf>
 Package pdftex.def Info: ranking.pdf  used on input line 511.
 (pdftex.def)             Requested size: 469.75502pt x 335.54749pt.
 
 
+Package natbib Warning: Citation `rogers2023' on page 11 undefined on input line 529.
+
+
+
 [11 <./ranking.pdf>]
-<mainfig.pdf, id=493, 252.945pt x 144.54pt>
+
+Package natbib Warning: Citation `dellacqua2023' on page 12 undefined on input line 541.
+
+
+Package natbib Warning: Citation `noy2023' on page 12 undefined on input line 541.
+
+
+LaTeX Warning: Reference `fig:s2_supplement' on page 12 undefined on input line 551.
+
+
+LaTeX Warning: Reference `fig:ratings1' on page 12 undefined on input line 552.
+
+<mainfig.pdf, id=155, 252.945pt x 144.54pt>
 File: mainfig.pdf Graphic file (type pdf)
 <use mainfig.pdf>
 Package pdftex.def Info: mainfig.pdf  used on input line 556.
 (pdftex.def)             Requested size: 469.75502pt x 268.43797pt.
-<ratings1.pdf, id=496, 252.945pt x 144.54pt>
+
+LaTeX Warning: Reference `fig:s2_supplement' on page 12 undefined on input line 559.
+
+
+LaTeX Warning: Reference `fig:s2_supplement' on page 12 undefined on input line 559.
+
+<ratings1.pdf, id=156, 252.945pt x 144.54pt>
 File: ratings1.pdf Graphic file (type pdf)
 <use ratings1.pdf>
 Package pdftex.def Info: ratings1.pdf  used on input line 565.
@@ -1038,19 +1153,51 @@ Package pdftex.def Info: ratings1.pdf  used on input line 565.
 
 [12]
 
+LaTeX Warning: Reference `fig:distance' on page 13 undefined on input line 583.
+
+
+
 [13 <./mainfig.pdf>]
+
+LaTeX Warning: Reference `sec:future_learning2' on page 14 undefined on input line 609.
+
+
 
 [14 <./ratings1.pdf>]
 
+LaTeX Warning: Reference `fig:difs' on page 15 undefined on input line 622.
+
+
+LaTeX Warning: Reference `sec:persists2' on page 15 undefined on input line 622.
+
+
+LaTeX Warning: Reference `tab:interactions2' on page 15 undefined on input line 627.
+
+
+
 [15]
 
+LaTeX Warning: Reference `fig:s3sup' on page 16 undefined on input line 655.
+
+
+LaTeX Warning: Reference `fig:ratings2' on page 16 undefined on input line 655.
+
+
+
 [16]
-<average_test_rewritten_lines_raw.pdf, id=554, 252.945pt x 144.54pt>
+<average_test_rewritten_lines_raw.pdf, id=211, 252.945pt x 144.54pt>
 File: average_test_rewritten_lines_raw.pdf Graphic file (type pdf)
 <use average_test_rewritten_lines_raw.pdf>
 Package pdftex.def Info: average_test_rewritten_lines_raw.pdf  used on input line 659.
 (pdftex.def)             Requested size: 469.75502pt x 268.43797pt.
-<ratings2.pdf, id=557, 252.945pt x 144.54pt>
+
+
+LaTeX Warning: Reference `fig:s3sup' on page 17 undefined on input line 664.
+
+
+LaTeX Warning: Reference `fig:s3sup' on page 17 undefined on input line 664.
+
+<ratings2.pdf, id=212, 252.945pt x 144.54pt>
 File: ratings2.pdf Graphic file (type pdf)
 <use ratings2.pdf>
 Package pdftex.def Info: ratings2.pdf  used on input line 670.
@@ -1059,11 +1206,69 @@ Package pdftex.def Info: ratings2.pdf  used on input line 670.
 
 [17 <./average_test_rewritten_lines_raw.pdf>]
 
+LaTeX Warning: Reference `sec:future_learning3' on page 18 undefined on input line 693.
+
+
+LaTeX Warning: Reference `fig:s3' on page 18 undefined on input line 701.
+
+
+LaTeX Warning: Reference `sec:persist3' on page 18 undefined on input line 701.
+
+
+
 [18 <./ratings2.pdf>]
+
+LaTeX Warning: Reference `tab:interactions3' on page 19 undefined on input line 703.
+
+
+Package natbib Warning: Citation `lin2024a' on page 19 undefined on input line 717.
+
+
+Package natbib Warning: Citation `hawkins2024between' on page 19 undefined on input line 717.
+
+
+Package natbib Warning: Citation `bandura1971' on page 19 undefined on input line 718.
+
+
+Package natbib Warning: Citation `meltzoff2005imitation' on page 19 undefined on input line 718.
+
+
+Package natbib Warning: Citation `lyons2007hidden' on page 19 undefined on input line 718.
+
+
+Package natbib Warning: Citation `anders2008deliberate' on page 19 undefined on input line 719.
+
+
 
 [19]
 
+Package natbib Warning: Citation `bick2024rapid' on page 20 undefined on input line 723.
+
+
+Package natbib Warning: Citation `bastani2024' on page 20 undefined on input line 724.
+
+
+Package natbib Warning: Citation `nie2024gpt' on page 20 undefined on input line 724.
+
+
+Package natbib Warning: Citation `kumar2023' on page 20 undefined on input line 731.
+
+
+Package natbib Warning: Citation `bastani2024' on page 20 undefined on input line 732.
+
+
+Package natbib Warning: Citation `lehmann2024ai' on page 20 undefined on input line 732.
+
+
+Package natbib Warning: Citation `shin2023' on page 20 undefined on input line 740.
+
+
+
 [20]
+
+Package natbib Warning: Citation `whut2010' on page 21 undefined on input line 752.
+
+
 Overfull \hbox (9.3852pt too wide) in paragraph at lines 761--762
 \T1/cmr/m/n/10.95 All our stud-ies were pre-registered. See pre-registrations for Study 1 at https://aspredicted.org/x9mm-
  []
@@ -1071,6 +1276,10 @@ Overfull \hbox (9.3852pt too wide) in paragraph at lines 761--762
 
 
 [21]
+
+LaTeX Warning: Reference `sec:persist3' on page 22 undefined on input line 771.
+
+
 Overfull \hbox (34.6742pt too wide) in paragraph at lines 768--772
 \T1/cmr/m/n/10.95 follow-up for Study 3 was col-lected in three batches. We pre-registered batch 2 https://aspredicted.org/5jcx-
  []
@@ -1079,7 +1288,42 @@ Overfull \hbox (34.6742pt too wide) in paragraph at lines 768--772
 
 [22]
 
+LaTeX Warning: Reference `sec:feedback' on page 23 undefined on input line 790.
+
+
+LaTeX Warning: Reference `tab:s2_test' on page 23 undefined on input line 797.
+
+
+LaTeX Warning: Reference `tab:s3_test' on page 23 undefined on input line 797.
+
+
+Package natbib Warning: Citation `rathje2024' on page 23 undefined on input line 802.
+
+
+Package natbib Warning: Citation `hackl2023' on page 23 undefined on input line 802.
+
+
+LaTeX Warning: Reference `tab:prompts' on page 23 undefined on input line 803.
+
+
+LaTeX Warning: Reference `tab:s2_test' on page 23 undefined on input line 805.
+
+
+LaTeX Warning: Reference `tab:s3_test' on page 23 undefined on input line 805.
+
+
+
 [23]
+
+LaTeX Warning: Reference `tab:s2_test' on page 24 undefined on input line 809.
+
+
+LaTeX Warning: Reference `tab:s3_test' on page 24 undefined on input line 809.
+
+
+Package natbib Warning: Citation `benjamini1995controlling' on page 24 undefined on input line 814.
+
+
 
 [24]
 Chapter 3.
@@ -1090,12 +1334,12 @@ Chapter 3.
 ]
 
 [26]
-<interface.png, id=673, 2514.39375pt x 1271.75125pt>
+<interface.png, id=294, 2514.39375pt x 1271.75125pt>
 File: interface.png Graphic file (type png)
 <use interface.png>
 Package pdftex.def Info: interface.png  used on input line 880.
 (pdftex.def)             Requested size: 446.26582pt x 225.70346pt.
-<sample.pdf, id=675, 551.05875pt x 147.55125pt>
+<sample.pdf, id=296, 551.05875pt x 147.55125pt>
 File: sample.pdf Graphic file (type pdf)
 <use sample.pdf>
 Package pdftex.def Info: sample.pdf  used on input line 887.
@@ -1105,11 +1349,20 @@ Package pdftex.def Info: sample.pdf  used on input line 887.
 [27 <./interface.png>]
 
 [28 <./sample.pdf>]
-<when_engage.pdf, id=696, 433.62pt x 216.81pt>
+
+LaTeX Warning: Reference `fig:when_engage' on page 29 undefined on input line 920.
+
+<when_engage.pdf, id=317, 433.62pt x 216.81pt>
 File: when_engage.pdf Graphic file (type pdf)
 <use when_engage.pdf>
 Package pdftex.def Info: when_engage.pdf  used on input line 926.
 (pdftex.def)             Requested size: 469.75502pt x 234.88904pt.
+
+LaTeX Warning: Reference `tab:main_reg' on page 29 undefined on input line 940.
+
+
+LaTeX Warning: Reference `fig:main' on page 29 undefined on input line 940.
+
 
 
 [29]
@@ -1117,7 +1370,7 @@ Overfull \hbox (2.67465pt too wide) in paragraph at lines 942--945
 []\T1/cmr/m/n/10.95 Our ex-ploratory anal-y-ses pro-vide ad-di-tional con-text for these find-ings. The pos-i-tive post-intervention
  []
 
-<main.pdf, id=706, 325.215pt x 144.54pt>
+<main.pdf, id=326, 325.215pt x 144.54pt>
 File: main.pdf Graphic file (type pdf)
 <use main.pdf>
 Package pdftex.def Info: main.pdf  used on input line 951.
@@ -1131,12 +1384,15 @@ Package pdftex.def Info: main.pdf  used on input line 951.
 [32
 
 ]
-<sentiment.pdf, id=739, 289.08pt x 144.54pt>
+
+LaTeX Warning: Reference `fig:sentiment' on page 33 undefined on input line 972.
+
+<sentiment.pdf, id=361, 289.08pt x 144.54pt>
 File: sentiment.pdf Graphic file (type pdf)
 <use sentiment.pdf>
 Package pdftex.def Info: sentiment.pdf  used on input line 977.
 (pdftex.def)             Requested size: 469.75502pt x 234.89012pt.
-<wordclouds.pdf, id=740, 601.24625pt x 417.56pt>
+<wordclouds.pdf, id=362, 601.24625pt x 417.56pt>
 File: wordclouds.pdf Graphic file (type pdf)
 <use wordclouds.pdf>
 Package pdftex.def Info: wordclouds.pdf  used on input line 984.
@@ -1150,6 +1406,10 @@ Package pdftex.def Info: wordclouds.pdf  used on input line 984.
 [34 <./wordclouds.pdf>]
 
 [35]
+
+LaTeX Warning: Reference `fig:interface' on page 36 undefined on input line 1055.
+
+
 Overfull \hbox (15.13986pt too wide) in paragraph at lines 1053--1057
 \T1/cmr/m/n/10.95 We an-a-lyzed de-identified plat-form logs from Khan Academy over a one-year pe-riod (Jan-uary^^UDecember
  []
@@ -1170,12 +1430,107 @@ Overfull \hbox (2.95987pt too wide) in paragraph at lines 1093--1095
 [39]
 Chapter 4.
 
+Package natbib Warning: Citation `national_research_council_assessing_2011' on page 40 undefined on input line 1116.
+
+
+Package natbib Warning: Citation `moffitt_gradient_2011' on page 40 undefined on input line 1117.
+
+
+Package natbib Warning: Citation `almlund_personality_2011' on page 40 undefined on input line 1117.
+
+
+Package natbib Warning: Citation `robbins_psychosocial_2004' on page 40 undefined on input line 1117.
+
+
+Package natbib Warning: Citation `kyllonen_personality_2014' on page 40 undefined on input line 1117.
+
+
+Package natbib Warning: Citation `coleman_understanding_2018' on page 40 undefined on input line 1117.
+
+
+Package natbib Warning: Citation `karabel_chosen_2005' on page 40 undefined on input line 1120.
+
+
 
 [40
 
 ]
 
+Package natbib Warning: Citation `national_research_council_assessing_2011' on page 41 undefined on input line 1124.
+
+
+Package natbib Warning: Citation `bastedo_what_2018' on page 41 undefined on input line 1124.
+
+
+Package natbib Warning: Citation `starkman_confessions_2013' on page 41 undefined on input line 1124.
+
+
+Package natbib Warning: Citation `coleman_understanding_2018' on page 41 undefined on input line 1126.
+
+
+Package natbib Warning: Citation `anderson_character_2020' on page 41 undefined on input line 1126.
+
+
+Package natbib Warning: Citation `kahneman_noise_2021' on page 41 undefined on input line 1126.
+
+
+Package natbib Warning: Citation `rushton_behavioral_1983' on page 41 undefined on input line 1126.
+
+
+Package natbib Warning: Citation `hoover_working_2017' on page 41 undefined on input line 1128.
+
+
+Package natbib Warning: Citation `korn_elite_2018' on page 41 undefined on input line 1128.
+
+
+Package natbib Warning: Citation `tay_conceptual_2022' on page 41 undefined on input line 1130.
+
+
+Package natbib Warning: Citation `hickman_automated_2022' on page 41 undefined on input line 1130.
+
+
+Package natbib Warning: Citation `manyika_what_2019' on page 41 undefined on input line 1130.
+
+
+Package natbib Warning: Citation `obermeyer_dissecting_2019' on page 41 undefined on input line 1130.
+
+
+Package natbib Warning: Citation `ensign_runaway_2018' on page 41 undefined on input line 1130.
+
+
+Package natbib Warning: Citation `alvero_essay_2021' on page 41 undefined on input line 1130.
+
+
+
 [41]
+
+Package natbib Warning: Citation `riedl_humancentered_2019' on page 42 undefined on input line 1132.
+
+
+Package natbib Warning: Citation `shneiderman_human-centered_2020' on page 42 undefined on input line 1132.
+
+
+Package natbib Warning: Citation `gunning_xaiexplainable_2019' on page 42 undefined on input line 1132.
+
+
+Package natbib Warning: Citation `shneiderman_human-centered_2020' on page 42 undefined on input line 1133.
+
+
+Package natbib Warning: Citation `noauthor_our_2021' on page 42 undefined on input line 1134.
+
+
+Package natbib Warning: Citation `lobel_equality_2022' on page 42 undefined on input line 1134.
+
+
+Package natbib Warning: Citation `almlund_personality_2011' on page 42 undefined on input line 1137.
+
+
+LaTeX Warning: Reference `tab:pqs' on page 42 undefined on input line 1137.
+
+
+Package natbib Warning: Citation `liu_roberta_2019' on page 42 undefined on input line 1137.
+
+
 
 [42]
 Underfull \hbox (badness 1838) in paragraph at lines 1152--1152
@@ -1187,7 +1542,7 @@ Overfull \hbox (29.89972pt too wide) in paragraph at lines 1143--1171
 [][]
  []
 
-<fig1_new2_scale.pdf, id=905, 523.9575pt x 297.51149pt>
+<fig1_new2_scale.pdf, id=481, 523.9575pt x 297.51149pt>
 File: fig1_new2_scale.pdf Graphic file (type pdf)
 <use fig1_new2_scale.pdf>
 Package pdftex.def Info: fig1_new2_scale.pdf  used on input line 1176.
@@ -1601,20 +1956,45 @@ Overfull \hbox (45.98337pt too wide) in paragraph at lines 1186--1207
 [45
 
 ]
-<fig2.jpg, id=940, 523.9575pt x 187.4202pt>
+
+LaTeX Warning: Reference `tab:concurrent' on page 46 undefined on input line 1211.
+
+
+Package natbib Warning: Citation `pierse_transformers_2021' on page 46 undefined on input line 1216.
+
+
+Package natbib Warning: Citation `janizek_explaining_2020' on page 46 undefined on input line 1216.
+
+
+LaTeX Warning: Reference `fig:interpret' on page 46 undefined on input line 1218.
+
+<fig2.jpg, id=513, 523.9575pt x 187.4202pt>
 File: fig2.jpg Graphic file (type jpg)
 <use fig2.jpg>
 Package pdftex.def Info: fig2.jpg  used on input line 1223.
 (pdftex.def)             Requested size: 469.75502pt x 168.03603pt.
+
+LaTeX Warning: Reference `tab:concurrent' on page 46 undefined on input line 1232.
+
 
 
 [46
 
 ]
 
+Package natbib Warning: Citation `benjamini_control_2001' on page 47 undefined on input line 1236.
+
+
+
 [47 <./fig2.jpg>]
 
 LaTeX Warning: Float too large for page by 27.08109pt on input line 1368.
+
+
+Package natbib Warning: Citation `benjamini_control_2001' on page 48 undefined on input line 1371.
+
+
+Package natbib Warning: Citation `kamas_empathy_2021' on page 48 undefined on input line 1371.
 
 
 
@@ -1622,15 +2002,92 @@ LaTeX Warning: Float too large for page by 27.08109pt on input line 1368.
 
 [49]
 
+Package natbib Warning: Citation `alvero_essay_2021' on page 50 undefined on input line 1381.
+
+
+
 [50]
+
+Package natbib Warning: Citation `benjamini_control_2001' on page 51 undefined on input line 1385.
+
+
+Package natbib Warning: Citation `alvero_essay_2021' on page 51 undefined on input line 1390.
+
+
+Package natbib Warning: Citation `pennebaker_when_2014' on page 51 undefined on input line 1391.
+
+
+Package natbib Warning: Citation `alvero_essay_2021' on page 51 undefined on input line 1392.
+
+
+Package natbib Warning: Citation `pennebaker_when_2014' on page 51 undefined on input line 1392.
+
+
 
 [51]
 
+Package natbib Warning: Citation `goyer_role_2021' on page 52 undefined on input line 1399.
+
+
+Package natbib Warning: Citation `salganik_measuring_2020' on page 52 undefined on input line 1399.
+
+
+Package natbib Warning: Citation `martin_exploring_2016' on page 52 undefined on input line 1399.
+
+
+Package natbib Warning: Citation `ahadi_multiple_1989' on page 52 undefined on input line 1399.
+
+
+Package natbib Warning: Citation `gotz_small_2022' on page 52 undefined on input line 1399.
+
+
+Package natbib Warning: Citation `goldrick-rab_following_2006' on page 52 undefined on input line 1400.
+
+
+Package natbib Warning: Citation `hepworth_factors_2018' on page 52 undefined on input line 1400.
+
+
+Package natbib Warning: Citation `porchea_predictors_2010' on page 52 undefined on input line 1400.
+
+
+Package natbib Warning: Citation `murphy_customized_2020' on page 52 undefined on input line 1400.
+
+
+Package natbib Warning: Citation `goyer_role_2021' on page 52 undefined on input line 1400.
+
+
+
 [52]
+
+Package natbib Warning: Citation `willingham_success_1985' on page 53 undefined on input line 1402.
+
+
+Package natbib Warning: Citation `bastedo_what_2018' on page 53 undefined on input line 1405.
+
+
+Package natbib Warning: Citation `clifton_managing_2020' on page 53 undefined on input line 1407.
+
+
+Package natbib Warning: Citation `campbell_assessing_1979' on page 53 undefined on input line 1419.
+
+
+Package natbib Warning: Citation `dietvorst_algorithm_2015' on page 53 undefined on input line 1420.
+
+
 
 [53]
 
 [54]
+
+Package natbib Warning: Citation `mahoney_organized_2005' on page 55 undefined on input line 1434.
+
+
+Package natbib Warning: Citation `larson_toward_2000' on page 55 undefined on input line 1434.
+
+
+Package natbib Warning: Citation `act_actsat_2013' on page 55 undefined on input line 1437.
+
+
 Overfull \hbox (62.50516pt too wide) in paragraph at lines 1446--1447
 \T1/cmr/m/n/10.95 We ob-tained data from the 2015 Na-tional Stu-dent Clear-ing-house (NSC) database (www.studentclearinghouse.org)
  []
@@ -1638,6 +2095,13 @@ Overfull \hbox (62.50516pt too wide) in paragraph at lines 1446--1447
 
 
 [55]
+
+Package natbib Warning: Citation `van_buuren_mice_2011' on page 56 undefined on input line 1449.
+
+
+Package natbib Warning: Citation `liu_roberta_2019' on page 56 undefined on input line 1459.
+
+
 
 [56]
 
@@ -1648,10 +2112,29 @@ Overfull \hbox (62.50516pt too wide) in paragraph at lines 1446--1447
 [59]
 Chapter 5.
 
+Package natbib Warning: Citation `bastani2024' on page 60 undefined on input line 1498.
+
+
+Package natbib Warning: Citation `wu2025human' on page 60 undefined on input line 1498.
+
+
+Package natbib Warning: Citation `obermeyer_dissecting_2019' on page 60 undefined on input line 1498.
+
+
+Package natbib Warning: Citation `alvero_essay_2021' on page 60 undefined on input line 1498.
+
+
 
 [60
 
 ]
+
+Package natbib Warning: Citation `bastani2024' on page 61 undefined on input line 1514.
+
+
+Package natbib Warning: Citation `lehmann2024ai' on page 61 undefined on input line 1514.
+
+
 
 [61]
 
@@ -1663,25 +2146,41 @@ l.1532 ...mentary Online Materials for Chapter 2}}
                                                   
 Chapter A.
 
+LaTeX Warning: Reference `fig:design' on page 63 undefined on input line 1536.
+
+
+LaTeX Warning: Reference `tab:prompts' on page 63 undefined on input line 1538.
+
+
 Overfull \hbox (74.90411pt too wide) in paragraph at lines 1544--1554
  [][] 
  []
+
+
+LaTeX Warning: Reference `fig:ai_valid' on page 63 undefined on input line 1559.
 
 
 
 [63
 
 ]
-<ai_validity.pdf, id=1103, 361.35pt x 144.54pt>
+<ai_validity.pdf, id=622, 361.35pt x 144.54pt>
 File: ai_validity.pdf Graphic file (type pdf)
 <use ai_validity.pdf>
 Package pdftex.def Info: ai_validity.pdf  used on input line 1563.
 (pdftex.def)             Requested size: 352.31625pt x 140.92702pt.
-<correlations.pdf, id=1105, 505.89pt x 216.81pt>
+
+
+LaTeX Warning: Reference `fig:ratings_cor' on page 64 undefined on input line 1577.
+
+<correlations.pdf, id=623, 505.89pt x 216.81pt>
 File: correlations.pdf Graphic file (type pdf)
 <use correlations.pdf>
 Package pdftex.def Info: correlations.pdf  used on input line 1581.
 (pdftex.def)             Requested size: 352.31625pt x 150.99513pt.
+
+LaTeX Warning: Reference `tab:beta' on page 64 undefined on input line 1586.
+
 
 Overfull \hbox (23.73485pt too wide) in paragraph at lines 1592--1619
  [][] 
@@ -1691,15 +2190,28 @@ Overfull \hbox (23.73485pt too wide) in paragraph at lines 1592--1619
 
 [64 <./ai_validity.pdf>]
 
+LaTeX Warning: Reference `fig:feedback prompt' on page 65 undefined on input line 1626.
+
+
+LaTeX Warning: Reference `tab:s2missingness' on page 65 undefined on input line 1680.
+
+
+LaTeX Warning: Reference `tab:s2randomization' on page 65 undefined on input line 1704.
+
+
+
 [65 <./correlations.pdf>]
 Overfull \hbox (289.21098pt too wide) in paragraph at lines 1710--1751
  [][] 
  []
 
 
+LaTeX Warning: Reference `tab:s2_practice' on page 66 undefined on input line 1754.
+
+
 
 [66]
-<mainfig_sup.pdf, id=1152, 325.215pt x 144.54pt>
+<mainfig_sup.pdf, id=669, 325.215pt x 144.54pt>
 File: mainfig_sup.pdf Graphic file (type pdf)
 <use mainfig_sup.pdf>
 Package pdftex.def Info: mainfig_sup.pdf  used on input line 1757.
@@ -1710,6 +2222,9 @@ Overfull \hbox (222.01585pt too wide) in paragraph at lines 1769--1789
  []
 
 
+LaTeX Warning: Reference `tab:s2_test' on page 67 undefined on input line 1791.
+
+
 
 [67]
 Overfull \hbox (219.598pt too wide) in paragraph at lines 1797--1823
@@ -1717,14 +2232,23 @@ Overfull \hbox (219.598pt too wide) in paragraph at lines 1797--1823
  []
 
 
+LaTeX Warning: Reference `tab:effort_practice2' on page 68 undefined on input line 1827.
+
+
 Overfull \hbox (102.40364pt too wide) in paragraph at lines 1832--1852
  [][] 
  []
 
 
+LaTeX Warning: Reference `tab:effort_test2' on page 68 undefined on input line 1856.
+
+
 Overfull \hbox (108.45203pt too wide) in paragraph at lines 1861--1887
  [][] 
  []
+
+
+LaTeX Warning: Reference `tab:learning_rate2' on page 68 undefined on input line 1891.
 
 
 
@@ -1733,15 +2257,24 @@ Overfull \hbox (104.82149pt too wide) in paragraph at lines 1897--1917
  [][] 
  []
 
-<levenshtein_distance.pdf, id=1180, 469.755pt x 216.81pt>
+
+LaTeX Warning: Reference `fig:distance' on page 69 undefined on input line 1919.
+
+<levenshtein_distance.pdf, id=695, 469.755pt x 216.81pt>
 File: levenshtein_distance.pdf Graphic file (type pdf)
 <use levenshtein_distance.pdf>
 Package pdftex.def Info: levenshtein_distance.pdf  used on input line 1923.
 (pdftex.def)             Requested size: 446.26582pt x 205.96832pt.
 
+LaTeX Warning: Reference `tab:motivation2' on page 69 undefined on input line 1930.
+
+
 Overfull \hbox (30.59213pt too wide) in paragraph at lines 1936--1962
  [][] 
  []
+
+
+LaTeX Warning: Reference `tab:s2_followup' on page 69 undefined on input line 1965.
 
 
 Overfull \hbox (167.22144pt too wide) in paragraph at lines 1970--1996
@@ -1756,17 +2289,29 @@ Overfull \hbox (377.30055pt too wide) in paragraph at lines 2006--2051
  []
 
 
+LaTeX Warning: Reference `tab:s3missingness' on page 70 undefined on input line 2057.
+
+
+LaTeX Warning: Reference `tab:s3randomization' on page 70 undefined on input line 2081.
+
+
 
 [70]
 Overfull \hbox (130.31184pt too wide) in paragraph at lines 2087--2129
  [][] 
  []
 
-<skill_lines_raw.pdf, id=1203, 325.215pt x 144.54pt>
+
+LaTeX Warning: Reference `tab:s3_practice' on page 71 undefined on input line 2134.
+
+<skill_lines_raw.pdf, id=715, 325.215pt x 144.54pt>
 File: skill_lines_raw.pdf Graphic file (type pdf)
 <use skill_lines_raw.pdf>
 Package pdftex.def Info: skill_lines_raw.pdf  used on input line 2139.
 (pdftex.def)             Requested size: 352.31625pt x 156.59709pt.
+
+LaTeX Warning: Reference `tab:s3_test' on page 71 undefined on input line 2146.
+
 
 Overfull \hbox (254.22768pt too wide) in paragraph at lines 2153--2179
  [][] 
@@ -1780,9 +2325,15 @@ Overfull \hbox (219.75064pt too wide) in paragraph at lines 2186--2210
  []
 
 
+LaTeX Warning: Reference `tab:effort_practice3' on page 72 undefined on input line 2214.
+
+
 Overfull \hbox (111.0225pt too wide) in paragraph at lines 2221--2247
  [][] 
  []
+
+
+LaTeX Warning: Reference `tab:effort_test3' on page 72 undefined on input line 2250.
 
 
 Overfull \hbox (107.39197pt too wide) in paragraph at lines 2256--2282
@@ -1790,9 +2341,15 @@ Overfull \hbox (107.39197pt too wide) in paragraph at lines 2256--2282
  []
 
 
+LaTeX Warning: Reference `tab:learning_rate3' on page 72 undefined on input line 2284.
+
+
 Overfull \hbox (107.39197pt too wide) in paragraph at lines 2290--2316
  [][] 
  []
+
+
+LaTeX Warning: Reference `tab:motivation3' on page 72 undefined on input line 2320.
 
 
 Overfull \hbox (33.16261pt too wide) in paragraph at lines 2326--2352
@@ -1800,11 +2357,17 @@ Overfull \hbox (33.16261pt too wide) in paragraph at lines 2326--2352
  []
 
 
+LaTeX Warning: Reference `tab:s3_followup' on page 72 undefined on input line 2356.
+
+
 
 [72]
 Overfull \hbox (163.14662pt too wide) in paragraph at lines 2363--2389
  [][] 
  []
+
+
+LaTeX Warning: Reference `tab:s3_followup_batches' on page 73 undefined on input line 2391.
 
 
 Overfull \hbox (298.19559pt too wide) in paragraph at lines 2433--2491
@@ -1885,27 +2448,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 383--389
 
 [95])
 
-[96] (./sampledissertation.aux)
+Package natbib Warning: There were undefined citations.
+
+
+
+[96] (./sampledissertation.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-20>
  ***********
-Package rerunfilecheck Info: File `sampledissertation.out' has not changed.
-(rerunfilecheck)             Checksum: EF87A92B6B5796BC75996636FE63ACAC;2539.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `sampledissertation.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `sampledissertation.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  79D14B5A62AEA08FA4FC526BD4B13876;5048.
  ) 
 Here is how much of TeX's memory you used:
- 34766 strings out of 469273
- 716604 string characters out of 5467219
- 1261103 words of memory out of 5000000
- 62326 multiletter control sequences out of 15000+600000
+ 34736 strings out of 469273
+ 716025 string characters out of 5467219
+ 1249456 words of memory out of 5000000
+ 62311 multiletter control sequences out of 15000+600000
  647285 words of font info for 87 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 98i,13n,105p,1911b,1739s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,13n,105p,1911b,1763s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on sampledissertation.pdf (106 pages, 26842458 bytes).
+Output written on sampledissertation.pdf (103 pages, 26817811 bytes).
 PDF statistics:
- 1558 PDF objects out of 1728 (max. 8388607)
- 1292 compressed objects within 13 object streams
- 360 named destinations out of 1000 (max. 500000)
- 193 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1170 PDF objects out of 1200 (max. 8388607)
+ 913 compressed objects within 10 object streams
+ 357 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

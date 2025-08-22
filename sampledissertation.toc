@@ -1,7 +1,7 @@
 \babel@toc {american}{}\relax 
 \contentsline {chapter}{ABSTRACT}{iii}{chapter*.1}%
-\contentsline {chapter}{LIST OF TABLES}{vii}{section*.2}%
-\contentsline {chapter}{LIST OF ILLUSTRATIONS}{viii}{section*.3}%
+\contentsline {chapter}{LIST OF TABLES}{vi}{section*.2}%
+\contentsline {chapter}{LIST OF ILLUSTRATIONS}{vii}{section*.3}%
 \contentsline {chapter}{\numberline {1}Preface}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Learning, not cheating: AI assistance can enhance rather than hinder skill development}{6}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Abstract}{6}{section.2.1}%

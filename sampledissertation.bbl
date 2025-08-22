@@ -5,12 +5,6 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Rogers and {Lasky-Fink}(2023)]{rogers2023}
-Todd Rogers and Jessica {Lasky-Fink}.
-\newblock \emph{Writing for {{Busy Readers}}: {{Communicate More Effectively}} in the {{Real World}}}.
-\newblock Penguin, September 2023.
-\newblock ISBN 978-0-593-18748-7.
-
 \bibitem[Bubeck et~al.(2023)Bubeck, Chandrasekaran, Eldan, Gehrke, Horvitz, Kamar, Lee, Lee, Li, Lundberg, Nori, Palangi, Ribeiro, and Zhang]{bubeck2023}
 S{\'e}bastien Bubeck, Varun Chandrasekaran, Ronen Eldan, Johannes Gehrke, Eric Horvitz, Ece Kamar, Peter Lee, Yin~Tat Lee, Yuanzhi Li, Scott Lundberg, Harsha Nori, Hamid Palangi, Marco~Tulio Ribeiro, and Yi~Zhang.
 \newblock Sparks of {{Artificial General Intelligence}}: {{Early}} experiments with {{GPT-4}}, April 2023.
@@ -145,6 +139,12 @@ Allen Nie, Yash Chandak, Miroslav Suzara, Ali Malik, Juliette Woodrow, Matt Peng
 Alexander Bick, Adam Blandin, and David~J Deming.
 \newblock The rapid adoption of generative ai.
 \newblock Technical report, National Bureau of Economic Research, 2024.
+
+\bibitem[Rogers and {Lasky-Fink}(2023)]{rogers2023}
+Todd Rogers and Jessica {Lasky-Fink}.
+\newblock \emph{Writing for {{Busy Readers}}: {{Communicate More Effectively}} in the {{Real World}}}.
+\newblock Penguin, September 2023.
+\newblock ISBN 978-0-593-18748-7.
 
 \bibitem[Shulman et~al.(2024)Shulman, Markowitz, and Rogers]{shulman2024}
 Hillary~C. Shulman, David~M. Markowitz, and Todd Rogers.
